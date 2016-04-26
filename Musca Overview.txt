@@ -1,11 +1,11 @@
-Input Engine (IE) 
+Input Engine (IE)
 -----------------
-Interface: 
+Interface:
 Input - ARRAY(pixels):Camera Feed (CF)
 Output - SHORT_INT:Player1_Move, SHORT_INT:Player2_Move, BOOL:Player1_Error, BOOL:Player2_Error, VECTOR: Player1_PosVec, VECTOR: Player2_PosVec
 
 Components:
-*Colour Detection 
+*Colour Detection
 *Movement Detection
 *Movement Physical Validation & Decision
 
@@ -18,7 +18,7 @@ Game Engine (GE)
 ----------------
 Interface:
 Input - SHORT_INT:Player1_Move, SHORT_INT:Player2_Move, BOOL:Player1_Error, BOOL:Player2_Error
-Output - ARRAY(SHORT_INT):Maze, BOOL:EndGame 
+Output - ARRAY(SHORT_INT):Maze, BOOL:EndGame
 
 Components:
 *Contextual Validation
@@ -43,3 +43,17 @@ Components:
 
 Error Cases:
 Sprites Unavailable - No sprites loaded into memory
+
+
+VARIABLES & CONSTANTS:
+----------------------
+Movement (3BITS):
+- 000 (NO_MOVE)
+- 001 (UP)
+- 010 (RIGHT)
+- 011 (LEFT)
+- 100 (DOWN)
+
+Error(1 BIT):
+- 0 (NO_ERROR)
+- 1 (ERROR)
