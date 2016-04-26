@@ -57,3 +57,10 @@ Movement (3BITS):
 Error(1 BIT):
 - 0 (NO_ERROR)
 - 1 (ERROR)
+
+Maze:
+-40(ROWS)
+-64(COLS)
+
+Render:
+-15(CELL_DIMENSION)
