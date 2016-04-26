@@ -58,9 +58,18 @@ Error(1 BIT):
 - 0 (NO_ERROR)
 - 1 (ERROR)
 
-Maze:
--40(ROWS)
--64(COLS)
+Maze Dimensions:
+-40 (ROWS)
+-64 (COLS)
+
+Maze Array Values(4 BITS [room to expand]):
+-0000 (EMPTY_CELL)
+-0001 (WALL)
+-0010 (START_POINT_P1)
+-0011 (START_POINT_P2)
+-0100 (END_POINT)
+-0101 (P1)
+-0110 (P2)
 
 Render:
--15(CELL_DIMENSION)
+-15 (CELL_DIMENSION)
