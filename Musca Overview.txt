@@ -18,7 +18,7 @@ Game Engine (GE)
 ----------------
 Interface:
 Input - SHORT_INT:Player1_Move, SHORT_INT:Player2_Move, BOOL:Player1_Error, BOOL:Player2_Error
-Output - ARRAY(SHORT_INT):Maze, BOOL:EndGame
+Output - ARRAY(SHORT_INT):Maze, BOOL:EndGame, SHORT_INT: Player_Win
 
 Components:
 *Contextual Validation
@@ -33,7 +33,7 @@ Wall Collision - Player moved into a wall (Not a major error)
 Render Engine (RE)
 ------------------
 Interface:
-Input - ARRAY(SHORT_INT):Maze, BOOL:Player1_Error, BOOL:Player2_Error,VECTOR: Player1_PosVec, VECTOR: Player2_PosVec
+Input - ARRAY(SHORT_INT):Maze, BOOL:Player1_Error, BOOL:Player2_Error,VECTOR: Player1_PosVec, VECTOR: Player2_PosVec, SHORT_INT: Player_Win
 Output - ARRAY(pixels):Game Screen (GS)
 
 Components:
@@ -73,3 +73,8 @@ Maze Array Values(4 BITS [room to expand]):
 
 Render:
 -15 (CELL_DIMENSION)
+
+Player_Win:
+-00 (NONE)
+-01 (PLAYER_1)
+-10 (PLAYER_2)
