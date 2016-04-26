@@ -1,0 +1,45 @@
+Input Engine (IE) 
+-----------------
+Interface: 
+Input - ARRAY(pixels):Camera Feed (CF)
+Output - SHORT_INT:Player1_Move, SHORT_INT:Player2_Move, BOOL:Player1_Error, BOOL:Player2_Error, VECTOR: Player1_PosVec, VECTOR: Player2_PosVec
+
+Components:
+*Colour Detection 
+*Movement Detection
+*Movement Physical Validation & Decision
+
+Error Cases:
+Physical Error - Diagonal Move (NOT LEFT, RIGHT, UP OR DOWN)
+Ball Error - Ball not found
+
+
+Game Engine (GE)
+----------------
+Interface:
+Input - SHORT_INT:Player1_Move, SHORT_INT:Player2_Move, BOOL:Player1_Error, BOOL:Player2_Error
+Output - ARRAY(SHORT_INT):Maze, BOOL:EndGame 
+
+Components:
+*Contextual Validation
+*Update Maze
+*Collision Detection
+*Detection of End Game
+
+Error Cases:
+Wall Collision - Player moved into a wall (Not a major error)
+
+
+Render Engine (RE)
+------------------
+Interface:
+Input - ARRAY(SHORT_INT):Maze, BOOL:Player1_Error, BOOL:Player2_Error,VECTOR: Player1_PosVec, VECTOR: Player2_PosVec
+Output - ARRAY(pixels):Game Screen (GS)
+
+Components:
+*Controller Location
+*View
+*Sprite lookup
+
+Error Cases:
+Sprites Unavailable - No sprites loaded into memory
