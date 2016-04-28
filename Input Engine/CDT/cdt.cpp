@@ -7,14 +7,14 @@
 
 
 #include <iostream>
+#include <ac_fixed.h>
+#pragma hls_design_top
 
-using namespace std;
-
-void cdt(int H_IN, int S_IN, int V_IN, int &R_OUT, int &G_OUT, int &B_OUT){
-	int r,g,b;
+void cdt(ac_int<10, false> H_IN, ac_int<10, false> S_IN, ac_int<10, false> V_IN, ac_int<10, false> &R_OUT, ac_int<10, false> &G_OUT, ac_int<10, false> &B_OUT){
+	ac_int<10, false> r,g,b;
 	r = g = b = 0;
-	if((H_IN >= 350) || (H_IN <= 10)){
-		if((S_IN >= 70) && (V_IN >= 70)){
+	if((H_IN >= 340) || (H_IN <= 50)){
+		if((S_IN >= 80)){
 			g = 1023;
 		}
 	}
@@ -23,18 +23,5 @@ void cdt(int H_IN, int S_IN, int V_IN, int &R_OUT, int &G_OUT, int &B_OUT){
 	B_OUT = b;
 }
 
+//end file
 
-int main(){
-	int H_IN = 0;
-	int S_IN = 100;
-	int V_IN = 100;
-
-	int R_OUT, G_OUT, B_OUT;
-
-	cdt(H_IN,S_IN,V_IN,R_OUT,G_OUT,B_OUT);
-
-	cout << "R: " << R_OUT << " G: " << G_OUT << " B: " << B_OUT << endl;
-
-
-	return 0;
-}

@@ -1,0 +1,47 @@
+
+# Messages from "go new"
+
+Creating project directory '\\icnas3.cc.ic.ac.uk\oh1015\MUSCA\Input Engine\RGBHSV\RGBHSV'. (PRJ-1)
+Branching solution 'solution.v1' at state 'new' (PRJ-2)
+Branching solution 'solution.v1' at state 'new' (PRJ-2)
+
+# Messages from "go analyze"
+
+Front End called with arguments: -- {\\icnas3.cc.ic.ac.uk\oh1015\MUSCA\Input Engine\RGBHSV\RGBHSV.cpp} (CIN-69)
+Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+Pragma 'hls_design<top>' detected on routine 'RGB_HSV' (CIN-6)
+Source file analysis completed (CIN-68)
+Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
+Completed transformation 'analyze' on solution 'solution.v1': elapsed time 1.45 seconds, memory usage 171012kB, peak memory usage 214928kB (SOL-9)
+
+# Messages from "go compile"
+
+Starting transformation 'compile' on solution 'solution.v1' (SOL-8)
+Generating synthesis internal form... (CIN-3)
+Found top design routine 'RGB_HSV' specified by directive (CIN-52)
+Synthesizing routine 'RGB_HSV' (CIN-13)
+Inlining routine 'RGB_HSV' (CIN-14)
+Optimizing block '/RGB_HSV' ... (CIN-4)
+Inout port 'H_OUT' is only used as an input. (OPT-10)
+Inout port 'S_OUT' is only used as an input. (OPT-10)
+Inout port 'V_OUT' is only used as an input. (OPT-10)
+Design 'RGB_HSV' was read (SOL-1)
+Optimizing partition '/RGB_HSV': (Total ops = 118, Real ops = 35, Vars = 44) (SOL-10)
+Optimizing partition '/RGB_HSV/core': (Total ops = 118, Real ops = 35, Vars = 38) (SOL-10)
+Optimizing partition '/RGB_HSV/core': (Total ops = 116, Real ops = 33, Vars = 39) (SOL-10)
+Optimizing partition '/RGB_HSV': (Total ops = 116, Real ops = 33, Vars = 45) (SOL-10)
+Optimizing partition '/RGB_HSV': (Total ops = 116, Real ops = 33, Vars = 45) (SOL-10)
+Optimizing partition '/RGB_HSV/core': (Total ops = 116, Real ops = 33, Vars = 39) (SOL-10)
+Optimizing partition '/RGB_HSV/core': (Total ops = 3, Real ops = 0, Vars = 3) (SOL-10)
+Optimizing partition '/RGB_HSV': (Total ops = 3, Real ops = 0, Vars = 9) (SOL-10)
+Optimizing partition '/RGB_HSV': (Total ops = 3, Real ops = 0, Vars = 9) (SOL-10)
+Optimizing partition '/RGB_HSV/core': (Total ops = 3, Real ops = 0, Vars = 3) (SOL-10)
+Optimizing partition '/RGB_HSV': (Total ops = 3, Real ops = 0, Vars = 9) (SOL-10)
+Optimizing partition '/RGB_HSV': (Total ops = 3, Real ops = 0, Vars = 9) (SOL-10)
+Optimizing partition '/RGB_HSV/core': (Total ops = 3, Real ops = 0, Vars = 3) (SOL-10)
+Optimizing partition '/RGB_HSV': (Total ops = 3, Real ops = 0, Vars = 9) (SOL-10)
+Optimizing partition '/RGB_HSV/core': (Total ops = 3, Real ops = 0, Vars = 3) (SOL-10)
+Completed transformation 'compile' on solution 'RGB_HSV.v3': elapsed time 0.56 seconds, memory usage 173724kB, peak memory usage 214928kB (SOL-9)
+Input port 'H_OUT' is never used. (OPT-4)
+Input port 'S_OUT' is never used. (OPT-4)
+Input port 'V_OUT' is never used. (OPT-4)

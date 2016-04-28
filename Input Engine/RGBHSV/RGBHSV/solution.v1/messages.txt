@@ -1,0 +1,20 @@
+
+# Messages from "go new"
+
+Creating project directory '\\icnas3.cc.ic.ac.uk\oh1015\MUSCA\Input Engine\RGBHSV\RGBHSV'. (PRJ-1)
+Branching solution 'solution.v1' at state 'new' (PRJ-2)
+Branching solution 'solution.v1' at state 'new' (PRJ-2)
+Branching solution 'solution.v1' at state 'new' (PRJ-2)
+Branching solution 'solution.v1' at state 'new' (PRJ-2)
+Branching solution 'solution.v1' at state 'new' (PRJ-2)
+Branching solution 'solution.v1' at state 'new' (PRJ-2)
+Branching solution 'solution.v1' at state 'new' (PRJ-2)
+Branching solution 'solution.v1' at state 'new' (PRJ-2)
+
+# Messages from "go analyze"
+
+Front End called with arguments: -- {\\icnas3.cc.ic.ac.uk\oh1015\MUSCA\Input Engine\RGBHSV\RGBHSV.cpp} (CIN-69)
+Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+Source file analysis completed (CIN-68)
+Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
+Completed transformation 'analyze' on solution 'solution.v1': elapsed time 0.95 seconds, memory usage 160280kB, peak memory usage 213152kB (SOL-9)

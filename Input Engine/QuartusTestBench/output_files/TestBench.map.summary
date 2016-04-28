@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Apr 27 18:45:21 2016
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+Revision Name : TestBench
+Top-level Entity Name : TestBench
+Family : Cyclone III
+Total logic elements : 2,648
+    Total combinational functions : 2,550
+    Dedicated logic registers : 333
+Total registers : 333
+Total pins : 61
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

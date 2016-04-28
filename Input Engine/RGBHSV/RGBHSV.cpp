@@ -7,19 +7,21 @@
 
 //This code is to convert an RGB value to a HSV value
 
-
+#include <ac_fixed.h>
 #include <iostream>
+#include <algorithm>
+#include <math/mgc_ac_math.h>
+#pragma hls_design_top
+#define percent 100;
 
-using namespace std;
-
-void HSVRGB(int R_IN, int G_IN, int B_IN, int &H_OUT, float &S_OUT, float &V_OUT){
-	float delta, min, max;
-	float h, s, v;
-
-	float r = (float)R_IN;
-	float g = (float)G_IN;
-	float b = (float)B_IN;
-
+void HSVRGB(ac_fixed<10, 10, false> r, ac_fixed<10, 10, false>  g, ac_fixed<10, 10, false>  b, ac_fixed<10, 10, false, AC_RND> &H_OUT, ac_fixed<10, 10, false, AC_RND> &S_OUT, ac_fixed<10, 10, false, AC_RND> &V_OUT){
+	ac_fixed<10, 10, false> delta, min, max;
+	ac_fixed<14, 8, false> v;
+	ac_fixed<16, 8, false> s; 
+    ac_fixed<14, 11, true> h;
+	ac_fixed<10,1, false> val;
+	val = 0.39216;
+	
 	if(r >= g){
 		if(r >= b){
 			max = r;
@@ -50,23 +52,21 @@ void HSVRGB(int R_IN, int G_IN, int B_IN, int &H_OUT, float &S_OUT, float &V_OUT
 		min = b;
 	}
 
-	v = max*0.39216;
+	v = max*val;
+	
+	delta = max - min;
 
-	if(max == min){
+	if(delta == 0){
 		h = 0;
 		s = 0;
 	}
-
 	else{
-		delta = max - min;
-
 		if(max!= 0){
 			s = delta/max;
 		}
 		else{
 			r = g = b = 0;
 			s = 0;
-			h = -1;
 		}
 
 		if(r == max){
@@ -85,33 +85,11 @@ void HSVRGB(int R_IN, int G_IN, int B_IN, int &H_OUT, float &S_OUT, float &V_OUT
 		}
 	}
 
-	H_OUT = (int)h;
-	S_OUT = s*100;
+	H_OUT = h;
+	S_OUT = s*percent;
 	V_OUT = v;
 
 }
-
-
-
-int main(){
-	int r = 128;
-	int g = 13;
-	int b = 128;
-
-	int h;
-	float s;
-	float v;
-
-	cout << "r: " << r << " g: " << g << " b: " << b << endl;
-
-	HSVRGB(r,g,b,h,s,v);
-
-	cout << "h: " << h << " s: " << s << " v: " << v << endl;
-
-	return 0;
-}
-
-
 
 //end file
 

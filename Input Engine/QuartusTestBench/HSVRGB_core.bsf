@@ -1,0 +1,253 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 384 384)
+	(text "HSVRGB_core" (rect 5 0 71 12)(font "Arial" ))
+	(text "inst" (rect 8 352 20 364)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 10 12)(font "Arial" ))
+		(text "clk" (rect 21 27 31 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "arst_n" (rect 0 0 25 12)(font "Arial" ))
+		(text "arst_n" (rect 21 43 46 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "r_rsc_mgc_in_wire_d[9..0]" (rect 0 0 109 12)(font "Arial" ))
+		(text "r_rsc_mgc_in_wire_d[9..0]" (rect 21 59 130 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "g_rsc_mgc_in_wire_d[9..0]" (rect 0 0 110 12)(font "Arial" ))
+		(text "g_rsc_mgc_in_wire_d[9..0]" (rect 21 75 131 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "b_rsc_mgc_in_wire_d[9..0]" (rect 0 0 110 12)(font "Arial" ))
+		(text "b_rsc_mgc_in_wire_d[9..0]" (rect 21 91 131 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "div_mgc_div_z[10..0]" (rect 0 0 86 12)(font "Arial" ))
+		(text "div_mgc_div_z[10..0]" (rect 21 107 107 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "div_mgc_div_1_z[10..0]" (rect 0 0 95 12)(font "Arial" ))
+		(text "div_mgc_div_1_z[10..0]" (rect 21 123 116 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 3))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "div_mgc_div_2_z[10..0]" (rect 0 0 96 12)(font "Arial" ))
+		(text "div_mgc_div_2_z[10..0]" (rect 21 139 117 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 3))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "div_mgc_div_3_z[10..0]" (rect 0 0 96 12)(font "Arial" ))
+		(text "div_mgc_div_3_z[10..0]" (rect 21 155 117 167)(font "Arial" ))
+		(line (pt 0 160)(pt 16 160)(line_width 3))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "div_mgc_div_4_z[10..0]" (rect 0 0 97 12)(font "Arial" ))
+		(text "div_mgc_div_4_z[10..0]" (rect 21 171 118 183)(font "Arial" ))
+		(line (pt 0 176)(pt 16 176)(line_width 3))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "div_mgc_div_5_z[10..0]" (rect 0 0 96 12)(font "Arial" ))
+		(text "div_mgc_div_5_z[10..0]" (rect 21 187 117 199)(font "Arial" ))
+		(line (pt 0 192)(pt 16 192)(line_width 3))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "div_mgc_div_6_z[9..0]" (rect 0 0 93 12)(font "Arial" ))
+		(text "div_mgc_div_6_z[9..0]" (rect 21 203 114 215)(font "Arial" ))
+		(line (pt 0 208)(pt 16 208)(line_width 3))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "div_mgc_div_7_z[9..0]" (rect 0 0 93 12)(font "Arial" ))
+		(text "div_mgc_div_7_z[9..0]" (rect 21 219 114 231)(font "Arial" ))
+		(line (pt 0 224)(pt 16 224)(line_width 3))
+	)
+	(port
+		(pt 368 32)
+		(output)
+		(text "H_OUT_rsc_mgc_out_stdreg_d[9..0]" (rect 0 0 154 12)(font "Arial" ))
+		(text "H_OUT_rsc_mgc_out_stdreg_d[9..0]" (rect 193 27 347 39)(font "Arial" ))
+		(line (pt 368 32)(pt 352 32)(line_width 3))
+	)
+	(port
+		(pt 368 48)
+		(output)
+		(text "S_OUT_rsc_mgc_out_stdreg_d[9..0]" (rect 0 0 153 12)(font "Arial" ))
+		(text "S_OUT_rsc_mgc_out_stdreg_d[9..0]" (rect 194 43 347 55)(font "Arial" ))
+		(line (pt 368 48)(pt 352 48)(line_width 3))
+	)
+	(port
+		(pt 368 64)
+		(output)
+		(text "V_OUT_rsc_mgc_out_stdreg_d[9..0]" (rect 0 0 155 12)(font "Arial" ))
+		(text "V_OUT_rsc_mgc_out_stdreg_d[9..0]" (rect 192 59 347 71)(font "Arial" ))
+		(line (pt 368 64)(pt 352 64)(line_width 3))
+	)
+	(port
+		(pt 368 80)
+		(output)
+		(text "div_mgc_div_a[10..0]" (rect 0 0 87 12)(font "Arial" ))
+		(text "div_mgc_div_a[10..0]" (rect 260 75 347 87)(font "Arial" ))
+		(line (pt 368 80)(pt 352 80)(line_width 3))
+	)
+	(port
+		(pt 368 96)
+		(output)
+		(text "div_mgc_div_b[10..0]" (rect 0 0 87 12)(font "Arial" ))
+		(text "div_mgc_div_b[10..0]" (rect 260 91 347 103)(font "Arial" ))
+		(line (pt 368 96)(pt 352 96)(line_width 3))
+	)
+	(port
+		(pt 368 112)
+		(output)
+		(text "div_mgc_div_1_a[10..0]" (rect 0 0 96 12)(font "Arial" ))
+		(text "div_mgc_div_1_a[10..0]" (rect 251 107 347 119)(font "Arial" ))
+		(line (pt 368 112)(pt 352 112)(line_width 3))
+	)
+	(port
+		(pt 368 128)
+		(output)
+		(text "div_mgc_div_1_b[10..0]" (rect 0 0 96 12)(font "Arial" ))
+		(text "div_mgc_div_1_b[10..0]" (rect 251 123 347 135)(font "Arial" ))
+		(line (pt 368 128)(pt 352 128)(line_width 3))
+	)
+	(port
+		(pt 368 144)
+		(output)
+		(text "div_mgc_div_2_a[10..0]" (rect 0 0 97 12)(font "Arial" ))
+		(text "div_mgc_div_2_a[10..0]" (rect 250 139 347 151)(font "Arial" ))
+		(line (pt 368 144)(pt 352 144)(line_width 3))
+	)
+	(port
+		(pt 368 160)
+		(output)
+		(text "div_mgc_div_2_b[10..0]" (rect 0 0 97 12)(font "Arial" ))
+		(text "div_mgc_div_2_b[10..0]" (rect 250 155 347 167)(font "Arial" ))
+		(line (pt 368 160)(pt 352 160)(line_width 3))
+	)
+	(port
+		(pt 368 176)
+		(output)
+		(text "div_mgc_div_3_a[10..0]" (rect 0 0 97 12)(font "Arial" ))
+		(text "div_mgc_div_3_a[10..0]" (rect 250 171 347 183)(font "Arial" ))
+		(line (pt 368 176)(pt 352 176)(line_width 3))
+	)
+	(port
+		(pt 368 192)
+		(output)
+		(text "div_mgc_div_3_b[10..0]" (rect 0 0 97 12)(font "Arial" ))
+		(text "div_mgc_div_3_b[10..0]" (rect 250 187 347 199)(font "Arial" ))
+		(line (pt 368 192)(pt 352 192)(line_width 3))
+	)
+	(port
+		(pt 368 208)
+		(output)
+		(text "div_mgc_div_4_a[10..0]" (rect 0 0 99 12)(font "Arial" ))
+		(text "div_mgc_div_4_a[10..0]" (rect 248 203 347 215)(font "Arial" ))
+		(line (pt 368 208)(pt 352 208)(line_width 3))
+	)
+	(port
+		(pt 368 224)
+		(output)
+		(text "div_mgc_div_4_b[10..0]" (rect 0 0 99 12)(font "Arial" ))
+		(text "div_mgc_div_4_b[10..0]" (rect 248 219 347 231)(font "Arial" ))
+		(line (pt 368 224)(pt 352 224)(line_width 3))
+	)
+	(port
+		(pt 368 240)
+		(output)
+		(text "div_mgc_div_5_a[10..0]" (rect 0 0 97 12)(font "Arial" ))
+		(text "div_mgc_div_5_a[10..0]" (rect 250 235 347 247)(font "Arial" ))
+		(line (pt 368 240)(pt 352 240)(line_width 3))
+	)
+	(port
+		(pt 368 256)
+		(output)
+		(text "div_mgc_div_5_b[10..0]" (rect 0 0 97 12)(font "Arial" ))
+		(text "div_mgc_div_5_b[10..0]" (rect 250 251 347 263)(font "Arial" ))
+		(line (pt 368 256)(pt 352 256)(line_width 3))
+	)
+	(port
+		(pt 368 272)
+		(output)
+		(text "div_mgc_div_6_a[9..0]" (rect 0 0 94 12)(font "Arial" ))
+		(text "div_mgc_div_6_a[9..0]" (rect 253 267 347 279)(font "Arial" ))
+		(line (pt 368 272)(pt 352 272)(line_width 3))
+	)
+	(port
+		(pt 368 288)
+		(output)
+		(text "div_mgc_div_6_b[9..0]" (rect 0 0 94 12)(font "Arial" ))
+		(text "div_mgc_div_6_b[9..0]" (rect 253 283 347 295)(font "Arial" ))
+		(line (pt 368 288)(pt 352 288)(line_width 3))
+	)
+	(port
+		(pt 368 304)
+		(output)
+		(text "div_mgc_div_7_a[9..0]" (rect 0 0 94 12)(font "Arial" ))
+		(text "div_mgc_div_7_a[9..0]" (rect 253 299 347 311)(font "Arial" ))
+		(line (pt 368 304)(pt 352 304)(line_width 3))
+	)
+	(port
+		(pt 368 320)
+		(output)
+		(text "div_mgc_div_7_b[9..0]" (rect 0 0 94 12)(font "Arial" ))
+		(text "div_mgc_div_7_b[9..0]" (rect 253 315 347 327)(font "Arial" ))
+		(line (pt 368 320)(pt 352 320)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 352 352)(line_width 1))
+	)
+)

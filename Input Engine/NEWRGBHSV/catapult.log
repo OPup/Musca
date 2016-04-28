@@ -1,0 +1,618 @@
+//  Catapult University Version 2011a.126 (Production Release) Wed Aug  8 00:52:07 PDT 2012
+//  
+//  Copyright (c) Calypto Design Systems, Inc., 1996-2012, All Rights Reserved.
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF CALYPTO DESIGN SYSTEMS OR ITS LICENSORS
+//  
+//  Running on Windows 7 oh1015@EEWS104A-005 Service Pack 1 6.01.7601 i686
+//  
+//  Package information: SIFLIBS v17.0_1.1, HLS_PKGS v17.0_1.1, 
+//                       DesignPad v2.78_0.0
+//  
+//  This version may only be used for academic purposes.  Some optimizations 
+//  are disabled, so results obtained from this version may be sub-optimal.
+//  
+//  Start time Wed Apr 27 13:22:27 2016
+# -------------------------------------------------
+# Logging session transcript to file "C:\Users\oh1015\AppData\Local\Temp\log6152ddab20.0"
+# Loading options from registry.
+# Warning: set_working_dir: Directory 'C:/Windows/System32' not writable, using C:/Users/oh1015/AppData/Local/Temp
+# Launching web browser to open http://www.hlsbluebook.com/
+set_working_dir {//icnas3.cc.ic.ac.uk/oh1015/MUSCA/Input Engine/New folder}
+# Error: set_working_dir: Directory '//icnas3.cc.ic.ac.uk/oh1015/MUSCA/Input Engine/New folder' does not exist
+set_working_dir {//icnas3.cc.ic.ac.uk/oh1015/MUSCA/Input Engine/NEWRGBHSV}
+solution file add ../RGBHSV/RGBHSV.cpp -exclude true
+# /INPUTFILES/1
+solution file add ../RGBHSV/RGBHSV.cpp -exclude true
+# /INPUTFILES/1
+solution file add ../RGBHSV/RGBHSV.cpp
+# /INPUTFILES/1
+# File '//icnas3.cc.ic.ac.uk/oh1015/MUSCA/Input Engine/RGBHSV/RGBHSV.cpp' saved
+go analyze
+# Creating project directory '\\icnas3.cc.ic.ac.uk\oh1015\MUSCA\Input Engine\NEWRGBHSV\Catapult'. (PRJ-1)
+# Moving session transcript to file "\\icnas3.cc.ic.ac.uk\oh1015\MUSCA\Input Engine\NEWRGBHSV\catapult.log"
+# Info: Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
+# Front End called with arguments: -- {\\icnas3.cc.ic.ac.uk\oh1015\MUSCA\Input Engine\RGBHSV\RGBHSV.cpp} (CIN-69)
+# Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+# Error: $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(54): $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(54): more than one operator "*" matches these operands: (CRD-350)
+# Warning:             function template "ac_fixed<W, I, S, AC_TRN, AC_WRAP>::rt<64, 64, false>::mult ac::ops_with_other_types::operator*(const ac_fixed<W, I, S, Q, O> &, Ulong)"
+# Warning:             function template "ac_fixed<W, I, S, AC_TRN, AC_WRAP>::rt<64, 64, true>::mult ac::ops_with_other_types::operator*(const ac_fixed<W, I, S, Q, O> &, Slong)"
+# Warning:             function template "ac_fixed<W, I, S, AC_TRN, AC_WRAP>::rt<32, 32, false>::mult ac::ops_with_other_types::operator*(const ac_fixed<W, I, S, Q, O> &, unsigned long)"
+# Warning:             function template "ac_fixed<W, I, S, AC_TRN, AC_WRAP>::rt<32, 32, true>::mult ac::ops_with_other_types::operator*(const ac_fixed<W, I, S, Q, O> &, long)"
+# Warning:             function template "ac_fixed<W, I, S, AC_TRN, AC_WRAP>::rt<32, 32, false>::mult ac::ops_with_other_types::operator*(const ac_fixed<W, I, S, Q, O> &, unsigned int)"
+# Warning:             function template "ac_fixed<W, I, S, AC_TRN, AC_WRAP>::rt<32, 32, true>::mult ac::ops_with_other_types::operator*(const ac_fixed<W, I, S, Q, O> &, int)"
+# Warning:             function template "ac_fixed<W, I, S, AC_TRN, AC_WRAP>::rt<16, 16, false>::mult ac::ops_with_other_types::operator*(const ac_fixed<W, I, S, Q, O> &, unsigned short)"
+# Warning:             function template "ac_fixed<W, I, S, AC_TRN, AC_WRAP>::rt<16, 16, true>::mult ac::ops_with_other_types::operator*(const ac_fixed<W, I, S, Q, O> &, short)"
+# Warning:             function template "ac_fixed<W, I, S, AC_TRN, AC_WRAP>::rt<8, 8, false>::mult ac::ops_with_other_types::operator*(const ac_fixed<W, I, S, Q, O> &, unsigned char)"
+# Warning:             function template "ac_fixed<W, I, S, AC_TRN, AC_WRAP>::rt<8, 8, true>::mult ac::ops_with_other_types::operator*(const ac_fixed<W, I, S, Q, O> &, signed char)"
+# Warning:             function template "ac_fixed<W, I, S, AC_TRN, AC_WRAP>::rt<8, 8, true>::mult ac::ops_with_other_types::operator*(const ac_fixed<W, I, S, Q, O> &, char)"
+# Warning:             function template "ac_fixed<W, I, S, AC_TRN, AC_WRAP>::rt<1, 1, false>::mult ac::ops_with_other_types::operator*(const ac_fixed<W, I, S, Q, O> &, bool)"
+# Warning:             operand types are: ac_fixed<14, 7, false, AC_TRN, AC_WRAP> * double
+# Error: $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(89): $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(89): no suitable conversion function from "ac_fixed<14, 7, false, AC_TRN, AC_WRAP>" to "int" exists (CRD-413)
+# Error: $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(90): $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(90): no suitable conversion function from "ac_fixed<14, 7, false, AC_TRN, AC_WRAP>" to "int" exists (CRD-413)
+# Error: $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(91): $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(91): no suitable conversion function from "ac_fixed<14, 7, false, AC_TRN, AC_WRAP>" to "int" exists (CRD-413)
+# Error: Compilation aborted (CIN-5)
+# Error: go analyze: Failed analyze
+# File '$PROJECT_HOME/../RGBHSV/RGBHSV.cpp' saved
+go analyze
+# Info: Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
+# Front End called with arguments: -- {\\icnas3.cc.ic.ac.uk\oh1015\MUSCA\Input Engine\RGBHSV\RGBHSV.cpp} (CIN-69)
+# Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+# Error: $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(54): $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(54): more than one operator "*" matches these operands: (CRD-350)
+# Warning:             function template "ac_fixed<W, I, S, AC_TRN, AC_WRAP>::rt<64, 64, false>::mult ac::ops_with_other_types::operator*(const ac_fixed<W, I, S, Q, O> &, Ulong)"
+# Warning:             function template "ac_fixed<W, I, S, AC_TRN, AC_WRAP>::rt<64, 64, true>::mult ac::ops_with_other_types::operator*(const ac_fixed<W, I, S, Q, O> &, Slong)"
+# Warning:             function template "ac_fixed<W, I, S, AC_TRN, AC_WRAP>::rt<32, 32, false>::mult ac::ops_with_other_types::operator*(const ac_fixed<W, I, S, Q, O> &, unsigned long)"
+# Warning:             function template "ac_fixed<W, I, S, AC_TRN, AC_WRAP>::rt<32, 32, true>::mult ac::ops_with_other_types::operator*(const ac_fixed<W, I, S, Q, O> &, long)"
+# Warning:             function template "ac_fixed<W, I, S, AC_TRN, AC_WRAP>::rt<32, 32, false>::mult ac::ops_with_other_types::operator*(const ac_fixed<W, I, S, Q, O> &, unsigned int)"
+# Warning:             function template "ac_fixed<W, I, S, AC_TRN, AC_WRAP>::rt<32, 32, true>::mult ac::ops_with_other_types::operator*(const ac_fixed<W, I, S, Q, O> &, int)"
+# Warning:             function template "ac_fixed<W, I, S, AC_TRN, AC_WRAP>::rt<16, 16, false>::mult ac::ops_with_other_types::operator*(const ac_fixed<W, I, S, Q, O> &, unsigned short)"
+# Warning:             function template "ac_fixed<W, I, S, AC_TRN, AC_WRAP>::rt<16, 16, true>::mult ac::ops_with_other_types::operator*(const ac_fixed<W, I, S, Q, O> &, short)"
+# Warning:             function template "ac_fixed<W, I, S, AC_TRN, AC_WRAP>::rt<8, 8, false>::mult ac::ops_with_other_types::operator*(const ac_fixed<W, I, S, Q, O> &, unsigned char)"
+# Warning:             function template "ac_fixed<W, I, S, AC_TRN, AC_WRAP>::rt<8, 8, true>::mult ac::ops_with_other_types::operator*(const ac_fixed<W, I, S, Q, O> &, signed char)"
+# Warning:             function template "ac_fixed<W, I, S, AC_TRN, AC_WRAP>::rt<8, 8, true>::mult ac::ops_with_other_types::operator*(const ac_fixed<W, I, S, Q, O> &, char)"
+# Warning:             function template "ac_fixed<W, I, S, AC_TRN, AC_WRAP>::rt<1, 1, false>::mult ac::ops_with_other_types::operator*(const ac_fixed<W, I, S, Q, O> &, bool)"
+# Warning:             operand types are: ac_fixed<14, 7, false, AC_TRN, AC_WRAP> * double
+# Error: Compilation aborted (CIN-5)
+# Error: go analyze: Failed analyze
+# File '$PROJECT_HOME/../RGBHSV/RGBHSV.cpp' saved
+go analyze
+# Info: Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
+# Front End called with arguments: -- {\\icnas3.cc.ic.ac.uk\oh1015\MUSCA\Input Engine\RGBHSV\RGBHSV.cpp} (CIN-69)
+# Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+# Source file analysis completed (CIN-68)
+# Info: Completed transformation 'analyze' on solution 'solution.v1': elapsed time 1.70 seconds, memory usage 132752kB, peak memory usage 185348kB (SOL-9)
+directive set -CLOCKS {clk {-CLOCK_PERIOD 20.0 -CLOCK_EDGE rising -CLOCK_HIGH_TIME 10.00 -CLOCK_OFFSET 0.000000 -CLOCK_UNCERTAINTY 0.0 -RESET_KIND async -RESET_SYNC_NAME rst -RESET_SYNC_ACTIVE high -RESET_ASYNC_NAME arst_n -RESET_ASYNC_ACTIVE low -ENABLE_NAME {} -ENABLE_ACTIVE high}}
+# /CLOCKS {clk {-CLOCK_PERIOD 20.0 -CLOCK_EDGE rising -CLOCK_UNCERTAINTY 0.0 -CLOCK_HIGH_TIME 10.0 -RESET_SYNC_NAME rst -RESET_ASYNC_NAME arst_n -RESET_KIND async -RESET_SYNC_ACTIVE high -RESET_ASYNC_ACTIVE low -ENABLE_NAME {} -ENABLE_ACTIVE high}}
+directive set -TECHLIBS {{Altera_accel_CycloneIII.lib Altera_accel_CycloneIII} {mgc_Altera-Cyclone-III-6_beh_psr.lib {{mgc_Altera-Cyclone-III-6_beh_psr part EP3C16F484C}}}}
+# /TECHLIBS {{Altera_accel_CycloneIII.lib Altera_accel_CycloneIII} {mgc_Altera-Cyclone-III-6_beh_psr.lib {{mgc_Altera-Cyclone-III-6_beh_psr part EP3C16F484C}}}}
+go compile
+# Info: Starting transformation 'compile' on solution 'solution.v1' (SOL-8)
+# Reading component library '$MGC_HOME\pkgs\siflibs\mgc_busdefs.lib' [mgc_busdefs]... (LIB-49)
+# Reading component library '$MGC_HOME\pkgs\siflibs\stdops.lib' [STDOPS]... (LIB-49)
+# Reading component library '$MGC_HOME\pkgs\siflibs\mgc_ioport.lib' [mgc_ioport]... (LIB-49)
+# Reading component library '$MGC_HOME\pkgs\ccs_altera\Altera_accel_CycloneIII.lib' [Altera_accel_CycloneIII]... (LIB-49)
+# Reading component library '$MGC_HOME\pkgs\siflibs\psr2010a_up2\mgc_Altera-Cyclone-III-6_beh_psr.lib' [mgc_Altera-Cyclone-III-6_beh_psr]... (LIB-49)
+# Generating synthesis internal form... (CIN-3)
+# Error: No design detected Design hierarchy must be selected interactively or using pragma 'hls_design top' (CIN-21)
+# Error: Compilation aborted (CIN-5)
+# Error: go compile: Failed compile
+directive set -DESIGN_HIERARCHY HSVRGB
+# /DESIGN_HIERARCHY HSVRGB
+go compile
+# Info: Starting transformation 'compile' on solution 'solution.v1' (SOL-8)
+# Generating synthesis internal form... (CIN-3)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): Found top design routine 'HSVRGB' specified by directive (CIN-52)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): Synthesizing routine 'HSVRGB' (CIN-13)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): Inlining routine 'HSVRGB' (CIN-14)
+# Warning: $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(21): Conversion to float type may cause simulation mismatch (CIN-65)
+# Warning: $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(22): Conversion to float type may cause simulation mismatch (CIN-65)
+# Warning: $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(23): Conversion to float type may cause simulation mismatch (CIN-65)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): Optimizing block '/HSVRGB' ... (CIN-4)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): Inout port 'H_OUT' is only used as an output. (OPT-11)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): Inout port 'S_OUT' is only used as an output. (OPT-11)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): Inout port 'V_OUT' is only used as an output. (OPT-11)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 159, Real ops = 50, Vars = 49) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 159, Real ops = 50, Vars = 43) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 159, Real ops = 50, Vars = 43) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 159, Real ops = 50, Vars = 49) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 159, Real ops = 50, Vars = 49) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 159, Real ops = 50, Vars = 43) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 135, Real ops = 42, Vars = 31) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 197, Real ops = 41, Vars = 30) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 197, Real ops = 41, Vars = 36) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 197, Real ops = 41, Vars = 36) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 197, Real ops = 41, Vars = 67) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 211, Real ops = 49, Vars = 28) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 214, Real ops = 48, Vars = 28) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 214, Real ops = 48, Vars = 34) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 208, Real ops = 48, Vars = 39) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 208, Real ops = 48, Vars = 28) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 208, Real ops = 48, Vars = 34) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 208, Real ops = 48, Vars = 28) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 208, Real ops = 48, Vars = 34) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 208, Real ops = 48, Vars = 34) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 208, Real ops = 48, Vars = 28) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 145, Real ops = 46, Vars = 26) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 130, Real ops = 42, Vars = 26) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 114, Real ops = 42, Vars = 26) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 114, Real ops = 42, Vars = 32) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 114, Real ops = 42, Vars = 26) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 114, Real ops = 42, Vars = 32) (SOL-10)
+# Design 'HSVRGB' was read (SOL-1)
+# Info: Completed transformation 'compile' on solution 'HSVRGB.v1': elapsed time 0.50 seconds, memory usage 139332kB, peak memory usage 185348kB (SOL-9)
+directive set /HSVRGB/core/main -PIPELINE_INIT_INTERVAL 1
+# /HSVRGB/core/main/PIPELINE_INIT_INTERVAL 1
+go allocate
+# Info: Starting transformation 'architect' on solution 'HSVRGB.v1' (SOL-8)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): Loop '/HSVRGB/core/main' is left rolled. (LOOP-4)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): I/O-Port inferred - resource 'R_IN:rsc' (from var: R_IN) mapped to 'mgc_ioport.mgc_in_wire' (size: 10). (MEM-2)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): I/O-Port inferred - resource 'G_IN:rsc' (from var: G_IN) mapped to 'mgc_ioport.mgc_in_wire' (size: 10). (MEM-2)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): I/O-Port inferred - resource 'B_IN:rsc' (from var: B_IN) mapped to 'mgc_ioport.mgc_in_wire' (size: 10). (MEM-2)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): I/O-Port inferred - resource 'H_OUT:rsc' (from var: H_OUT) mapped to 'mgc_ioport.mgc_out_stdreg' (size: 10). (MEM-2)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): I/O-Port inferred - resource 'S_OUT:rsc' (from var: S_OUT) mapped to 'mgc_ioport.mgc_out_stdreg' (size: 10). (MEM-2)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): I/O-Port inferred - resource 'V_OUT:rsc' (from var: V_OUT) mapped to 'mgc_ioport.mgc_out_stdreg' (size: 10). (MEM-2)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 121, Real ops = 43, Vars = 34) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 121, Real ops = 43, Vars = 26) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 120, Real ops = 43, Vars = 26) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 120, Real ops = 43, Vars = 34) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 120, Real ops = 43, Vars = 34) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 120, Real ops = 43, Vars = 26) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 396, Real ops = 98, Vars = 198) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 135, Real ops = 61, Vars = 31) (SOL-10)
+# Design 'HSVRGB' contains '61' real operations. (SOL-11)
+# Info: Completed transformation 'architect' on solution 'HSVRGB.v1': elapsed time 0.72 seconds, memory usage 139920kB, peak memory usage 185348kB (SOL-9)
+# Info: Starting transformation 'allocate' on solution 'HSVRGB.v1' (SOL-8)
+# Performing concurrent resource allocation and scheduling on '/HSVRGB/core' (CRAAS-1)
+# Info: Select qualified components for data operations ... (CRAAS-3)
+# Info: Apply resource constraints on data operations ... (CRAAS-4)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): Prescheduled LOOP 'main' (6 c-steps) (SCHD-7)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): Prescheduled SEQUENTIAL 'core' (total length 6 c-steps) (SCHD-8)
+# Info: Initial schedule of SEQUENTIAL 'core': Latency = 5, Area (Datapath, Register, Total) = 2782.36, 0.00, 2782.36 (CRAAS-11)
+# At least one feasible schedule exists. (CRAAS-9)
+# Info: Optimized LOOP 'main': Latency = 5, Area (Datapath, Register, Total) = 2777.05, 0.00, 2777.05 (CRAAS-10)
+# Info: Final schedule of SEQUENTIAL 'core': Latency = 5, Area (Datapath, Register, Total) = 2777.05, 0.00, 2777.05 (CRAAS-12)
+# Resource allocation and scheduling done. (CRAAS-2)
+# Netlist written to file 'schedule.gnt' (NET-4)
+# Info: Completed transformation 'allocate' on solution 'HSVRGB.v1': elapsed time 0.16 seconds, memory usage 140156kB, peak memory usage 185348kB (SOL-9)
+go extract
+# Info: Starting transformation 'schedule' on solution 'HSVRGB.v1' (SOL-8)
+# Performing concurrent resource allocation and scheduling on '/HSVRGB/core' (CRAAS-1)
+# Global signal 'R_IN:rsc.z' added to design 'HSVRGB' for component 'R_IN:rsc:mgc_in_wire' (LIB-3)
+# Global signal 'G_IN:rsc.z' added to design 'HSVRGB' for component 'G_IN:rsc:mgc_in_wire' (LIB-3)
+# Global signal 'B_IN:rsc.z' added to design 'HSVRGB' for component 'B_IN:rsc:mgc_in_wire' (LIB-3)
+# Global signal 'H_OUT:rsc.z' added to design 'HSVRGB' for component 'H_OUT:rsc:mgc_out_stdreg' (LIB-3)
+# Global signal 'S_OUT:rsc.z' added to design 'HSVRGB' for component 'S_OUT:rsc:mgc_out_stdreg' (LIB-3)
+# Global signal 'V_OUT:rsc.z' added to design 'HSVRGB' for component 'V_OUT:rsc:mgc_out_stdreg' (LIB-3)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 570, Real ops = 65, Vars = 273) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 483, Real ops = 64, Vars = 225) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core/core': (Total ops = 495, Real ops = 64, Vars = 314) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core/core': (Total ops = 458, Real ops = 73, Vars = 179) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 582, Real ops = 73, Vars = 266) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 497, Real ops = 73, Vars = 219) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core/core': (Total ops = 421, Real ops = 73, Vars = 206) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core/core': (Total ops = 421, Real ops = 73, Vars = 179) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 546, Real ops = 73, Vars = 265) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 461, Real ops = 73, Vars = 219) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core/core': (Total ops = 421, Real ops = 73, Vars = 179) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 546, Real ops = 73, Vars = 265) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 461, Real ops = 73, Vars = 219) (SOL-10)
+# Report written to file 'cycle.rpt'
+# Netlist written to file 'cycle.v' (NET-4)
+# Info: Completed transformation 'schedule' on solution 'HSVRGB.v1': elapsed time 1.48 seconds, memory usage 145828kB, peak memory usage 185348kB (SOL-9)
+# Info: Starting transformation 'dpfsm' on solution 'HSVRGB.v1' (SOL-8)
+# Performing FSM extraction... (FSM-1)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 1391, Real ops = 750, Vars = 1410) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 1306, Real ops = 750, Vars = 1364) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 1215, Real ops = 382, Vars = 266) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 1130, Real ops = 382, Vars = 220) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 835, Real ops = 375, Vars = 281) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 750, Real ops = 375, Vars = 235) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 833, Real ops = 373, Vars = 279) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 748, Real ops = 373, Vars = 233) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 748, Real ops = 373, Vars = 233) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 833, Real ops = 373, Vars = 279) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 833, Real ops = 373, Vars = 279) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 748, Real ops = 373, Vars = 233) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 821, Real ops = 373, Vars = 291) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 736, Real ops = 373, Vars = 245) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 833, Real ops = 373, Vars = 279) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 748, Real ops = 373, Vars = 233) (SOL-10)
+# Info: Completed transformation 'dpfsm' on solution 'HSVRGB.v1': elapsed time 0.87 seconds, memory usage 147664kB, peak memory usage 185348kB (SOL-9)
+# Info: Starting transformation 'extract' on solution 'HSVRGB.v1' (SOL-8)
+# Warning: Reassigned operation acc:DEFAULT to mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(1,0,1,1,2) (ASG-1)
+# Warning: Reassigned operation acc#5:DEFAULT to mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(1,0,1,1,2) (ASG-1)
+# Warning: Reassigned operation acc#6:DEFAULT to mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(1,0,1,1,2) (ASG-1)
+# Warning: Reassigned operation else#7:if#1:acc#2:DEFAULT to mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(2,0,2,0,2) (ASG-1)
+# Warning: Reassigned operation else#7:else#1:if:acc#3:DEFAULT to mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(2,0,2,0,2) (ASG-1)
+# Warning: Reassigned operation else#7:else#1:else:acc#3:DEFAULT to mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(2,0,2,0,2) (ASG-1)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 1074, Real ops = 527, Vars = 1011) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 989, Real ops = 527, Vars = 965) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 705, Real ops = 324, Vars = 270) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 620, Real ops = 324, Vars = 224) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 705, Real ops = 324, Vars = 270) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 620, Real ops = 324, Vars = 224) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 608, Real ops = 324, Vars = 236) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 620, Real ops = 324, Vars = 224) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 705, Real ops = 324, Vars = 270) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 705, Real ops = 324, Vars = 270) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 620, Real ops = 324, Vars = 224) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 705, Real ops = 324, Vars = 270) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 620, Real ops = 324, Vars = 224) (SOL-10)
+# Warning: Reassigned operation and:mgc_Altera-Cyclone-III-6_beh_psr.mgc_and(14,2) to mgc_Altera-Cyclone-III-6_beh_psr.mgc_and(14,3) (ASG-1)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 862, Real ops = 429, Vars = 799) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 777, Real ops = 429, Vars = 753) (SOL-10)
+# Netlist written to file 'schematic.nlv' (NET-4)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 862, Real ops = 429, Vars = 799) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 777, Real ops = 429, Vars = 753) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 715, Real ops = 324, Vars = 270) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 630, Real ops = 324, Vars = 224) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 715, Real ops = 324, Vars = 270) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 630, Real ops = 324, Vars = 224) (SOL-10)
+# Report written to file 'rtl.rpt'
+# Netlist written to file 'rtl.v' (NET-4)
+# generate concat
+# order file name is: rtl.v_order.txt
+# Add dependent file: ./rtl_mgc_ioport.v
+# Add dependent file: ./rtl_mgc_ioport_v2001.v
+# Add dependent file: C:/PROGRA~1/CALYPT~1/CATAPU~1.126/Mgc_home/pkgs/hls_pkgs/mgc_comps_src/mgc_div_beh.v
+# Add dependent file: ./rtl.v
+# Finished writing concatenated file: //icnas3.cc.ic.ac.uk/oh1015/MUSCA/Input Engine/NEWRGBHSV/Catapult/HSVRGB.v1/concat_rtl.v
+# Synthesis timing script written to file './rtl.v.psr_timing'
+# IO timing constraints written to synthesis script file
+# Synthesis script written to file 'rtl.v.psr'
+# Info: Completed transformation 'extract' on solution 'HSVRGB.v1': elapsed time 5.52 seconds, memory usage 148428kB, peak memory usage 185348kB (SOL-9)
+# Input file has changed
+go new
+solution file set {$PROJECT_HOME/../RGBHSV/RGBHSV.cpp} -updated
+# Info: Branching solution 'solution.v1' at state 'new' (PRJ-2)
+# File '$PROJECT_HOME/../RGBHSV/RGBHSV.cpp' saved
+go analyze
+# Info: Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
+# Front End called with arguments: -- {\\icnas3.cc.ic.ac.uk\oh1015\MUSCA\Input Engine\RGBHSV\RGBHSV.cpp} (CIN-69)
+# Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+# Error: $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(18): $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(18): "r" has already been declared in the current scope (CRD-101)
+# Error: $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(18): $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(18): "g" has already been declared in the current scope (CRD-101)
+# Error: $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(18): $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(18): "b" has already been declared in the current scope (CRD-101)
+# Error: Compilation aborted (CIN-5)
+# Error: go analyze: Failed analyze
+# File '$PROJECT_HOME/../RGBHSV/RGBHSV.cpp' saved
+go analyze
+# Info: Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
+# Front End called with arguments: -- {\\icnas3.cc.ic.ac.uk\oh1015\MUSCA\Input Engine\RGBHSV\RGBHSV.cpp} (CIN-69)
+# Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+# Source file analysis completed (CIN-68)
+# Info: Completed transformation 'analyze' on solution 'solution.v1': elapsed time 1.95 seconds, memory usage 167132kB, peak memory usage 216936kB (SOL-9)
+# Input file has changed
+go new
+solution file set {$PROJECT_HOME/../RGBHSV/RGBHSV.cpp} -updated
+# Info: Branching solution 'solution.v2' at state 'new' (PRJ-2)
+go analyze
+# Info: Starting transformation 'analyze' on solution 'solution.v2' (SOL-8)
+# Front End called with arguments: -- {\\icnas3.cc.ic.ac.uk\oh1015\MUSCA\Input Engine\RGBHSV\RGBHSV.cpp} (CIN-69)
+# Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+# Source file analysis completed (CIN-68)
+# Info: Completed transformation 'analyze' on solution 'solution.v2': elapsed time 2.10 seconds, memory usage 168732kB, peak memory usage 217196kB (SOL-9)
+go compile
+# Info: Starting transformation 'compile' on solution 'solution.v2' (SOL-8)
+# Generating synthesis internal form... (CIN-3)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): Found top design routine 'HSVRGB' specified by directive (CIN-52)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): Synthesizing routine 'HSVRGB' (CIN-13)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): Inlining routine 'HSVRGB' (CIN-14)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): Optimizing block '/HSVRGB' ... (CIN-4)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): Inout port 'H_OUT' is only used as an output. (OPT-11)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): Inout port 'S_OUT' is only used as an output. (OPT-11)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): Inout port 'V_OUT' is only used as an output. (OPT-11)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 167, Real ops = 50, Vars = 51) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 167, Real ops = 50, Vars = 45) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 167, Real ops = 50, Vars = 45) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 167, Real ops = 50, Vars = 51) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 167, Real ops = 50, Vars = 51) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 167, Real ops = 50, Vars = 45) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 165, Real ops = 42, Vars = 33) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 163, Real ops = 41, Vars = 32) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 163, Real ops = 41, Vars = 38) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 163, Real ops = 41, Vars = 38) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 187, Real ops = 41, Vars = 72) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 202, Real ops = 47, Vars = 22) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 207, Real ops = 46, Vars = 22) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 207, Real ops = 46, Vars = 28) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 200, Real ops = 46, Vars = 31) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 200, Real ops = 46, Vars = 22) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 200, Real ops = 46, Vars = 28) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 200, Real ops = 46, Vars = 22) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 200, Real ops = 46, Vars = 28) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 200, Real ops = 46, Vars = 28) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 200, Real ops = 46, Vars = 22) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 139, Real ops = 46, Vars = 20) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 126, Real ops = 44, Vars = 20) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 110, Real ops = 44, Vars = 20) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 110, Real ops = 44, Vars = 26) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 110, Real ops = 44, Vars = 20) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 110, Real ops = 44, Vars = 26) (SOL-10)
+# Design 'HSVRGB' was read (SOL-1)
+# Info: Completed transformation 'compile' on solution 'HSVRGB.v2': elapsed time 0.94 seconds, memory usage 161648kB, peak memory usage 217196kB (SOL-9)
+go allocate
+# Info: Starting transformation 'architect' on solution 'HSVRGB.v2' (SOL-8)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): Loop '/HSVRGB/core/main' is left rolled. (LOOP-4)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): I/O-Port inferred - resource 'r:rsc' (from var: r) mapped to 'mgc_ioport.mgc_in_wire' (size: 10). (MEM-2)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): I/O-Port inferred - resource 'g:rsc' (from var: g) mapped to 'mgc_ioport.mgc_in_wire' (size: 10). (MEM-2)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): I/O-Port inferred - resource 'b:rsc' (from var: b) mapped to 'mgc_ioport.mgc_in_wire' (size: 10). (MEM-2)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): I/O-Port inferred - resource 'H_OUT:rsc' (from var: H_OUT) mapped to 'mgc_ioport.mgc_out_stdreg' (size: 10). (MEM-2)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): I/O-Port inferred - resource 'S_OUT:rsc' (from var: S_OUT) mapped to 'mgc_ioport.mgc_out_stdreg' (size: 10). (MEM-2)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): I/O-Port inferred - resource 'V_OUT:rsc' (from var: V_OUT) mapped to 'mgc_ioport.mgc_out_stdreg' (size: 10). (MEM-2)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 117, Real ops = 45, Vars = 28) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 117, Real ops = 45, Vars = 20) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 113, Real ops = 45, Vars = 20) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 113, Real ops = 45, Vars = 28) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 113, Real ops = 45, Vars = 28) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 113, Real ops = 45, Vars = 20) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 345, Real ops = 95, Vars = 165) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 132, Real ops = 58, Vars = 29) (SOL-10)
+# Design 'HSVRGB' contains '58' real operations. (SOL-11)
+# Info: Completed transformation 'architect' on solution 'HSVRGB.v2': elapsed time 1.56 seconds, memory usage 161760kB, peak memory usage 217196kB (SOL-9)
+# Info: Starting transformation 'allocate' on solution 'HSVRGB.v2' (SOL-8)
+# Performing concurrent resource allocation and scheduling on '/HSVRGB/core' (CRAAS-1)
+# Info: Select qualified components for data operations ... (CRAAS-3)
+# Info: Apply resource constraints on data operations ... (CRAAS-4)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): Prescheduled LOOP 'main' (5 c-steps) (SCHD-7)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): Prescheduled SEQUENTIAL 'core' (total length 5 c-steps) (SCHD-8)
+# Info: Initial schedule of SEQUENTIAL 'core': Latency = 4, Area (Datapath, Register, Total) = 2444.10, 0.00, 2444.10 (CRAAS-11)
+# At least one feasible schedule exists. (CRAAS-9)
+# Info: Optimized LOOP 'main': Latency = 4, Area (Datapath, Register, Total) = 2438.79, 0.00, 2438.79 (CRAAS-10)
+# Info: Final schedule of SEQUENTIAL 'core': Latency = 4, Area (Datapath, Register, Total) = 2438.79, 0.00, 2438.79 (CRAAS-12)
+# Resource allocation and scheduling done. (CRAAS-2)
+# Netlist written to file 'schedule.gnt' (NET-4)
+# Info: Completed transformation 'allocate' on solution 'HSVRGB.v2': elapsed time 0.09 seconds, memory usage 163276kB, peak memory usage 217196kB (SOL-9)
+go extract
+# Info: Starting transformation 'schedule' on solution 'HSVRGB.v2' (SOL-8)
+# Performing concurrent resource allocation and scheduling on '/HSVRGB/core' (CRAAS-1)
+# Global signal 'r:rsc.z' added to design 'HSVRGB' for component 'r:rsc:mgc_in_wire' (LIB-3)
+# Global signal 'g:rsc.z' added to design 'HSVRGB' for component 'g:rsc:mgc_in_wire' (LIB-3)
+# Global signal 'b:rsc.z' added to design 'HSVRGB' for component 'b:rsc:mgc_in_wire' (LIB-3)
+# Global signal 'H_OUT:rsc.z' added to design 'HSVRGB' for component 'H_OUT:rsc:mgc_out_stdreg' (LIB-3)
+# Global signal 'S_OUT:rsc.z' added to design 'HSVRGB' for component 'S_OUT:rsc:mgc_out_stdreg' (LIB-3)
+# Global signal 'V_OUT:rsc.z' added to design 'HSVRGB' for component 'V_OUT:rsc:mgc_out_stdreg' (LIB-3)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 543, Real ops = 62, Vars = 245) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 456, Real ops = 61, Vars = 197) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core/core': (Total ops = 468, Real ops = 61, Vars = 286) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core/core': (Total ops = 432, Real ops = 67, Vars = 149) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 556, Real ops = 67, Vars = 236) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 471, Real ops = 67, Vars = 189) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core/core': (Total ops = 395, Real ops = 67, Vars = 176) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core/core': (Total ops = 395, Real ops = 67, Vars = 149) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 520, Real ops = 67, Vars = 235) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 435, Real ops = 67, Vars = 189) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core/core': (Total ops = 395, Real ops = 67, Vars = 149) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 520, Real ops = 67, Vars = 235) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 435, Real ops = 67, Vars = 189) (SOL-10)
+# Report written to file 'cycle.rpt'
+# Netlist written to file 'cycle.v' (NET-4)
+# Info: Completed transformation 'schedule' on solution 'HSVRGB.v2': elapsed time 1.45 seconds, memory usage 165588kB, peak memory usage 217196kB (SOL-9)
+# Info: Starting transformation 'dpfsm' on solution 'HSVRGB.v2' (SOL-8)
+# Performing FSM extraction... (FSM-1)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 1542, Real ops = 941, Vars = 1658) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 1457, Real ops = 941, Vars = 1612) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 1242, Real ops = 419, Vars = 273) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 1157, Real ops = 419, Vars = 227) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 903, Real ops = 431, Vars = 301) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 818, Real ops = 431, Vars = 255) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 872, Real ops = 403, Vars = 274) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 787, Real ops = 403, Vars = 228) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 871, Real ops = 402, Vars = 273) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 786, Real ops = 402, Vars = 227) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 786, Real ops = 402, Vars = 227) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 871, Real ops = 402, Vars = 273) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 871, Real ops = 402, Vars = 273) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 786, Real ops = 402, Vars = 227) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 859, Real ops = 402, Vars = 285) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 774, Real ops = 402, Vars = 239) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 871, Real ops = 402, Vars = 273) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 786, Real ops = 402, Vars = 227) (SOL-10)
+# Info: Completed transformation 'dpfsm' on solution 'HSVRGB.v2': elapsed time 1.22 seconds, memory usage 166156kB, peak memory usage 217196kB (SOL-9)
+# Info: Starting transformation 'extract' on solution 'HSVRGB.v2' (SOL-8)
+# Warning: Reassigned operation mux1h#24:mgc_Altera-Cyclone-III-6_beh_psr.mgc_mux1hot(7,4) to mgc_Altera-Cyclone-III-6_beh_psr.mgc_mux1hot(7,3) (ASG-1)
+# Warning: Reassigned operation mux1h#25:mgc_Altera-Cyclone-III-6_beh_psr.mgc_mux1hot(7,4) to mgc_Altera-Cyclone-III-6_beh_psr.mgc_mux1hot(7,3) (ASG-1)
+# Warning: Reassigned operation acc:DEFAULT to mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(1,0,1,1,2) (ASG-1)
+# Warning: Reassigned operation acc#5:DEFAULT to mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(1,0,1,1,2) (ASG-1)
+# Warning: Reassigned operation acc#6:DEFAULT to mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(1,0,1,1,2) (ASG-1)
+# Warning: Reassigned operation else#7:if#1:acc#2:DEFAULT to mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(2,0,2,0,2) (ASG-1)
+# Warning: Reassigned operation else#7:else#1:if:acc#3:DEFAULT to mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(2,0,2,0,2) (ASG-1)
+# Warning: Reassigned operation else#7:else#1:else:acc#3:DEFAULT to mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(2,0,2,0,2) (ASG-1)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 1048, Real ops = 535, Vars = 985) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 963, Real ops = 535, Vars = 939) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 742, Real ops = 348, Vars = 264) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 657, Real ops = 348, Vars = 218) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 742, Real ops = 348, Vars = 264) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 657, Real ops = 348, Vars = 218) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 645, Real ops = 348, Vars = 230) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 657, Real ops = 348, Vars = 218) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 742, Real ops = 348, Vars = 264) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 742, Real ops = 348, Vars = 264) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 657, Real ops = 348, Vars = 218) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 742, Real ops = 348, Vars = 264) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 657, Real ops = 348, Vars = 218) (SOL-10)
+# Warning: Reassigned operation or#62:mgc_Altera-Cyclone-III-6_beh_psr.mgc_or(1,4) to mgc_Altera-Cyclone-III-6_beh_psr.mgc_or(1,7) (ASG-1)
+# Warning: Reassigned operation and:mgc_Altera-Cyclone-III-6_beh_psr.mgc_and(14,2) to mgc_Altera-Cyclone-III-6_beh_psr.mgc_and(14,3) (ASG-1)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 885, Real ops = 448, Vars = 822) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 800, Real ops = 448, Vars = 776) (SOL-10)
+# Netlist written to file 'schematic.nlv' (NET-4)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 885, Real ops = 448, Vars = 822) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 800, Real ops = 448, Vars = 776) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 752, Real ops = 348, Vars = 264) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 667, Real ops = 348, Vars = 218) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 752, Real ops = 348, Vars = 264) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 667, Real ops = 348, Vars = 218) (SOL-10)
+# Report written to file 'rtl.rpt'
+# Netlist written to file 'rtl.v' (NET-4)
+# generate concat
+# order file name is: rtl.v_order.txt
+# Add dependent file: ./rtl_mgc_ioport.v
+# Add dependent file: ./rtl_mgc_ioport_v2001.v
+# Add dependent file: C:/PROGRA~1/CALYPT~1/CATAPU~1.126/Mgc_home/pkgs/hls_pkgs/mgc_comps_src/mgc_div_beh.v
+# Add dependent file: ./rtl.v
+# Finished writing concatenated file: //icnas3.cc.ic.ac.uk/oh1015/MUSCA/Input Engine/NEWRGBHSV/Catapult/HSVRGB.v2/concat_rtl.v
+# Synthesis timing script written to file './rtl.v.psr_timing'
+# IO timing constraints written to synthesis script file
+# Synthesis script written to file 'rtl.v.psr'
+# Info: Completed transformation 'extract' on solution 'HSVRGB.v2': elapsed time 5.23 seconds, memory usage 166156kB, peak memory usage 217196kB (SOL-9)
+# File '$PROJECT_HOME/../RGBHSV/RGBHSV.cpp' saved
+# Input file has changed
+go new
+solution file set {$PROJECT_HOME/../RGBHSV/RGBHSV.cpp} -updated
+# Info: Branching solution 'solution.v2' at state 'new' (PRJ-2)
+go analyze
+# Info: Starting transformation 'analyze' on solution 'solution.v2' (SOL-8)
+# Front End called with arguments: -- {\\icnas3.cc.ic.ac.uk\oh1015\MUSCA\Input Engine\RGBHSV\RGBHSV.cpp} (CIN-69)
+# Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+# Source file analysis completed (CIN-68)
+# Info: Completed transformation 'analyze' on solution 'solution.v2': elapsed time 1.71 seconds, memory usage 172980kB, peak memory usage 228304kB (SOL-9)
+go compile
+# Info: Starting transformation 'compile' on solution 'solution.v2' (SOL-8)
+# Generating synthesis internal form... (CIN-3)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): Found top design routine 'HSVRGB' specified by directive (CIN-52)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): Synthesizing routine 'HSVRGB' (CIN-13)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): Inlining routine 'HSVRGB' (CIN-14)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): Optimizing block '/HSVRGB' ... (CIN-4)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): Inout port 'H_OUT' is only used as an output. (OPT-11)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): Inout port 'S_OUT' is only used as an output. (OPT-11)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): Inout port 'V_OUT' is only used as an output. (OPT-11)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 142, Real ops = 50, Vars = 42) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 142, Real ops = 50, Vars = 36) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 142, Real ops = 50, Vars = 36) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 142, Real ops = 50, Vars = 42) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 142, Real ops = 50, Vars = 42) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 142, Real ops = 50, Vars = 36) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 129, Real ops = 42, Vars = 25) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 129, Real ops = 42, Vars = 31) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 129, Real ops = 42, Vars = 31) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 153, Real ops = 42, Vars = 57) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 103, Real ops = 41, Vars = 19) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 103, Real ops = 41, Vars = 25) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 102, Real ops = 41, Vars = 25) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 99, Real ops = 40, Vars = 19) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 99, Real ops = 40, Vars = 25) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 99, Real ops = 40, Vars = 19) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 99, Real ops = 40, Vars = 25) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 99, Real ops = 40, Vars = 25) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 99, Real ops = 40, Vars = 19) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 88, Real ops = 39, Vars = 19) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 88, Real ops = 39, Vars = 25) (SOL-10)
+# Design 'HSVRGB' was read (SOL-1)
+# Info: Completed transformation 'compile' on solution 'HSVRGB.v3': elapsed time 0.98 seconds, memory usage 175584kB, peak memory usage 228304kB (SOL-9)
+go allocate
+# Info: Starting transformation 'architect' on solution 'HSVRGB.v3' (SOL-8)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): Loop '/HSVRGB/core/main' is left rolled. (LOOP-4)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): I/O-Port inferred - resource 'r:rsc' (from var: r) mapped to 'mgc_ioport.mgc_in_wire' (size: 10). (MEM-2)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): I/O-Port inferred - resource 'g:rsc' (from var: g) mapped to 'mgc_ioport.mgc_in_wire' (size: 10). (MEM-2)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): I/O-Port inferred - resource 'b:rsc' (from var: b) mapped to 'mgc_ioport.mgc_in_wire' (size: 10). (MEM-2)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): I/O-Port inferred - resource 'H_OUT:rsc' (from var: H_OUT) mapped to 'mgc_ioport.mgc_out_stdreg' (size: 10). (MEM-2)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): I/O-Port inferred - resource 'S_OUT:rsc' (from var: S_OUT) mapped to 'mgc_ioport.mgc_out_stdreg' (size: 10). (MEM-2)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): I/O-Port inferred - resource 'V_OUT:rsc' (from var: V_OUT) mapped to 'mgc_ioport.mgc_out_stdreg' (size: 10). (MEM-2)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 95, Real ops = 40, Vars = 27) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 95, Real ops = 40, Vars = 19) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 91, Real ops = 40, Vars = 19) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 91, Real ops = 40, Vars = 27) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 91, Real ops = 40, Vars = 27) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 91, Real ops = 40, Vars = 19) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 318, Real ops = 90, Vars = 161) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/core': (Total ops = 105, Real ops = 53, Vars = 29) (SOL-10)
+# Design 'HSVRGB' contains '53' real operations. (SOL-11)
+# Info: Completed transformation 'architect' on solution 'HSVRGB.v3': elapsed time 2.18 seconds, memory usage 176248kB, peak memory usage 228304kB (SOL-9)
+# Info: Starting transformation 'allocate' on solution 'HSVRGB.v3' (SOL-8)
+# Performing concurrent resource allocation and scheduling on '/HSVRGB/core' (CRAAS-1)
+# Info: Select qualified components for data operations ... (CRAAS-3)
+# Info: Apply resource constraints on data operations ... (CRAAS-4)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): Prescheduled LOOP 'main' (4 c-steps) (SCHD-7)
+# $PROJECT_HOME/../RGBHSV/RGBHSV.cpp(16): Prescheduled SEQUENTIAL 'core' (total length 4 c-steps) (SCHD-8)
+# Info: Initial schedule of SEQUENTIAL 'core': Latency = 3, Area (Datapath, Register, Total) = 1378.94, 0.00, 1378.94 (CRAAS-11)
+# At least one feasible schedule exists. (CRAAS-9)
+# Info: Optimized LOOP 'main': Latency = 3, Area (Datapath, Register, Total) = 1369.33, 0.00, 1369.33 (CRAAS-10)
+# Info: Final schedule of SEQUENTIAL 'core': Latency = 3, Area (Datapath, Register, Total) = 1369.33, 0.00, 1369.33 (CRAAS-12)
+# Resource allocation and scheduling done. (CRAAS-2)
+# Netlist written to file 'schedule.gnt' (NET-4)
+# Info: Completed transformation 'allocate' on solution 'HSVRGB.v3': elapsed time 0.11 seconds, memory usage 176976kB, peak memory usage 228304kB (SOL-9)
+go extract
+# Info: Starting transformation 'schedule' on solution 'HSVRGB.v3' (SOL-8)
+# Performing concurrent resource allocation and scheduling on '/HSVRGB/core' (CRAAS-1)
+# Global signal 'r:rsc.z' added to design 'HSVRGB' for component 'r:rsc:mgc_in_wire' (LIB-3)
+# Global signal 'g:rsc.z' added to design 'HSVRGB' for component 'g:rsc:mgc_in_wire' (LIB-3)
+# Global signal 'b:rsc.z' added to design 'HSVRGB' for component 'b:rsc:mgc_in_wire' (LIB-3)
+# Global signal 'H_OUT:rsc.z' added to design 'HSVRGB' for component 'H_OUT:rsc:mgc_out_stdreg' (LIB-3)
+# Global signal 'S_OUT:rsc.z' added to design 'HSVRGB' for component 'S_OUT:rsc:mgc_out_stdreg' (LIB-3)
+# Global signal 'V_OUT:rsc.z' added to design 'HSVRGB' for component 'V_OUT:rsc:mgc_out_stdreg' (LIB-3)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 396, Real ops = 54, Vars = 181) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 327, Real ops = 53, Vars = 142) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core/core': (Total ops = 295, Real ops = 53, Vars = 110) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core/core': (Total ops = 279, Real ops = 53, Vars = 101) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 376, Real ops = 53, Vars = 170) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 309, Real ops = 53, Vars = 132) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core/core': (Total ops = 266, Real ops = 53, Vars = 113) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core/core': (Total ops = 266, Real ops = 53, Vars = 101) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 364, Real ops = 53, Vars = 169) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 297, Real ops = 53, Vars = 132) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core/core': (Total ops = 266, Real ops = 53, Vars = 101) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 364, Real ops = 53, Vars = 169) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 297, Real ops = 53, Vars = 132) (SOL-10)
+# Report written to file 'cycle.rpt'
+# Netlist written to file 'cycle.v' (NET-4)
+# Info: Completed transformation 'schedule' on solution 'HSVRGB.v3': elapsed time 1.12 seconds, memory usage 179768kB, peak memory usage 228304kB (SOL-9)
+# Info: Starting transformation 'dpfsm' on solution 'HSVRGB.v3' (SOL-8)
+# Performing FSM extraction... (FSM-1)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 764, Real ops = 349, Vars = 790) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 697, Real ops = 349, Vars = 753) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 551, Real ops = 207, Vars = 146) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 484, Real ops = 207, Vars = 109) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 427, Real ops = 187, Vars = 141) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 360, Real ops = 187, Vars = 104) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 420, Real ops = 180, Vars = 148) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 353, Real ops = 180, Vars = 111) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 353, Real ops = 180, Vars = 111) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 420, Real ops = 180, Vars = 148) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 420, Real ops = 180, Vars = 148) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 353, Real ops = 180, Vars = 111) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 420, Real ops = 180, Vars = 150) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 353, Real ops = 180, Vars = 113) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 420, Real ops = 180, Vars = 148) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 353, Real ops = 180, Vars = 111) (SOL-10)
+# Info: Completed transformation 'dpfsm' on solution 'HSVRGB.v3': elapsed time 0.45 seconds, memory usage 180532kB, peak memory usage 228304kB (SOL-9)
+# Info: Starting transformation 'extract' on solution 'HSVRGB.v3' (SOL-8)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 489, Real ops = 225, Vars = 441) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 422, Real ops = 225, Vars = 404) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 335, Real ops = 148, Vars = 144) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 268, Real ops = 148, Vars = 107) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 335, Real ops = 148, Vars = 144) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 268, Real ops = 148, Vars = 107) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 268, Real ops = 148, Vars = 109) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 268, Real ops = 148, Vars = 107) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 335, Real ops = 148, Vars = 144) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 335, Real ops = 148, Vars = 144) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 268, Real ops = 148, Vars = 107) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 335, Real ops = 148, Vars = 144) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 268, Real ops = 148, Vars = 107) (SOL-10)
+# Warning: Reassigned operation and:mgc_Altera-Cyclone-III-6_beh_psr.mgc_and(8,2) to mgc_Altera-Cyclone-III-6_beh_psr.mgc_and(8,3) (ASG-1)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 401, Real ops = 190, Vars = 353) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 334, Real ops = 190, Vars = 316) (SOL-10)
+# Netlist written to file 'schematic.nlv' (NET-4)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 401, Real ops = 190, Vars = 353) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 334, Real ops = 190, Vars = 316) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 328, Real ops = 148, Vars = 144) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 261, Real ops = 148, Vars = 107) (SOL-10)
+# Info: Optimizing partition '/HSVRGB': (Total ops = 328, Real ops = 148, Vars = 144) (SOL-10)
+# Info: Optimizing partition '/HSVRGB/HSVRGB:core': (Total ops = 261, Real ops = 148, Vars = 107) (SOL-10)
+# Report written to file 'rtl.rpt'
+# Netlist written to file 'rtl.v' (NET-4)
+# generate concat
+# order file name is: rtl.v_order.txt
+# Add dependent file: ./rtl_mgc_ioport.v
+# Add dependent file: ./rtl_mgc_ioport_v2001.v
+# Add dependent file: C:/PROGRA~1/CALYPT~1/CATAPU~1.126/Mgc_home/pkgs/hls_pkgs/mgc_comps_src/mgc_div_beh.v
+# Add dependent file: ./rtl.v
+# Finished writing concatenated file: //icnas3.cc.ic.ac.uk/oh1015/MUSCA/Input Engine/NEWRGBHSV/Catapult/HSVRGB.v3/concat_rtl.v
+# Synthesis timing script written to file './rtl.v.psr_timing'
+# IO timing constraints written to synthesis script file
+# Synthesis script written to file 'rtl.v.psr'
+# Info: Completed transformation 'extract' on solution 'HSVRGB.v3': elapsed time 4.02 seconds, memory usage 181912kB, peak memory usage 228304kB (SOL-9)
+project save
+# Saving project file '//icnas3.cc.ic.ac.uk/oh1015/MUSCA/Input Engine/NEWRGBHSV/Catapult.ccs'. (PRJ-5)
+quit -f

@@ -1,0 +1,43 @@
+
+# Messages from "go new"
+
+Creating project directory '\\icnas3.cc.ic.ac.uk\oh1015\MUSCA\Input Engine\RGBHSV\RGBHSV'. (PRJ-1)
+
+# Messages from "go analyze"
+
+Front End called with arguments: -- {\\icnas3.cc.ic.ac.uk\oh1015\MUSCA\Input Engine\RGBHSV\RGBHSV.cpp} (CIN-69)
+Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+Pragma 'hls_design<top>' detected on routine 'RGB_HSV' (CIN-6)
+Source file analysis completed (CIN-68)
+Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
+Completed transformation 'analyze' on solution 'solution.v1': elapsed time 1.28 seconds, memory usage 160624kB, peak memory usage 209028kB (SOL-9)
+$PROJECT_HOME/RGBHSV.cpp(83): last line of file ends without a newline (CRD-1)
+
+# Messages from "go compile"
+
+Reading component library '$MGC_HOME\pkgs\siflibs\mgc_busdefs.lib' [mgc_busdefs]... (LIB-49)
+Reading component library '$MGC_HOME\pkgs\siflibs\stdops.lib' [STDOPS]... (LIB-49)
+Reading component library '$MGC_HOME\pkgs\siflibs\mgc_ioport.lib' [mgc_ioport]... (LIB-49)
+Reading component library '$MGC_HOME\pkgs\ccs_altera\Altera_accel_CycloneIII.lib' [Altera_accel_CycloneIII]... (LIB-49)
+Reading component library '$MGC_HOME\pkgs\siflibs\psr2010a_up2\mgc_Altera-Cyclone-III-6_beh_psr.lib' [mgc_Altera-Cyclone-III-6_beh_psr]... (LIB-49)
+Starting transformation 'compile' on solution 'solution.v1' (SOL-8)
+Generating synthesis internal form... (CIN-3)
+Found top design routine 'RGB_HSV' specified by directive (CIN-52)
+Synthesizing routine 'RGB_HSV' (CIN-13)
+Inlining routine 'RGB_HSV' (CIN-14)
+Optimizing block '/RGB_HSV' ... (CIN-4)
+Design 'RGB_HSV' was read (SOL-1)
+Optimizing partition '/RGB_HSV': (Total ops = 118, Real ops = 35, Vars = 41) (SOL-10)
+Optimizing partition '/RGB_HSV/core': (Total ops = 118, Real ops = 35, Vars = 35) (SOL-10)
+Optimizing partition '/RGB_HSV/core': (Total ops = 116, Real ops = 33, Vars = 36) (SOL-10)
+Optimizing partition '/RGB_HSV': (Total ops = 116, Real ops = 33, Vars = 42) (SOL-10)
+Optimizing partition '/RGB_HSV': (Total ops = 116, Real ops = 33, Vars = 42) (SOL-10)
+Optimizing partition '/RGB_HSV/core': (Total ops = 116, Real ops = 33, Vars = 36) (SOL-10)
+Optimizing partition '/RGB_HSV/core': (Total ops = 6, Real ops = 0, Vars = 6) (SOL-10)
+Optimizing partition '/RGB_HSV': (Total ops = 6, Real ops = 0, Vars = 12) (SOL-10)
+Optimizing partition '/RGB_HSV': (Total ops = 6, Real ops = 0, Vars = 12) (SOL-10)
+Optimizing partition '/RGB_HSV/core': (Total ops = 6, Real ops = 0, Vars = 6) (SOL-10)
+Optimizing partition '/RGB_HSV': (Total ops = 6, Real ops = 0, Vars = 12) (SOL-10)
+Optimizing partition '/RGB_HSV': (Total ops = 6, Real ops = 0, Vars = 12) (SOL-10)
+Optimizing partition '/RGB_HSV/core': (Total ops = 6, Real ops = 0, Vars = 6) (SOL-10)
+Completed transformation 'compile' on solution 'RGB_HSV.v1': elapsed time 0.48 seconds, memory usage 164840kB, peak memory usage 209028kB (SOL-9)
