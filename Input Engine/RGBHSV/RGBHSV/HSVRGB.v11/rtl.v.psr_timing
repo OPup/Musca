@@ -1,0 +1,156 @@
+create_clock -domain clk -name clk -period 20.0 -waveform { 0.0 10.0 } clk
+set_clock_uncertainty -design rtl 0.0 clk
+
+# Multicycle component mgc_Altera-Cyclone-III-6_beh_psr.mgc_div (div_mgc_div) [cycles: 4]
+set saved_design [current_design]
+set_attribute -name HIERARCHY -value preserve -instance div_mgc_div
+current_design [list_design div_mgc_div]
+set mc_inst_out_list {}
+foreach mc_inst_out [all_outputs] {
+   lappend mc_inst_out_list [join [concat div_mgc_div "/" $mc_inst_out] ""]
+}
+current_design $saved_design
+set_multicycle_path 4 -through $mc_inst_out_list
+
+# Multicycle component mgc_Altera-Cyclone-III-6_beh_psr.mgc_div (div_mgc_div_1) [cycles: 4]
+set saved_design [current_design]
+set_attribute -name HIERARCHY -value preserve -instance div_mgc_div_1
+current_design [list_design div_mgc_div_1]
+set mc_inst_out_list {}
+foreach mc_inst_out [all_outputs] {
+   lappend mc_inst_out_list [join [concat div_mgc_div_1 "/" $mc_inst_out] ""]
+}
+current_design $saved_design
+set_multicycle_path 4 -through $mc_inst_out_list
+
+# Multicycle component mgc_Altera-Cyclone-III-6_beh_psr.mgc_div (div_mgc_div_2) [cycles: 4]
+set saved_design [current_design]
+set_attribute -name HIERARCHY -value preserve -instance div_mgc_div_2
+current_design [list_design div_mgc_div_2]
+set mc_inst_out_list {}
+foreach mc_inst_out [all_outputs] {
+   lappend mc_inst_out_list [join [concat div_mgc_div_2 "/" $mc_inst_out] ""]
+}
+current_design $saved_design
+set_multicycle_path 4 -through $mc_inst_out_list
+
+# Multicycle component mgc_Altera-Cyclone-III-6_beh_psr.mgc_div (div_mgc_div_3) [cycles: 4]
+set saved_design [current_design]
+set_attribute -name HIERARCHY -value preserve -instance div_mgc_div_3
+current_design [list_design div_mgc_div_3]
+set mc_inst_out_list {}
+foreach mc_inst_out [all_outputs] {
+   lappend mc_inst_out_list [join [concat div_mgc_div_3 "/" $mc_inst_out] ""]
+}
+current_design $saved_design
+set_multicycle_path 4 -through $mc_inst_out_list
+
+# Multicycle component mgc_Altera-Cyclone-III-6_beh_psr.mgc_div (div_mgc_div_4) [cycles: 4]
+set saved_design [current_design]
+set_attribute -name HIERARCHY -value preserve -instance div_mgc_div_4
+current_design [list_design div_mgc_div_4]
+set mc_inst_out_list {}
+foreach mc_inst_out [all_outputs] {
+   lappend mc_inst_out_list [join [concat div_mgc_div_4 "/" $mc_inst_out] ""]
+}
+current_design $saved_design
+set_multicycle_path 4 -through $mc_inst_out_list
+
+# Multicycle component mgc_Altera-Cyclone-III-6_beh_psr.mgc_div (div_mgc_div_5) [cycles: 4]
+set saved_design [current_design]
+set_attribute -name HIERARCHY -value preserve -instance div_mgc_div_5
+current_design [list_design div_mgc_div_5]
+set mc_inst_out_list {}
+foreach mc_inst_out [all_outputs] {
+   lappend mc_inst_out_list [join [concat div_mgc_div_5 "/" $mc_inst_out] ""]
+}
+current_design $saved_design
+set_multicycle_path 4 -through $mc_inst_out_list
+
+# Multicycle component mgc_Altera-Cyclone-III-6_beh_psr.mgc_div (div_mgc_div_6) [cycles: 4]
+set saved_design [current_design]
+set_attribute -name HIERARCHY -value preserve -instance div_mgc_div_6
+current_design [list_design div_mgc_div_6]
+set mc_inst_out_list {}
+foreach mc_inst_out [all_outputs] {
+   lappend mc_inst_out_list [join [concat div_mgc_div_6 "/" $mc_inst_out] ""]
+}
+current_design $saved_design
+set_multicycle_path 4 -through $mc_inst_out_list
+
+# Multicycle component mgc_Altera-Cyclone-III-6_beh_psr.mgc_div (div_mgc_div_7) [cycles: 4]
+set saved_design [current_design]
+set_attribute -name HIERARCHY -value preserve -instance div_mgc_div_7
+current_design [list_design div_mgc_div_7]
+set mc_inst_out_list {}
+foreach mc_inst_out [all_outputs] {
+   lappend mc_inst_out_list [join [concat div_mgc_div_7 "/" $mc_inst_out] ""]
+}
+current_design $saved_design
+set_multicycle_path 4 -through $mc_inst_out_list
+
+# Multicycle component mgc_Altera-Cyclone-III-6_beh_psr.mgc_div (div_mgc_div_8) [cycles: 4]
+set saved_design [current_design]
+set_attribute -name HIERARCHY -value preserve -instance div_mgc_div_8
+current_design [list_design div_mgc_div_8]
+set mc_inst_out_list {}
+foreach mc_inst_out [all_outputs] {
+   lappend mc_inst_out_list [join [concat div_mgc_div_8 "/" $mc_inst_out] ""]
+}
+current_design $saved_design
+set_multicycle_path 4 -through $mc_inst_out_list
+
+# Multicycle component mgc_Altera-Cyclone-III-6_beh_psr.mgc_div (div_mgc_div_9) [cycles: 4]
+set saved_design [current_design]
+set_attribute -name HIERARCHY -value preserve -instance div_mgc_div_9
+current_design [list_design div_mgc_div_9]
+set mc_inst_out_list {}
+foreach mc_inst_out [all_outputs] {
+   lappend mc_inst_out_list [join [concat div_mgc_div_9 "/" $mc_inst_out] ""]
+}
+current_design $saved_design
+set_multicycle_path 4 -through $mc_inst_out_list
+
+# Multicycle component mgc_Altera-Cyclone-III-6_beh_psr.mgc_div (div_mgc_div_10) [cycles: 4]
+set saved_design [current_design]
+set_attribute -name HIERARCHY -value preserve -instance div_mgc_div_10
+current_design [list_design div_mgc_div_10]
+set mc_inst_out_list {}
+foreach mc_inst_out [all_outputs] {
+   lappend mc_inst_out_list [join [concat div_mgc_div_10 "/" $mc_inst_out] ""]
+}
+current_design $saved_design
+set_multicycle_path 4 -through $mc_inst_out_list
+
+# Multicycle component mgc_Altera-Cyclone-III-6_beh_psr.mgc_div (div_mgc_div_11) [cycles: 4]
+set saved_design [current_design]
+set_attribute -name HIERARCHY -value preserve -instance div_mgc_div_11
+current_design [list_design div_mgc_div_11]
+set mc_inst_out_list {}
+foreach mc_inst_out [all_outputs] {
+   lappend mc_inst_out_list [join [concat div_mgc_div_11 "/" $mc_inst_out] ""]
+}
+current_design $saved_design
+set_multicycle_path 4 -through $mc_inst_out_list
+
+# Multicycle component mgc_Altera-Cyclone-III-6_beh_psr.mgc_div (div_mgc_div_12) [cycles: 2]
+set saved_design [current_design]
+set_attribute -name HIERARCHY -value preserve -instance div_mgc_div_12
+current_design [list_design div_mgc_div_12]
+set mc_inst_out_list {}
+foreach mc_inst_out [all_outputs] {
+   lappend mc_inst_out_list [join [concat div_mgc_div_12 "/" $mc_inst_out] ""]
+}
+current_design $saved_design
+set_multicycle_path 2 -through $mc_inst_out_list
+
+# Multicycle component mgc_Altera-Cyclone-III-6_beh_psr.mgc_div (div_mgc_div_13) [cycles: 2]
+set saved_design [current_design]
+set_attribute -name HIERARCHY -value preserve -instance div_mgc_div_13
+current_design [list_design div_mgc_div_13]
+set mc_inst_out_list {}
+foreach mc_inst_out [all_outputs] {
+   lappend mc_inst_out_list [join [concat div_mgc_div_13 "/" $mc_inst_out] ""]
+}
+current_design $saved_design
+set_multicycle_path 2 -through $mc_inst_out_list

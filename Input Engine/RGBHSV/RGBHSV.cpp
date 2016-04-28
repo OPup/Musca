@@ -12,15 +12,16 @@
 #include <algorithm>
 #include <math/mgc_ac_math.h>
 #pragma hls_design_top
-#define percent 100;
 
 void HSVRGB(ac_fixed<10, 10, false> r, ac_fixed<10, 10, false>  g, ac_fixed<10, 10, false>  b, ac_fixed<10, 10, false, AC_RND> &H_OUT, ac_fixed<10, 10, false, AC_RND> &S_OUT, ac_fixed<10, 10, false, AC_RND> &V_OUT){
-	ac_fixed<10, 10, false> delta, min, max;
-	ac_fixed<14, 8, false> v;
-	ac_fixed<16, 8, false> s; 
-    ac_fixed<14, 11, true> h;
-	ac_fixed<10,1, false> val;
-	val = 0.39216;
+	ac_fixed<10, 10, false> min;
+	ac_fixed<15, 10, false> delta, max;
+	ac_fixed<10, 7, false> v;
+	ac_fixed<17, 7, false> s; 
+	ac_fixed<12, 8, true> subtract;
+    ac_fixed<16, 9, true> h;
+	ac_fixed<9,1, false> val;
+	val = 0.0977;
 	
 	if(r >= g){
 		if(r >= b){
@@ -70,13 +71,18 @@ void HSVRGB(ac_fixed<10, 10, false> r, ac_fixed<10, 10, false>  g, ac_fixed<10, 
 		}
 
 		if(r == max){
-			h = (g - b)/delta;
+		    subtract = g - b;
+			h = subtract/delta;
 		}
 		else if(g == max){
-			h = 2 + (b - r)/delta;
+		    subtract = b - r;
+			h = subtract/delta;
+			h = h + 2;
 		}
 		else{
-			h = 4 + (r - g)/delta;
+		    subtract = r - g;
+			h = subtract/delta;
+			h = h + 4;
 		}
 
 		h = h * 60;
@@ -84,12 +90,15 @@ void HSVRGB(ac_fixed<10, 10, false> r, ac_fixed<10, 10, false>  g, ac_fixed<10, 
 			h = h + 360;
 		}
 	}
+	
+	s = s * 100;
 
 	H_OUT = h;
-	S_OUT = s*percent;
+	S_OUT = s;
 	V_OUT = v;
 
 }
 
+// Problem with S being zero from the division. Possibly delta?
 //end file
 

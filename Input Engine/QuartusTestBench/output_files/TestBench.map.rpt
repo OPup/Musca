@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TestBench
-Wed Apr 27 18:45:21 2016
+Thu Apr 28 16:27:43 2016
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -31,11 +31,14 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Ver
  23. Parameter Settings for User Entity Instance: HSVRGB:inst|mgc_div:div_mgc_div_5
  24. Parameter Settings for User Entity Instance: HSVRGB:inst|mgc_div:div_mgc_div_6
  25. Parameter Settings for User Entity Instance: HSVRGB:inst|mgc_div:div_mgc_div_7
- 26. Parameter Settings for Inferred Entity Instance: HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult1
- 27. Parameter Settings for Inferred Entity Instance: HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult0
- 28. lpm_mult Parameter Settings by Entity Instance
- 29. Elapsed Time Per Partition
- 30. Analysis & Synthesis Messages
+ 26. Parameter Settings for User Entity Instance: HSVRGB:inst|mgc_div:div_mgc_div_8
+ 27. Parameter Settings for User Entity Instance: HSVRGB:inst|mgc_div:div_mgc_div_9
+ 28. Parameter Settings for User Entity Instance: HSVRGB:inst|mgc_div:div_mgc_div_10
+ 29. Parameter Settings for Inferred Entity Instance: HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult0
+ 30. Parameter Settings for Inferred Entity Instance: HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult1
+ 31. lpm_mult Parameter Settings by Entity Instance
+ 32. Elapsed Time Per Partition
+ 33. Analysis & Synthesis Messages
 
 
 
@@ -61,15 +64,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Apr 27 18:45:21 2016            ;
+; Analysis & Synthesis Status        ; Successful - Thu Apr 28 16:27:42 2016            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; TestBench                                        ;
 ; Top-level Entity Name              ; TestBench                                        ;
 ; Family                             ; Cyclone III                                      ;
-; Total logic elements               ; 2,648                                            ;
-;     Total combinational functions  ; 2,550                                            ;
-;     Dedicated logic registers      ; 333                                              ;
-; Total registers                    ; 333                                              ;
+; Total logic elements               ; 5,356                                            ;
+;     Total combinational functions  ; 5,179                                            ;
+;     Dedicated logic registers      ; 474                                              ;
+; Total registers                    ; 474                                              ;
 ; Total pins                         ; 61                                               ;
 ; Total virtual pins                 ; 0                                                ;
 ; Total memory bits                  ; 0                                                ;
@@ -188,7 +191,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------------------------------------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path                                                                                                           ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                                               ; Library ;
 +--------------------------------------------------------------------------------------------------------------------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; ../RGBHSV/RGBHSV/HSVRGB.v6/rtl.v                                                                                                           ; yes             ; User Verilog HDL File              ; H:/MUSCA/Input Engine/RGBHSV/RGBHSV/HSVRGB.v6/rtl.v                                                                                        ;         ;
+; ../RGBHSV/RGBHSV/HSVRGB.v17/rtl.v                                                                                                          ; yes             ; User Verilog HDL File              ; H:/MUSCA/Input Engine/RGBHSV/RGBHSV/HSVRGB.v17/rtl.v                                                                                       ;         ;
 ; ../../../COGiX/provided_files/student_files_2015/prj2/quartus_proj/DE0_CAMERA_MOUSE/catapult_ip/mouse/rtl_mgc_ioport.v                     ; yes             ; User Verilog HDL File              ; H:/COGiX/provided_files/student_files_2015/prj2/quartus_proj/DE0_CAMERA_MOUSE/catapult_ip/mouse/rtl_mgc_ioport.v                           ;         ;
 ; C:/Program Files/Calypto Design Systems/Catapult Synthesis 2011a.126 Production Release/Mgc_home/pkgs/hls_pkgs/mgc_comps_src/mgc_div_beh.v ; yes             ; User Verilog HDL File              ; C:/Program Files/Calypto Design Systems/Catapult Synthesis 2011a.126 Production Release/Mgc_home/pkgs/hls_pkgs/mgc_comps_src/mgc_div_beh.v ;         ;
 ; TestBench.bdf                                                                                                                              ; yes             ; User Block Diagram/Schematic File  ; H:/MUSCA/Input Engine/QuartusTestBench/TestBench.bdf                                                                                       ;         ;
@@ -213,8 +216,8 @@ applicable agreement for further details.
 ; look_add.inc                                                                                                                               ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/look_add.inc                                                                             ;         ;
 ; alt_stratix_add_sub.inc                                                                                                                    ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/alt_stratix_add_sub.inc                                                                  ;         ;
 ; db/add_sub_2eh.tdf                                                                                                                         ; yes             ; Auto-Generated Megafunction        ; H:/MUSCA/Input Engine/QuartusTestBench/db/add_sub_2eh.tdf                                                                                  ;         ;
-; altshift.tdf                                                                                                                               ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altshift.tdf                                                                             ;         ;
 ; db/add_sub_dfh.tdf                                                                                                                         ; yes             ; Auto-Generated Megafunction        ; H:/MUSCA/Input Engine/QuartusTestBench/db/add_sub_dfh.tdf                                                                                  ;         ;
+; altshift.tdf                                                                                                                               ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altshift.tdf                                                                             ;         ;
 +--------------------------------------------------------------------------------------------------------------------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -223,28 +226,28 @@ applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 2,648     ;
+; Estimated Total logic elements              ; 5,356     ;
 ;                                             ;           ;
-; Total combinational functions               ; 2550      ;
+; Total combinational functions               ; 5179      ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 180       ;
-;     -- 3 input functions                    ; 1880      ;
-;     -- <=2 input functions                  ; 490       ;
+;     -- 4 input functions                    ; 656       ;
+;     -- 3 input functions                    ; 3632      ;
+;     -- <=2 input functions                  ; 891       ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 1366      ;
-;     -- arithmetic mode                      ; 1184      ;
+;     -- normal mode                          ; 2900      ;
+;     -- arithmetic mode                      ; 2279      ;
 ;                                             ;           ;
-; Total registers                             ; 333       ;
-;     -- Dedicated logic registers            ; 333       ;
+; Total registers                             ; 474       ;
+;     -- Dedicated logic registers            ; 474       ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 61        ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 333       ;
-; Total fan-out                               ; 8087      ;
-; Average fan-out                             ; 2.69      ;
+; Maximum fan-out                             ; 474       ;
+; Total fan-out                               ; 16233     ;
+; Average fan-out                             ; 2.81      ;
 +---------------------------------------------+-----------+
 
 
@@ -253,140 +256,322 @@ applicable agreement for further details.
 +------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                           ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                        ; Library Name ;
 +------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |TestBench                                           ; 2550 (0)          ; 333 (0)      ; 0           ; 0            ; 0       ; 0         ; 61   ; 0            ; |TestBench                                                                                                                                                                 ; work         ;
-;    |HSVRGB:inst|                                     ; 2550 (0)          ; 333 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst                                                                                                                                                     ; work         ;
-;       |HSVRGB_core:HSVRGB_core_inst|                 ; 529 (496)         ; 333 (333)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst                                                                                                                        ; work         ;
-;          |lpm_mult:Mult0|                            ; 27 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult0                                                                                                         ; work         ;
-;             |multcore:mult_core|                     ; 27 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult0|multcore:mult_core                                                                                      ; work         ;
-;                |mpar_add:padder|                     ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder                                                                      ; work         ;
-;                   |lpm_add_sub:adder[0]|             ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]                                                 ; work         ;
-;                      |add_sub_2eh:auto_generated|    ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_2eh:auto_generated                      ; work         ;
-;                   |mpar_add:sub_par_add|             ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add                                                 ; work         ;
-;                      |lpm_add_sub:adder[0]|          ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]                            ; work         ;
-;                         |add_sub_dfh:auto_generated| ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_dfh:auto_generated ; work         ;
-;          |lpm_mult:Mult1|                            ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult1                                                                                                         ; work         ;
-;             |multcore:mult_core|                     ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult1|multcore:mult_core                                                                                      ; work         ;
-;       |mgc_div:div_mgc_div_1|                        ; 270 (270)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|mgc_div:div_mgc_div_1                                                                                                                               ; work         ;
-;       |mgc_div:div_mgc_div_2|                        ; 270 (270)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|mgc_div:div_mgc_div_2                                                                                                                               ; work         ;
-;       |mgc_div:div_mgc_div_3|                        ; 270 (270)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|mgc_div:div_mgc_div_3                                                                                                                               ; work         ;
-;       |mgc_div:div_mgc_div_4|                        ; 270 (270)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|mgc_div:div_mgc_div_4                                                                                                                               ; work         ;
-;       |mgc_div:div_mgc_div_5|                        ; 271 (271)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|mgc_div:div_mgc_div_5                                                                                                                               ; work         ;
-;       |mgc_div:div_mgc_div_6|                        ; 199 (199)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|mgc_div:div_mgc_div_6                                                                                                                               ; work         ;
-;       |mgc_div:div_mgc_div_7|                        ; 200 (200)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|mgc_div:div_mgc_div_7                                                                                                                               ; work         ;
-;       |mgc_div:div_mgc_div|                          ; 271 (271)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|mgc_div:div_mgc_div                                                                                                                                 ; work         ;
+; |TestBench                                           ; 5179 (0)          ; 474 (0)      ; 0           ; 0            ; 0       ; 0         ; 61   ; 0            ; |TestBench                                                                                                                                                                 ; work         ;
+;    |HSVRGB:inst|                                     ; 5179 (0)          ; 474 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst                                                                                                                                                     ; work         ;
+;       |HSVRGB_core:HSVRGB_core_inst|                 ; 934 (891)         ; 474 (474)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst                                                                                                                        ; work         ;
+;          |lpm_mult:Mult0|                            ; 17 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult0                                                                                                         ; work         ;
+;             |multcore:mult_core|                     ; 17 (9)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult0|multcore:mult_core                                                                                      ; work         ;
+;                |mpar_add:padder|                     ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder                                                                      ; work         ;
+;                   |lpm_add_sub:adder[0]|             ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]                                                 ; work         ;
+;                      |add_sub_2eh:auto_generated|    ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_2eh:auto_generated                      ; work         ;
+;                   |mpar_add:sub_par_add|             ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add                                                 ; work         ;
+;                      |lpm_add_sub:adder[0]|          ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]                            ; work         ;
+;                         |add_sub_dfh:auto_generated| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_dfh:auto_generated ; work         ;
+;          |lpm_mult:Mult1|                            ; 26 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult1                                                                                                         ; work         ;
+;             |multcore:mult_core|                     ; 26 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult1|multcore:mult_core                                                                                      ; work         ;
+;                |mpar_add:padder|                     ; 14 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder                                                                      ; work         ;
+;                   |lpm_add_sub:adder[0]|             ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]                                                 ; work         ;
+;                      |add_sub_2eh:auto_generated|    ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_2eh:auto_generated                      ; work         ;
+;                   |mpar_add:sub_par_add|             ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add                                                 ; work         ;
+;                      |lpm_add_sub:adder[0]|          ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]                            ; work         ;
+;                         |add_sub_dfh:auto_generated| ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_dfh:auto_generated ; work         ;
+;       |mgc_div:div_mgc_div_10|                       ; 305 (305)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|mgc_div:div_mgc_div_10                                                                                                                              ; work         ;
+;       |mgc_div:div_mgc_div_1|                        ; 404 (404)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|mgc_div:div_mgc_div_1                                                                                                                               ; work         ;
+;       |mgc_div:div_mgc_div_2|                        ; 404 (404)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|mgc_div:div_mgc_div_2                                                                                                                               ; work         ;
+;       |mgc_div:div_mgc_div_3|                        ; 404 (404)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|mgc_div:div_mgc_div_3                                                                                                                               ; work         ;
+;       |mgc_div:div_mgc_div_4|                        ; 404 (404)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|mgc_div:div_mgc_div_4                                                                                                                               ; work         ;
+;       |mgc_div:div_mgc_div_5|                        ; 404 (404)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|mgc_div:div_mgc_div_5                                                                                                                               ; work         ;
+;       |mgc_div:div_mgc_div_6|                        ; 404 (404)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|mgc_div:div_mgc_div_6                                                                                                                               ; work         ;
+;       |mgc_div:div_mgc_div_7|                        ; 404 (404)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|mgc_div:div_mgc_div_7                                                                                                                               ; work         ;
+;       |mgc_div:div_mgc_div_8|                        ; 404 (404)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|mgc_div:div_mgc_div_8                                                                                                                               ; work         ;
+;       |mgc_div:div_mgc_div_9|                        ; 304 (304)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|mgc_div:div_mgc_div_9                                                                                                                               ; work         ;
+;       |mgc_div:div_mgc_div|                          ; 404 (404)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TestBench|HSVRGB:inst|mgc_div:div_mgc_div                                                                                                                                 ; work         ;
 +------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                                                                                ;
-+-----------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-; Register name                                                                           ; Reason for Removal                                                                      ;
-+-----------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|V_OUT_rsc_mgc_out_stdreg_d[9]                  ; Stuck at GND due to stuck port data_in                                                  ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|S_OUT_rsc_mgc_out_stdreg_d[0,1]                ; Stuck at GND due to stuck port data_in                                                  ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|H_OUT_rsc_mgc_out_stdreg_d[0,1]                ; Stuck at GND due to stuck port data_in                                                  ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|main_stage_0_2                                 ; Stuck at VCC due to stuck port data_in                                                  ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|main_stage_0_3                                 ; Stuck at VCC due to stuck port data_in                                                  ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_equal_svs_st_2                          ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_equal_svs_2                 ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_div_2cyc_st_1                        ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_div_2cyc                 ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_equal_svs_st_1                          ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_equal_svs                   ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_13[9]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[9]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_14[9]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[9]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_15[9]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[9]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_16[9]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[9]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_17[9]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[9]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_13[8]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[8]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_14[8]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[8]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_15[8]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[8]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_16[8]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[8]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_17[8]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[8]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_13[7]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[7]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_14[7]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[7]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_15[7]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[7]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_16[7]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[7]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_17[7]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[7]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_13[6]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[6]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_14[6]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[6]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_15[6]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[6]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_16[6]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[6]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_17[6]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[6]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_13[5]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[5]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_14[5]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[5]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_15[5]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[5]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_16[5]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[5]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_17[5]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[5]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_13[4]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[4]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_14[4]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[4]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_15[4]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[4]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_16[4]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[4]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_17[4]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[4]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_13[3]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[3]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_14[3]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[3]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_15[3]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[3]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_16[3]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[3]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_17[3]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[3]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_13[2]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[2]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_14[2]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[2]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_15[2]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[2]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_16[2]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[2]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_17[2]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[2]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_13[1]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[1]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_14[1]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[1]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_15[1]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[1]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_16[1]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[1]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_17[1]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[1]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_13[0]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[0]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_14[0]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[0]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_15[0]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[0]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_16[0]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[0]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_17[0]                                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12[0]                          ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_slc_tmp_mut_1[10]                  ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_slc_tmp_mut[10]        ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_slc_tmp_mut_1[9]                   ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_slc_tmp_mut[9]         ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_slc_tmp_mut_1[8]                   ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_slc_tmp_mut[8]         ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_slc_tmp_mut_1[7]                   ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_slc_tmp_mut[7]         ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_slc_tmp_mut_1[6]                   ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_slc_tmp_mut[6]         ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_slc_tmp_mut_1[5]                   ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_slc_tmp_mut[5]         ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_slc_tmp_mut_1[4]                   ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_slc_tmp_mut[4]         ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_slc_tmp_mut_1[3]                   ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_slc_tmp_mut[3]         ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_slc_tmp_mut_1[2]                   ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_slc_tmp_mut[2]         ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_slc_tmp_mut_1[1]                   ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_slc_tmp_mut[1]         ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_slc_tmp_mut_1[0]                   ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_slc_tmp_mut[0]         ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_slc_tmp_mut_1[10]             ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_slc_tmp_mut[10]   ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_slc_tmp_mut_1[9]              ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_slc_tmp_mut[9]    ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_slc_tmp_mut_1[8]              ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_slc_tmp_mut[8]    ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_slc_tmp_mut_1[7]              ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_slc_tmp_mut[7]    ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_slc_tmp_mut_1[6]              ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_slc_tmp_mut[6]    ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_slc_tmp_mut_1[5]              ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_slc_tmp_mut[5]    ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_slc_tmp_mut_1[4]              ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_slc_tmp_mut[4]    ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_slc_tmp_mut_1[3]              ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_slc_tmp_mut[3]    ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_slc_tmp_mut_1[2]              ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_slc_tmp_mut[2]    ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_slc_tmp_mut_1[1]              ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_slc_tmp_mut[1]    ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_slc_tmp_mut_1[0]              ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_slc_tmp_mut[0]    ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_slc_tmp_mut_1[10]           ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_slc_tmp_mut[10] ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_slc_tmp_mut_1[9]            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_slc_tmp_mut[9]  ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_slc_tmp_mut_1[8]            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_slc_tmp_mut[8]  ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_slc_tmp_mut_1[7]            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_slc_tmp_mut[7]  ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_slc_tmp_mut_1[6]            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_slc_tmp_mut[6]  ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_slc_tmp_mut_1[5]            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_slc_tmp_mut[5]  ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_slc_tmp_mut_1[4]            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_slc_tmp_mut[4]  ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_slc_tmp_mut_1[3]            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_slc_tmp_mut[3]  ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_slc_tmp_mut_1[2]            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_slc_tmp_mut[2]  ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_slc_tmp_mut_1[1]            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_slc_tmp_mut[1]  ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_slc_tmp_mut_1[0]            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_slc_tmp_mut[0]  ;
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_ac_fixed_cctor_sg1_1_sva_duc[0..8] ; Lost fanout                                                                             ;
-; Total Number of Removed Registers = 102                                                 ;                                                                                         ;
-+-----------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                                    ;
++-------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------+
+; Register name                                                                       ; Reason for Removal                                                                              ;
++-------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------+
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|V_OUT_rsc_mgc_out_stdreg_d[8,9]            ; Stuck at GND due to stuck port data_in                                                          ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|S_OUT_rsc_mgc_out_stdreg_d[8,9]            ; Stuck at GND due to stuck port data_in                                                          ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|main_stage_0_2                             ; Stuck at VCC due to stuck port data_in                                                          ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|main_stage_0_3                             ; Stuck at VCC due to stuck port data_in                                                          ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|main_stage_0_4                             ; Stuck at VCC due to stuck port data_in                                                          ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_equal_svs_st_3                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_equal_svs_3                         ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12_sg1_1[9]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[9]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_14_sg1_1[9]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[9]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_16_sg1_1[9]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[9]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_18_sg1_1[9]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[9]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_20_sg1_1[9]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[9]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_22_sg1_1[9]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[9]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_24_sg1_1[9]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[9]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_26_sg1_1[9]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[9]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12_sg1_1[8]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[8]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_14_sg1_1[8]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[8]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_16_sg1_1[8]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[8]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_18_sg1_1[8]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[8]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_20_sg1_1[8]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[8]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_22_sg1_1[8]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[8]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_24_sg1_1[8]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[8]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_26_sg1_1[8]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[8]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12_sg1_1[7]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[7]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_14_sg1_1[7]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[7]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_16_sg1_1[7]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[7]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_18_sg1_1[7]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[7]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_20_sg1_1[7]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[7]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_22_sg1_1[7]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[7]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_24_sg1_1[7]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[7]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_26_sg1_1[7]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[7]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12_sg1_1[6]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[6]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_14_sg1_1[6]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[6]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_16_sg1_1[6]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[6]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_18_sg1_1[6]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[6]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_20_sg1_1[6]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[6]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_22_sg1_1[6]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[6]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_24_sg1_1[6]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[6]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_26_sg1_1[6]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[6]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12_sg1_1[5]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[5]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_14_sg1_1[5]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[5]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_16_sg1_1[5]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[5]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_18_sg1_1[5]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[5]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_20_sg1_1[5]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[5]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_22_sg1_1[5]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[5]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_24_sg1_1[5]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[5]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_26_sg1_1[5]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[5]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12_sg1_1[4]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[4]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_14_sg1_1[4]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[4]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_16_sg1_1[4]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[4]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_18_sg1_1[4]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[4]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_20_sg1_1[4]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[4]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_22_sg1_1[4]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[4]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_24_sg1_1[4]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[4]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_26_sg1_1[4]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[4]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12_sg1_1[3]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[3]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_14_sg1_1[3]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[3]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_16_sg1_1[3]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[3]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_18_sg1_1[3]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[3]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_20_sg1_1[3]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[3]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_22_sg1_1[3]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[3]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_24_sg1_1[3]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[3]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_26_sg1_1[3]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[3]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12_sg1_1[2]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[2]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_14_sg1_1[2]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[2]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_16_sg1_1[2]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[2]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_18_sg1_1[2]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[2]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_20_sg1_1[2]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[2]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_22_sg1_1[2]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[2]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_24_sg1_1[2]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[2]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_26_sg1_1[2]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[2]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12_sg1_1[1]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[1]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_14_sg1_1[1]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[1]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_16_sg1_1[1]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[1]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_18_sg1_1[1]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[1]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_20_sg1_1[1]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[1]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_22_sg1_1[1]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[1]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_24_sg1_1[1]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[1]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_26_sg1_1[1]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[1]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_12_sg1_1[0]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[0]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_14_sg1_1[0]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[0]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_16_sg1_1[0]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[0]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_18_sg1_1[0]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[0]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_20_sg1_1[0]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[0]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_22_sg1_1[0]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[0]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_24_sg1_1[0]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[0]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_26_sg1_1[0]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_10_sg1_1[0]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_6_sg1[7]        ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_4_sg1[7]        ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_8_sg1[7]        ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_4_sg1[7]        ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_6_sg1[6]        ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_4_sg1[6]        ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_8_sg1[6]        ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_4_sg1[6]        ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_6_sg1[5]        ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_4_sg1[5]        ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_8_sg1[5]        ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_4_sg1[5]        ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_6_sg1[4]        ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_4_sg1[4]        ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_8_sg1[4]        ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_4_sg1[4]        ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_6_sg1[3]        ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_4_sg1[3]        ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_8_sg1[3]        ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_4_sg1[3]        ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_6_sg1[2]        ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_4_sg1[2]        ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_8_sg1[2]        ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_4_sg1[2]        ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_6_sg1[1]        ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_4_sg1[1]        ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_8_sg1[1]        ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_4_sg1[1]        ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_6_sg1[0]        ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_4_sg1[0]        ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_8_sg1[0]        ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_4_sg1[0]        ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_6_sg1[7]   ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_4_sg1[7]   ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_8_sg1[7]   ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_4_sg1[7]   ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_6_sg1[6]   ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_4_sg1[6]   ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_8_sg1[6]   ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_4_sg1[6]   ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_6_sg1[5]   ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_4_sg1[5]   ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_8_sg1[5]   ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_4_sg1[5]   ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_6_sg1[4]   ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_4_sg1[4]   ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_8_sg1[4]   ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_4_sg1[4]   ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_6_sg1[3]   ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_4_sg1[3]   ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_8_sg1[3]   ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_4_sg1[3]   ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_6_sg1[2]   ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_4_sg1[2]   ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_8_sg1[2]   ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_4_sg1[2]   ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_6_sg1[1]   ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_4_sg1[1]   ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_8_sg1[1]   ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_4_sg1[1]   ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_6_sg1[0]   ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_4_sg1[0]   ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_8_sg1[0]   ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_4_sg1[0]   ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_6_sg1[7] ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_4_sg1[7] ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_8_sg1[7] ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_4_sg1[7] ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_6_sg1[6] ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_4_sg1[6] ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_8_sg1[6] ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_4_sg1[6] ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_6_sg1[5] ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_4_sg1[5] ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_8_sg1[5] ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_4_sg1[5] ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_6_sg1[4] ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_4_sg1[4] ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_8_sg1[4] ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_4_sg1[4] ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_6_sg1[3] ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_4_sg1[3] ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_8_sg1[3] ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_4_sg1[3] ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_6_sg1[2] ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_4_sg1[2] ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_8_sg1[2] ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_4_sg1[2] ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_6_sg1[1] ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_4_sg1[1] ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_8_sg1[1] ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_4_sg1[1] ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_6_sg1[0] ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_4_sg1[0] ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_8_sg1[0] ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_4_sg1[0] ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_equal_svs_st_2                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_equal_svs_2                         ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_div_2cyc_st_1                    ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_div_2cyc                         ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_13_sg1_1[9]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[9]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_15_sg1_1[9]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[9]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_17_sg1_1[9]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[9]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_19_sg1_1[9]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[9]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_21_sg1_1[9]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[9]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_23_sg1_1[9]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[9]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_25_sg1_1[9]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[9]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_9_sg1_1[9]                             ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[9]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_13_sg1_1[8]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[8]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_15_sg1_1[8]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[8]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_17_sg1_1[8]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[8]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_19_sg1_1[8]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[8]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_21_sg1_1[8]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[8]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_23_sg1_1[8]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[8]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_25_sg1_1[8]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[8]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_9_sg1_1[8]                             ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[8]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_13_sg1_1[7]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[7]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_15_sg1_1[7]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[7]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_17_sg1_1[7]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[7]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_19_sg1_1[7]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[7]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_21_sg1_1[7]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[7]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_23_sg1_1[7]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[7]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_25_sg1_1[7]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[7]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_9_sg1_1[7]                             ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[7]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_13_sg1_1[6]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[6]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_15_sg1_1[6]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[6]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_17_sg1_1[6]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[6]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_19_sg1_1[6]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[6]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_21_sg1_1[6]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[6]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_23_sg1_1[6]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[6]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_25_sg1_1[6]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[6]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_9_sg1_1[6]                             ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[6]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_13_sg1_1[5]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[5]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_15_sg1_1[5]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[5]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_17_sg1_1[5]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[5]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_19_sg1_1[5]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[5]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_21_sg1_1[5]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[5]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_23_sg1_1[5]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[5]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_25_sg1_1[5]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[5]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_9_sg1_1[5]                             ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[5]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_13_sg1_1[4]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[4]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_15_sg1_1[4]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[4]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_17_sg1_1[4]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[4]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_19_sg1_1[4]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[4]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_21_sg1_1[4]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[4]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_23_sg1_1[4]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[4]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_25_sg1_1[4]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[4]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_9_sg1_1[4]                             ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[4]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_13_sg1_1[3]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[3]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_15_sg1_1[3]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[3]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_17_sg1_1[3]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[3]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_19_sg1_1[3]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[3]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_21_sg1_1[3]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[3]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_23_sg1_1[3]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[3]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_25_sg1_1[3]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[3]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_9_sg1_1[3]                             ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[3]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_13_sg1_1[2]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[2]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_15_sg1_1[2]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[2]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_17_sg1_1[2]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[2]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_19_sg1_1[2]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[2]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_21_sg1_1[2]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[2]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_23_sg1_1[2]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[2]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_25_sg1_1[2]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[2]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_9_sg1_1[2]                             ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[2]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_13_sg1_1[1]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[1]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_15_sg1_1[1]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[1]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_17_sg1_1[1]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[1]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_19_sg1_1[1]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[1]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_21_sg1_1[1]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[1]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_23_sg1_1[1]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[1]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_25_sg1_1[1]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[1]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_9_sg1_1[1]                             ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[1]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_13_sg1_1[0]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[0]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_15_sg1_1[0]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[0]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_17_sg1_1[0]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[0]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_19_sg1_1[0]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[0]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_21_sg1_1[0]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[0]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_23_sg1_1[0]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[0]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_25_sg1_1[0]                            ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[0]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_9_sg1_1[0]                             ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mut_11_sg1_1[0]                            ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_5_sg1[7]        ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_3_sg1[7]        ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_7_sg1[7]        ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_3_sg1[7]        ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_5_sg1[6]        ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_3_sg1[6]        ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_7_sg1[6]        ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_3_sg1[6]        ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_5_sg1[5]        ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_3_sg1[5]        ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_7_sg1[5]        ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_3_sg1[5]        ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_5_sg1[4]        ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_3_sg1[4]        ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_7_sg1[4]        ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_3_sg1[4]        ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_5_sg1[3]        ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_3_sg1[3]        ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_7_sg1[3]        ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_3_sg1[3]        ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_5_sg1[2]        ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_3_sg1[2]        ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_7_sg1[2]        ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_3_sg1[2]        ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_5_sg1[1]        ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_3_sg1[1]        ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_7_sg1[1]        ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_3_sg1[1]        ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_5_sg1[0]        ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_3_sg1[0]        ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_7_sg1[0]        ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_if_1_conc_2_tmp_mut_3_sg1[0]        ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_5_sg1[7]   ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_3_sg1[7]   ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_7_sg1[7]   ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_3_sg1[7]   ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_5_sg1[6]   ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_3_sg1[6]   ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_7_sg1[6]   ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_3_sg1[6]   ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_5_sg1[5]   ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_3_sg1[5]   ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_7_sg1[5]   ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_3_sg1[5]   ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_5_sg1[4]   ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_3_sg1[4]   ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_7_sg1[4]   ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_3_sg1[4]   ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_5_sg1[3]   ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_3_sg1[3]   ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_7_sg1[3]   ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_3_sg1[3]   ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_5_sg1[2]   ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_3_sg1[2]   ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_7_sg1[2]   ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_3_sg1[2]   ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_5_sg1[1]   ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_3_sg1[1]   ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_7_sg1[1]   ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_3_sg1[1]   ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_5_sg1[0]   ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_3_sg1[0]   ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_7_sg1[0]   ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_if_conc_2_tmp_mut_3_sg1[0]   ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_5_sg1[7] ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_3_sg1[7] ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_7_sg1[7] ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_3_sg1[7] ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_5_sg1[6] ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_3_sg1[6] ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_7_sg1[6] ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_3_sg1[6] ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_5_sg1[5] ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_3_sg1[5] ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_7_sg1[5] ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_3_sg1[5] ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_5_sg1[4] ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_3_sg1[4] ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_7_sg1[4] ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_3_sg1[4] ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_5_sg1[3] ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_3_sg1[3] ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_7_sg1[3] ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_3_sg1[3] ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_5_sg1[2] ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_3_sg1[2] ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_7_sg1[2] ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_3_sg1[2] ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_5_sg1[1] ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_3_sg1[1] ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_7_sg1[1] ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_3_sg1[1] ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_5_sg1[0] ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_3_sg1[0] ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_7_sg1[0] ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_else_1_else_conc_2_tmp_mut_3_sg1[0] ;
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_equal_svs_st_1                      ; Merged with HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|else_7_equal_svs                           ;
+; Total Number of Removed Registers = 267                                             ;                                                                                                 ;
++-------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                   ;
-+---------------------------------------------------------+---------------------------+---------------------------------------------------------+
-; Register name                                           ; Reason for Removal        ; Registers Removed due to This Register                  ;
-+---------------------------------------------------------+---------------------------+---------------------------------------------------------+
-; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|main_stage_0_2 ; Stuck at VCC              ; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|main_stage_0_3 ;
-;                                                         ; due to stuck port data_in ;                                                         ;
-+---------------------------------------------------------+---------------------------+---------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                    ;
++---------------------------------------------------------+---------------------------+----------------------------------------------------------+
+; Register name                                           ; Reason for Removal        ; Registers Removed due to This Register                   ;
++---------------------------------------------------------+---------------------------+----------------------------------------------------------+
+; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|main_stage_0_2 ; Stuck at VCC              ; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|main_stage_0_3, ;
+;                                                         ; due to stuck port data_in ; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|main_stage_0_4  ;
++---------------------------------------------------------+---------------------------+----------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -394,26 +579,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 333   ;
-; Number of registers using Synchronous Clear  ; 8     ;
+; Total registers                              ; 474   ;
+; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 116   ;
+; Number of registers using Clock Enable       ; 120   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                        ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                              ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------+
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |TestBench|HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|h_sg2_lpi_dfm_1_mx0 ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |TestBench|HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|result              ;
-; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |TestBench|HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mux_6_nl[5]         ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |TestBench|HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|mux_5_nl[7]         ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
+; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |TestBench|HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|result ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------+
@@ -487,8 +669,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-----------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                ;
 +----------------+-------+-----------------------------------------------------+
-; width_a        ; 11    ; Signed Integer                                      ;
-; width_b        ; 11    ; Signed Integer                                      ;
+; width_a        ; 17    ; Signed Integer                                      ;
+; width_b        ; 16    ; Signed Integer                                      ;
 ; signd          ; 1     ; Signed Integer                                      ;
 +----------------+-------+-----------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
@@ -499,8 +681,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                  ;
 +----------------+-------+-------------------------------------------------------+
-; width_a        ; 11    ; Signed Integer                                        ;
-; width_b        ; 11    ; Signed Integer                                        ;
+; width_a        ; 17    ; Signed Integer                                        ;
+; width_b        ; 16    ; Signed Integer                                        ;
 ; signd          ; 1     ; Signed Integer                                        ;
 +----------------+-------+-------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
@@ -511,8 +693,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                  ;
 +----------------+-------+-------------------------------------------------------+
-; width_a        ; 11    ; Signed Integer                                        ;
-; width_b        ; 11    ; Signed Integer                                        ;
+; width_a        ; 17    ; Signed Integer                                        ;
+; width_b        ; 16    ; Signed Integer                                        ;
 ; signd          ; 1     ; Signed Integer                                        ;
 +----------------+-------+-------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
@@ -523,8 +705,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                  ;
 +----------------+-------+-------------------------------------------------------+
-; width_a        ; 11    ; Signed Integer                                        ;
-; width_b        ; 11    ; Signed Integer                                        ;
+; width_a        ; 17    ; Signed Integer                                        ;
+; width_b        ; 16    ; Signed Integer                                        ;
 ; signd          ; 1     ; Signed Integer                                        ;
 +----------------+-------+-------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
@@ -535,8 +717,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                  ;
 +----------------+-------+-------------------------------------------------------+
-; width_a        ; 11    ; Signed Integer                                        ;
-; width_b        ; 11    ; Signed Integer                                        ;
+; width_a        ; 17    ; Signed Integer                                        ;
+; width_b        ; 16    ; Signed Integer                                        ;
 ; signd          ; 1     ; Signed Integer                                        ;
 +----------------+-------+-------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
@@ -547,8 +729,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                  ;
 +----------------+-------+-------------------------------------------------------+
-; width_a        ; 11    ; Signed Integer                                        ;
-; width_b        ; 11    ; Signed Integer                                        ;
+; width_a        ; 17    ; Signed Integer                                        ;
+; width_b        ; 16    ; Signed Integer                                        ;
 ; signd          ; 1     ; Signed Integer                                        ;
 +----------------+-------+-------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
@@ -559,9 +741,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                  ;
 +----------------+-------+-------------------------------------------------------+
-; width_a        ; 10    ; Signed Integer                                        ;
-; width_b        ; 10    ; Signed Integer                                        ;
-; signd          ; 0     ; Signed Integer                                        ;
+; width_a        ; 17    ; Signed Integer                                        ;
+; width_b        ; 16    ; Signed Integer                                        ;
+; signd          ; 1     ; Signed Integer                                        ;
 +----------------+-------+-------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -571,15 +753,51 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                  ;
 +----------------+-------+-------------------------------------------------------+
-; width_a        ; 10    ; Signed Integer                                        ;
+; width_a        ; 17    ; Signed Integer                                        ;
+; width_b        ; 16    ; Signed Integer                                        ;
+; signd          ; 1     ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: HSVRGB:inst|mgc_div:div_mgc_div_8 ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; width_a        ; 17    ; Signed Integer                                        ;
+; width_b        ; 16    ; Signed Integer                                        ;
+; signd          ; 1     ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: HSVRGB:inst|mgc_div:div_mgc_div_9 ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; width_a        ; 15    ; Signed Integer                                        ;
 ; width_b        ; 10    ; Signed Integer                                        ;
 ; signd          ; 0     ; Signed Integer                                        ;
 +----------------+-------+-------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: HSVRGB:inst|mgc_div:div_mgc_div_10 ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; width_a        ; 15    ; Signed Integer                                         ;
+; width_b        ; 10    ; Signed Integer                                         ;
+; signd          ; 0     ; Signed Integer                                         ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +----------------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult1 ;
+; Parameter Settings for Inferred Entity Instance: HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult0 ;
 +------------------------------------------------+-------------+-------------------------------------------+
 ; Parameter Name                                 ; Value       ; Type                                      ;
 +------------------------------------------------+-------------+-------------------------------------------+
@@ -588,9 +806,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; AUTO_CASCADE_CHAINS                            ; ON          ; AUTO_CASCADE                              ;
 ; IGNORE_CASCADE_BUFFERS                         ; OFF         ; IGNORE_CASCADE                            ;
 ; LPM_WIDTHA                                     ; 5           ; Untyped                                   ;
-; LPM_WIDTHB                                     ; 8           ; Untyped                                   ;
-; LPM_WIDTHP                                     ; 13          ; Untyped                                   ;
-; LPM_WIDTHR                                     ; 13          ; Untyped                                   ;
+; LPM_WIDTHB                                     ; 10          ; Untyped                                   ;
+; LPM_WIDTHP                                     ; 15          ; Untyped                                   ;
+; LPM_WIDTHR                                     ; 15          ; Untyped                                   ;
 ; LPM_WIDTHS                                     ; 1           ; Untyped                                   ;
 ; LPM_REPRESENTATION                             ; UNSIGNED    ; Untyped                                   ;
 ; LPM_PIPELINE                                   ; 0           ; Untyped                                   ;
@@ -598,7 +816,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; INPUT_A_IS_CONSTANT                            ; YES         ; Untyped                                   ;
 ; INPUT_B_IS_CONSTANT                            ; NO          ; Untyped                                   ;
 ; USE_EAB                                        ; OFF         ; Untyped                                   ;
-; MAXIMIZE_SPEED                                 ; 5           ; Untyped                                   ;
+; MAXIMIZE_SPEED                                 ; 6           ; Untyped                                   ;
 ; DEVICE_FAMILY                                  ; Cyclone III ; Untyped                                   ;
 ; CARRY_CHAIN                                    ; MANUAL      ; Untyped                                   ;
 ; APEX20K_TECHNOLOGY_MAPPER                      ; LUT         ; TECH_MAPPER_APEX20K                       ;
@@ -614,7 +832,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult0 ;
+; Parameter Settings for Inferred Entity Instance: HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult1 ;
 +------------------------------------------------+-------------+-------------------------------------------+
 ; Parameter Name                                 ; Value       ; Type                                      ;
 +------------------------------------------------+-------------+-------------------------------------------+
@@ -622,16 +840,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; IGNORE_CARRY_BUFFERS                           ; OFF         ; IGNORE_CARRY                              ;
 ; AUTO_CASCADE_CHAINS                            ; ON          ; AUTO_CASCADE                              ;
 ; IGNORE_CASCADE_BUFFERS                         ; OFF         ; IGNORE_CASCADE                            ;
-; LPM_WIDTHA                                     ; 10          ; Untyped                                   ;
-; LPM_WIDTHB                                     ; 5           ; Untyped                                   ;
+; LPM_WIDTHA                                     ; 5           ; Untyped                                   ;
+; LPM_WIDTHB                                     ; 10          ; Untyped                                   ;
 ; LPM_WIDTHP                                     ; 15          ; Untyped                                   ;
 ; LPM_WIDTHR                                     ; 15          ; Untyped                                   ;
 ; LPM_WIDTHS                                     ; 1           ; Untyped                                   ;
 ; LPM_REPRESENTATION                             ; UNSIGNED    ; Untyped                                   ;
 ; LPM_PIPELINE                                   ; 0           ; Untyped                                   ;
 ; LATENCY                                        ; 0           ; Untyped                                   ;
-; INPUT_A_IS_CONSTANT                            ; NO          ; Untyped                                   ;
-; INPUT_B_IS_CONSTANT                            ; YES         ; Untyped                                   ;
+; INPUT_A_IS_CONSTANT                            ; YES         ; Untyped                                   ;
+; INPUT_B_IS_CONSTANT                            ; NO          ; Untyped                                   ;
 ; USE_EAB                                        ; OFF         ; Untyped                                   ;
 ; MAXIMIZE_SPEED                                 ; 6           ; Untyped                                   ;
 ; DEVICE_FAMILY                                  ; Cyclone III ; Untyped                                   ;
@@ -654,10 +872,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Name                                  ; Value                                                   ;
 +---------------------------------------+---------------------------------------------------------+
 ; Number of entity instances            ; 2                                                       ;
-; Entity Instance                       ; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult1 ;
+; Entity Instance                       ; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult0 ;
 ;     -- LPM_WIDTHA                     ; 5                                                       ;
-;     -- LPM_WIDTHB                     ; 8                                                       ;
-;     -- LPM_WIDTHP                     ; 13                                                      ;
+;     -- LPM_WIDTHB                     ; 10                                                      ;
+;     -- LPM_WIDTHP                     ; 15                                                      ;
 ;     -- LPM_REPRESENTATION             ; UNSIGNED                                                ;
 ;     -- INPUT_A_IS_CONSTANT            ; YES                                                     ;
 ;     -- INPUT_B_IS_CONSTANT            ; NO                                                      ;
@@ -665,13 +883,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                    ;
 ;     -- INPUT_A_FIXED_VALUE            ; Bx                                                      ;
 ;     -- INPUT_B_FIXED_VALUE            ; Bx                                                      ;
-; Entity Instance                       ; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult0 ;
-;     -- LPM_WIDTHA                     ; 10                                                      ;
-;     -- LPM_WIDTHB                     ; 5                                                       ;
+; Entity Instance                       ; HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult1 ;
+;     -- LPM_WIDTHA                     ; 5                                                       ;
+;     -- LPM_WIDTHB                     ; 10                                                      ;
 ;     -- LPM_WIDTHP                     ; 15                                                      ;
 ;     -- LPM_REPRESENTATION             ; UNSIGNED                                                ;
-;     -- INPUT_A_IS_CONSTANT            ; NO                                                      ;
-;     -- INPUT_B_IS_CONSTANT            ; YES                                                     ;
+;     -- INPUT_A_IS_CONSTANT            ; YES                                                     ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                      ;
 ;     -- USE_EAB                        ; OFF                                                     ;
 ;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                    ;
 ;     -- INPUT_A_FIXED_VALUE            ; Bx                                                      ;
@@ -684,7 +902,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:05     ;
+; Top            ; 00:00:08     ;
 +----------------+--------------+
 
 
@@ -694,10 +912,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Wed Apr 27 18:45:09 2016
+    Info: Processing started: Thu Apr 28 16:27:25 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TestBench -c TestBench
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
-Info (12021): Found 2 design units, including 2 entities, in source file /musca/input engine/rgbhsv/rgbhsv/hsvrgb.v6/rtl.v
+Info (12021): Found 2 design units, including 2 entities, in source file /musca/input engine/rgbhsv/rgbhsv/hsvrgb.v17/rtl.v
     Info (12023): Found entity 1: HSVRGB_core
     Info (12023): Found entity 2: HSVRGB
 Info (12021): Found 7 design units, including 7 entities, in source file /cogix/provided_files/student_files_2015/prj2/quartus_proj/de0_camera_mouse/catapult_ip/mouse/rtl_mgc_ioport_v2001.v
@@ -742,65 +960,59 @@ Info (12128): Elaborating entity "mgc_out_stdreg" for hierarchy "HSVRGB:inst|mgc
 Info (12128): Elaborating entity "mgc_out_stdreg" for hierarchy "HSVRGB:inst|mgc_out_stdreg:S_OUT_rsc_mgc_out_stdreg"
 Info (12128): Elaborating entity "mgc_out_stdreg" for hierarchy "HSVRGB:inst|mgc_out_stdreg:V_OUT_rsc_mgc_out_stdreg"
 Info (12128): Elaborating entity "mgc_div" for hierarchy "HSVRGB:inst|mgc_div:div_mgc_div"
-Info (12128): Elaborating entity "mgc_div" for hierarchy "HSVRGB:inst|mgc_div:div_mgc_div_6"
+Info (12128): Elaborating entity "mgc_div" for hierarchy "HSVRGB:inst|mgc_div:div_mgc_div_9"
 Info (12128): Elaborating entity "HSVRGB_core" for hierarchy "HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst"
 Info (278001): Inferred 2 megafunctions from design logic
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|Mult1"
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|Mult0"
-Info (12130): Elaborated megafunction instantiation "HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult1"
-Info (12133): Instantiated megafunction "HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult1" with the following parameter:
-    Info (12134): Parameter "LPM_WIDTHA" = "5"
-    Info (12134): Parameter "LPM_WIDTHB" = "8"
-    Info (12134): Parameter "LPM_WIDTHP" = "13"
-    Info (12134): Parameter "LPM_WIDTHR" = "13"
-    Info (12134): Parameter "LPM_WIDTHS" = "1"
-    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "YES"
-    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
-    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
-Info (12131): Elaborated megafunction instantiation "HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult1|multcore:mult_core", which is child of megafunction instantiation "HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult1"
-Info (12131): Elaborated megafunction instantiation "HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder", which is child of megafunction instantiation "HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult1"
-Info (12131): Elaborated megafunction instantiation "HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]", which is child of megafunction instantiation "HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_2eh.tdf
-    Info (12023): Found entity 1: add_sub_2eh
-Info (12131): Elaborated megafunction instantiation "HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult1|altshift:external_latency_ffs", which is child of megafunction instantiation "HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult1"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|Mult1"
 Info (12130): Elaborated megafunction instantiation "HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult0"
 Info (12133): Instantiated megafunction "HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult0" with the following parameter:
-    Info (12134): Parameter "LPM_WIDTHA" = "10"
-    Info (12134): Parameter "LPM_WIDTHB" = "5"
+    Info (12134): Parameter "LPM_WIDTHA" = "5"
+    Info (12134): Parameter "LPM_WIDTHB" = "10"
     Info (12134): Parameter "LPM_WIDTHP" = "15"
     Info (12134): Parameter "LPM_WIDTHR" = "15"
     Info (12134): Parameter "LPM_WIDTHS" = "1"
     Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
-    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "YES"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "YES"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
     Info (12134): Parameter "MAXIMIZE_SPEED" = "6"
 Info (12131): Elaborated megafunction instantiation "HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult0|multcore:mult_core", which is child of megafunction instantiation "HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult0"
 Info (12131): Elaborated megafunction instantiation "HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder", which is child of megafunction instantiation "HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult0"
 Info (12131): Elaborated megafunction instantiation "HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]", which is child of megafunction instantiation "HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult0"
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_2eh.tdf
+    Info (12023): Found entity 1: add_sub_2eh
 Info (12131): Elaborated megafunction instantiation "HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add", which is child of megafunction instantiation "HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult0"
 Info (12131): Elaborated megafunction instantiation "HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]", which is child of megafunction instantiation "HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult0"
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_dfh.tdf
     Info (12023): Found entity 1: add_sub_dfh
 Info (12131): Elaborated megafunction instantiation "HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult0|altshift:external_latency_ffs", which is child of megafunction instantiation "HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult0"
+Info (12130): Elaborated megafunction instantiation "HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult1"
+Info (12133): Instantiated megafunction "HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult1" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "5"
+    Info (12134): Parameter "LPM_WIDTHB" = "10"
+    Info (12134): Parameter "LPM_WIDTHP" = "15"
+    Info (12134): Parameter "LPM_WIDTHR" = "15"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "YES"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "6"
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "H_OUT[1]" is stuck at GND
-    Warning (13410): Pin "H_OUT[0]" is stuck at GND
-    Warning (13410): Pin "S_OUT[1]" is stuck at GND
-    Warning (13410): Pin "S_OUT[0]" is stuck at GND
+    Warning (13410): Pin "S_OUT[9]" is stuck at GND
+    Warning (13410): Pin "S_OUT[8]" is stuck at GND
     Warning (13410): Pin "V_OUT[9]" is stuck at GND
+    Warning (13410): Pin "V_OUT[8]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 9 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2786 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 5491 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 31 input pins
     Info (21059): Implemented 30 output pins
-    Info (21061): Implemented 2725 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 484 megabytes
-    Info: Processing ended: Wed Apr 27 18:45:21 2016
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:07
+    Info (21061): Implemented 5430 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 504 megabytes
+    Info: Processing ended: Thu Apr 28 16:27:43 2016
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:10
 
 
