@@ -18,8 +18,8 @@ void cdt(ac_int<10, false> H_IN, ac_int<10, false> S_IN, ac_int<10, false> V_IN,
 			 r = 1023;
 		}
 	}
-	if(((S_IN >= 30) && (V_IN > 30)) || ((V_IN >= 10) && (S_IN >= 50))){
-	    if((H_IN >= 190) && (H_IN <= 260)){
+	if(S_IN >= 30){
+	    if((H_IN >= 195) && (H_IN <= 250)){
 	         b = 1023;
 	    }
 	}

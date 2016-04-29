@@ -87,6 +87,19 @@ void mean_vga(ac_int<PIXEL_WL*KERNEL_WIDTH,false> vin[NUM_PIXELS], ac_int<PIXEL_
 			r[4] += (regs[i].slc<COLOUR_WL>(2*COLOUR_WL + 4*PIXEL_WL));
 			g[4] += (regs[i].slc<COLOUR_WL>(COLOUR_WL + 4*PIXEL_WL)) ;
 			b[4] += (regs[i].slc<COLOUR_WL>(0 + 4*PIXEL_WL)) ;
+			
+			r[5] += (regs[i].slc<COLOUR_WL>(2*COLOUR_WL + 5*PIXEL_WL));
+			g[5] += (regs[i].slc<COLOUR_WL>(COLOUR_WL + 5*PIXEL_WL));
+			b[5] += (regs[i].slc<COLOUR_WL>(0 + 5*PIXEL_WL));
+			// the line before ...
+			r[6] += (regs[i].slc<COLOUR_WL>(2*COLOUR_WL + 6*PIXEL_WL));
+			g[6] += (regs[i].slc<COLOUR_WL>(COLOUR_WL + 6*PIXEL_WL)) ;
+			b[6] += (regs[i].slc<COLOUR_WL>(0 + 6*PIXEL_WL)) ;
+			// the line before ... 
+			r[7] += (regs[i].slc<COLOUR_WL>(2*COLOUR_WL + 7*PIXEL_WL));
+			g[7] += (regs[i].slc<COLOUR_WL>(COLOUR_WL + 7*PIXEL_WL)) ;
+			b[7] += (regs[i].slc<COLOUR_WL>(0 + 7*PIXEL_WL)) ;	
+			
 		}
 		// add the accumualted value for all processed lines
 		ACC2: for(i = 0; i < KERNEL_WIDTH; i++) {    
@@ -98,6 +111,19 @@ void mean_vga(ac_int<PIXEL_WL*KERNEL_WIDTH,false> vin[NUM_PIXELS], ac_int<PIXEL_
 		red /= KERNEL_NUMEL;
 		green /= KERNEL_NUMEL;
 		blue /= KERNEL_NUMEL;
+	    
+	    if(red > 256){
+	        red = 1023;
+	    }
+	    else{
+	        red = 0;
+	    }
+	    if(blue > 256){
+	        blue = 1023;
+	    }
+	    else{
+	        blue = 0;
+	    }
 	    
 		// group the RGB components into a single signal
 		vout[p] = ((((ac_int<PIXEL_WL, false>)red) << (2*COLOUR_WL)) | (((ac_int<PIXEL_WL, false>)green) << COLOUR_WL) | (ac_int<PIXEL_WL, false>)blue);
