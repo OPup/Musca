@@ -51,8 +51,8 @@ Movement (3BITS):
 - 000 (NO_MOVE)
 - 001 (UP)
 - 010 (RIGHT)
-- 011 (LEFT)
-- 100 (DOWN)
+- 011 (DOWN)
+- 100 (LEFT)
 
 Error(1 BIT):
 - 0 (NO_ERROR)
