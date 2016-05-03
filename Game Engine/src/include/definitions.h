@@ -1,7 +1,7 @@
 #include <iostream>
 #include <ac_int.h>
 
-//
+//SIZE definitions
 #define ROWS 40
 #define COLS 64
 #define CELL_SIZE 15
