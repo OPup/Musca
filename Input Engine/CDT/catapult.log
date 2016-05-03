@@ -1,0 +1,172 @@
+//  Catapult University Version 2011a.126 (Production Release) Wed Aug  8 00:52:07 PDT 2012
+//  
+//  Copyright (c) Calypto Design Systems, Inc., 1996-2012, All Rights Reserved.
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF CALYPTO DESIGN SYSTEMS OR ITS LICENSORS
+//  
+//  Running on Windows 7 oh1015@EEWS104A-012 Service Pack 1 6.01.7601 i686
+//  
+//  Package information: SIFLIBS v17.0_1.1, HLS_PKGS v17.0_1.1, 
+//                       DesignPad v2.78_0.0
+//  
+//  This version may only be used for academic purposes.  Some optimizations 
+//  are disabled, so results obtained from this version may be sub-optimal.
+//  
+//  Start time Fri Apr 29 16:46:28 2016
+# -------------------------------------------------
+# Logging session transcript to file "C:\Users\oh1015\AppData\Local\Temp\log7592234ae80.0"
+# Loading options from registry.
+# Warning: set_working_dir: Directory 'C:/Windows/System32' not writable, using C:/Users/oh1015/AppData/Local/Temp
+project load {//icnas3.cc.ic.ac.uk/oh1015/MUSCA/Input Engine/CDT/CDTNEW}
+# Moving session transcript to file "\\icnas3.cc.ic.ac.uk\oh1015\MUSCA\Input Engine\CDT\catapult.log"
+# Reading component library '$MGC_HOME\pkgs\siflibs\mgc_busdefs.lib' [mgc_busdefs]... (LIB-49)
+# Reading component library '$MGC_HOME\pkgs\siflibs\stdops.lib' [STDOPS]... (LIB-49)
+# Reading component library '$MGC_HOME\pkgs\siflibs\mgc_ioport.lib' [mgc_ioport]... (LIB-49)
+# Reading component library '$MGC_HOME\pkgs\ccs_altera\Altera_accel_CycloneIII.lib' [Altera_accel_CycloneIII]... (LIB-49)
+# Reading component library '$MGC_HOME\pkgs\siflibs\psr2010a_up2\mgc_Altera-Cyclone-III-6_beh_psr.lib' [mgc_Altera-Cyclone-III-6_beh_psr]... (LIB-49)
+# File '$PROJECT_HOME/cdt.cpp' saved
+go extract
+# Info: Starting transformation 'analyze' on solution 'solution.v2' (SOL-8)
+# Front End called with arguments: -- {\\icnas3.cc.ic.ac.uk\oh1015\MUSCA\Input Engine\CDT\cdt.cpp} (CIN-69)
+# Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+# Source file analysis completed (CIN-68)
+# Info: Completed transformation 'analyze' on solution 'solution.v2': elapsed time 1.00 seconds, memory usage 161532kB, peak memory usage 197096kB (SOL-9)
+# Info: Starting transformation 'compile' on solution 'solution.v2' (SOL-8)
+# Generating synthesis internal form... (CIN-3)
+# $PROJECT_HOME/cdt.cpp(13): Found top design routine 'cdt' specified by directive (CIN-52)
+# $PROJECT_HOME/cdt.cpp(13): Synthesizing routine 'cdt' (CIN-13)
+# $PROJECT_HOME/cdt.cpp(13): Inlining routine 'cdt' (CIN-14)
+# $PROJECT_HOME/cdt.cpp(13): Optimizing block '/cdt' ... (CIN-4)
+# $PROJECT_HOME/cdt.cpp(13): Inout port 'R_OUT' is only used as an output. (OPT-11)
+# $PROJECT_HOME/cdt.cpp(13): Inout port 'G_OUT' is only used as an output. (OPT-11)
+# $PROJECT_HOME/cdt.cpp(13): Inout port 'B_OUT' is only used as an output. (OPT-11)
+# Info: Optimizing partition '/cdt': (Total ops = 84, Real ops = 20, Vars = 26) (SOL-10)
+# Info: Optimizing partition '/cdt/core': (Total ops = 84, Real ops = 20, Vars = 20) (SOL-10)
+# Info: Optimizing partition '/cdt/core': (Total ops = 84, Real ops = 20, Vars = 20) (SOL-10)
+# Info: Optimizing partition '/cdt': (Total ops = 84, Real ops = 20, Vars = 26) (SOL-10)
+# Info: Optimizing partition '/cdt': (Total ops = 84, Real ops = 20, Vars = 26) (SOL-10)
+# Info: Optimizing partition '/cdt/core': (Total ops = 84, Real ops = 20, Vars = 20) (SOL-10)
+# Info: Optimizing partition '/cdt/core': (Total ops = 56, Real ops = 11, Vars = 10) (SOL-10)
+# Info: Optimizing partition '/cdt/core': (Total ops = 56, Real ops = 11, Vars = 10) (SOL-10)
+# Info: Optimizing partition '/cdt': (Total ops = 56, Real ops = 11, Vars = 16) (SOL-10)
+# Info: Optimizing partition '/cdt': (Total ops = 56, Real ops = 11, Vars = 16) (SOL-10)
+# Info: Optimizing partition '/cdt/core': (Total ops = 56, Real ops = 11, Vars = 10) (SOL-10)
+# Info: Optimizing partition '/cdt/core': (Total ops = 52, Real ops = 11, Vars = 10) (SOL-10)
+# Info: Optimizing partition '/cdt': (Total ops = 52, Real ops = 11, Vars = 16) (SOL-10)
+# Info: Optimizing partition '/cdt/core': (Total ops = 50, Real ops = 11, Vars = 13) (SOL-10)
+# Info: Optimizing partition '/cdt/core': (Total ops = 50, Real ops = 11, Vars = 10) (SOL-10)
+# Info: Optimizing partition '/cdt': (Total ops = 50, Real ops = 11, Vars = 16) (SOL-10)
+# Info: Optimizing partition '/cdt/core': (Total ops = 50, Real ops = 11, Vars = 10) (SOL-10)
+# Info: Optimizing partition '/cdt': (Total ops = 50, Real ops = 11, Vars = 16) (SOL-10)
+# Info: Optimizing partition '/cdt': (Total ops = 50, Real ops = 11, Vars = 16) (SOL-10)
+# Info: Optimizing partition '/cdt/core': (Total ops = 50, Real ops = 11, Vars = 10) (SOL-10)
+# Info: Optimizing partition '/cdt/core': (Total ops = 63, Real ops = 15, Vars = 17) (SOL-10)
+# Info: Optimizing partition '/cdt/core': (Total ops = 46, Real ops = 15, Vars = 14) (SOL-10)
+# Info: Optimizing partition '/cdt/core': (Total ops = 46, Real ops = 15, Vars = 10) (SOL-10)
+# Info: Optimizing partition '/cdt': (Total ops = 46, Real ops = 15, Vars = 16) (SOL-10)
+# Info: Optimizing partition '/cdt/core': (Total ops = 46, Real ops = 15, Vars = 10) (SOL-10)
+# Info: Optimizing partition '/cdt': (Total ops = 46, Real ops = 15, Vars = 16) (SOL-10)
+# Design 'cdt' was read (SOL-1)
+# Info: Completed transformation 'compile' on solution 'cdt.v8': elapsed time 1.28 seconds, memory usage 166212kB, peak memory usage 197096kB (SOL-9)
+# Info: Starting transformation 'architect' on solution 'cdt.v8' (SOL-8)
+# $PROJECT_HOME/cdt.cpp(13): Loop '/cdt/core/main' is left rolled. (LOOP-4)
+# $PROJECT_HOME/cdt.cpp(13): I/O-Port inferred - resource 'H_IN:rsc' (from var: H_IN) mapped to 'mgc_ioport.mgc_in_wire' (size: 10). (MEM-2)
+# $PROJECT_HOME/cdt.cpp(13): I/O-Port inferred - resource 'S_IN:rsc' (from var: S_IN) mapped to 'mgc_ioport.mgc_in_wire' (size: 10). (MEM-2)
+# $PROJECT_HOME/cdt.cpp(13): I/O-Port inferred - resource 'V_IN:rsc' (from var: V_IN) mapped to 'mgc_ioport.mgc_in_wire' (size: 10). (MEM-2)
+# $PROJECT_HOME/cdt.cpp(13): I/O-Port inferred - resource 'R_OUT:rsc' (from var: R_OUT) mapped to 'mgc_ioport.mgc_out_stdreg' (size: 10). (MEM-2)
+# $PROJECT_HOME/cdt.cpp(13): I/O-Port inferred - resource 'G_OUT:rsc' (from var: G_OUT) mapped to 'mgc_ioport.mgc_out_stdreg' (size: 10). (MEM-2)
+# $PROJECT_HOME/cdt.cpp(13): I/O-Port inferred - resource 'B_OUT:rsc' (from var: B_OUT) mapped to 'mgc_ioport.mgc_out_stdreg' (size: 10). (MEM-2)
+# Info: Optimizing partition '/cdt': (Total ops = 53, Real ops = 16, Vars = 18) (SOL-10)
+# Info: Optimizing partition '/cdt/core': (Total ops = 53, Real ops = 16, Vars = 10) (SOL-10)
+# Info: Optimizing partition '/cdt/core': (Total ops = 50, Real ops = 16, Vars = 10) (SOL-10)
+# Info: Optimizing partition '/cdt': (Total ops = 50, Real ops = 16, Vars = 18) (SOL-10)
+# Info: Optimizing partition '/cdt': (Total ops = 50, Real ops = 16, Vars = 18) (SOL-10)
+# Info: Optimizing partition '/cdt/core': (Total ops = 50, Real ops = 16, Vars = 10) (SOL-10)
+# Info: Optimizing partition '/cdt/core': (Total ops = 138, Real ops = 28, Vars = 66) (SOL-10)
+# Info: Optimizing partition '/cdt/core': (Total ops = 55, Real ops = 27, Vars = 14) (SOL-10)
+# Design 'cdt' contains '27' real operations. (SOL-11)
+# Info: Completed transformation 'architect' on solution 'cdt.v8': elapsed time 3.00 seconds, memory usage 166900kB, peak memory usage 197096kB (SOL-9)
+# Info: Starting transformation 'allocate' on solution 'cdt.v8' (SOL-8)
+# Performing concurrent resource allocation and scheduling on '/cdt/core' (CRAAS-1)
+# Info: Select qualified components for data operations ... (CRAAS-3)
+# Info: Apply resource constraints on data operations ... (CRAAS-4)
+# $PROJECT_HOME/cdt.cpp(13): Prescheduled LOOP 'main' (2 c-steps) (SCHD-7)
+# $PROJECT_HOME/cdt.cpp(13): Prescheduled SEQUENTIAL 'core' (total length 2 c-steps) (SCHD-8)
+# Info: Initial schedule of SEQUENTIAL 'core': Latency = 1, Area (Datapath, Register, Total) = 94.00, 0.00, 94.00 (CRAAS-11)
+# At least one feasible schedule exists. (CRAAS-9)
+# Info: Final schedule of SEQUENTIAL 'core': Latency = 1, Area (Datapath, Register, Total) = 94.00, 0.00, 94.00 (CRAAS-12)
+# Resource allocation and scheduling done. (CRAAS-2)
+# Netlist written to file 'schedule.gnt' (NET-4)
+# Info: Completed transformation 'allocate' on solution 'cdt.v8': elapsed time 0.12 seconds, memory usage 167252kB, peak memory usage 197096kB (SOL-9)
+# Info: Starting transformation 'schedule' on solution 'cdt.v8' (SOL-8)
+# Performing concurrent resource allocation and scheduling on '/cdt/core' (CRAAS-1)
+# Global signal 'H_IN:rsc.z' added to design 'cdt' for component 'H_IN:rsc:mgc_in_wire' (LIB-3)
+# Global signal 'S_IN:rsc.z' added to design 'cdt' for component 'S_IN:rsc:mgc_in_wire' (LIB-3)
+# Global signal 'V_IN:rsc.z' added to design 'cdt' for component 'V_IN:rsc:mgc_in_wire' (LIB-3)
+# Global signal 'R_OUT:rsc.z' added to design 'cdt' for component 'R_OUT:rsc:mgc_out_stdreg' (LIB-3)
+# Global signal 'G_OUT:rsc.z' added to design 'cdt' for component 'G_OUT:rsc:mgc_out_stdreg' (LIB-3)
+# Global signal 'B_OUT:rsc.z' added to design 'cdt' for component 'B_OUT:rsc:mgc_out_stdreg' (LIB-3)
+# Info: Optimizing partition '/cdt': (Total ops = 94, Real ops = 28, Vars = 46) (SOL-10)
+# Info: Optimizing partition '/cdt/cdt:core': (Total ops = 73, Real ops = 27, Vars = 31) (SOL-10)
+# Info: Optimizing partition '/cdt/cdt:core/core': (Total ops = 65, Real ops = 27, Vars = 23) (SOL-10)
+# Info: Optimizing partition '/cdt/cdt:core/core': (Total ops = 52, Real ops = 27, Vars = 14) (SOL-10)
+# Info: Optimizing partition '/cdt': (Total ops = 77, Real ops = 27, Vars = 35) (SOL-10)
+# Info: Optimizing partition '/cdt/cdt:core': (Total ops = 58, Real ops = 27, Vars = 21) (SOL-10)
+# Info: Optimizing partition '/cdt/cdt:core/core': (Total ops = 51, Real ops = 27, Vars = 14) (SOL-10)
+# Info: Optimizing partition '/cdt': (Total ops = 77, Real ops = 27, Vars = 34) (SOL-10)
+# Info: Optimizing partition '/cdt/cdt:core': (Total ops = 58, Real ops = 27, Vars = 21) (SOL-10)
+# Report written to file 'cycle.rpt'
+# Netlist written to file 'cycle.v' (NET-4)
+# Info: Completed transformation 'schedule' on solution 'cdt.v8': elapsed time 0.61 seconds, memory usage 168712kB, peak memory usage 197096kB (SOL-9)
+# Info: Starting transformation 'dpfsm' on solution 'cdt.v8' (SOL-8)
+# Performing FSM extraction... (FSM-1)
+# Info: Optimizing partition '/cdt': (Total ops = 104, Real ops = 40, Vars = 80) (SOL-10)
+# Info: Optimizing partition '/cdt/cdt:core': (Total ops = 85, Real ops = 40, Vars = 67) (SOL-10)
+# Info: Optimizing partition '/cdt': (Total ops = 94, Real ops = 36, Vars = 31) (SOL-10)
+# Info: Optimizing partition '/cdt/cdt:core': (Total ops = 75, Real ops = 36, Vars = 18) (SOL-10)
+# Info: Optimizing partition '/cdt': (Total ops = 69, Real ops = 27, Vars = 31) (SOL-10)
+# Info: Optimizing partition '/cdt/cdt:core': (Total ops = 50, Real ops = 27, Vars = 18) (SOL-10)
+# Info: Optimizing partition '/cdt': (Total ops = 69, Real ops = 27, Vars = 33) (SOL-10)
+# Info: Optimizing partition '/cdt/cdt:core': (Total ops = 50, Real ops = 27, Vars = 20) (SOL-10)
+# Info: Optimizing partition '/cdt/cdt:core': (Total ops = 50, Real ops = 27, Vars = 20) (SOL-10)
+# Info: Optimizing partition '/cdt': (Total ops = 69, Real ops = 27, Vars = 33) (SOL-10)
+# Info: Optimizing partition '/cdt': (Total ops = 69, Real ops = 27, Vars = 33) (SOL-10)
+# Info: Optimizing partition '/cdt/cdt:core': (Total ops = 50, Real ops = 27, Vars = 20) (SOL-10)
+# Info: Optimizing partition '/cdt': (Total ops = 69, Real ops = 27, Vars = 33) (SOL-10)
+# Info: Optimizing partition '/cdt/cdt:core': (Total ops = 50, Real ops = 27, Vars = 20) (SOL-10)
+# Info: Completed transformation 'dpfsm' on solution 'cdt.v8': elapsed time 0.16 seconds, memory usage 167932kB, peak memory usage 197096kB (SOL-9)
+# Info: Starting transformation 'extract' on solution 'cdt.v8' (SOL-8)
+# Info: Optimizing partition '/cdt': (Total ops = 74, Real ops = 29, Vars = 66) (SOL-10)
+# Info: Optimizing partition '/cdt/cdt:core': (Total ops = 55, Real ops = 29, Vars = 53) (SOL-10)
+# Info: Optimizing partition '/cdt': (Total ops = 75, Real ops = 27, Vars = 33) (SOL-10)
+# Info: Optimizing partition '/cdt/cdt:core': (Total ops = 56, Real ops = 27, Vars = 20) (SOL-10)
+# Info: Optimizing partition '/cdt': (Total ops = 75, Real ops = 27, Vars = 33) (SOL-10)
+# Info: Optimizing partition '/cdt/cdt:core': (Total ops = 56, Real ops = 27, Vars = 20) (SOL-10)
+# Info: Optimizing partition '/cdt/cdt:core': (Total ops = 56, Real ops = 27, Vars = 20) (SOL-10)
+# Info: Optimizing partition '/cdt': (Total ops = 75, Real ops = 27, Vars = 33) (SOL-10)
+# Info: Optimizing partition '/cdt': (Total ops = 75, Real ops = 27, Vars = 33) (SOL-10)
+# Info: Optimizing partition '/cdt/cdt:core': (Total ops = 56, Real ops = 27, Vars = 20) (SOL-10)
+# Info: Optimizing partition '/cdt': (Total ops = 75, Real ops = 27, Vars = 33) (SOL-10)
+# Info: Optimizing partition '/cdt/cdt:core': (Total ops = 56, Real ops = 27, Vars = 20) (SOL-10)
+# Info: Optimizing partition '/cdt': (Total ops = 81, Real ops = 29, Vars = 73) (SOL-10)
+# Info: Optimizing partition '/cdt/cdt:core': (Total ops = 62, Real ops = 29, Vars = 60) (SOL-10)
+# Netlist written to file 'schematic.nlv' (NET-4)
+# Info: Optimizing partition '/cdt': (Total ops = 81, Real ops = 29, Vars = 73) (SOL-10)
+# Info: Optimizing partition '/cdt/cdt:core': (Total ops = 62, Real ops = 29, Vars = 60) (SOL-10)
+# Info: Optimizing partition '/cdt': (Total ops = 75, Real ops = 27, Vars = 33) (SOL-10)
+# Info: Optimizing partition '/cdt/cdt:core': (Total ops = 56, Real ops = 27, Vars = 20) (SOL-10)
+# Info: Optimizing partition '/cdt': (Total ops = 75, Real ops = 27, Vars = 33) (SOL-10)
+# Info: Optimizing partition '/cdt/cdt:core': (Total ops = 56, Real ops = 27, Vars = 20) (SOL-10)
+# Report written to file 'rtl.rpt'
+# Netlist written to file 'rtl.v' (NET-4)
+# generate concat
+# order file name is: rtl.v_order.txt
+# Add dependent file: ./rtl_mgc_ioport.v
+# Add dependent file: ./rtl_mgc_ioport_v2001.v
+# Add dependent file: ./rtl.v
+# Finished writing concatenated file: //icnas3.cc.ic.ac.uk/oh1015/MUSCA/Input Engine/CDT/CDTNEW/cdt.v8/concat_rtl.v
+# Synthesis timing script written to file './rtl.v.psr_timing'
+# IO timing constraints written to synthesis script file
+# Synthesis script written to file 'rtl.v.psr'
+# Info: Completed transformation 'extract' on solution 'cdt.v8': elapsed time 1.97 seconds, memory usage 168940kB, peak memory usage 197096kB (SOL-9)

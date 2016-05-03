@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="TestBench">
+		<CBX_INST_ENTRY INSTANCE_NAME="|TestBench|HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_2eh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|TestBench|HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_dfh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|TestBench|HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_2eh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|TestBench|HSVRGB:inst|HSVRGB_core:HSVRGB_core_inst|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_dfh.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
