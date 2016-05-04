@@ -1,0 +1,410 @@
+
+# Program: Catapult University Version
+# Version: 2011a.126
+#    File: Nlview netlist
+
+module new "Render:core:fsm" "orig"
+load port {clk} input -attr xrf 9131 -attr oid 1 -attr @path {/Render/Render:core/Render:core:fsm/clk}
+load port {rst} input -attr xrf 9132 -attr oid 2 -attr @path {/Render/Render:core/Render:core:fsm/rst}
+load portBus {fsm_output(1:0)} output 2 {fsm_output(1)} {fsm_output(0)} -attr xrf 9133 -attr oid 3 -attr @path {/Render/Render:core/Render:core:fsm/fsm_output}
+load net {clk} -attr xrf 9134 -attr oid 4
+load net {clk} -port {clk} -attr xrf 9135 -attr oid 5
+load net {rst} -attr xrf 9136 -attr oid 6
+load net {rst} -port {rst} -attr xrf 9137 -attr oid 7
+load net {fsm_output(0)} -attr vt d
+load net {fsm_output(1)} -attr vt d
+load netBundle {fsm_output} 2 {fsm_output(0)} {fsm_output(1)} -attr xrf 9138 -attr oid 8 -attr vt d -attr @path {/Render/Render:core/Render:core:fsm/fsm_output}
+load net {fsm_output(0)} -port {fsm_output(0)} -attr vt d -attr @path {/Render/Render:core/Render:core:fsm/fsm_output}
+load net {fsm_output(1)} -port {fsm_output(1)} -attr vt d -attr @path {/Render/Render:core/Render:core:fsm/fsm_output}
+### END MODULE 
+
+module new "Render:core" "orig"
+load port {clk} input -attr xrf 9139 -attr oid 9 -attr vt d -attr @path {/Render/Render:core/clk}
+load port {rst} input -attr xrf 9140 -attr oid 10 -attr vt d -attr @path {/Render/Render:core/rst}
+load portBus {X_pix:rsc:mgc_in_wire.d(10:0)} input 11 {X_pix:rsc:mgc_in_wire.d(10)} {X_pix:rsc:mgc_in_wire.d(9)} {X_pix:rsc:mgc_in_wire.d(8)} {X_pix:rsc:mgc_in_wire.d(7)} {X_pix:rsc:mgc_in_wire.d(6)} {X_pix:rsc:mgc_in_wire.d(5)} {X_pix:rsc:mgc_in_wire.d(4)} {X_pix:rsc:mgc_in_wire.d(3)} {X_pix:rsc:mgc_in_wire.d(2)} {X_pix:rsc:mgc_in_wire.d(1)} {X_pix:rsc:mgc_in_wire.d(0)} -attr xrf 9141 -attr oid 11 -attr vt d -attr @path {/Render/Render:core/X_pix:rsc:mgc_in_wire.d}
+load portBus {v_out:rsc:mgc_out_stdreg.d(11:0)} output 12 {v_out:rsc:mgc_out_stdreg.d(11)} {v_out:rsc:mgc_out_stdreg.d(10)} {v_out:rsc:mgc_out_stdreg.d(9)} {v_out:rsc:mgc_out_stdreg.d(8)} {v_out:rsc:mgc_out_stdreg.d(7)} {v_out:rsc:mgc_out_stdreg.d(6)} {v_out:rsc:mgc_out_stdreg.d(5)} {v_out:rsc:mgc_out_stdreg.d(4)} {v_out:rsc:mgc_out_stdreg.d(3)} {v_out:rsc:mgc_out_stdreg.d(2)} {v_out:rsc:mgc_out_stdreg.d(1)} {v_out:rsc:mgc_out_stdreg.d(0)} -attr xrf 9142 -attr oid 12 -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load symbol "Render:core:fsm" "orig" GEN \
+     port {clk#1} input \
+     port {rst#1} input \
+     portBus {fsm_output(1:0)} output 2 {fsm_output(1)} {fsm_output(0)} \
+
+load symbol "add(4,0,4,1,5)" "INTERFACE" RTL(+) boxcolor 0 \
+     portBus {A(3:0)} input 4 {A(3)} {A(2)} {A(1)} {A(0)} \
+     portBus {B(3:0)} input 4 {B(3)} {B(2)} {B(1)} {B(0)} \
+     portBus {Z(4:0)} output 5 {Z(4)} {Z(3)} {Z(2)} {Z(1)} {Z(0)} \
+
+load symbol "not(1)" "INTERFACE" INV boxcolor 0 \
+     portBus {A(0:0)} input 1 {A(0)} \
+     portBus {Z(0:0)} output 1 {Z(0)} \
+
+load symbol "mux(2,12)" "INTERFACE" MUX boxcolor 0 \
+     portBus {A0(11:0)} input 12 {A0(11)} {A0(10)} {A0(9)} {A0(8)} {A0(7)} {A0(6)} {A0(5)} {A0(4)} {A0(3)} {A0(2)} {A0(1)} {A0(0)} \
+     portBus {A1(11:0)} input 12 {A1(11)} {A1(10)} {A1(9)} {A1(8)} {A1(7)} {A1(6)} {A1(5)} {A1(4)} {A1(3)} {A1(2)} {A1(1)} {A1(0)} \
+     portBus {S(0:0)} input.top 1 {S(0)} \
+     portBus {Z(11:0)} output 12 {Z(11)} {Z(10)} {Z(9)} {Z(8)} {Z(7)} {Z(6)} {Z(5)} {Z(4)} {Z(3)} {Z(2)} {Z(1)} {Z(0)} \
+
+load symbol "reg(12,1,0,0,1)" "INTERFACE" GEN boxcolor 1 \
+     portBus {D(11:0)} input 12 {D(11)} {D(10)} {D(9)} {D(8)} {D(7)} {D(6)} {D(5)} {D(4)} {D(3)} {D(2)} {D(1)} {D(0)} \
+     portBus {DRs(11:0)} input 12 {DRs(11)} {DRs(10)} {DRs(9)} {DRs(8)} {DRs(7)} {DRs(6)} {DRs(5)} {DRs(4)} {DRs(3)} {DRs(2)} {DRs(1)} {DRs(0)} \
+     port {clk} input.clk \
+     portBus {Rs(0:0)} input 1 {Rs(0)} \
+     portBus {Z(11:0)} output 12 {Z(11)} {Z(10)} {Z(9)} {Z(8)} {Z(7)} {Z(6)} {Z(5)} {Z(4)} {Z(3)} {Z(2)} {Z(1)} {Z(0)} \
+
+load net {mux.itm(0)} -attr vt d
+load net {mux.itm(1)} -attr vt d
+load net {mux.itm(2)} -attr vt d
+load net {mux.itm(3)} -attr vt d
+load net {mux.itm(4)} -attr vt d
+load net {mux.itm(5)} -attr vt d
+load net {mux.itm(6)} -attr vt d
+load net {mux.itm(7)} -attr vt d
+load net {mux.itm(8)} -attr vt d
+load net {mux.itm(9)} -attr vt d
+load net {mux.itm(10)} -attr vt d
+load net {mux.itm(11)} -attr vt d
+load netBundle {mux.itm} 12 {mux.itm(0)} {mux.itm(1)} {mux.itm(2)} {mux.itm(3)} {mux.itm(4)} {mux.itm(5)} {mux.itm(6)} {mux.itm(7)} {mux.itm(8)} {mux.itm(9)} {mux.itm(10)} {mux.itm(11)} -attr xrf 9143 -attr oid 13 -attr vt d -attr @path {/Render/Render:core/mux.itm}
+load net {if:exs.itm(0)} -attr vt d
+load net {if:exs.itm(1)} -attr vt d
+load net {if:exs.itm(2)} -attr vt d
+load net {if:exs.itm(3)} -attr vt d
+load net {if:exs.itm(4)} -attr vt d
+load net {if:exs.itm(5)} -attr vt d
+load net {if:exs.itm(6)} -attr vt d
+load net {if:exs.itm(7)} -attr vt d
+load net {if:exs.itm(8)} -attr vt d
+load net {if:exs.itm(9)} -attr vt d
+load net {if:exs.itm(10)} -attr vt d
+load net {if:exs.itm(11)} -attr vt d
+load netBundle {if:exs.itm} 12 {if:exs.itm(0)} {if:exs.itm(1)} {if:exs.itm(2)} {if:exs.itm(3)} {if:exs.itm(4)} {if:exs.itm(5)} {if:exs.itm(6)} {if:exs.itm(7)} {if:exs.itm(8)} {if:exs.itm(9)} {if:exs.itm(10)} {if:exs.itm(11)} -attr xrf 9144 -attr oid 14 -attr vt d -attr @path {/Render/Render:core/if:exs.itm}
+load net {if:slc.itm(0)} -attr vt d
+load net {if:slc.itm(1)} -attr vt d
+load net {if:slc.itm(2)} -attr vt d
+load net {if:slc.itm(3)} -attr vt d
+load netBundle {if:slc.itm} 4 {if:slc.itm(0)} {if:slc.itm(1)} {if:slc.itm(2)} {if:slc.itm(3)} -attr xrf 9145 -attr oid 15 -attr vt d -attr @path {/Render/Render:core/if:slc.itm}
+load net {clk} -attr xrf 9146 -attr oid 16
+load net {clk} -port {clk} -attr xrf 9147 -attr oid 17
+load net {rst} -attr xrf 9148 -attr oid 18
+load net {rst} -port {rst} -attr xrf 9149 -attr oid 19
+load net {X_pix:rsc:mgc_in_wire.d(0)} -attr vt d
+load net {X_pix:rsc:mgc_in_wire.d(1)} -attr vt d
+load net {X_pix:rsc:mgc_in_wire.d(2)} -attr vt d
+load net {X_pix:rsc:mgc_in_wire.d(3)} -attr vt d
+load net {X_pix:rsc:mgc_in_wire.d(4)} -attr vt d
+load net {X_pix:rsc:mgc_in_wire.d(5)} -attr vt d
+load net {X_pix:rsc:mgc_in_wire.d(6)} -attr vt d
+load net {X_pix:rsc:mgc_in_wire.d(7)} -attr vt d
+load net {X_pix:rsc:mgc_in_wire.d(8)} -attr vt d
+load net {X_pix:rsc:mgc_in_wire.d(9)} -attr vt d
+load net {X_pix:rsc:mgc_in_wire.d(10)} -attr vt d
+load netBundle {X_pix:rsc:mgc_in_wire.d} 11 {X_pix:rsc:mgc_in_wire.d(0)} {X_pix:rsc:mgc_in_wire.d(1)} {X_pix:rsc:mgc_in_wire.d(2)} {X_pix:rsc:mgc_in_wire.d(3)} {X_pix:rsc:mgc_in_wire.d(4)} {X_pix:rsc:mgc_in_wire.d(5)} {X_pix:rsc:mgc_in_wire.d(6)} {X_pix:rsc:mgc_in_wire.d(7)} {X_pix:rsc:mgc_in_wire.d(8)} {X_pix:rsc:mgc_in_wire.d(9)} {X_pix:rsc:mgc_in_wire.d(10)} -attr xrf 9150 -attr oid 20 -attr vt d -attr @path {/Render/Render:core/X_pix:rsc:mgc_in_wire.d}
+load net {X_pix:rsc:mgc_in_wire.d(0)} -port {X_pix:rsc:mgc_in_wire.d(0)} -attr vt d
+load net {X_pix:rsc:mgc_in_wire.d(1)} -port {X_pix:rsc:mgc_in_wire.d(1)} -attr vt d
+load net {X_pix:rsc:mgc_in_wire.d(2)} -port {X_pix:rsc:mgc_in_wire.d(2)} -attr vt d
+load net {X_pix:rsc:mgc_in_wire.d(3)} -port {X_pix:rsc:mgc_in_wire.d(3)} -attr vt d
+load net {X_pix:rsc:mgc_in_wire.d(4)} -port {X_pix:rsc:mgc_in_wire.d(4)} -attr vt d
+load net {X_pix:rsc:mgc_in_wire.d(5)} -port {X_pix:rsc:mgc_in_wire.d(5)} -attr vt d
+load net {X_pix:rsc:mgc_in_wire.d(6)} -port {X_pix:rsc:mgc_in_wire.d(6)} -attr vt d
+load net {X_pix:rsc:mgc_in_wire.d(7)} -port {X_pix:rsc:mgc_in_wire.d(7)} -attr vt d
+load net {X_pix:rsc:mgc_in_wire.d(8)} -port {X_pix:rsc:mgc_in_wire.d(8)} -attr vt d
+load net {X_pix:rsc:mgc_in_wire.d(9)} -port {X_pix:rsc:mgc_in_wire.d(9)} -attr vt d
+load net {X_pix:rsc:mgc_in_wire.d(10)} -port {X_pix:rsc:mgc_in_wire.d(10)} -attr vt d
+load netBundle {X_pix:rsc:mgc_in_wire.d} 11 {X_pix:rsc:mgc_in_wire.d(0)} {X_pix:rsc:mgc_in_wire.d(1)} {X_pix:rsc:mgc_in_wire.d(2)} {X_pix:rsc:mgc_in_wire.d(3)} {X_pix:rsc:mgc_in_wire.d(4)} {X_pix:rsc:mgc_in_wire.d(5)} {X_pix:rsc:mgc_in_wire.d(6)} {X_pix:rsc:mgc_in_wire.d(7)} {X_pix:rsc:mgc_in_wire.d(8)} {X_pix:rsc:mgc_in_wire.d(9)} {X_pix:rsc:mgc_in_wire.d(10)} -attr xrf 9151 -attr oid 21 -attr vt d -attr @path {/Render/Render:core/X_pix:rsc:mgc_in_wire.d}
+load net {v_out:rsc:mgc_out_stdreg.d(0)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d(1)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d(2)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d(3)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d(4)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d(5)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d(6)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d(7)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d(8)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d(9)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d(10)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d(11)} -attr vt d
+load netBundle {v_out:rsc:mgc_out_stdreg.d} 12 {v_out:rsc:mgc_out_stdreg.d(0)} {v_out:rsc:mgc_out_stdreg.d(1)} {v_out:rsc:mgc_out_stdreg.d(2)} {v_out:rsc:mgc_out_stdreg.d(3)} {v_out:rsc:mgc_out_stdreg.d(4)} {v_out:rsc:mgc_out_stdreg.d(5)} {v_out:rsc:mgc_out_stdreg.d(6)} {v_out:rsc:mgc_out_stdreg.d(7)} {v_out:rsc:mgc_out_stdreg.d(8)} {v_out:rsc:mgc_out_stdreg.d(9)} {v_out:rsc:mgc_out_stdreg.d(10)} {v_out:rsc:mgc_out_stdreg.d(11)} -attr xrf 9152 -attr oid 22 -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d(0)} -port {v_out:rsc:mgc_out_stdreg.d(0)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d(1)} -port {v_out:rsc:mgc_out_stdreg.d(1)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d(2)} -port {v_out:rsc:mgc_out_stdreg.d(2)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d(3)} -port {v_out:rsc:mgc_out_stdreg.d(3)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d(4)} -port {v_out:rsc:mgc_out_stdreg.d(4)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d(5)} -port {v_out:rsc:mgc_out_stdreg.d(5)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d(6)} -port {v_out:rsc:mgc_out_stdreg.d(6)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d(7)} -port {v_out:rsc:mgc_out_stdreg.d(7)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d(8)} -port {v_out:rsc:mgc_out_stdreg.d(8)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d(9)} -port {v_out:rsc:mgc_out_stdreg.d(9)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d(10)} -port {v_out:rsc:mgc_out_stdreg.d(10)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d(11)} -port {v_out:rsc:mgc_out_stdreg.d(11)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load inst "Render:core:fsm:inst" "Render:core:fsm" "orig" -attr xrf 9153 -attr oid 23 -attr @path {/Render/Render:core/Render:core:fsm:inst} -attr hier "/Render/Render:core/Render:core:fsm" -pg 1 -lvl 3
+load net {clk} -pin  "Render:core:fsm:inst" {clk#1} -attr xrf 9154 -attr oid 24 -attr @path {/Render/Render:core/clk}
+load net {rst} -pin  "Render:core:fsm:inst" {rst#1} -attr xrf 9155 -attr oid 25 -attr @path {/Render/Render:core/rst}
+load net {fsm_output#1(0)} -pin  "Render:core:fsm:inst" {fsm_output(0)} -attr @path {/Render/Render:core/fsm_output}
+load net {fsm_output#1(1)} -pin  "Render:core:fsm:inst" {fsm_output(1)} -attr @path {/Render/Render:core/fsm_output}
+load inst "if:acc" "add(4,0,4,1,5)" "INTERFACE" -attr xrf 9156 -attr oid 26 -attr vt dc -attr @path {/Render/Render:core/if:acc} -attr area 5.000000 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(4,0,4,1,5)"
+load net {X_pix:rsc:mgc_in_wire.d(7)} -pin  "if:acc" {A(0)} -attr vt dc -attr @path {/Render/Render:core/if:slc.itm}
+load net {X_pix:rsc:mgc_in_wire.d(8)} -pin  "if:acc" {A(1)} -attr vt dc -attr @path {/Render/Render:core/if:slc.itm}
+load net {X_pix:rsc:mgc_in_wire.d(9)} -pin  "if:acc" {A(2)} -attr vt dc -attr @path {/Render/Render:core/if:slc.itm}
+load net {X_pix:rsc:mgc_in_wire.d(10)} -pin  "if:acc" {A(3)} -attr vt dc -attr @path {/Render/Render:core/if:slc.itm}
+load net {PWR} -pin  "if:acc" {B(0)} -attr @path {/Render/Render:core/Cn5_4}
+load net {PWR} -pin  "if:acc" {B(1)} -attr @path {/Render/Render:core/Cn5_4}
+load net {GND} -pin  "if:acc" {B(2)} -attr @path {/Render/Render:core/Cn5_4}
+load net {PWR} -pin  "if:acc" {B(3)} -attr @path {/Render/Render:core/Cn5_4}
+load net {if:acc.itm(0)} -pin  "if:acc" {Z(0)} -attr vt dc -attr @path {/Render/Render:core/if:acc.itm}
+load net {if:acc.itm(1)} -pin  "if:acc" {Z(1)} -attr vt dc -attr @path {/Render/Render:core/if:acc.itm}
+load net {if:acc.itm(2)} -pin  "if:acc" {Z(2)} -attr vt dc -attr @path {/Render/Render:core/if:acc.itm}
+load net {if:acc.itm(3)} -pin  "if:acc" {Z(3)} -attr vt dc -attr @path {/Render/Render:core/if:acc.itm}
+load net {if:acc.itm(4)} -pin  "if:acc" {Z(4)} -attr vt dc -attr @path {/Render/Render:core/if:acc.itm}
+load inst "not" "not(1)" "INTERFACE" -attr xrf 9157 -attr oid 27 -attr vt c -attr @path {/Render/Render:core/not} -attr area 0.001000 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_not(1)"
+load net {if:acc.itm(4)} -pin  "not" {A(0)} -attr vt c -attr @path {/Render/Render:core/slc.itm}
+load net {not.itm} -pin  "not" {Z(0)} -attr vt c -attr @path {/Render/Render:core/not.itm}
+load inst "mux" "mux(2,12)" "INTERFACE" -attr xrf 9158 -attr oid 28 -attr vt dc -attr @path {/Render/Render:core/mux} -attr area 11.034076 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_mux(12,1,2)"
+load net {not.itm} -pin  "mux" {A0(0)} -attr vt dc -attr @path {/Render/Render:core/if:exs.itm}
+load net {not.itm} -pin  "mux" {A0(1)} -attr vt dc -attr @path {/Render/Render:core/if:exs.itm}
+load net {not.itm} -pin  "mux" {A0(2)} -attr vt dc -attr @path {/Render/Render:core/if:exs.itm}
+load net {not.itm} -pin  "mux" {A0(3)} -attr vt dc -attr @path {/Render/Render:core/if:exs.itm}
+load net {not.itm} -pin  "mux" {A0(4)} -attr vt dc -attr @path {/Render/Render:core/if:exs.itm}
+load net {not.itm} -pin  "mux" {A0(5)} -attr vt dc -attr @path {/Render/Render:core/if:exs.itm}
+load net {not.itm} -pin  "mux" {A0(6)} -attr vt dc -attr @path {/Render/Render:core/if:exs.itm}
+load net {not.itm} -pin  "mux" {A0(7)} -attr vt dc -attr @path {/Render/Render:core/if:exs.itm}
+load net {not.itm} -pin  "mux" {A0(8)} -attr vt dc -attr @path {/Render/Render:core/if:exs.itm}
+load net {not.itm} -pin  "mux" {A0(9)} -attr vt dc -attr @path {/Render/Render:core/if:exs.itm}
+load net {not.itm} -pin  "mux" {A0(10)} -attr vt dc -attr @path {/Render/Render:core/if:exs.itm}
+load net {not.itm} -pin  "mux" {A0(11)} -attr vt dc -attr @path {/Render/Render:core/if:exs.itm}
+load net {v_out:rsc:mgc_out_stdreg.d(0)} -pin  "mux" {A1(0)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d(1)} -pin  "mux" {A1(1)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d(2)} -pin  "mux" {A1(2)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d(3)} -pin  "mux" {A1(3)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d(4)} -pin  "mux" {A1(4)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d(5)} -pin  "mux" {A1(5)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d(6)} -pin  "mux" {A1(6)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d(7)} -pin  "mux" {A1(7)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d(8)} -pin  "mux" {A1(8)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d(9)} -pin  "mux" {A1(9)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d(10)} -pin  "mux" {A1(10)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d(11)} -pin  "mux" {A1(11)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {fsm_output#1(0)} -pin  "mux" {S(0)} -attr @path {/Render/Render:core/slc(fsm_output).itm}
+load net {mux.itm(0)} -pin  "mux" {Z(0)} -attr vt dc -attr @path {/Render/Render:core/mux.itm}
+load net {mux.itm(1)} -pin  "mux" {Z(1)} -attr vt dc -attr @path {/Render/Render:core/mux.itm}
+load net {mux.itm(2)} -pin  "mux" {Z(2)} -attr vt dc -attr @path {/Render/Render:core/mux.itm}
+load net {mux.itm(3)} -pin  "mux" {Z(3)} -attr vt dc -attr @path {/Render/Render:core/mux.itm}
+load net {mux.itm(4)} -pin  "mux" {Z(4)} -attr vt dc -attr @path {/Render/Render:core/mux.itm}
+load net {mux.itm(5)} -pin  "mux" {Z(5)} -attr vt dc -attr @path {/Render/Render:core/mux.itm}
+load net {mux.itm(6)} -pin  "mux" {Z(6)} -attr vt dc -attr @path {/Render/Render:core/mux.itm}
+load net {mux.itm(7)} -pin  "mux" {Z(7)} -attr vt dc -attr @path {/Render/Render:core/mux.itm}
+load net {mux.itm(8)} -pin  "mux" {Z(8)} -attr vt dc -attr @path {/Render/Render:core/mux.itm}
+load net {mux.itm(9)} -pin  "mux" {Z(9)} -attr vt dc -attr @path {/Render/Render:core/mux.itm}
+load net {mux.itm(10)} -pin  "mux" {Z(10)} -attr vt dc -attr @path {/Render/Render:core/mux.itm}
+load net {mux.itm(11)} -pin  "mux" {Z(11)} -attr vt dc -attr @path {/Render/Render:core/mux.itm}
+load inst "reg(v_out:rsc:mgc_out_stdreg.d)" "reg(12,1,0,0,1)" "INTERFACE" -attr xrf 9159 -attr oid 29 -attr vt dc -attr @path {/Render/Render:core/reg(v_out:rsc:mgc_out_stdreg.d)}
+load net {mux.itm(0)} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {D(0)} -attr vt dc -attr @path {/Render/Render:core/mux.itm}
+load net {mux.itm(1)} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {D(1)} -attr vt dc -attr @path {/Render/Render:core/mux.itm}
+load net {mux.itm(2)} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {D(2)} -attr vt dc -attr @path {/Render/Render:core/mux.itm}
+load net {mux.itm(3)} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {D(3)} -attr vt dc -attr @path {/Render/Render:core/mux.itm}
+load net {mux.itm(4)} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {D(4)} -attr vt dc -attr @path {/Render/Render:core/mux.itm}
+load net {mux.itm(5)} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {D(5)} -attr vt dc -attr @path {/Render/Render:core/mux.itm}
+load net {mux.itm(6)} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {D(6)} -attr vt dc -attr @path {/Render/Render:core/mux.itm}
+load net {mux.itm(7)} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {D(7)} -attr vt dc -attr @path {/Render/Render:core/mux.itm}
+load net {mux.itm(8)} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {D(8)} -attr vt dc -attr @path {/Render/Render:core/mux.itm}
+load net {mux.itm(9)} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {D(9)} -attr vt dc -attr @path {/Render/Render:core/mux.itm}
+load net {mux.itm(10)} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {D(10)} -attr vt dc -attr @path {/Render/Render:core/mux.itm}
+load net {mux.itm(11)} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {D(11)} -attr vt dc -attr @path {/Render/Render:core/mux.itm}
+load net {GND} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {DRs(0)} -attr @path {/Render/Render:core/C0_12}
+load net {GND} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {DRs(1)} -attr @path {/Render/Render:core/C0_12}
+load net {GND} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {DRs(2)} -attr @path {/Render/Render:core/C0_12}
+load net {GND} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {DRs(3)} -attr @path {/Render/Render:core/C0_12}
+load net {GND} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {DRs(4)} -attr @path {/Render/Render:core/C0_12}
+load net {GND} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {DRs(5)} -attr @path {/Render/Render:core/C0_12}
+load net {GND} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {DRs(6)} -attr @path {/Render/Render:core/C0_12}
+load net {GND} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {DRs(7)} -attr @path {/Render/Render:core/C0_12}
+load net {GND} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {DRs(8)} -attr @path {/Render/Render:core/C0_12}
+load net {GND} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {DRs(9)} -attr @path {/Render/Render:core/C0_12}
+load net {GND} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {DRs(10)} -attr @path {/Render/Render:core/C0_12}
+load net {GND} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {DRs(11)} -attr @path {/Render/Render:core/C0_12}
+load net {clk} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {clk} -attr xrf 9160 -attr oid 30 -attr @path {/Render/Render:core/clk}
+load net {rst} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {Rs(0)} -attr @path {/Render/Render:core/rst}
+load net {v_out:rsc:mgc_out_stdreg.d(0)} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {Z(0)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d(1)} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {Z(1)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d(2)} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {Z(2)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d(3)} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {Z(3)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d(4)} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {Z(4)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d(5)} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {Z(5)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d(6)} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {Z(6)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d(7)} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {Z(7)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d(8)} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {Z(8)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d(9)} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {Z(9)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d(10)} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {Z(10)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d(11)} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {Z(11)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+### END MODULE 
+
+module new "Render" "orig"
+load portBus {X_pix:rsc.z(10:0)} input 11 {X_pix:rsc.z(10)} {X_pix:rsc.z(9)} {X_pix:rsc.z(8)} {X_pix:rsc.z(7)} {X_pix:rsc.z(6)} {X_pix:rsc.z(5)} {X_pix:rsc.z(4)} {X_pix:rsc.z(3)} {X_pix:rsc.z(2)} {X_pix:rsc.z(1)} {X_pix:rsc.z(0)} -attr xrf 9161 -attr oid 31 -attr vt d -attr @path {/Render/X_pix:rsc.z}
+load portBus {v_out:rsc.z(11:0)} output 12 {v_out:rsc.z(11)} {v_out:rsc.z(10)} {v_out:rsc.z(9)} {v_out:rsc.z(8)} {v_out:rsc.z(7)} {v_out:rsc.z(6)} {v_out:rsc.z(5)} {v_out:rsc.z(4)} {v_out:rsc.z(3)} {v_out:rsc.z(2)} {v_out:rsc.z(1)} {v_out:rsc.z(0)} -attr xrf 9162 -attr oid 32 -attr vt d -attr @path {/Render/v_out:rsc.z}
+load port {clk} input -attr xrf 9163 -attr oid 33 -attr vt d -attr @path {/Render/clk}
+load port {rst} input -attr xrf 9164 -attr oid 34 -attr vt d -attr @path {/Render/rst}
+load symbol "mgc_ioport.mgc_in_wire(1,11)" "INTERFACE" GEN boxcolor 0 \
+     portBus {d(10:0)} output 11 {d(10)} {d(9)} {d(8)} {d(7)} {d(6)} {d(5)} {d(4)} {d(3)} {d(2)} {d(1)} {d(0)} \
+     portBus {z(10:0)} input 11 {z(10)} {z(9)} {z(8)} {z(7)} {z(6)} {z(5)} {z(4)} {z(3)} {z(2)} {z(1)} {z(0)} \
+
+load symbol "mgc_ioport.mgc_out_stdreg(3,12)" "INTERFACE" GEN boxcolor 0 \
+     portBus {d(11:0)} input 12 {d(11)} {d(10)} {d(9)} {d(8)} {d(7)} {d(6)} {d(5)} {d(4)} {d(3)} {d(2)} {d(1)} {d(0)} \
+     portBus {z(11:0)} output 12 {z(11)} {z(10)} {z(9)} {z(8)} {z(7)} {z(6)} {z(5)} {z(4)} {z(3)} {z(2)} {z(1)} {z(0)} \
+
+load symbol "Render:core" "orig" GEN \
+     port {clk#1} input \
+     port {rst#1} input \
+     portBus {X_pix:rsc:mgc_in_wire.d(10:0)} input 11 {X_pix:rsc:mgc_in_wire.d(10)} {X_pix:rsc:mgc_in_wire.d(9)} {X_pix:rsc:mgc_in_wire.d(8)} {X_pix:rsc:mgc_in_wire.d(7)} {X_pix:rsc:mgc_in_wire.d(6)} {X_pix:rsc:mgc_in_wire.d(5)} {X_pix:rsc:mgc_in_wire.d(4)} {X_pix:rsc:mgc_in_wire.d(3)} {X_pix:rsc:mgc_in_wire.d(2)} {X_pix:rsc:mgc_in_wire.d(1)} {X_pix:rsc:mgc_in_wire.d(0)} \
+     portBus {v_out:rsc:mgc_out_stdreg.d(11:0)} output 12 {v_out:rsc:mgc_out_stdreg.d(11)} {v_out:rsc:mgc_out_stdreg.d(10)} {v_out:rsc:mgc_out_stdreg.d(9)} {v_out:rsc:mgc_out_stdreg.d(8)} {v_out:rsc:mgc_out_stdreg.d(7)} {v_out:rsc:mgc_out_stdreg.d(6)} {v_out:rsc:mgc_out_stdreg.d(5)} {v_out:rsc:mgc_out_stdreg.d(4)} {v_out:rsc:mgc_out_stdreg.d(3)} {v_out:rsc:mgc_out_stdreg.d(2)} {v_out:rsc:mgc_out_stdreg.d(1)} {v_out:rsc:mgc_out_stdreg.d(0)} \
+
+load net {X_pix:rsc:mgc_in_wire.d#1(0)} -attr vt d
+load net {X_pix:rsc:mgc_in_wire.d#1(1)} -attr vt d
+load net {X_pix:rsc:mgc_in_wire.d#1(2)} -attr vt d
+load net {X_pix:rsc:mgc_in_wire.d#1(3)} -attr vt d
+load net {X_pix:rsc:mgc_in_wire.d#1(4)} -attr vt d
+load net {X_pix:rsc:mgc_in_wire.d#1(5)} -attr vt d
+load net {X_pix:rsc:mgc_in_wire.d#1(6)} -attr vt d
+load net {X_pix:rsc:mgc_in_wire.d#1(7)} -attr vt d
+load net {X_pix:rsc:mgc_in_wire.d#1(8)} -attr vt d
+load net {X_pix:rsc:mgc_in_wire.d#1(9)} -attr vt d
+load net {X_pix:rsc:mgc_in_wire.d#1(10)} -attr vt d
+load netBundle {X_pix:rsc:mgc_in_wire.d#1} 11 {X_pix:rsc:mgc_in_wire.d#1(0)} {X_pix:rsc:mgc_in_wire.d#1(1)} {X_pix:rsc:mgc_in_wire.d#1(2)} {X_pix:rsc:mgc_in_wire.d#1(3)} {X_pix:rsc:mgc_in_wire.d#1(4)} {X_pix:rsc:mgc_in_wire.d#1(5)} {X_pix:rsc:mgc_in_wire.d#1(6)} {X_pix:rsc:mgc_in_wire.d#1(7)} {X_pix:rsc:mgc_in_wire.d#1(8)} {X_pix:rsc:mgc_in_wire.d#1(9)} {X_pix:rsc:mgc_in_wire.d#1(10)} -attr xrf 9165 -attr oid 35 -attr vt d -attr @path {/Render/X_pix:rsc:mgc_in_wire.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(0)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d#1(1)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d#1(2)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d#1(3)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d#1(4)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d#1(5)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d#1(6)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d#1(7)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d#1(8)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d#1(9)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d#1(10)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d#1(11)} -attr vt d
+load netBundle {v_out:rsc:mgc_out_stdreg.d#1} 12 {v_out:rsc:mgc_out_stdreg.d#1(0)} {v_out:rsc:mgc_out_stdreg.d#1(1)} {v_out:rsc:mgc_out_stdreg.d#1(2)} {v_out:rsc:mgc_out_stdreg.d#1(3)} {v_out:rsc:mgc_out_stdreg.d#1(4)} {v_out:rsc:mgc_out_stdreg.d#1(5)} {v_out:rsc:mgc_out_stdreg.d#1(6)} {v_out:rsc:mgc_out_stdreg.d#1(7)} {v_out:rsc:mgc_out_stdreg.d#1(8)} {v_out:rsc:mgc_out_stdreg.d#1(9)} {v_out:rsc:mgc_out_stdreg.d#1(10)} {v_out:rsc:mgc_out_stdreg.d#1(11)} -attr xrf 9166 -attr oid 36 -attr vt d -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {X_pix:rsc.z(0)} -attr vt d
+load net {X_pix:rsc.z(1)} -attr vt d
+load net {X_pix:rsc.z(2)} -attr vt d
+load net {X_pix:rsc.z(3)} -attr vt d
+load net {X_pix:rsc.z(4)} -attr vt d
+load net {X_pix:rsc.z(5)} -attr vt d
+load net {X_pix:rsc.z(6)} -attr vt d
+load net {X_pix:rsc.z(7)} -attr vt d
+load net {X_pix:rsc.z(8)} -attr vt d
+load net {X_pix:rsc.z(9)} -attr vt d
+load net {X_pix:rsc.z(10)} -attr vt d
+load netBundle {X_pix:rsc.z} 11 {X_pix:rsc.z(0)} {X_pix:rsc.z(1)} {X_pix:rsc.z(2)} {X_pix:rsc.z(3)} {X_pix:rsc.z(4)} {X_pix:rsc.z(5)} {X_pix:rsc.z(6)} {X_pix:rsc.z(7)} {X_pix:rsc.z(8)} {X_pix:rsc.z(9)} {X_pix:rsc.z(10)} -attr xrf 9167 -attr oid 37 -attr vt d -attr @path {/Render/X_pix:rsc.z}
+load net {X_pix:rsc.z(0)} -port {X_pix:rsc.z(0)} -attr vt d
+load net {X_pix:rsc.z(1)} -port {X_pix:rsc.z(1)} -attr vt d
+load net {X_pix:rsc.z(2)} -port {X_pix:rsc.z(2)} -attr vt d
+load net {X_pix:rsc.z(3)} -port {X_pix:rsc.z(3)} -attr vt d
+load net {X_pix:rsc.z(4)} -port {X_pix:rsc.z(4)} -attr vt d
+load net {X_pix:rsc.z(5)} -port {X_pix:rsc.z(5)} -attr vt d
+load net {X_pix:rsc.z(6)} -port {X_pix:rsc.z(6)} -attr vt d
+load net {X_pix:rsc.z(7)} -port {X_pix:rsc.z(7)} -attr vt d
+load net {X_pix:rsc.z(8)} -port {X_pix:rsc.z(8)} -attr vt d
+load net {X_pix:rsc.z(9)} -port {X_pix:rsc.z(9)} -attr vt d
+load net {X_pix:rsc.z(10)} -port {X_pix:rsc.z(10)} -attr vt d
+load netBundle {X_pix:rsc.z} 11 {X_pix:rsc.z(0)} {X_pix:rsc.z(1)} {X_pix:rsc.z(2)} {X_pix:rsc.z(3)} {X_pix:rsc.z(4)} {X_pix:rsc.z(5)} {X_pix:rsc.z(6)} {X_pix:rsc.z(7)} {X_pix:rsc.z(8)} {X_pix:rsc.z(9)} {X_pix:rsc.z(10)} -attr xrf 9168 -attr oid 38 -attr vt d -attr @path {/Render/X_pix:rsc.z}
+load net {v_out:rsc.z(0)} -attr vt d
+load net {v_out:rsc.z(1)} -attr vt d
+load net {v_out:rsc.z(2)} -attr vt d
+load net {v_out:rsc.z(3)} -attr vt d
+load net {v_out:rsc.z(4)} -attr vt d
+load net {v_out:rsc.z(5)} -attr vt d
+load net {v_out:rsc.z(6)} -attr vt d
+load net {v_out:rsc.z(7)} -attr vt d
+load net {v_out:rsc.z(8)} -attr vt d
+load net {v_out:rsc.z(9)} -attr vt d
+load net {v_out:rsc.z(10)} -attr vt d
+load net {v_out:rsc.z(11)} -attr vt d
+load netBundle {v_out:rsc.z} 12 {v_out:rsc.z(0)} {v_out:rsc.z(1)} {v_out:rsc.z(2)} {v_out:rsc.z(3)} {v_out:rsc.z(4)} {v_out:rsc.z(5)} {v_out:rsc.z(6)} {v_out:rsc.z(7)} {v_out:rsc.z(8)} {v_out:rsc.z(9)} {v_out:rsc.z(10)} {v_out:rsc.z(11)} -attr xrf 9169 -attr oid 39 -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(0)} -port {v_out:rsc.z(0)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(1)} -port {v_out:rsc.z(1)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(2)} -port {v_out:rsc.z(2)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(3)} -port {v_out:rsc.z(3)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(4)} -port {v_out:rsc.z(4)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(5)} -port {v_out:rsc.z(5)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(6)} -port {v_out:rsc.z(6)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(7)} -port {v_out:rsc.z(7)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(8)} -port {v_out:rsc.z(8)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(9)} -port {v_out:rsc.z(9)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(10)} -port {v_out:rsc.z(10)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(11)} -port {v_out:rsc.z(11)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {clk} -attr xrf 9170 -attr oid 40
+load net {clk} -port {clk} -attr xrf 9171 -attr oid 41
+load net {rst} -attr xrf 9172 -attr oid 42
+load net {rst} -port {rst} -attr xrf 9173 -attr oid 43
+load inst "Render:core:inst" "Render:core" "orig" -attr xrf 9174 -attr oid 44 -attr vt dc -attr @path {/Render/Render:core:inst} -attr area 16.035076 -attr delay 0.368970 -attr hier "/Render/Render:core" -pg 1 -lvl 5
+load net {clk} -pin  "Render:core:inst" {clk#1} -attr xrf 9175 -attr oid 45 -attr @path {/Render/clk}
+load net {rst} -pin  "Render:core:inst" {rst#1} -attr xrf 9176 -attr oid 46 -attr @path {/Render/rst}
+load net {X_pix:rsc:mgc_in_wire.d#1(0)} -pin  "Render:core:inst" {X_pix:rsc:mgc_in_wire.d(0)} -attr vt dc -attr @path {/Render/X_pix:rsc:mgc_in_wire.d}
+load net {X_pix:rsc:mgc_in_wire.d#1(1)} -pin  "Render:core:inst" {X_pix:rsc:mgc_in_wire.d(1)} -attr vt dc -attr @path {/Render/X_pix:rsc:mgc_in_wire.d}
+load net {X_pix:rsc:mgc_in_wire.d#1(2)} -pin  "Render:core:inst" {X_pix:rsc:mgc_in_wire.d(2)} -attr vt dc -attr @path {/Render/X_pix:rsc:mgc_in_wire.d}
+load net {X_pix:rsc:mgc_in_wire.d#1(3)} -pin  "Render:core:inst" {X_pix:rsc:mgc_in_wire.d(3)} -attr vt dc -attr @path {/Render/X_pix:rsc:mgc_in_wire.d}
+load net {X_pix:rsc:mgc_in_wire.d#1(4)} -pin  "Render:core:inst" {X_pix:rsc:mgc_in_wire.d(4)} -attr vt dc -attr @path {/Render/X_pix:rsc:mgc_in_wire.d}
+load net {X_pix:rsc:mgc_in_wire.d#1(5)} -pin  "Render:core:inst" {X_pix:rsc:mgc_in_wire.d(5)} -attr vt dc -attr @path {/Render/X_pix:rsc:mgc_in_wire.d}
+load net {X_pix:rsc:mgc_in_wire.d#1(6)} -pin  "Render:core:inst" {X_pix:rsc:mgc_in_wire.d(6)} -attr vt dc -attr @path {/Render/X_pix:rsc:mgc_in_wire.d}
+load net {X_pix:rsc:mgc_in_wire.d#1(7)} -pin  "Render:core:inst" {X_pix:rsc:mgc_in_wire.d(7)} -attr vt dc -attr @path {/Render/X_pix:rsc:mgc_in_wire.d}
+load net {X_pix:rsc:mgc_in_wire.d#1(8)} -pin  "Render:core:inst" {X_pix:rsc:mgc_in_wire.d(8)} -attr vt dc -attr @path {/Render/X_pix:rsc:mgc_in_wire.d}
+load net {X_pix:rsc:mgc_in_wire.d#1(9)} -pin  "Render:core:inst" {X_pix:rsc:mgc_in_wire.d(9)} -attr vt dc -attr @path {/Render/X_pix:rsc:mgc_in_wire.d}
+load net {X_pix:rsc:mgc_in_wire.d#1(10)} -pin  "Render:core:inst" {X_pix:rsc:mgc_in_wire.d(10)} -attr vt dc -attr @path {/Render/X_pix:rsc:mgc_in_wire.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(0)} -pin  "Render:core:inst" {v_out:rsc:mgc_out_stdreg.d(0)} -attr vt dc -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(1)} -pin  "Render:core:inst" {v_out:rsc:mgc_out_stdreg.d(1)} -attr vt dc -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(2)} -pin  "Render:core:inst" {v_out:rsc:mgc_out_stdreg.d(2)} -attr vt dc -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(3)} -pin  "Render:core:inst" {v_out:rsc:mgc_out_stdreg.d(3)} -attr vt dc -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(4)} -pin  "Render:core:inst" {v_out:rsc:mgc_out_stdreg.d(4)} -attr vt dc -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(5)} -pin  "Render:core:inst" {v_out:rsc:mgc_out_stdreg.d(5)} -attr vt dc -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(6)} -pin  "Render:core:inst" {v_out:rsc:mgc_out_stdreg.d(6)} -attr vt dc -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(7)} -pin  "Render:core:inst" {v_out:rsc:mgc_out_stdreg.d(7)} -attr vt dc -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(8)} -pin  "Render:core:inst" {v_out:rsc:mgc_out_stdreg.d(8)} -attr vt dc -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(9)} -pin  "Render:core:inst" {v_out:rsc:mgc_out_stdreg.d(9)} -attr vt dc -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(10)} -pin  "Render:core:inst" {v_out:rsc:mgc_out_stdreg.d(10)} -attr vt dc -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(11)} -pin  "Render:core:inst" {v_out:rsc:mgc_out_stdreg.d(11)} -attr vt dc -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load inst "X_pix:rsc:mgc_in_wire" "mgc_ioport.mgc_in_wire(1,11)" "INTERFACE" -attr xrf 9177 -attr oid 47 -attr vt d -attr @path {/Render/X_pix:rsc:mgc_in_wire} -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_ioport.mgc_in_wire(1,11)" -pg 1 -lvl 1
+load net {X_pix:rsc:mgc_in_wire.d#1(0)} -pin  "X_pix:rsc:mgc_in_wire" {d(0)} -attr vt d -attr @path {/Render/X_pix:rsc:mgc_in_wire.d}
+load net {X_pix:rsc:mgc_in_wire.d#1(1)} -pin  "X_pix:rsc:mgc_in_wire" {d(1)} -attr vt d -attr @path {/Render/X_pix:rsc:mgc_in_wire.d}
+load net {X_pix:rsc:mgc_in_wire.d#1(2)} -pin  "X_pix:rsc:mgc_in_wire" {d(2)} -attr vt d -attr @path {/Render/X_pix:rsc:mgc_in_wire.d}
+load net {X_pix:rsc:mgc_in_wire.d#1(3)} -pin  "X_pix:rsc:mgc_in_wire" {d(3)} -attr vt d -attr @path {/Render/X_pix:rsc:mgc_in_wire.d}
+load net {X_pix:rsc:mgc_in_wire.d#1(4)} -pin  "X_pix:rsc:mgc_in_wire" {d(4)} -attr vt d -attr @path {/Render/X_pix:rsc:mgc_in_wire.d}
+load net {X_pix:rsc:mgc_in_wire.d#1(5)} -pin  "X_pix:rsc:mgc_in_wire" {d(5)} -attr vt d -attr @path {/Render/X_pix:rsc:mgc_in_wire.d}
+load net {X_pix:rsc:mgc_in_wire.d#1(6)} -pin  "X_pix:rsc:mgc_in_wire" {d(6)} -attr vt d -attr @path {/Render/X_pix:rsc:mgc_in_wire.d}
+load net {X_pix:rsc:mgc_in_wire.d#1(7)} -pin  "X_pix:rsc:mgc_in_wire" {d(7)} -attr vt d -attr @path {/Render/X_pix:rsc:mgc_in_wire.d}
+load net {X_pix:rsc:mgc_in_wire.d#1(8)} -pin  "X_pix:rsc:mgc_in_wire" {d(8)} -attr vt d -attr @path {/Render/X_pix:rsc:mgc_in_wire.d}
+load net {X_pix:rsc:mgc_in_wire.d#1(9)} -pin  "X_pix:rsc:mgc_in_wire" {d(9)} -attr vt d -attr @path {/Render/X_pix:rsc:mgc_in_wire.d}
+load net {X_pix:rsc:mgc_in_wire.d#1(10)} -pin  "X_pix:rsc:mgc_in_wire" {d(10)} -attr vt d -attr @path {/Render/X_pix:rsc:mgc_in_wire.d}
+load net {X_pix:rsc.z(0)} -pin  "X_pix:rsc:mgc_in_wire" {z(0)} -attr vt d -attr @path {/Render/X_pix:rsc.z}
+load net {X_pix:rsc.z(1)} -pin  "X_pix:rsc:mgc_in_wire" {z(1)} -attr vt d -attr @path {/Render/X_pix:rsc.z}
+load net {X_pix:rsc.z(2)} -pin  "X_pix:rsc:mgc_in_wire" {z(2)} -attr vt d -attr @path {/Render/X_pix:rsc.z}
+load net {X_pix:rsc.z(3)} -pin  "X_pix:rsc:mgc_in_wire" {z(3)} -attr vt d -attr @path {/Render/X_pix:rsc.z}
+load net {X_pix:rsc.z(4)} -pin  "X_pix:rsc:mgc_in_wire" {z(4)} -attr vt d -attr @path {/Render/X_pix:rsc.z}
+load net {X_pix:rsc.z(5)} -pin  "X_pix:rsc:mgc_in_wire" {z(5)} -attr vt d -attr @path {/Render/X_pix:rsc.z}
+load net {X_pix:rsc.z(6)} -pin  "X_pix:rsc:mgc_in_wire" {z(6)} -attr vt d -attr @path {/Render/X_pix:rsc.z}
+load net {X_pix:rsc.z(7)} -pin  "X_pix:rsc:mgc_in_wire" {z(7)} -attr vt d -attr @path {/Render/X_pix:rsc.z}
+load net {X_pix:rsc.z(8)} -pin  "X_pix:rsc:mgc_in_wire" {z(8)} -attr vt d -attr @path {/Render/X_pix:rsc.z}
+load net {X_pix:rsc.z(9)} -pin  "X_pix:rsc:mgc_in_wire" {z(9)} -attr vt d -attr @path {/Render/X_pix:rsc.z}
+load net {X_pix:rsc.z(10)} -pin  "X_pix:rsc:mgc_in_wire" {z(10)} -attr vt d -attr @path {/Render/X_pix:rsc.z}
+load inst "v_out:rsc:mgc_out_stdreg" "mgc_ioport.mgc_out_stdreg(3,12)" "INTERFACE" -attr xrf 9178 -attr oid 48 -attr vt d -attr @path {/Render/v_out:rsc:mgc_out_stdreg} -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_ioport.mgc_out_stdreg(3,12)" -pg 1 -lvl 1002
+load net {v_out:rsc:mgc_out_stdreg.d#1(0)} -pin  "v_out:rsc:mgc_out_stdreg" {d(0)} -attr vt d -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(1)} -pin  "v_out:rsc:mgc_out_stdreg" {d(1)} -attr vt d -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(2)} -pin  "v_out:rsc:mgc_out_stdreg" {d(2)} -attr vt d -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(3)} -pin  "v_out:rsc:mgc_out_stdreg" {d(3)} -attr vt d -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(4)} -pin  "v_out:rsc:mgc_out_stdreg" {d(4)} -attr vt d -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(5)} -pin  "v_out:rsc:mgc_out_stdreg" {d(5)} -attr vt d -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(6)} -pin  "v_out:rsc:mgc_out_stdreg" {d(6)} -attr vt d -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(7)} -pin  "v_out:rsc:mgc_out_stdreg" {d(7)} -attr vt d -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(8)} -pin  "v_out:rsc:mgc_out_stdreg" {d(8)} -attr vt d -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(9)} -pin  "v_out:rsc:mgc_out_stdreg" {d(9)} -attr vt d -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(10)} -pin  "v_out:rsc:mgc_out_stdreg" {d(10)} -attr vt d -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(11)} -pin  "v_out:rsc:mgc_out_stdreg" {d(11)} -attr vt d -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc.z(0)} -pin  "v_out:rsc:mgc_out_stdreg" {z(0)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(1)} -pin  "v_out:rsc:mgc_out_stdreg" {z(1)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(2)} -pin  "v_out:rsc:mgc_out_stdreg" {z(2)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(3)} -pin  "v_out:rsc:mgc_out_stdreg" {z(3)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(4)} -pin  "v_out:rsc:mgc_out_stdreg" {z(4)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(5)} -pin  "v_out:rsc:mgc_out_stdreg" {z(5)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(6)} -pin  "v_out:rsc:mgc_out_stdreg" {z(6)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(7)} -pin  "v_out:rsc:mgc_out_stdreg" {z(7)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(8)} -pin  "v_out:rsc:mgc_out_stdreg" {z(8)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(9)} -pin  "v_out:rsc:mgc_out_stdreg" {z(9)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(10)} -pin  "v_out:rsc:mgc_out_stdreg" {z(10)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(11)} -pin  "v_out:rsc:mgc_out_stdreg" {z(11)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+### END MODULE 
+
