@@ -1,0 +1,5 @@
+
+State Machine - |quartus|Render:inst|Render_core:Render_core_inst|Render_core_fsm:Render_core_fsm_inst|state_var
+Name state_var.st_main_1 
+state_var.st_main 0 
+state_var.st_main_1 1 

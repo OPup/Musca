@@ -1,0 +1,78 @@
+
+# Program: Catapult University Version
+# Version: 2011a.126
+#    File: Nlview netlist
+
+module new "Render:core" "orig"
+load port {clk} input -attr xrf 401 -attr oid 1 -attr vt d -attr @path {/Render/Render:core/clk}
+load port {rst} input -attr xrf 402 -attr oid 2 -attr vt d -attr @path {/Render/Render:core/rst}
+load net {clk} -attr xrf 403 -attr oid 3
+load net {clk} -port {clk} -attr xrf 404 -attr oid 4
+load net {rst} -attr xrf 405 -attr oid 5
+load net {rst} -port {rst} -attr xrf 406 -attr oid 6
+### END MODULE 
+
+module new "Render" "v1"
+load portBus {v_out:rsc.z(11:0)} output 12 {v_out:rsc.z(11)} {v_out:rsc.z(10)} {v_out:rsc.z(9)} {v_out:rsc.z(8)} {v_out:rsc.z(7)} {v_out:rsc.z(6)} {v_out:rsc.z(5)} {v_out:rsc.z(4)} {v_out:rsc.z(3)} {v_out:rsc.z(2)} {v_out:rsc.z(1)} {v_out:rsc.z(0)} -attr xrf 407 -attr oid 7 -attr vt d -attr @path {/Render/v_out:rsc.z}
+load port {clk} input -attr xrf 408 -attr oid 8 -attr vt d -attr @path {/Render/clk}
+load port {rst} input -attr xrf 409 -attr oid 9 -attr vt d -attr @path {/Render/rst}
+load symbol "mgc_ioport.mgc_out_stdreg(1,12)" "INTERFACE" GEN boxcolor 0 \
+     portBus {d(11:0)} input 12 {d(11)} {d(10)} {d(9)} {d(8)} {d(7)} {d(6)} {d(5)} {d(4)} {d(3)} {d(2)} {d(1)} {d(0)} \
+     portBus {z(11:0)} output 12 {z(11)} {z(10)} {z(9)} {z(8)} {z(7)} {z(6)} {z(5)} {z(4)} {z(3)} {z(2)} {z(1)} {z(0)} \
+
+load net {v_out:rsc.z(0)} -attr vt d
+load net {v_out:rsc.z(1)} -attr vt d
+load net {v_out:rsc.z(2)} -attr vt d
+load net {v_out:rsc.z(3)} -attr vt d
+load net {v_out:rsc.z(4)} -attr vt d
+load net {v_out:rsc.z(5)} -attr vt d
+load net {v_out:rsc.z(6)} -attr vt d
+load net {v_out:rsc.z(7)} -attr vt d
+load net {v_out:rsc.z(8)} -attr vt d
+load net {v_out:rsc.z(9)} -attr vt d
+load net {v_out:rsc.z(10)} -attr vt d
+load net {v_out:rsc.z(11)} -attr vt d
+load netBundle {v_out:rsc.z} 12 {v_out:rsc.z(0)} {v_out:rsc.z(1)} {v_out:rsc.z(2)} {v_out:rsc.z(3)} {v_out:rsc.z(4)} {v_out:rsc.z(5)} {v_out:rsc.z(6)} {v_out:rsc.z(7)} {v_out:rsc.z(8)} {v_out:rsc.z(9)} {v_out:rsc.z(10)} {v_out:rsc.z(11)} -attr xrf 410 -attr oid 10 -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(0)} -port {v_out:rsc.z(0)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(1)} -port {v_out:rsc.z(1)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(2)} -port {v_out:rsc.z(2)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(3)} -port {v_out:rsc.z(3)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(4)} -port {v_out:rsc.z(4)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(5)} -port {v_out:rsc.z(5)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(6)} -port {v_out:rsc.z(6)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(7)} -port {v_out:rsc.z(7)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(8)} -port {v_out:rsc.z(8)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(9)} -port {v_out:rsc.z(9)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(10)} -port {v_out:rsc.z(10)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(11)} -port {v_out:rsc.z(11)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {clk} -attr xrf 411 -attr oid 11
+load net {clk} -port {clk} -attr xrf 412 -attr oid 12
+load net {rst} -attr xrf 413 -attr oid 13
+load net {rst} -port {rst} -attr xrf 414 -attr oid 14
+load inst "v_out:rsc:mgc_out_stdreg" "mgc_ioport.mgc_out_stdreg(1,12)" "INTERFACE" -attr xrf 415 -attr oid 15 -attr vt d -attr @path {/Render/v_out:rsc:mgc_out_stdreg} -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_ioport.mgc_out_stdreg(1,12)" -pg 1 -lvl 1002
+load net {GND} -pin  "v_out:rsc:mgc_out_stdreg" {d(0)} -attr @path {/Render/C240_12#1}
+load net {GND} -pin  "v_out:rsc:mgc_out_stdreg" {d(1)} -attr @path {/Render/C240_12#1}
+load net {GND} -pin  "v_out:rsc:mgc_out_stdreg" {d(2)} -attr @path {/Render/C240_12#1}
+load net {GND} -pin  "v_out:rsc:mgc_out_stdreg" {d(3)} -attr @path {/Render/C240_12#1}
+load net {PWR} -pin  "v_out:rsc:mgc_out_stdreg" {d(4)} -attr @path {/Render/C240_12#1}
+load net {PWR} -pin  "v_out:rsc:mgc_out_stdreg" {d(5)} -attr @path {/Render/C240_12#1}
+load net {PWR} -pin  "v_out:rsc:mgc_out_stdreg" {d(6)} -attr @path {/Render/C240_12#1}
+load net {PWR} -pin  "v_out:rsc:mgc_out_stdreg" {d(7)} -attr @path {/Render/C240_12#1}
+load net {GND} -pin  "v_out:rsc:mgc_out_stdreg" {d(8)} -attr @path {/Render/C240_12#1}
+load net {GND} -pin  "v_out:rsc:mgc_out_stdreg" {d(9)} -attr @path {/Render/C240_12#1}
+load net {GND} -pin  "v_out:rsc:mgc_out_stdreg" {d(10)} -attr @path {/Render/C240_12#1}
+load net {GND} -pin  "v_out:rsc:mgc_out_stdreg" {d(11)} -attr @path {/Render/C240_12#1}
+load net {v_out:rsc.z(0)} -pin  "v_out:rsc:mgc_out_stdreg" {z(0)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(1)} -pin  "v_out:rsc:mgc_out_stdreg" {z(1)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(2)} -pin  "v_out:rsc:mgc_out_stdreg" {z(2)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(3)} -pin  "v_out:rsc:mgc_out_stdreg" {z(3)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(4)} -pin  "v_out:rsc:mgc_out_stdreg" {z(4)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(5)} -pin  "v_out:rsc:mgc_out_stdreg" {z(5)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(6)} -pin  "v_out:rsc:mgc_out_stdreg" {z(6)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(7)} -pin  "v_out:rsc:mgc_out_stdreg" {z(7)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(8)} -pin  "v_out:rsc:mgc_out_stdreg" {z(8)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(9)} -pin  "v_out:rsc:mgc_out_stdreg" {z(9)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(10)} -pin  "v_out:rsc:mgc_out_stdreg" {z(10)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(11)} -pin  "v_out:rsc:mgc_out_stdreg" {z(11)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+### END MODULE 
+

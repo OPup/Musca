@@ -1,0 +1,1021 @@
+
+# Program: Catapult University Version
+# Version: 2011a.126
+#    File: Nlview netlist
+
+module new "Render:core" "orig"
+load port {clk} input -attr xrf 7693 -attr oid 1 -attr vt d -attr @path {/Render/Render:core/clk}
+load port {rst} input -attr xrf 7694 -attr oid 2 -attr vt d -attr @path {/Render/Render:core/rst}
+load portBus {v_out:rsc:mgc_out_stdreg.d(11:0)} output 12 {v_out:rsc:mgc_out_stdreg.d(11)} {v_out:rsc:mgc_out_stdreg.d(10)} {v_out:rsc:mgc_out_stdreg.d(9)} {v_out:rsc:mgc_out_stdreg.d(8)} {v_out:rsc:mgc_out_stdreg.d(7)} {v_out:rsc:mgc_out_stdreg.d(6)} {v_out:rsc:mgc_out_stdreg.d(5)} {v_out:rsc:mgc_out_stdreg.d(4)} {v_out:rsc:mgc_out_stdreg.d(3)} {v_out:rsc:mgc_out_stdreg.d(2)} {v_out:rsc:mgc_out_stdreg.d(1)} {v_out:rsc:mgc_out_stdreg.d(0)} -attr xrf 7695 -attr oid 3 -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load symbol "add(4,-1,4,-1,4)" "INTERFACE" RTL(+) boxcolor 0 \
+     portBus {A(3:0)} input 4 {A(3)} {A(2)} {A(1)} {A(0)} \
+     portBus {B(3:0)} input 4 {B(3)} {B(2)} {B(1)} {B(0)} \
+     portBus {Z(3:0)} output 4 {Z(3)} {Z(2)} {Z(1)} {Z(0)} \
+
+load symbol "mux(2,1)" "INTERFACE" MUX boxcolor 0 \
+     portBus {A0(0:0)} input 1 {A0(0)} \
+     portBus {A1(0:0)} input 1 {A1(0)} \
+     portBus {S(0:0)} input.top 1 {S(0)} \
+     portBus {Z(0:0)} output 1 {Z(0)} \
+
+load symbol "reg(1,1,0,0,1)" "INTERFACE" GEN boxcolor 1 \
+     portBus {D(0:0)} input 1 {D(0)} \
+     portBus {DRs(0:0)} input 1 {DRs(0)} \
+     port {clk} input.clk \
+     portBus {Rs(0:0)} input 1 {Rs(0)} \
+     portBus {Z(0:0)} output 1 {Z(0)} \
+
+load symbol "not(1)" "INTERFACE" INV boxcolor 0 \
+     portBus {A(0:0)} input 1 {A(0)} \
+     portBus {Z(0:0)} output 1 {Z(0)} \
+
+load symbol "and(2,21)" "INTERFACE" AND boxcolor 0 \
+     portBus {A0(20:0)} input 21 {A0(20)} {A0(19)} {A0(18)} {A0(17)} {A0(16)} {A0(15)} {A0(14)} {A0(13)} {A0(12)} {A0(11)} {A0(10)} {A0(9)} {A0(8)} {A0(7)} {A0(6)} {A0(5)} {A0(4)} {A0(3)} {A0(2)} {A0(1)} {A0(0)} \
+     portBus {A1(20:0)} input 21 {A1(20)} {A1(19)} {A1(18)} {A1(17)} {A1(16)} {A1(15)} {A1(14)} {A1(13)} {A1(12)} {A1(11)} {A1(10)} {A1(9)} {A1(8)} {A1(7)} {A1(6)} {A1(5)} {A1(4)} {A1(3)} {A1(2)} {A1(1)} {A1(0)} \
+     portBus {Z(20:0)} output 21 {Z(20)} {Z(19)} {Z(18)} {Z(17)} {Z(16)} {Z(15)} {Z(14)} {Z(13)} {Z(12)} {Z(11)} {Z(10)} {Z(9)} {Z(8)} {Z(7)} {Z(6)} {Z(5)} {Z(4)} {Z(3)} {Z(2)} {Z(1)} {Z(0)} \
+
+load symbol "mux(2,21)" "INTERFACE" MUX boxcolor 0 \
+     portBus {A0(20:0)} input 21 {A0(20)} {A0(19)} {A0(18)} {A0(17)} {A0(16)} {A0(15)} {A0(14)} {A0(13)} {A0(12)} {A0(11)} {A0(10)} {A0(9)} {A0(8)} {A0(7)} {A0(6)} {A0(5)} {A0(4)} {A0(3)} {A0(2)} {A0(1)} {A0(0)} \
+     portBus {A1(20:0)} input 21 {A1(20)} {A1(19)} {A1(18)} {A1(17)} {A1(16)} {A1(15)} {A1(14)} {A1(13)} {A1(12)} {A1(11)} {A1(10)} {A1(9)} {A1(8)} {A1(7)} {A1(6)} {A1(5)} {A1(4)} {A1(3)} {A1(2)} {A1(1)} {A1(0)} \
+     portBus {S(0:0)} input.top 1 {S(0)} \
+     portBus {Z(20:0)} output 21 {Z(20)} {Z(19)} {Z(18)} {Z(17)} {Z(16)} {Z(15)} {Z(14)} {Z(13)} {Z(12)} {Z(11)} {Z(10)} {Z(9)} {Z(8)} {Z(7)} {Z(6)} {Z(5)} {Z(4)} {Z(3)} {Z(2)} {Z(1)} {Z(0)} \
+
+load symbol "reg(21,1,0,0,1)" "INTERFACE" GEN boxcolor 1 \
+     portBus {D(20:0)} input 21 {D(20)} {D(19)} {D(18)} {D(17)} {D(16)} {D(15)} {D(14)} {D(13)} {D(12)} {D(11)} {D(10)} {D(9)} {D(8)} {D(7)} {D(6)} {D(5)} {D(4)} {D(3)} {D(2)} {D(1)} {D(0)} \
+     portBus {DRs(20:0)} input 21 {DRs(20)} {DRs(19)} {DRs(18)} {DRs(17)} {DRs(16)} {DRs(15)} {DRs(14)} {DRs(13)} {DRs(12)} {DRs(11)} {DRs(10)} {DRs(9)} {DRs(8)} {DRs(7)} {DRs(6)} {DRs(5)} {DRs(4)} {DRs(3)} {DRs(2)} {DRs(1)} {DRs(0)} \
+     port {clk} input.clk \
+     portBus {Rs(0:0)} input 1 {Rs(0)} \
+     portBus {Z(20:0)} output 21 {Z(20)} {Z(19)} {Z(18)} {Z(17)} {Z(16)} {Z(15)} {Z(14)} {Z(13)} {Z(12)} {Z(11)} {Z(10)} {Z(9)} {Z(8)} {Z(7)} {Z(6)} {Z(5)} {Z(4)} {Z(3)} {Z(2)} {Z(1)} {Z(0)} \
+
+load symbol "add(3,0,4,-1,4)" "INTERFACE" RTL(+) boxcolor 0 \
+     portBus {A(2:0)} input 3 {A(2)} {A(1)} {A(0)} \
+     portBus {B(3:0)} input 4 {B(3)} {B(2)} {B(1)} {B(0)} \
+     portBus {Z(3:0)} output 4 {Z(3)} {Z(2)} {Z(1)} {Z(0)} \
+
+load symbol "and(2,1)" "INTERFACE" AND boxcolor 0 \
+     portBus {A0(0:0)} input 1 {A0(0)} \
+     portBus {A1(0:0)} input 1 {A1(0)} \
+     portBus {Z(0:0)} output 1 {Z(0)} \
+
+load symbol "add(21,-1,1,0,21)" "INTERFACE" RTL(+) boxcolor 0 \
+     portBus {A(20:0)} input 21 {A(20)} {A(19)} {A(18)} {A(17)} {A(16)} {A(15)} {A(14)} {A(13)} {A(12)} {A(11)} {A(10)} {A(9)} {A(8)} {A(7)} {A(6)} {A(5)} {A(4)} {A(3)} {A(2)} {A(1)} {A(0)} \
+     portBus {B(0:0)} input 1 {B(0)} \
+     portBus {Z(20:0)} output 21 {Z(20)} {Z(19)} {Z(18)} {Z(17)} {Z(16)} {Z(15)} {Z(14)} {Z(13)} {Z(12)} {Z(11)} {Z(10)} {Z(9)} {Z(8)} {Z(7)} {Z(6)} {Z(5)} {Z(4)} {Z(3)} {Z(2)} {Z(1)} {Z(0)} \
+
+load symbol "or(2,1)" "INTERFACE" OR boxcolor 0 \
+     portBus {A0(0:0)} input 1 {A0(0)} \
+     portBus {A1(0:0)} input 1 {A1(0)} \
+     portBus {Z(0:0)} output 1 {Z(0)} \
+
+load net {for:i#2.lpi(0)} -attr vt d
+load net {for:i#2.lpi(1)} -attr vt d
+load net {for:i#2.lpi(2)} -attr vt d
+load net {for:i#2.lpi(3)} -attr vt d
+load net {for:i#2.lpi(4)} -attr vt d
+load net {for:i#2.lpi(5)} -attr vt d
+load net {for:i#2.lpi(6)} -attr vt d
+load net {for:i#2.lpi(7)} -attr vt d
+load net {for:i#2.lpi(8)} -attr vt d
+load net {for:i#2.lpi(9)} -attr vt d
+load net {for:i#2.lpi(10)} -attr vt d
+load net {for:i#2.lpi(11)} -attr vt d
+load net {for:i#2.lpi(12)} -attr vt d
+load net {for:i#2.lpi(13)} -attr vt d
+load net {for:i#2.lpi(14)} -attr vt d
+load net {for:i#2.lpi(15)} -attr vt d
+load net {for:i#2.lpi(16)} -attr vt d
+load net {for:i#2.lpi(17)} -attr vt d
+load net {for:i#2.lpi(18)} -attr vt d
+load net {for:i#2.lpi(19)} -attr vt d
+load net {for:i#2.lpi(20)} -attr vt d
+load netBundle {for:i#2.lpi} 21 {for:i#2.lpi(0)} {for:i#2.lpi(1)} {for:i#2.lpi(2)} {for:i#2.lpi(3)} {for:i#2.lpi(4)} {for:i#2.lpi(5)} {for:i#2.lpi(6)} {for:i#2.lpi(7)} {for:i#2.lpi(8)} {for:i#2.lpi(9)} {for:i#2.lpi(10)} {for:i#2.lpi(11)} {for:i#2.lpi(12)} {for:i#2.lpi(13)} {for:i#2.lpi(14)} {for:i#2.lpi(15)} {for:i#2.lpi(16)} {for:i#2.lpi(17)} {for:i#2.lpi(18)} {for:i#2.lpi(19)} {for:i#2.lpi(20)} -attr xrf 7696 -attr oid 4 -attr vt d -attr @path {/Render/Render:core/for:i#2.lpi}
+load net {for:i#1.lpi(0)} -attr vt d
+load net {for:i#1.lpi(1)} -attr vt d
+load net {for:i#1.lpi(2)} -attr vt d
+load net {for:i#1.lpi(3)} -attr vt d
+load net {for:i#1.lpi(4)} -attr vt d
+load net {for:i#1.lpi(5)} -attr vt d
+load net {for:i#1.lpi(6)} -attr vt d
+load net {for:i#1.lpi(7)} -attr vt d
+load net {for:i#1.lpi(8)} -attr vt d
+load net {for:i#1.lpi(9)} -attr vt d
+load net {for:i#1.lpi(10)} -attr vt d
+load net {for:i#1.lpi(11)} -attr vt d
+load net {for:i#1.lpi(12)} -attr vt d
+load net {for:i#1.lpi(13)} -attr vt d
+load net {for:i#1.lpi(14)} -attr vt d
+load net {for:i#1.lpi(15)} -attr vt d
+load net {for:i#1.lpi(16)} -attr vt d
+load net {for:i#1.lpi(17)} -attr vt d
+load net {for:i#1.lpi(18)} -attr vt d
+load net {for:i#1.lpi(19)} -attr vt d
+load net {for:i#1.lpi(20)} -attr vt d
+load netBundle {for:i#1.lpi} 21 {for:i#1.lpi(0)} {for:i#1.lpi(1)} {for:i#1.lpi(2)} {for:i#1.lpi(3)} {for:i#1.lpi(4)} {for:i#1.lpi(5)} {for:i#1.lpi(6)} {for:i#1.lpi(7)} {for:i#1.lpi(8)} {for:i#1.lpi(9)} {for:i#1.lpi(10)} {for:i#1.lpi(11)} {for:i#1.lpi(12)} {for:i#1.lpi(13)} {for:i#1.lpi(14)} {for:i#1.lpi(15)} {for:i#1.lpi(16)} {for:i#1.lpi(17)} {for:i#1.lpi(18)} {for:i#1.lpi(19)} {for:i#1.lpi(20)} -attr xrf 7697 -attr oid 5 -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.sva(0)} -attr vt d
+load net {for:i#1.sva(1)} -attr vt d
+load net {for:i#1.sva(2)} -attr vt d
+load net {for:i#1.sva(3)} -attr vt d
+load net {for:i#1.sva(4)} -attr vt d
+load net {for:i#1.sva(5)} -attr vt d
+load net {for:i#1.sva(6)} -attr vt d
+load net {for:i#1.sva(7)} -attr vt d
+load net {for:i#1.sva(8)} -attr vt d
+load net {for:i#1.sva(9)} -attr vt d
+load net {for:i#1.sva(10)} -attr vt d
+load net {for:i#1.sva(11)} -attr vt d
+load net {for:i#1.sva(12)} -attr vt d
+load net {for:i#1.sva(13)} -attr vt d
+load net {for:i#1.sva(14)} -attr vt d
+load net {for:i#1.sva(15)} -attr vt d
+load net {for:i#1.sva(16)} -attr vt d
+load net {for:i#1.sva(17)} -attr vt d
+load net {for:i#1.sva(18)} -attr vt d
+load net {for:i#1.sva(19)} -attr vt d
+load net {for:i#1.sva(20)} -attr vt d
+load netBundle {for:i#1.sva} 21 {for:i#1.sva(0)} {for:i#1.sva(1)} {for:i#1.sva(2)} {for:i#1.sva(3)} {for:i#1.sva(4)} {for:i#1.sva(5)} {for:i#1.sva(6)} {for:i#1.sva(7)} {for:i#1.sva(8)} {for:i#1.sva(9)} {for:i#1.sva(10)} {for:i#1.sva(11)} {for:i#1.sva(12)} {for:i#1.sva(13)} {for:i#1.sva(14)} {for:i#1.sva(15)} {for:i#1.sva(16)} {for:i#1.sva(17)} {for:i#1.sva(18)} {for:i#1.sva(19)} {for:i#1.sva(20)} -attr xrf 7698 -attr oid 6 -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load net {for:i#2.lpi.dfm(0)} -attr vt d
+load net {for:i#2.lpi.dfm(1)} -attr vt d
+load net {for:i#2.lpi.dfm(2)} -attr vt d
+load net {for:i#2.lpi.dfm(3)} -attr vt d
+load net {for:i#2.lpi.dfm(4)} -attr vt d
+load net {for:i#2.lpi.dfm(5)} -attr vt d
+load net {for:i#2.lpi.dfm(6)} -attr vt d
+load net {for:i#2.lpi.dfm(7)} -attr vt d
+load net {for:i#2.lpi.dfm(8)} -attr vt d
+load net {for:i#2.lpi.dfm(9)} -attr vt d
+load net {for:i#2.lpi.dfm(10)} -attr vt d
+load net {for:i#2.lpi.dfm(11)} -attr vt d
+load net {for:i#2.lpi.dfm(12)} -attr vt d
+load net {for:i#2.lpi.dfm(13)} -attr vt d
+load net {for:i#2.lpi.dfm(14)} -attr vt d
+load net {for:i#2.lpi.dfm(15)} -attr vt d
+load net {for:i#2.lpi.dfm(16)} -attr vt d
+load net {for:i#2.lpi.dfm(17)} -attr vt d
+load net {for:i#2.lpi.dfm(18)} -attr vt d
+load net {for:i#2.lpi.dfm(19)} -attr vt d
+load net {for:i#2.lpi.dfm(20)} -attr vt d
+load netBundle {for:i#2.lpi.dfm} 21 {for:i#2.lpi.dfm(0)} {for:i#2.lpi.dfm(1)} {for:i#2.lpi.dfm(2)} {for:i#2.lpi.dfm(3)} {for:i#2.lpi.dfm(4)} {for:i#2.lpi.dfm(5)} {for:i#2.lpi.dfm(6)} {for:i#2.lpi.dfm(7)} {for:i#2.lpi.dfm(8)} {for:i#2.lpi.dfm(9)} {for:i#2.lpi.dfm(10)} {for:i#2.lpi.dfm(11)} {for:i#2.lpi.dfm(12)} {for:i#2.lpi.dfm(13)} {for:i#2.lpi.dfm(14)} {for:i#2.lpi.dfm(15)} {for:i#2.lpi.dfm(16)} {for:i#2.lpi.dfm(17)} {for:i#2.lpi.dfm(18)} {for:i#2.lpi.dfm(19)} {for:i#2.lpi.dfm(20)} -attr xrf 7699 -attr oid 7 -attr vt d -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.sva#1(0)} -attr vt d
+load net {for:i#2.sva#1(1)} -attr vt d
+load net {for:i#2.sva#1(2)} -attr vt d
+load net {for:i#2.sva#1(3)} -attr vt d
+load net {for:i#2.sva#1(4)} -attr vt d
+load net {for:i#2.sva#1(5)} -attr vt d
+load net {for:i#2.sva#1(6)} -attr vt d
+load net {for:i#2.sva#1(7)} -attr vt d
+load net {for:i#2.sva#1(8)} -attr vt d
+load net {for:i#2.sva#1(9)} -attr vt d
+load net {for:i#2.sva#1(10)} -attr vt d
+load net {for:i#2.sva#1(11)} -attr vt d
+load net {for:i#2.sva#1(12)} -attr vt d
+load net {for:i#2.sva#1(13)} -attr vt d
+load net {for:i#2.sva#1(14)} -attr vt d
+load net {for:i#2.sva#1(15)} -attr vt d
+load net {for:i#2.sva#1(16)} -attr vt d
+load net {for:i#2.sva#1(17)} -attr vt d
+load net {for:i#2.sva#1(18)} -attr vt d
+load net {for:i#2.sva#1(19)} -attr vt d
+load net {for:i#2.sva#1(20)} -attr vt d
+load netBundle {for:i#2.sva#1} 21 {for:i#2.sva#1(0)} {for:i#2.sva#1(1)} {for:i#2.sva#1(2)} {for:i#2.sva#1(3)} {for:i#2.sva#1(4)} {for:i#2.sva#1(5)} {for:i#2.sva#1(6)} {for:i#2.sva#1(7)} {for:i#2.sva#1(8)} {for:i#2.sva#1(9)} {for:i#2.sva#1(10)} {for:i#2.sva#1(11)} {for:i#2.sva#1(12)} {for:i#2.sva#1(13)} {for:i#2.sva#1(14)} {for:i#2.sva#1(15)} {for:i#2.sva#1(16)} {for:i#2.sva#1(17)} {for:i#2.sva#1(18)} {for:i#2.sva#1(19)} {for:i#2.sva#1(20)} -attr xrf 7700 -attr oid 8 -attr vt d -attr @path {/Render/Render:core/for:i#2.sva#1}
+load net {slc(for:i#2.lpi.dfm).itm(0)} -attr vt d
+load net {slc(for:i#2.lpi.dfm).itm(1)} -attr vt d
+load net {slc(for:i#2.lpi.dfm).itm(2)} -attr vt d
+load net {slc(for:i#2.lpi.dfm).itm(3)} -attr vt d
+load netBundle {slc(for:i#2.lpi.dfm).itm} 4 {slc(for:i#2.lpi.dfm).itm(0)} {slc(for:i#2.lpi.dfm).itm(1)} {slc(for:i#2.lpi.dfm).itm(2)} {slc(for:i#2.lpi.dfm).itm(3)} -attr xrf 7701 -attr oid 9 -attr vt d -attr @path {/Render/Render:core/slc(for:i#2.lpi.dfm).itm}
+load net {slc(for:i#1.lpi).itm(0)} -attr vt d
+load net {slc(for:i#1.lpi).itm(1)} -attr vt d
+load net {slc(for:i#1.lpi).itm(2)} -attr vt d
+load net {slc(for:i#1.lpi).itm(3)} -attr vt d
+load netBundle {slc(for:i#1.lpi).itm} 4 {slc(for:i#1.lpi).itm(0)} {slc(for:i#1.lpi).itm(1)} {slc(for:i#1.lpi).itm(2)} {slc(for:i#1.lpi).itm(3)} -attr xrf 7702 -attr oid 10 -attr vt d -attr @path {/Render/Render:core/slc(for:i#1.lpi).itm}
+load net {mux#1.itm(0)} -attr vt d
+load net {mux#1.itm(1)} -attr vt d
+load net {mux#1.itm(2)} -attr vt d
+load net {mux#1.itm(3)} -attr vt d
+load net {mux#1.itm(4)} -attr vt d
+load net {mux#1.itm(5)} -attr vt d
+load net {mux#1.itm(6)} -attr vt d
+load net {mux#1.itm(7)} -attr vt d
+load net {mux#1.itm(8)} -attr vt d
+load net {mux#1.itm(9)} -attr vt d
+load net {mux#1.itm(10)} -attr vt d
+load net {mux#1.itm(11)} -attr vt d
+load net {mux#1.itm(12)} -attr vt d
+load net {mux#1.itm(13)} -attr vt d
+load net {mux#1.itm(14)} -attr vt d
+load net {mux#1.itm(15)} -attr vt d
+load net {mux#1.itm(16)} -attr vt d
+load net {mux#1.itm(17)} -attr vt d
+load net {mux#1.itm(18)} -attr vt d
+load net {mux#1.itm(19)} -attr vt d
+load net {mux#1.itm(20)} -attr vt d
+load netBundle {mux#1.itm} 21 {mux#1.itm(0)} {mux#1.itm(1)} {mux#1.itm(2)} {mux#1.itm(3)} {mux#1.itm(4)} {mux#1.itm(5)} {mux#1.itm(6)} {mux#1.itm(7)} {mux#1.itm(8)} {mux#1.itm(9)} {mux#1.itm(10)} {mux#1.itm(11)} {mux#1.itm(12)} {mux#1.itm(13)} {mux#1.itm(14)} {mux#1.itm(15)} {mux#1.itm(16)} {mux#1.itm(17)} {mux#1.itm(18)} {mux#1.itm(19)} {mux#1.itm(20)} -attr xrf 7703 -attr oid 11 -attr vt d -attr @path {/Render/Render:core/mux#1.itm}
+load net {for:and#3.itm(0)} -attr vt d
+load net {for:and#3.itm(1)} -attr vt d
+load net {for:and#3.itm(2)} -attr vt d
+load net {for:and#3.itm(3)} -attr vt d
+load net {for:and#3.itm(4)} -attr vt d
+load net {for:and#3.itm(5)} -attr vt d
+load net {for:and#3.itm(6)} -attr vt d
+load net {for:and#3.itm(7)} -attr vt d
+load net {for:and#3.itm(8)} -attr vt d
+load net {for:and#3.itm(9)} -attr vt d
+load net {for:and#3.itm(10)} -attr vt d
+load net {for:and#3.itm(11)} -attr vt d
+load net {for:and#3.itm(12)} -attr vt d
+load net {for:and#3.itm(13)} -attr vt d
+load net {for:and#3.itm(14)} -attr vt d
+load net {for:and#3.itm(15)} -attr vt d
+load net {for:and#3.itm(16)} -attr vt d
+load net {for:and#3.itm(17)} -attr vt d
+load net {for:and#3.itm(18)} -attr vt d
+load net {for:and#3.itm(19)} -attr vt d
+load net {for:and#3.itm(20)} -attr vt d
+load netBundle {for:and#3.itm} 21 {for:and#3.itm(0)} {for:and#3.itm(1)} {for:and#3.itm(2)} {for:and#3.itm(3)} {for:and#3.itm(4)} {for:and#3.itm(5)} {for:and#3.itm(6)} {for:and#3.itm(7)} {for:and#3.itm(8)} {for:and#3.itm(9)} {for:and#3.itm(10)} {for:and#3.itm(11)} {for:and#3.itm(12)} {for:and#3.itm(13)} {for:and#3.itm(14)} {for:and#3.itm(15)} {for:and#3.itm(16)} {for:and#3.itm(17)} {for:and#3.itm(18)} {for:and#3.itm(19)} {for:and#3.itm(20)} -attr xrf 7704 -attr oid 12 -attr vt d -attr @path {/Render/Render:core/for:and#3.itm}
+load net {for:exs#1.itm(0)} -attr vt d
+load net {for:exs#1.itm(1)} -attr vt d
+load net {for:exs#1.itm(2)} -attr vt d
+load net {for:exs#1.itm(3)} -attr vt d
+load net {for:exs#1.itm(4)} -attr vt d
+load net {for:exs#1.itm(5)} -attr vt d
+load net {for:exs#1.itm(6)} -attr vt d
+load net {for:exs#1.itm(7)} -attr vt d
+load net {for:exs#1.itm(8)} -attr vt d
+load net {for:exs#1.itm(9)} -attr vt d
+load net {for:exs#1.itm(10)} -attr vt d
+load net {for:exs#1.itm(11)} -attr vt d
+load net {for:exs#1.itm(12)} -attr vt d
+load net {for:exs#1.itm(13)} -attr vt d
+load net {for:exs#1.itm(14)} -attr vt d
+load net {for:exs#1.itm(15)} -attr vt d
+load net {for:exs#1.itm(16)} -attr vt d
+load net {for:exs#1.itm(17)} -attr vt d
+load net {for:exs#1.itm(18)} -attr vt d
+load net {for:exs#1.itm(19)} -attr vt d
+load net {for:exs#1.itm(20)} -attr vt d
+load netBundle {for:exs#1.itm} 21 {for:exs#1.itm(0)} {for:exs#1.itm(1)} {for:exs#1.itm(2)} {for:exs#1.itm(3)} {for:exs#1.itm(4)} {for:exs#1.itm(5)} {for:exs#1.itm(6)} {for:exs#1.itm(7)} {for:exs#1.itm(8)} {for:exs#1.itm(9)} {for:exs#1.itm(10)} {for:exs#1.itm(11)} {for:exs#1.itm(12)} {for:exs#1.itm(13)} {for:exs#1.itm(14)} {for:exs#1.itm(15)} {for:exs#1.itm(16)} {for:exs#1.itm(17)} {for:exs#1.itm(18)} {for:exs#1.itm(19)} {for:exs#1.itm(20)} -attr xrf 7705 -attr oid 13 -attr vt d -attr @path {/Render/Render:core/for:exs#1.itm}
+load net {slc(for:i#1.sva#2).itm(0)} -attr vt d
+load net {slc(for:i#1.sva#2).itm(1)} -attr vt d
+load net {slc(for:i#1.sva#2).itm(2)} -attr vt d
+load netBundle {slc(for:i#1.sva#2).itm} 3 {slc(for:i#1.sva#2).itm(0)} {slc(for:i#1.sva#2).itm(1)} {slc(for:i#1.sva#2).itm(2)} -attr xrf 7706 -attr oid 14 -attr vt d -attr @path {/Render/Render:core/slc(for:i#1.sva#2).itm}
+load net {mux#3.itm(0)} -attr vt d
+load net {mux#3.itm(1)} -attr vt d
+load net {mux#3.itm(2)} -attr vt d
+load net {mux#3.itm(3)} -attr vt d
+load net {mux#3.itm(4)} -attr vt d
+load net {mux#3.itm(5)} -attr vt d
+load net {mux#3.itm(6)} -attr vt d
+load net {mux#3.itm(7)} -attr vt d
+load net {mux#3.itm(8)} -attr vt d
+load net {mux#3.itm(9)} -attr vt d
+load net {mux#3.itm(10)} -attr vt d
+load net {mux#3.itm(11)} -attr vt d
+load net {mux#3.itm(12)} -attr vt d
+load net {mux#3.itm(13)} -attr vt d
+load net {mux#3.itm(14)} -attr vt d
+load net {mux#3.itm(15)} -attr vt d
+load net {mux#3.itm(16)} -attr vt d
+load net {mux#3.itm(17)} -attr vt d
+load net {mux#3.itm(18)} -attr vt d
+load net {mux#3.itm(19)} -attr vt d
+load net {mux#3.itm(20)} -attr vt d
+load netBundle {mux#3.itm} 21 {mux#3.itm(0)} {mux#3.itm(1)} {mux#3.itm(2)} {mux#3.itm(3)} {mux#3.itm(4)} {mux#3.itm(5)} {mux#3.itm(6)} {mux#3.itm(7)} {mux#3.itm(8)} {mux#3.itm(9)} {mux#3.itm(10)} {mux#3.itm(11)} {mux#3.itm(12)} {mux#3.itm(13)} {mux#3.itm(14)} {mux#3.itm(15)} {mux#3.itm(16)} {mux#3.itm(17)} {mux#3.itm(18)} {mux#3.itm(19)} {mux#3.itm(20)} -attr xrf 7707 -attr oid 15 -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load net {for:exs.itm(0)} -attr vt d
+load net {for:exs.itm(1)} -attr vt d
+load net {for:exs.itm(2)} -attr vt d
+load net {for:exs.itm(3)} -attr vt d
+load net {for:exs.itm(4)} -attr vt d
+load net {for:exs.itm(5)} -attr vt d
+load net {for:exs.itm(6)} -attr vt d
+load net {for:exs.itm(7)} -attr vt d
+load net {for:exs.itm(8)} -attr vt d
+load net {for:exs.itm(9)} -attr vt d
+load net {for:exs.itm(10)} -attr vt d
+load net {for:exs.itm(11)} -attr vt d
+load net {for:exs.itm(12)} -attr vt d
+load net {for:exs.itm(13)} -attr vt d
+load net {for:exs.itm(14)} -attr vt d
+load net {for:exs.itm(15)} -attr vt d
+load net {for:exs.itm(16)} -attr vt d
+load net {for:exs.itm(17)} -attr vt d
+load net {for:exs.itm(18)} -attr vt d
+load net {for:exs.itm(19)} -attr vt d
+load net {for:exs.itm(20)} -attr vt d
+load netBundle {for:exs.itm} 21 {for:exs.itm(0)} {for:exs.itm(1)} {for:exs.itm(2)} {for:exs.itm(3)} {for:exs.itm(4)} {for:exs.itm(5)} {for:exs.itm(6)} {for:exs.itm(7)} {for:exs.itm(8)} {for:exs.itm(9)} {for:exs.itm(10)} {for:exs.itm(11)} {for:exs.itm(12)} {for:exs.itm(13)} {for:exs.itm(14)} {for:exs.itm(15)} {for:exs.itm(16)} {for:exs.itm(17)} {for:exs.itm(18)} {for:exs.itm(19)} {for:exs.itm(20)} -attr xrf 7708 -attr oid 16 -attr vt d -attr @path {/Render/Render:core/for:exs.itm}
+load net {slc(for:i#2.sva#3).itm(0)} -attr vt d
+load net {slc(for:i#2.sva#3).itm(1)} -attr vt d
+load net {slc(for:i#2.sva#3).itm(2)} -attr vt d
+load netBundle {slc(for:i#2.sva#3).itm} 3 {slc(for:i#2.sva#3).itm(0)} {slc(for:i#2.sva#3).itm(1)} {slc(for:i#2.sva#3).itm(2)} -attr xrf 7709 -attr oid 17 -attr vt d -attr @path {/Render/Render:core/slc(for:i#2.sva#3).itm}
+load net {clk} -attr xrf 7710 -attr oid 18
+load net {clk} -port {clk} -attr xrf 7711 -attr oid 19
+load net {rst} -attr xrf 7712 -attr oid 20
+load net {rst} -port {rst} -attr xrf 7713 -attr oid 21
+load net {v_out:rsc:mgc_out_stdreg.d(0)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d(1)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d(2)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d(3)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d(4)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d(5)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d(6)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d(7)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d(8)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d(9)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d(10)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d(11)} -attr vt d
+load netBundle {v_out:rsc:mgc_out_stdreg.d} 12 {v_out:rsc:mgc_out_stdreg.d(0)} {v_out:rsc:mgc_out_stdreg.d(1)} {v_out:rsc:mgc_out_stdreg.d(2)} {v_out:rsc:mgc_out_stdreg.d(3)} {v_out:rsc:mgc_out_stdreg.d(4)} {v_out:rsc:mgc_out_stdreg.d(5)} {v_out:rsc:mgc_out_stdreg.d(6)} {v_out:rsc:mgc_out_stdreg.d(7)} {v_out:rsc:mgc_out_stdreg.d(8)} {v_out:rsc:mgc_out_stdreg.d(9)} {v_out:rsc:mgc_out_stdreg.d(10)} {v_out:rsc:mgc_out_stdreg.d(11)} -attr xrf 7714 -attr oid 22 -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {reg(v_out:rsc:mgc_out_stdreg.d).reg} -port {v_out:rsc:mgc_out_stdreg.d(0)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {reg(v_out:rsc:mgc_out_stdreg.d).reg} -port {v_out:rsc:mgc_out_stdreg.d(1)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {reg(v_out:rsc:mgc_out_stdreg.d).reg} -port {v_out:rsc:mgc_out_stdreg.d(2)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {reg(v_out:rsc:mgc_out_stdreg.d).reg} -port {v_out:rsc:mgc_out_stdreg.d(3)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {reg(v_out:rsc:mgc_out_stdreg.d).reg} -port {v_out:rsc:mgc_out_stdreg.d(4)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {reg(v_out:rsc:mgc_out_stdreg.d).reg} -port {v_out:rsc:mgc_out_stdreg.d(5)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {reg(v_out:rsc:mgc_out_stdreg.d).reg} -port {v_out:rsc:mgc_out_stdreg.d(6)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {reg(v_out:rsc:mgc_out_stdreg.d).reg} -port {v_out:rsc:mgc_out_stdreg.d(7)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {reg(v_out:rsc:mgc_out_stdreg.d).reg} -port {v_out:rsc:mgc_out_stdreg.d(8)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {reg(v_out:rsc:mgc_out_stdreg.d).reg} -port {v_out:rsc:mgc_out_stdreg.d(9)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {reg(v_out:rsc:mgc_out_stdreg.d).reg} -port {v_out:rsc:mgc_out_stdreg.d(10)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load net {reg(v_out:rsc:mgc_out_stdreg.d).reg} -port {v_out:rsc:mgc_out_stdreg.d(11)} -attr vt d -attr @path {/Render/Render:core/v_out:rsc:mgc_out_stdreg.d}
+load inst "main-1:for:if:acc" "add(4,-1,4,-1,4)" "INTERFACE" -attr xrf 7715 -attr oid 23 -attr vt d -attr @path {/Render/Render:core/main-1:for:if:acc} -attr area 5.293382 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(4,0,4,0,4)"
+load net {for:i#2.lpi.dfm(17)} -pin  "main-1:for:if:acc" {A(0)} -attr vt d -attr @path {/Render/Render:core/slc(for:i#2.lpi.dfm).itm}
+load net {for:i#2.lpi.dfm(18)} -pin  "main-1:for:if:acc" {A(1)} -attr vt d -attr @path {/Render/Render:core/slc(for:i#2.lpi.dfm).itm}
+load net {for:i#2.lpi.dfm(19)} -pin  "main-1:for:if:acc" {A(2)} -attr vt d -attr @path {/Render/Render:core/slc(for:i#2.lpi.dfm).itm}
+load net {for:i#2.lpi.dfm(20)} -pin  "main-1:for:if:acc" {A(3)} -attr vt d -attr @path {/Render/Render:core/slc(for:i#2.lpi.dfm).itm}
+load net {PWR} -pin  "main-1:for:if:acc" {B(0)} -attr @path {/Render/Render:core/Cn5_4}
+load net {PWR} -pin  "main-1:for:if:acc" {B(1)} -attr @path {/Render/Render:core/Cn5_4}
+load net {GND} -pin  "main-1:for:if:acc" {B(2)} -attr @path {/Render/Render:core/Cn5_4}
+load net {PWR} -pin  "main-1:for:if:acc" {B(3)} -attr @path {/Render/Render:core/Cn5_4}
+load net {main-1:for:if:acc.itm(0)} -pin  "main-1:for:if:acc" {Z(0)} -attr vt d -attr @path {/Render/Render:core/main-1:for:if:acc.itm}
+load net {main-1:for:if:acc.itm(1)} -pin  "main-1:for:if:acc" {Z(1)} -attr vt d -attr @path {/Render/Render:core/main-1:for:if:acc.itm}
+load net {main-1:for:if:acc.itm(2)} -pin  "main-1:for:if:acc" {Z(2)} -attr vt d -attr @path {/Render/Render:core/main-1:for:if:acc.itm}
+load net {main-1:for:if:acc.itm(3)} -pin  "main-1:for:if:acc" {Z(3)} -attr vt d -attr @path {/Render/Render:core/main-1:for:if:acc.itm}
+load inst "main-2:for:if:acc" "add(4,-1,4,-1,4)" "INTERFACE" -attr xrf 7716 -attr oid 24 -attr vt d -attr @path {/Render/Render:core/main-2:for:if:acc} -attr area 5.293382 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(4,0,4,0,4)"
+load net {for:i#1.lpi(17)} -pin  "main-2:for:if:acc" {A(0)} -attr vt d -attr @path {/Render/Render:core/slc(for:i#1.lpi).itm}
+load net {for:i#1.lpi(18)} -pin  "main-2:for:if:acc" {A(1)} -attr vt d -attr @path {/Render/Render:core/slc(for:i#1.lpi).itm}
+load net {for:i#1.lpi(19)} -pin  "main-2:for:if:acc" {A(2)} -attr vt d -attr @path {/Render/Render:core/slc(for:i#1.lpi).itm}
+load net {for:i#1.lpi(20)} -pin  "main-2:for:if:acc" {A(3)} -attr vt d -attr @path {/Render/Render:core/slc(for:i#1.lpi).itm}
+load net {PWR} -pin  "main-2:for:if:acc" {B(0)} -attr @path {/Render/Render:core/Cn5_4}
+load net {PWR} -pin  "main-2:for:if:acc" {B(1)} -attr @path {/Render/Render:core/Cn5_4}
+load net {GND} -pin  "main-2:for:if:acc" {B(2)} -attr @path {/Render/Render:core/Cn5_4}
+load net {PWR} -pin  "main-2:for:if:acc" {B(3)} -attr @path {/Render/Render:core/Cn5_4}
+load net {main-2:for:if:acc.itm(0)} -pin  "main-2:for:if:acc" {Z(0)} -attr vt d -attr @path {/Render/Render:core/main-2:for:if:acc.itm}
+load net {main-2:for:if:acc.itm(1)} -pin  "main-2:for:if:acc" {Z(1)} -attr vt d -attr @path {/Render/Render:core/main-2:for:if:acc.itm}
+load net {main-2:for:if:acc.itm(2)} -pin  "main-2:for:if:acc" {Z(2)} -attr vt d -attr @path {/Render/Render:core/main-2:for:if:acc.itm}
+load net {main-2:for:if:acc.itm(3)} -pin  "main-2:for:if:acc" {Z(3)} -attr vt d -attr @path {/Render/Render:core/main-2:for:if:acc.itm}
+load inst "mux" "mux(2,1)" "INTERFACE" -attr xrf 7717 -attr oid 25 -attr @path {/Render/Render:core/mux} -attr area 0.920423 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_mux(1,1,2)"
+load net {main-1:for:if:acc.itm(3)} -pin  "mux" {A0(0)} -attr @path {/Render/Render:core/main-1:for:slc#1.itm}
+load net {main-2:for:if:acc.itm(3)} -pin  "mux" {A1(0)} -attr @path {/Render/Render:core/main-2:for:slc#1.itm}
+load net {or.dcpl} -pin  "mux" {S(0)} -attr @path {/Render/Render:core/or.dcpl}
+load net {mux.itm} -pin  "mux" {Z(0)} -attr @path {/Render/Render:core/mux.itm}
+load inst "reg(v_out:rsc:mgc_out_stdreg.d)" "reg(1,1,0,0,1)" "INTERFACE" -attr xrf 7718 -attr oid 26 -attr @path {/Render/Render:core/reg(v_out:rsc:mgc_out_stdreg.d)}
+load net {mux.itm} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {D(0)} -attr @path {/Render/Render:core/mux.itm}
+load net {GND} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {DRs(0)} -attr @path {/Render/Render:core/C0_12#1}
+load net {clk} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {clk} -attr xrf 7719 -attr oid 27 -attr @path {/Render/Render:core/clk}
+load net {rst} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {Rs(0)} -attr @path {/Render/Render:core/rst}
+load net {reg(v_out:rsc:mgc_out_stdreg.d).reg} -pin  "reg(v_out:rsc:mgc_out_stdreg.d)" {Z(0)} -attr @path {/Render/Render:core/reg(v_out:rsc:mgc_out_stdreg.d).reg}
+load inst "not#2" "not(1)" "INTERFACE" -attr xrf 7720 -attr oid 28 -attr vt c -attr @path {/Render/Render:core/not#2} -attr area 0.001000 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_not(1)"
+load net {exit:main-1:for.sva#1} -pin  "not#2" {A(0)} -attr vt c -attr @path {/Render/Render:core/exit:main-1:for.sva#1}
+load net {not#2.itm} -pin  "not#2" {Z(0)} -attr vt c -attr @path {/Render/Render:core/not#2.itm}
+load inst "for:and#3" "and(2,21)" "INTERFACE" -attr xrf 7721 -attr oid 29 -attr vt dc -attr @path {/Render/Render:core/for:and#3} -attr area 15.326480 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_and(21,2)"
+load net {for:i#1.lpi(0)} -pin  "for:and#3" {A0(0)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(1)} -pin  "for:and#3" {A0(1)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(2)} -pin  "for:and#3" {A0(2)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(3)} -pin  "for:and#3" {A0(3)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(4)} -pin  "for:and#3" {A0(4)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(5)} -pin  "for:and#3" {A0(5)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(6)} -pin  "for:and#3" {A0(6)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(7)} -pin  "for:and#3" {A0(7)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(8)} -pin  "for:and#3" {A0(8)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(9)} -pin  "for:and#3" {A0(9)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(10)} -pin  "for:and#3" {A0(10)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(11)} -pin  "for:and#3" {A0(11)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(12)} -pin  "for:and#3" {A0(12)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(13)} -pin  "for:and#3" {A0(13)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(14)} -pin  "for:and#3" {A0(14)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(15)} -pin  "for:and#3" {A0(15)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(16)} -pin  "for:and#3" {A0(16)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(17)} -pin  "for:and#3" {A0(17)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(18)} -pin  "for:and#3" {A0(18)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(19)} -pin  "for:and#3" {A0(19)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(20)} -pin  "for:and#3" {A0(20)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {not#2.itm} -pin  "for:and#3" {A1(0)} -attr vt dc -attr @path {/Render/Render:core/for:exs#1.itm}
+load net {not#2.itm} -pin  "for:and#3" {A1(1)} -attr vt dc -attr @path {/Render/Render:core/for:exs#1.itm}
+load net {not#2.itm} -pin  "for:and#3" {A1(2)} -attr vt dc -attr @path {/Render/Render:core/for:exs#1.itm}
+load net {not#2.itm} -pin  "for:and#3" {A1(3)} -attr vt dc -attr @path {/Render/Render:core/for:exs#1.itm}
+load net {not#2.itm} -pin  "for:and#3" {A1(4)} -attr vt dc -attr @path {/Render/Render:core/for:exs#1.itm}
+load net {not#2.itm} -pin  "for:and#3" {A1(5)} -attr vt dc -attr @path {/Render/Render:core/for:exs#1.itm}
+load net {not#2.itm} -pin  "for:and#3" {A1(6)} -attr vt dc -attr @path {/Render/Render:core/for:exs#1.itm}
+load net {not#2.itm} -pin  "for:and#3" {A1(7)} -attr vt dc -attr @path {/Render/Render:core/for:exs#1.itm}
+load net {not#2.itm} -pin  "for:and#3" {A1(8)} -attr vt dc -attr @path {/Render/Render:core/for:exs#1.itm}
+load net {not#2.itm} -pin  "for:and#3" {A1(9)} -attr vt dc -attr @path {/Render/Render:core/for:exs#1.itm}
+load net {not#2.itm} -pin  "for:and#3" {A1(10)} -attr vt dc -attr @path {/Render/Render:core/for:exs#1.itm}
+load net {not#2.itm} -pin  "for:and#3" {A1(11)} -attr vt dc -attr @path {/Render/Render:core/for:exs#1.itm}
+load net {not#2.itm} -pin  "for:and#3" {A1(12)} -attr vt dc -attr @path {/Render/Render:core/for:exs#1.itm}
+load net {not#2.itm} -pin  "for:and#3" {A1(13)} -attr vt dc -attr @path {/Render/Render:core/for:exs#1.itm}
+load net {not#2.itm} -pin  "for:and#3" {A1(14)} -attr vt dc -attr @path {/Render/Render:core/for:exs#1.itm}
+load net {not#2.itm} -pin  "for:and#3" {A1(15)} -attr vt dc -attr @path {/Render/Render:core/for:exs#1.itm}
+load net {not#2.itm} -pin  "for:and#3" {A1(16)} -attr vt dc -attr @path {/Render/Render:core/for:exs#1.itm}
+load net {not#2.itm} -pin  "for:and#3" {A1(17)} -attr vt dc -attr @path {/Render/Render:core/for:exs#1.itm}
+load net {not#2.itm} -pin  "for:and#3" {A1(18)} -attr vt dc -attr @path {/Render/Render:core/for:exs#1.itm}
+load net {not#2.itm} -pin  "for:and#3" {A1(19)} -attr vt dc -attr @path {/Render/Render:core/for:exs#1.itm}
+load net {not#2.itm} -pin  "for:and#3" {A1(20)} -attr vt dc -attr @path {/Render/Render:core/for:exs#1.itm}
+load net {for:and#3.itm(0)} -pin  "for:and#3" {Z(0)} -attr vt dc -attr @path {/Render/Render:core/for:and#3.itm}
+load net {for:and#3.itm(1)} -pin  "for:and#3" {Z(1)} -attr vt dc -attr @path {/Render/Render:core/for:and#3.itm}
+load net {for:and#3.itm(2)} -pin  "for:and#3" {Z(2)} -attr vt dc -attr @path {/Render/Render:core/for:and#3.itm}
+load net {for:and#3.itm(3)} -pin  "for:and#3" {Z(3)} -attr vt dc -attr @path {/Render/Render:core/for:and#3.itm}
+load net {for:and#3.itm(4)} -pin  "for:and#3" {Z(4)} -attr vt dc -attr @path {/Render/Render:core/for:and#3.itm}
+load net {for:and#3.itm(5)} -pin  "for:and#3" {Z(5)} -attr vt dc -attr @path {/Render/Render:core/for:and#3.itm}
+load net {for:and#3.itm(6)} -pin  "for:and#3" {Z(6)} -attr vt dc -attr @path {/Render/Render:core/for:and#3.itm}
+load net {for:and#3.itm(7)} -pin  "for:and#3" {Z(7)} -attr vt dc -attr @path {/Render/Render:core/for:and#3.itm}
+load net {for:and#3.itm(8)} -pin  "for:and#3" {Z(8)} -attr vt dc -attr @path {/Render/Render:core/for:and#3.itm}
+load net {for:and#3.itm(9)} -pin  "for:and#3" {Z(9)} -attr vt dc -attr @path {/Render/Render:core/for:and#3.itm}
+load net {for:and#3.itm(10)} -pin  "for:and#3" {Z(10)} -attr vt dc -attr @path {/Render/Render:core/for:and#3.itm}
+load net {for:and#3.itm(11)} -pin  "for:and#3" {Z(11)} -attr vt dc -attr @path {/Render/Render:core/for:and#3.itm}
+load net {for:and#3.itm(12)} -pin  "for:and#3" {Z(12)} -attr vt dc -attr @path {/Render/Render:core/for:and#3.itm}
+load net {for:and#3.itm(13)} -pin  "for:and#3" {Z(13)} -attr vt dc -attr @path {/Render/Render:core/for:and#3.itm}
+load net {for:and#3.itm(14)} -pin  "for:and#3" {Z(14)} -attr vt dc -attr @path {/Render/Render:core/for:and#3.itm}
+load net {for:and#3.itm(15)} -pin  "for:and#3" {Z(15)} -attr vt dc -attr @path {/Render/Render:core/for:and#3.itm}
+load net {for:and#3.itm(16)} -pin  "for:and#3" {Z(16)} -attr vt dc -attr @path {/Render/Render:core/for:and#3.itm}
+load net {for:and#3.itm(17)} -pin  "for:and#3" {Z(17)} -attr vt dc -attr @path {/Render/Render:core/for:and#3.itm}
+load net {for:and#3.itm(18)} -pin  "for:and#3" {Z(18)} -attr vt dc -attr @path {/Render/Render:core/for:and#3.itm}
+load net {for:and#3.itm(19)} -pin  "for:and#3" {Z(19)} -attr vt dc -attr @path {/Render/Render:core/for:and#3.itm}
+load net {for:and#3.itm(20)} -pin  "for:and#3" {Z(20)} -attr vt dc -attr @path {/Render/Render:core/for:and#3.itm}
+load inst "mux#1" "mux(2,21)" "INTERFACE" -attr xrf 7722 -attr oid 30 -attr vt dc -attr @path {/Render/Render:core/mux#1} -attr area 19.308883 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_mux(21,1,2)"
+load net {for:and#3.itm(0)} -pin  "mux#1" {A0(0)} -attr vt dc -attr @path {/Render/Render:core/for:and#3.itm}
+load net {for:and#3.itm(1)} -pin  "mux#1" {A0(1)} -attr vt dc -attr @path {/Render/Render:core/for:and#3.itm}
+load net {for:and#3.itm(2)} -pin  "mux#1" {A0(2)} -attr vt dc -attr @path {/Render/Render:core/for:and#3.itm}
+load net {for:and#3.itm(3)} -pin  "mux#1" {A0(3)} -attr vt dc -attr @path {/Render/Render:core/for:and#3.itm}
+load net {for:and#3.itm(4)} -pin  "mux#1" {A0(4)} -attr vt dc -attr @path {/Render/Render:core/for:and#3.itm}
+load net {for:and#3.itm(5)} -pin  "mux#1" {A0(5)} -attr vt dc -attr @path {/Render/Render:core/for:and#3.itm}
+load net {for:and#3.itm(6)} -pin  "mux#1" {A0(6)} -attr vt dc -attr @path {/Render/Render:core/for:and#3.itm}
+load net {for:and#3.itm(7)} -pin  "mux#1" {A0(7)} -attr vt dc -attr @path {/Render/Render:core/for:and#3.itm}
+load net {for:and#3.itm(8)} -pin  "mux#1" {A0(8)} -attr vt dc -attr @path {/Render/Render:core/for:and#3.itm}
+load net {for:and#3.itm(9)} -pin  "mux#1" {A0(9)} -attr vt dc -attr @path {/Render/Render:core/for:and#3.itm}
+load net {for:and#3.itm(10)} -pin  "mux#1" {A0(10)} -attr vt dc -attr @path {/Render/Render:core/for:and#3.itm}
+load net {for:and#3.itm(11)} -pin  "mux#1" {A0(11)} -attr vt dc -attr @path {/Render/Render:core/for:and#3.itm}
+load net {for:and#3.itm(12)} -pin  "mux#1" {A0(12)} -attr vt dc -attr @path {/Render/Render:core/for:and#3.itm}
+load net {for:and#3.itm(13)} -pin  "mux#1" {A0(13)} -attr vt dc -attr @path {/Render/Render:core/for:and#3.itm}
+load net {for:and#3.itm(14)} -pin  "mux#1" {A0(14)} -attr vt dc -attr @path {/Render/Render:core/for:and#3.itm}
+load net {for:and#3.itm(15)} -pin  "mux#1" {A0(15)} -attr vt dc -attr @path {/Render/Render:core/for:and#3.itm}
+load net {for:and#3.itm(16)} -pin  "mux#1" {A0(16)} -attr vt dc -attr @path {/Render/Render:core/for:and#3.itm}
+load net {for:and#3.itm(17)} -pin  "mux#1" {A0(17)} -attr vt dc -attr @path {/Render/Render:core/for:and#3.itm}
+load net {for:and#3.itm(18)} -pin  "mux#1" {A0(18)} -attr vt dc -attr @path {/Render/Render:core/for:and#3.itm}
+load net {for:and#3.itm(19)} -pin  "mux#1" {A0(19)} -attr vt dc -attr @path {/Render/Render:core/for:and#3.itm}
+load net {for:and#3.itm(20)} -pin  "mux#1" {A0(20)} -attr vt dc -attr @path {/Render/Render:core/for:and#3.itm}
+load net {for:i#1.sva(0)} -pin  "mux#1" {A1(0)} -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load net {for:i#1.sva(1)} -pin  "mux#1" {A1(1)} -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load net {for:i#1.sva(2)} -pin  "mux#1" {A1(2)} -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load net {for:i#1.sva(3)} -pin  "mux#1" {A1(3)} -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load net {for:i#1.sva(4)} -pin  "mux#1" {A1(4)} -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load net {for:i#1.sva(5)} -pin  "mux#1" {A1(5)} -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load net {for:i#1.sva(6)} -pin  "mux#1" {A1(6)} -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load net {for:i#1.sva(7)} -pin  "mux#1" {A1(7)} -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load net {for:i#1.sva(8)} -pin  "mux#1" {A1(8)} -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load net {for:i#1.sva(9)} -pin  "mux#1" {A1(9)} -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load net {for:i#1.sva(10)} -pin  "mux#1" {A1(10)} -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load net {for:i#1.sva(11)} -pin  "mux#1" {A1(11)} -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load net {for:i#1.sva(12)} -pin  "mux#1" {A1(12)} -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load net {for:i#1.sva(13)} -pin  "mux#1" {A1(13)} -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load net {for:i#1.sva(14)} -pin  "mux#1" {A1(14)} -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load net {for:i#1.sva(15)} -pin  "mux#1" {A1(15)} -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load net {for:i#1.sva(16)} -pin  "mux#1" {A1(16)} -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load net {for:i#1.sva(17)} -pin  "mux#1" {A1(17)} -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load net {for:i#1.sva(18)} -pin  "mux#1" {A1(18)} -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load net {for:i#1.sva(19)} -pin  "mux#1" {A1(19)} -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load net {for:i#1.sva(20)} -pin  "mux#1" {A1(20)} -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load net {or.dcpl} -pin  "mux#1" {S(0)} -attr @path {/Render/Render:core/or.dcpl}
+load net {mux#1.itm(0)} -pin  "mux#1" {Z(0)} -attr vt dc -attr @path {/Render/Render:core/mux#1.itm}
+load net {mux#1.itm(1)} -pin  "mux#1" {Z(1)} -attr vt dc -attr @path {/Render/Render:core/mux#1.itm}
+load net {mux#1.itm(2)} -pin  "mux#1" {Z(2)} -attr vt dc -attr @path {/Render/Render:core/mux#1.itm}
+load net {mux#1.itm(3)} -pin  "mux#1" {Z(3)} -attr vt dc -attr @path {/Render/Render:core/mux#1.itm}
+load net {mux#1.itm(4)} -pin  "mux#1" {Z(4)} -attr vt dc -attr @path {/Render/Render:core/mux#1.itm}
+load net {mux#1.itm(5)} -pin  "mux#1" {Z(5)} -attr vt dc -attr @path {/Render/Render:core/mux#1.itm}
+load net {mux#1.itm(6)} -pin  "mux#1" {Z(6)} -attr vt dc -attr @path {/Render/Render:core/mux#1.itm}
+load net {mux#1.itm(7)} -pin  "mux#1" {Z(7)} -attr vt dc -attr @path {/Render/Render:core/mux#1.itm}
+load net {mux#1.itm(8)} -pin  "mux#1" {Z(8)} -attr vt dc -attr @path {/Render/Render:core/mux#1.itm}
+load net {mux#1.itm(9)} -pin  "mux#1" {Z(9)} -attr vt dc -attr @path {/Render/Render:core/mux#1.itm}
+load net {mux#1.itm(10)} -pin  "mux#1" {Z(10)} -attr vt dc -attr @path {/Render/Render:core/mux#1.itm}
+load net {mux#1.itm(11)} -pin  "mux#1" {Z(11)} -attr vt dc -attr @path {/Render/Render:core/mux#1.itm}
+load net {mux#1.itm(12)} -pin  "mux#1" {Z(12)} -attr vt dc -attr @path {/Render/Render:core/mux#1.itm}
+load net {mux#1.itm(13)} -pin  "mux#1" {Z(13)} -attr vt dc -attr @path {/Render/Render:core/mux#1.itm}
+load net {mux#1.itm(14)} -pin  "mux#1" {Z(14)} -attr vt dc -attr @path {/Render/Render:core/mux#1.itm}
+load net {mux#1.itm(15)} -pin  "mux#1" {Z(15)} -attr vt dc -attr @path {/Render/Render:core/mux#1.itm}
+load net {mux#1.itm(16)} -pin  "mux#1" {Z(16)} -attr vt dc -attr @path {/Render/Render:core/mux#1.itm}
+load net {mux#1.itm(17)} -pin  "mux#1" {Z(17)} -attr vt dc -attr @path {/Render/Render:core/mux#1.itm}
+load net {mux#1.itm(18)} -pin  "mux#1" {Z(18)} -attr vt dc -attr @path {/Render/Render:core/mux#1.itm}
+load net {mux#1.itm(19)} -pin  "mux#1" {Z(19)} -attr vt dc -attr @path {/Render/Render:core/mux#1.itm}
+load net {mux#1.itm(20)} -pin  "mux#1" {Z(20)} -attr vt dc -attr @path {/Render/Render:core/mux#1.itm}
+load inst "reg(for:i#1.lpi)" "reg(21,1,0,0,1)" "INTERFACE" -attr xrf 7723 -attr oid 31 -attr vt dc -attr @path {/Render/Render:core/reg(for:i#1.lpi)}
+load net {mux#1.itm(0)} -pin  "reg(for:i#1.lpi)" {D(0)} -attr vt dc -attr @path {/Render/Render:core/mux#1.itm}
+load net {mux#1.itm(1)} -pin  "reg(for:i#1.lpi)" {D(1)} -attr vt dc -attr @path {/Render/Render:core/mux#1.itm}
+load net {mux#1.itm(2)} -pin  "reg(for:i#1.lpi)" {D(2)} -attr vt dc -attr @path {/Render/Render:core/mux#1.itm}
+load net {mux#1.itm(3)} -pin  "reg(for:i#1.lpi)" {D(3)} -attr vt dc -attr @path {/Render/Render:core/mux#1.itm}
+load net {mux#1.itm(4)} -pin  "reg(for:i#1.lpi)" {D(4)} -attr vt dc -attr @path {/Render/Render:core/mux#1.itm}
+load net {mux#1.itm(5)} -pin  "reg(for:i#1.lpi)" {D(5)} -attr vt dc -attr @path {/Render/Render:core/mux#1.itm}
+load net {mux#1.itm(6)} -pin  "reg(for:i#1.lpi)" {D(6)} -attr vt dc -attr @path {/Render/Render:core/mux#1.itm}
+load net {mux#1.itm(7)} -pin  "reg(for:i#1.lpi)" {D(7)} -attr vt dc -attr @path {/Render/Render:core/mux#1.itm}
+load net {mux#1.itm(8)} -pin  "reg(for:i#1.lpi)" {D(8)} -attr vt dc -attr @path {/Render/Render:core/mux#1.itm}
+load net {mux#1.itm(9)} -pin  "reg(for:i#1.lpi)" {D(9)} -attr vt dc -attr @path {/Render/Render:core/mux#1.itm}
+load net {mux#1.itm(10)} -pin  "reg(for:i#1.lpi)" {D(10)} -attr vt dc -attr @path {/Render/Render:core/mux#1.itm}
+load net {mux#1.itm(11)} -pin  "reg(for:i#1.lpi)" {D(11)} -attr vt dc -attr @path {/Render/Render:core/mux#1.itm}
+load net {mux#1.itm(12)} -pin  "reg(for:i#1.lpi)" {D(12)} -attr vt dc -attr @path {/Render/Render:core/mux#1.itm}
+load net {mux#1.itm(13)} -pin  "reg(for:i#1.lpi)" {D(13)} -attr vt dc -attr @path {/Render/Render:core/mux#1.itm}
+load net {mux#1.itm(14)} -pin  "reg(for:i#1.lpi)" {D(14)} -attr vt dc -attr @path {/Render/Render:core/mux#1.itm}
+load net {mux#1.itm(15)} -pin  "reg(for:i#1.lpi)" {D(15)} -attr vt dc -attr @path {/Render/Render:core/mux#1.itm}
+load net {mux#1.itm(16)} -pin  "reg(for:i#1.lpi)" {D(16)} -attr vt dc -attr @path {/Render/Render:core/mux#1.itm}
+load net {mux#1.itm(17)} -pin  "reg(for:i#1.lpi)" {D(17)} -attr vt dc -attr @path {/Render/Render:core/mux#1.itm}
+load net {mux#1.itm(18)} -pin  "reg(for:i#1.lpi)" {D(18)} -attr vt dc -attr @path {/Render/Render:core/mux#1.itm}
+load net {mux#1.itm(19)} -pin  "reg(for:i#1.lpi)" {D(19)} -attr vt dc -attr @path {/Render/Render:core/mux#1.itm}
+load net {mux#1.itm(20)} -pin  "reg(for:i#1.lpi)" {D(20)} -attr vt dc -attr @path {/Render/Render:core/mux#1.itm}
+load net {GND} -pin  "reg(for:i#1.lpi)" {DRs(0)} -attr @path {/Render/Render:core/C0_21}
+load net {GND} -pin  "reg(for:i#1.lpi)" {DRs(1)} -attr @path {/Render/Render:core/C0_21}
+load net {GND} -pin  "reg(for:i#1.lpi)" {DRs(2)} -attr @path {/Render/Render:core/C0_21}
+load net {GND} -pin  "reg(for:i#1.lpi)" {DRs(3)} -attr @path {/Render/Render:core/C0_21}
+load net {GND} -pin  "reg(for:i#1.lpi)" {DRs(4)} -attr @path {/Render/Render:core/C0_21}
+load net {GND} -pin  "reg(for:i#1.lpi)" {DRs(5)} -attr @path {/Render/Render:core/C0_21}
+load net {GND} -pin  "reg(for:i#1.lpi)" {DRs(6)} -attr @path {/Render/Render:core/C0_21}
+load net {GND} -pin  "reg(for:i#1.lpi)" {DRs(7)} -attr @path {/Render/Render:core/C0_21}
+load net {GND} -pin  "reg(for:i#1.lpi)" {DRs(8)} -attr @path {/Render/Render:core/C0_21}
+load net {GND} -pin  "reg(for:i#1.lpi)" {DRs(9)} -attr @path {/Render/Render:core/C0_21}
+load net {GND} -pin  "reg(for:i#1.lpi)" {DRs(10)} -attr @path {/Render/Render:core/C0_21}
+load net {GND} -pin  "reg(for:i#1.lpi)" {DRs(11)} -attr @path {/Render/Render:core/C0_21}
+load net {GND} -pin  "reg(for:i#1.lpi)" {DRs(12)} -attr @path {/Render/Render:core/C0_21}
+load net {GND} -pin  "reg(for:i#1.lpi)" {DRs(13)} -attr @path {/Render/Render:core/C0_21}
+load net {GND} -pin  "reg(for:i#1.lpi)" {DRs(14)} -attr @path {/Render/Render:core/C0_21}
+load net {GND} -pin  "reg(for:i#1.lpi)" {DRs(15)} -attr @path {/Render/Render:core/C0_21}
+load net {GND} -pin  "reg(for:i#1.lpi)" {DRs(16)} -attr @path {/Render/Render:core/C0_21}
+load net {GND} -pin  "reg(for:i#1.lpi)" {DRs(17)} -attr @path {/Render/Render:core/C0_21}
+load net {GND} -pin  "reg(for:i#1.lpi)" {DRs(18)} -attr @path {/Render/Render:core/C0_21}
+load net {GND} -pin  "reg(for:i#1.lpi)" {DRs(19)} -attr @path {/Render/Render:core/C0_21}
+load net {GND} -pin  "reg(for:i#1.lpi)" {DRs(20)} -attr @path {/Render/Render:core/C0_21}
+load net {clk} -pin  "reg(for:i#1.lpi)" {clk} -attr xrf 7724 -attr oid 32 -attr @path {/Render/Render:core/clk}
+load net {rst} -pin  "reg(for:i#1.lpi)" {Rs(0)} -attr @path {/Render/Render:core/rst}
+load net {for:i#1.lpi(0)} -pin  "reg(for:i#1.lpi)" {Z(0)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(1)} -pin  "reg(for:i#1.lpi)" {Z(1)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(2)} -pin  "reg(for:i#1.lpi)" {Z(2)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(3)} -pin  "reg(for:i#1.lpi)" {Z(3)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(4)} -pin  "reg(for:i#1.lpi)" {Z(4)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(5)} -pin  "reg(for:i#1.lpi)" {Z(5)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(6)} -pin  "reg(for:i#1.lpi)" {Z(6)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(7)} -pin  "reg(for:i#1.lpi)" {Z(7)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(8)} -pin  "reg(for:i#1.lpi)" {Z(8)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(9)} -pin  "reg(for:i#1.lpi)" {Z(9)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(10)} -pin  "reg(for:i#1.lpi)" {Z(10)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(11)} -pin  "reg(for:i#1.lpi)" {Z(11)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(12)} -pin  "reg(for:i#1.lpi)" {Z(12)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(13)} -pin  "reg(for:i#1.lpi)" {Z(13)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(14)} -pin  "reg(for:i#1.lpi)" {Z(14)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(15)} -pin  "reg(for:i#1.lpi)" {Z(15)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(16)} -pin  "reg(for:i#1.lpi)" {Z(16)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(17)} -pin  "reg(for:i#1.lpi)" {Z(17)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(18)} -pin  "reg(for:i#1.lpi)" {Z(18)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(19)} -pin  "reg(for:i#1.lpi)" {Z(19)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(20)} -pin  "reg(for:i#1.lpi)" {Z(20)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load inst "mux#2" "mux(2,1)" "INTERFACE" -attr xrf 7725 -attr oid 33 -attr @path {/Render/Render:core/mux#2} -attr area 0.920423 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_mux(1,1,2)"
+load net {exit:main-1:for.sva#1} -pin  "mux#2" {A0(0)} -attr @path {/Render/Render:core/exit:main-1:for.sva#1}
+load net {exit:main-1:for.lpi.dfm} -pin  "mux#2" {A1(0)} -attr @path {/Render/Render:core/exit:main-1:for.lpi.dfm}
+load net {or.dcpl} -pin  "mux#2" {S(0)} -attr @path {/Render/Render:core/or.dcpl}
+load net {mux#2.itm} -pin  "mux#2" {Z(0)} -attr @path {/Render/Render:core/mux#2.itm}
+load inst "reg(exit:main-1:for.lpi)" "reg(1,1,0,0,1)" "INTERFACE" -attr xrf 7726 -attr oid 34 -attr @path {/Render/Render:core/reg(exit:main-1:for.lpi)}
+load net {mux#2.itm} -pin  "reg(exit:main-1:for.lpi)" {D(0)} -attr @path {/Render/Render:core/mux#2.itm}
+load net {GND} -pin  "reg(exit:main-1:for.lpi)" {DRs(0)} -attr @path {/Render/Render:core/C0_1#1}
+load net {clk} -pin  "reg(exit:main-1:for.lpi)" {clk} -attr xrf 7727 -attr oid 35 -attr @path {/Render/Render:core/clk}
+load net {rst} -pin  "reg(exit:main-1:for.lpi)" {Rs(0)} -attr @path {/Render/Render:core/rst}
+load net {exit:main-1:for.lpi} -pin  "reg(exit:main-1:for.lpi)" {Z(0)} -attr @path {/Render/Render:core/exit:main-1:for.lpi}
+load inst "main-2:for:acc" "add(3,0,4,-1,4)" "INTERFACE" -attr xrf 7728 -attr oid 36 -attr vt d -attr @path {/Render/Render:core/main-2:for:acc} -attr area 5.293382 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(4,0,4,0,4)"
+load net {for:i#1.sva(18)} -pin  "main-2:for:acc" {A(0)} -attr vt d -attr @path {/Render/Render:core/slc(for:i#1.sva#2).itm}
+load net {for:i#1.sva(19)} -pin  "main-2:for:acc" {A(1)} -attr vt d -attr @path {/Render/Render:core/slc(for:i#1.sva#2).itm}
+load net {for:i#1.sva(20)} -pin  "main-2:for:acc" {A(2)} -attr vt d -attr @path {/Render/Render:core/slc(for:i#1.sva#2).itm}
+load net {PWR} -pin  "main-2:for:acc" {B(0)} -attr @path {/Render/Render:core/Cn5_4}
+load net {PWR} -pin  "main-2:for:acc" {B(1)} -attr @path {/Render/Render:core/Cn5_4}
+load net {GND} -pin  "main-2:for:acc" {B(2)} -attr @path {/Render/Render:core/Cn5_4}
+load net {PWR} -pin  "main-2:for:acc" {B(3)} -attr @path {/Render/Render:core/Cn5_4}
+load net {main-2:for:acc.itm(0)} -pin  "main-2:for:acc" {Z(0)} -attr vt d -attr @path {/Render/Render:core/main-2:for:acc.itm}
+load net {main-2:for:acc.itm(1)} -pin  "main-2:for:acc" {Z(1)} -attr vt d -attr @path {/Render/Render:core/main-2:for:acc.itm}
+load net {main-2:for:acc.itm(2)} -pin  "main-2:for:acc" {Z(2)} -attr vt d -attr @path {/Render/Render:core/main-2:for:acc.itm}
+load net {main-2:for:acc.itm(3)} -pin  "main-2:for:acc" {Z(3)} -attr vt d -attr @path {/Render/Render:core/main-2:for:acc.itm}
+load inst "main-2:for:not" "not(1)" "INTERFACE" -attr xrf 7729 -attr oid 37 -attr @path {/Render/Render:core/main-2:for:not} -attr area 0.001000 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_not(1)"
+load net {main-2:for:acc.itm(3)} -pin  "main-2:for:not" {A(0)} -attr @path {/Render/Render:core/main-2:for:slc.itm}
+load net {main-2:for:not.itm} -pin  "main-2:for:not" {Z(0)} -attr @path {/Render/Render:core/main-2:for:not.itm}
+load inst "for:and#4" "and(2,1)" "INTERFACE" -attr xrf 7730 -attr oid 38 -attr @path {/Render/Render:core/for:and#4} -attr area 0.730832 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_and(1,2)"
+load net {main-2:for:not.itm} -pin  "for:and#4" {A0(0)} -attr @path {/Render/Render:core/main-2:for:not.itm}
+load net {exit:main-1:for.lpi.dfm} -pin  "for:and#4" {A1(0)} -attr @path {/Render/Render:core/exit:main-1:for.lpi.dfm}
+load net {for:and#4.itm} -pin  "for:and#4" {Z(0)} -attr @path {/Render/Render:core/for:and#4.itm}
+load inst "reg(exit:main-2:for.lpi)" "reg(1,1,0,0,1)" "INTERFACE" -attr xrf 7731 -attr oid 39 -attr @path {/Render/Render:core/reg(exit:main-2:for.lpi)}
+load net {for:and#4.itm} -pin  "reg(exit:main-2:for.lpi)" {D(0)} -attr @path {/Render/Render:core/for:and#4.itm}
+load net {PWR} -pin  "reg(exit:main-2:for.lpi)" {DRs(0)} -attr @path {/Render/Render:core/C1_1}
+load net {clk} -pin  "reg(exit:main-2:for.lpi)" {clk} -attr xrf 7732 -attr oid 40 -attr @path {/Render/Render:core/clk}
+load net {rst} -pin  "reg(exit:main-2:for.lpi)" {Rs(0)} -attr @path {/Render/Render:core/rst}
+load net {exit:main-2:for.lpi} -pin  "reg(exit:main-2:for.lpi)" {Z(0)} -attr @path {/Render/Render:core/exit:main-2:for.lpi}
+load inst "mux#3" "mux(2,21)" "INTERFACE" -attr xrf 7733 -attr oid 41 -attr vt d -attr @path {/Render/Render:core/mux#3} -attr area 19.308883 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_mux(21,1,2)"
+load net {for:i#2.sva#1(0)} -pin  "mux#3" {A0(0)} -attr vt d -attr @path {/Render/Render:core/for:i#2.sva#1}
+load net {for:i#2.sva#1(1)} -pin  "mux#3" {A0(1)} -attr vt d -attr @path {/Render/Render:core/for:i#2.sva#1}
+load net {for:i#2.sva#1(2)} -pin  "mux#3" {A0(2)} -attr vt d -attr @path {/Render/Render:core/for:i#2.sva#1}
+load net {for:i#2.sva#1(3)} -pin  "mux#3" {A0(3)} -attr vt d -attr @path {/Render/Render:core/for:i#2.sva#1}
+load net {for:i#2.sva#1(4)} -pin  "mux#3" {A0(4)} -attr vt d -attr @path {/Render/Render:core/for:i#2.sva#1}
+load net {for:i#2.sva#1(5)} -pin  "mux#3" {A0(5)} -attr vt d -attr @path {/Render/Render:core/for:i#2.sva#1}
+load net {for:i#2.sva#1(6)} -pin  "mux#3" {A0(6)} -attr vt d -attr @path {/Render/Render:core/for:i#2.sva#1}
+load net {for:i#2.sva#1(7)} -pin  "mux#3" {A0(7)} -attr vt d -attr @path {/Render/Render:core/for:i#2.sva#1}
+load net {for:i#2.sva#1(8)} -pin  "mux#3" {A0(8)} -attr vt d -attr @path {/Render/Render:core/for:i#2.sva#1}
+load net {for:i#2.sva#1(9)} -pin  "mux#3" {A0(9)} -attr vt d -attr @path {/Render/Render:core/for:i#2.sva#1}
+load net {for:i#2.sva#1(10)} -pin  "mux#3" {A0(10)} -attr vt d -attr @path {/Render/Render:core/for:i#2.sva#1}
+load net {for:i#2.sva#1(11)} -pin  "mux#3" {A0(11)} -attr vt d -attr @path {/Render/Render:core/for:i#2.sva#1}
+load net {for:i#2.sva#1(12)} -pin  "mux#3" {A0(12)} -attr vt d -attr @path {/Render/Render:core/for:i#2.sva#1}
+load net {for:i#2.sva#1(13)} -pin  "mux#3" {A0(13)} -attr vt d -attr @path {/Render/Render:core/for:i#2.sva#1}
+load net {for:i#2.sva#1(14)} -pin  "mux#3" {A0(14)} -attr vt d -attr @path {/Render/Render:core/for:i#2.sva#1}
+load net {for:i#2.sva#1(15)} -pin  "mux#3" {A0(15)} -attr vt d -attr @path {/Render/Render:core/for:i#2.sva#1}
+load net {for:i#2.sva#1(16)} -pin  "mux#3" {A0(16)} -attr vt d -attr @path {/Render/Render:core/for:i#2.sva#1}
+load net {for:i#2.sva#1(17)} -pin  "mux#3" {A0(17)} -attr vt d -attr @path {/Render/Render:core/for:i#2.sva#1}
+load net {for:i#2.sva#1(18)} -pin  "mux#3" {A0(18)} -attr vt d -attr @path {/Render/Render:core/for:i#2.sva#1}
+load net {for:i#2.sva#1(19)} -pin  "mux#3" {A0(19)} -attr vt d -attr @path {/Render/Render:core/for:i#2.sva#1}
+load net {for:i#2.sva#1(20)} -pin  "mux#3" {A0(20)} -attr vt d -attr @path {/Render/Render:core/for:i#2.sva#1}
+load net {for:i#2.lpi.dfm(0)} -pin  "mux#3" {A1(0)} -attr vt d -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(1)} -pin  "mux#3" {A1(1)} -attr vt d -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(2)} -pin  "mux#3" {A1(2)} -attr vt d -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(3)} -pin  "mux#3" {A1(3)} -attr vt d -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(4)} -pin  "mux#3" {A1(4)} -attr vt d -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(5)} -pin  "mux#3" {A1(5)} -attr vt d -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(6)} -pin  "mux#3" {A1(6)} -attr vt d -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(7)} -pin  "mux#3" {A1(7)} -attr vt d -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(8)} -pin  "mux#3" {A1(8)} -attr vt d -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(9)} -pin  "mux#3" {A1(9)} -attr vt d -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(10)} -pin  "mux#3" {A1(10)} -attr vt d -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(11)} -pin  "mux#3" {A1(11)} -attr vt d -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(12)} -pin  "mux#3" {A1(12)} -attr vt d -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(13)} -pin  "mux#3" {A1(13)} -attr vt d -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(14)} -pin  "mux#3" {A1(14)} -attr vt d -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(15)} -pin  "mux#3" {A1(15)} -attr vt d -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(16)} -pin  "mux#3" {A1(16)} -attr vt d -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(17)} -pin  "mux#3" {A1(17)} -attr vt d -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(18)} -pin  "mux#3" {A1(18)} -attr vt d -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(19)} -pin  "mux#3" {A1(19)} -attr vt d -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(20)} -pin  "mux#3" {A1(20)} -attr vt d -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {or.dcpl} -pin  "mux#3" {S(0)} -attr @path {/Render/Render:core/or.dcpl}
+load net {mux#3.itm(0)} -pin  "mux#3" {Z(0)} -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load net {mux#3.itm(1)} -pin  "mux#3" {Z(1)} -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load net {mux#3.itm(2)} -pin  "mux#3" {Z(2)} -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load net {mux#3.itm(3)} -pin  "mux#3" {Z(3)} -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load net {mux#3.itm(4)} -pin  "mux#3" {Z(4)} -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load net {mux#3.itm(5)} -pin  "mux#3" {Z(5)} -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load net {mux#3.itm(6)} -pin  "mux#3" {Z(6)} -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load net {mux#3.itm(7)} -pin  "mux#3" {Z(7)} -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load net {mux#3.itm(8)} -pin  "mux#3" {Z(8)} -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load net {mux#3.itm(9)} -pin  "mux#3" {Z(9)} -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load net {mux#3.itm(10)} -pin  "mux#3" {Z(10)} -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load net {mux#3.itm(11)} -pin  "mux#3" {Z(11)} -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load net {mux#3.itm(12)} -pin  "mux#3" {Z(12)} -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load net {mux#3.itm(13)} -pin  "mux#3" {Z(13)} -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load net {mux#3.itm(14)} -pin  "mux#3" {Z(14)} -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load net {mux#3.itm(15)} -pin  "mux#3" {Z(15)} -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load net {mux#3.itm(16)} -pin  "mux#3" {Z(16)} -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load net {mux#3.itm(17)} -pin  "mux#3" {Z(17)} -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load net {mux#3.itm(18)} -pin  "mux#3" {Z(18)} -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load net {mux#3.itm(19)} -pin  "mux#3" {Z(19)} -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load net {mux#3.itm(20)} -pin  "mux#3" {Z(20)} -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load inst "reg(for:i#2.lpi)" "reg(21,1,0,0,1)" "INTERFACE" -attr xrf 7734 -attr oid 42 -attr vt dc -attr @path {/Render/Render:core/reg(for:i#2.lpi)}
+load net {mux#3.itm(0)} -pin  "reg(for:i#2.lpi)" {D(0)} -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load net {mux#3.itm(1)} -pin  "reg(for:i#2.lpi)" {D(1)} -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load net {mux#3.itm(2)} -pin  "reg(for:i#2.lpi)" {D(2)} -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load net {mux#3.itm(3)} -pin  "reg(for:i#2.lpi)" {D(3)} -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load net {mux#3.itm(4)} -pin  "reg(for:i#2.lpi)" {D(4)} -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load net {mux#3.itm(5)} -pin  "reg(for:i#2.lpi)" {D(5)} -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load net {mux#3.itm(6)} -pin  "reg(for:i#2.lpi)" {D(6)} -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load net {mux#3.itm(7)} -pin  "reg(for:i#2.lpi)" {D(7)} -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load net {mux#3.itm(8)} -pin  "reg(for:i#2.lpi)" {D(8)} -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load net {mux#3.itm(9)} -pin  "reg(for:i#2.lpi)" {D(9)} -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load net {mux#3.itm(10)} -pin  "reg(for:i#2.lpi)" {D(10)} -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load net {mux#3.itm(11)} -pin  "reg(for:i#2.lpi)" {D(11)} -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load net {mux#3.itm(12)} -pin  "reg(for:i#2.lpi)" {D(12)} -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load net {mux#3.itm(13)} -pin  "reg(for:i#2.lpi)" {D(13)} -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load net {mux#3.itm(14)} -pin  "reg(for:i#2.lpi)" {D(14)} -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load net {mux#3.itm(15)} -pin  "reg(for:i#2.lpi)" {D(15)} -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load net {mux#3.itm(16)} -pin  "reg(for:i#2.lpi)" {D(16)} -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load net {mux#3.itm(17)} -pin  "reg(for:i#2.lpi)" {D(17)} -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load net {mux#3.itm(18)} -pin  "reg(for:i#2.lpi)" {D(18)} -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load net {mux#3.itm(19)} -pin  "reg(for:i#2.lpi)" {D(19)} -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load net {mux#3.itm(20)} -pin  "reg(for:i#2.lpi)" {D(20)} -attr vt d -attr @path {/Render/Render:core/mux#3.itm}
+load net {GND} -pin  "reg(for:i#2.lpi)" {DRs(0)} -attr @path {/Render/Render:core/C0_21}
+load net {GND} -pin  "reg(for:i#2.lpi)" {DRs(1)} -attr @path {/Render/Render:core/C0_21}
+load net {GND} -pin  "reg(for:i#2.lpi)" {DRs(2)} -attr @path {/Render/Render:core/C0_21}
+load net {GND} -pin  "reg(for:i#2.lpi)" {DRs(3)} -attr @path {/Render/Render:core/C0_21}
+load net {GND} -pin  "reg(for:i#2.lpi)" {DRs(4)} -attr @path {/Render/Render:core/C0_21}
+load net {GND} -pin  "reg(for:i#2.lpi)" {DRs(5)} -attr @path {/Render/Render:core/C0_21}
+load net {GND} -pin  "reg(for:i#2.lpi)" {DRs(6)} -attr @path {/Render/Render:core/C0_21}
+load net {GND} -pin  "reg(for:i#2.lpi)" {DRs(7)} -attr @path {/Render/Render:core/C0_21}
+load net {GND} -pin  "reg(for:i#2.lpi)" {DRs(8)} -attr @path {/Render/Render:core/C0_21}
+load net {GND} -pin  "reg(for:i#2.lpi)" {DRs(9)} -attr @path {/Render/Render:core/C0_21}
+load net {GND} -pin  "reg(for:i#2.lpi)" {DRs(10)} -attr @path {/Render/Render:core/C0_21}
+load net {GND} -pin  "reg(for:i#2.lpi)" {DRs(11)} -attr @path {/Render/Render:core/C0_21}
+load net {GND} -pin  "reg(for:i#2.lpi)" {DRs(12)} -attr @path {/Render/Render:core/C0_21}
+load net {GND} -pin  "reg(for:i#2.lpi)" {DRs(13)} -attr @path {/Render/Render:core/C0_21}
+load net {GND} -pin  "reg(for:i#2.lpi)" {DRs(14)} -attr @path {/Render/Render:core/C0_21}
+load net {GND} -pin  "reg(for:i#2.lpi)" {DRs(15)} -attr @path {/Render/Render:core/C0_21}
+load net {GND} -pin  "reg(for:i#2.lpi)" {DRs(16)} -attr @path {/Render/Render:core/C0_21}
+load net {GND} -pin  "reg(for:i#2.lpi)" {DRs(17)} -attr @path {/Render/Render:core/C0_21}
+load net {GND} -pin  "reg(for:i#2.lpi)" {DRs(18)} -attr @path {/Render/Render:core/C0_21}
+load net {GND} -pin  "reg(for:i#2.lpi)" {DRs(19)} -attr @path {/Render/Render:core/C0_21}
+load net {GND} -pin  "reg(for:i#2.lpi)" {DRs(20)} -attr @path {/Render/Render:core/C0_21}
+load net {clk} -pin  "reg(for:i#2.lpi)" {clk} -attr xrf 7735 -attr oid 43 -attr @path {/Render/Render:core/clk}
+load net {rst} -pin  "reg(for:i#2.lpi)" {Rs(0)} -attr @path {/Render/Render:core/rst}
+load net {for:i#2.lpi(0)} -pin  "reg(for:i#2.lpi)" {Z(0)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi}
+load net {for:i#2.lpi(1)} -pin  "reg(for:i#2.lpi)" {Z(1)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi}
+load net {for:i#2.lpi(2)} -pin  "reg(for:i#2.lpi)" {Z(2)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi}
+load net {for:i#2.lpi(3)} -pin  "reg(for:i#2.lpi)" {Z(3)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi}
+load net {for:i#2.lpi(4)} -pin  "reg(for:i#2.lpi)" {Z(4)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi}
+load net {for:i#2.lpi(5)} -pin  "reg(for:i#2.lpi)" {Z(5)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi}
+load net {for:i#2.lpi(6)} -pin  "reg(for:i#2.lpi)" {Z(6)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi}
+load net {for:i#2.lpi(7)} -pin  "reg(for:i#2.lpi)" {Z(7)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi}
+load net {for:i#2.lpi(8)} -pin  "reg(for:i#2.lpi)" {Z(8)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi}
+load net {for:i#2.lpi(9)} -pin  "reg(for:i#2.lpi)" {Z(9)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi}
+load net {for:i#2.lpi(10)} -pin  "reg(for:i#2.lpi)" {Z(10)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi}
+load net {for:i#2.lpi(11)} -pin  "reg(for:i#2.lpi)" {Z(11)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi}
+load net {for:i#2.lpi(12)} -pin  "reg(for:i#2.lpi)" {Z(12)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi}
+load net {for:i#2.lpi(13)} -pin  "reg(for:i#2.lpi)" {Z(13)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi}
+load net {for:i#2.lpi(14)} -pin  "reg(for:i#2.lpi)" {Z(14)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi}
+load net {for:i#2.lpi(15)} -pin  "reg(for:i#2.lpi)" {Z(15)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi}
+load net {for:i#2.lpi(16)} -pin  "reg(for:i#2.lpi)" {Z(16)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi}
+load net {for:i#2.lpi(17)} -pin  "reg(for:i#2.lpi)" {Z(17)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi}
+load net {for:i#2.lpi(18)} -pin  "reg(for:i#2.lpi)" {Z(18)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi}
+load net {for:i#2.lpi(19)} -pin  "reg(for:i#2.lpi)" {Z(19)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi}
+load net {for:i#2.lpi(20)} -pin  "reg(for:i#2.lpi)" {Z(20)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi}
+load inst "for:not#3" "not(1)" "INTERFACE" -attr xrf 7736 -attr oid 44 -attr @path {/Render/Render:core/for:not#3} -attr area 0.001000 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_not(1)"
+load net {exit:main-2:for.lpi} -pin  "for:not#3" {A(0)} -attr @path {/Render/Render:core/exit:main-2:for.lpi}
+load net {for:not#3.itm} -pin  "for:not#3" {Z(0)} -attr @path {/Render/Render:core/for:not#3.itm}
+load inst "for:and" "and(2,21)" "INTERFACE" -attr xrf 7737 -attr oid 45 -attr vt dc -attr @path {/Render/Render:core/for:and} -attr area 15.326480 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_and(21,2)"
+load net {for:i#2.lpi(0)} -pin  "for:and" {A0(0)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi}
+load net {for:i#2.lpi(1)} -pin  "for:and" {A0(1)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi}
+load net {for:i#2.lpi(2)} -pin  "for:and" {A0(2)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi}
+load net {for:i#2.lpi(3)} -pin  "for:and" {A0(3)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi}
+load net {for:i#2.lpi(4)} -pin  "for:and" {A0(4)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi}
+load net {for:i#2.lpi(5)} -pin  "for:and" {A0(5)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi}
+load net {for:i#2.lpi(6)} -pin  "for:and" {A0(6)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi}
+load net {for:i#2.lpi(7)} -pin  "for:and" {A0(7)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi}
+load net {for:i#2.lpi(8)} -pin  "for:and" {A0(8)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi}
+load net {for:i#2.lpi(9)} -pin  "for:and" {A0(9)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi}
+load net {for:i#2.lpi(10)} -pin  "for:and" {A0(10)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi}
+load net {for:i#2.lpi(11)} -pin  "for:and" {A0(11)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi}
+load net {for:i#2.lpi(12)} -pin  "for:and" {A0(12)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi}
+load net {for:i#2.lpi(13)} -pin  "for:and" {A0(13)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi}
+load net {for:i#2.lpi(14)} -pin  "for:and" {A0(14)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi}
+load net {for:i#2.lpi(15)} -pin  "for:and" {A0(15)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi}
+load net {for:i#2.lpi(16)} -pin  "for:and" {A0(16)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi}
+load net {for:i#2.lpi(17)} -pin  "for:and" {A0(17)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi}
+load net {for:i#2.lpi(18)} -pin  "for:and" {A0(18)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi}
+load net {for:i#2.lpi(19)} -pin  "for:and" {A0(19)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi}
+load net {for:i#2.lpi(20)} -pin  "for:and" {A0(20)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi}
+load net {for:not#3.itm} -pin  "for:and" {A1(0)} -attr vt d -attr @path {/Render/Render:core/for:exs.itm}
+load net {for:not#3.itm} -pin  "for:and" {A1(1)} -attr vt d -attr @path {/Render/Render:core/for:exs.itm}
+load net {for:not#3.itm} -pin  "for:and" {A1(2)} -attr vt d -attr @path {/Render/Render:core/for:exs.itm}
+load net {for:not#3.itm} -pin  "for:and" {A1(3)} -attr vt d -attr @path {/Render/Render:core/for:exs.itm}
+load net {for:not#3.itm} -pin  "for:and" {A1(4)} -attr vt d -attr @path {/Render/Render:core/for:exs.itm}
+load net {for:not#3.itm} -pin  "for:and" {A1(5)} -attr vt d -attr @path {/Render/Render:core/for:exs.itm}
+load net {for:not#3.itm} -pin  "for:and" {A1(6)} -attr vt d -attr @path {/Render/Render:core/for:exs.itm}
+load net {for:not#3.itm} -pin  "for:and" {A1(7)} -attr vt d -attr @path {/Render/Render:core/for:exs.itm}
+load net {for:not#3.itm} -pin  "for:and" {A1(8)} -attr vt d -attr @path {/Render/Render:core/for:exs.itm}
+load net {for:not#3.itm} -pin  "for:and" {A1(9)} -attr vt d -attr @path {/Render/Render:core/for:exs.itm}
+load net {for:not#3.itm} -pin  "for:and" {A1(10)} -attr vt d -attr @path {/Render/Render:core/for:exs.itm}
+load net {for:not#3.itm} -pin  "for:and" {A1(11)} -attr vt d -attr @path {/Render/Render:core/for:exs.itm}
+load net {for:not#3.itm} -pin  "for:and" {A1(12)} -attr vt d -attr @path {/Render/Render:core/for:exs.itm}
+load net {for:not#3.itm} -pin  "for:and" {A1(13)} -attr vt d -attr @path {/Render/Render:core/for:exs.itm}
+load net {for:not#3.itm} -pin  "for:and" {A1(14)} -attr vt d -attr @path {/Render/Render:core/for:exs.itm}
+load net {for:not#3.itm} -pin  "for:and" {A1(15)} -attr vt d -attr @path {/Render/Render:core/for:exs.itm}
+load net {for:not#3.itm} -pin  "for:and" {A1(16)} -attr vt d -attr @path {/Render/Render:core/for:exs.itm}
+load net {for:not#3.itm} -pin  "for:and" {A1(17)} -attr vt d -attr @path {/Render/Render:core/for:exs.itm}
+load net {for:not#3.itm} -pin  "for:and" {A1(18)} -attr vt d -attr @path {/Render/Render:core/for:exs.itm}
+load net {for:not#3.itm} -pin  "for:and" {A1(19)} -attr vt d -attr @path {/Render/Render:core/for:exs.itm}
+load net {for:not#3.itm} -pin  "for:and" {A1(20)} -attr vt d -attr @path {/Render/Render:core/for:exs.itm}
+load net {for:i#2.lpi.dfm(0)} -pin  "for:and" {Z(0)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(1)} -pin  "for:and" {Z(1)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(2)} -pin  "for:and" {Z(2)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(3)} -pin  "for:and" {Z(3)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(4)} -pin  "for:and" {Z(4)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(5)} -pin  "for:and" {Z(5)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(6)} -pin  "for:and" {Z(6)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(7)} -pin  "for:and" {Z(7)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(8)} -pin  "for:and" {Z(8)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(9)} -pin  "for:and" {Z(9)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(10)} -pin  "for:and" {Z(10)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(11)} -pin  "for:and" {Z(11)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(12)} -pin  "for:and" {Z(12)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(13)} -pin  "for:and" {Z(13)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(14)} -pin  "for:and" {Z(14)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(15)} -pin  "for:and" {Z(15)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(16)} -pin  "for:and" {Z(16)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(17)} -pin  "for:and" {Z(17)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(18)} -pin  "for:and" {Z(18)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(19)} -pin  "for:and" {Z(19)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(20)} -pin  "for:and" {Z(20)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load inst "for:not#5" "not(1)" "INTERFACE" -attr xrf 7738 -attr oid 46 -attr @path {/Render/Render:core/for:not#5} -attr area 0.001000 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_not(1)"
+load net {exit:main-2:for.lpi} -pin  "for:not#5" {A(0)} -attr @path {/Render/Render:core/exit:main-2:for.lpi}
+load net {for:not#5.itm} -pin  "for:not#5" {Z(0)} -attr @path {/Render/Render:core/for:not#5.itm}
+load inst "for:and#2" "and(2,1)" "INTERFACE" -attr xrf 7739 -attr oid 47 -attr @path {/Render/Render:core/for:and#2} -attr area 0.730832 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_and(1,2)"
+load net {exit:main-1:for.lpi} -pin  "for:and#2" {A0(0)} -attr @path {/Render/Render:core/exit:main-1:for.lpi}
+load net {for:not#5.itm} -pin  "for:and#2" {A1(0)} -attr @path {/Render/Render:core/for:not#5.itm}
+load net {exit:main-1:for.lpi.dfm} -pin  "for:and#2" {Z(0)} -attr @path {/Render/Render:core/exit:main-1:for.lpi.dfm}
+load inst "main-2:for:acc#2" "add(21,-1,1,0,21)" "INTERFACE" -attr xrf 7740 -attr oid 48 -attr vt d -attr @path {/Render/Render:core/main-2:for:acc#2} -attr area 22.000000 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(21,0,2,1,21)"
+load net {for:i#1.lpi(0)} -pin  "main-2:for:acc#2" {A(0)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(1)} -pin  "main-2:for:acc#2" {A(1)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(2)} -pin  "main-2:for:acc#2" {A(2)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(3)} -pin  "main-2:for:acc#2" {A(3)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(4)} -pin  "main-2:for:acc#2" {A(4)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(5)} -pin  "main-2:for:acc#2" {A(5)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(6)} -pin  "main-2:for:acc#2" {A(6)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(7)} -pin  "main-2:for:acc#2" {A(7)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(8)} -pin  "main-2:for:acc#2" {A(8)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(9)} -pin  "main-2:for:acc#2" {A(9)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(10)} -pin  "main-2:for:acc#2" {A(10)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(11)} -pin  "main-2:for:acc#2" {A(11)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(12)} -pin  "main-2:for:acc#2" {A(12)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(13)} -pin  "main-2:for:acc#2" {A(13)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(14)} -pin  "main-2:for:acc#2" {A(14)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(15)} -pin  "main-2:for:acc#2" {A(15)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(16)} -pin  "main-2:for:acc#2" {A(16)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(17)} -pin  "main-2:for:acc#2" {A(17)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(18)} -pin  "main-2:for:acc#2" {A(18)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(19)} -pin  "main-2:for:acc#2" {A(19)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {for:i#1.lpi(20)} -pin  "main-2:for:acc#2" {A(20)} -attr vt d -attr @path {/Render/Render:core/for:i#1.lpi}
+load net {PWR} -pin  "main-2:for:acc#2" {B(0)} -attr @path {/Render/Render:core/C1_1#1}
+load net {for:i#1.sva(0)} -pin  "main-2:for:acc#2" {Z(0)} -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load net {for:i#1.sva(1)} -pin  "main-2:for:acc#2" {Z(1)} -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load net {for:i#1.sva(2)} -pin  "main-2:for:acc#2" {Z(2)} -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load net {for:i#1.sva(3)} -pin  "main-2:for:acc#2" {Z(3)} -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load net {for:i#1.sva(4)} -pin  "main-2:for:acc#2" {Z(4)} -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load net {for:i#1.sva(5)} -pin  "main-2:for:acc#2" {Z(5)} -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load net {for:i#1.sva(6)} -pin  "main-2:for:acc#2" {Z(6)} -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load net {for:i#1.sva(7)} -pin  "main-2:for:acc#2" {Z(7)} -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load net {for:i#1.sva(8)} -pin  "main-2:for:acc#2" {Z(8)} -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load net {for:i#1.sva(9)} -pin  "main-2:for:acc#2" {Z(9)} -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load net {for:i#1.sva(10)} -pin  "main-2:for:acc#2" {Z(10)} -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load net {for:i#1.sva(11)} -pin  "main-2:for:acc#2" {Z(11)} -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load net {for:i#1.sva(12)} -pin  "main-2:for:acc#2" {Z(12)} -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load net {for:i#1.sva(13)} -pin  "main-2:for:acc#2" {Z(13)} -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load net {for:i#1.sva(14)} -pin  "main-2:for:acc#2" {Z(14)} -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load net {for:i#1.sva(15)} -pin  "main-2:for:acc#2" {Z(15)} -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load net {for:i#1.sva(16)} -pin  "main-2:for:acc#2" {Z(16)} -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load net {for:i#1.sva(17)} -pin  "main-2:for:acc#2" {Z(17)} -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load net {for:i#1.sva(18)} -pin  "main-2:for:acc#2" {Z(18)} -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load net {for:i#1.sva(19)} -pin  "main-2:for:acc#2" {Z(19)} -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load net {for:i#1.sva(20)} -pin  "main-2:for:acc#2" {Z(20)} -attr vt d -attr @path {/Render/Render:core/for:i#1.sva}
+load inst "main-1:for:acc" "add(3,0,4,-1,4)" "INTERFACE" -attr xrf 7741 -attr oid 49 -attr vt dc -attr @path {/Render/Render:core/main-1:for:acc} -attr area 5.293382 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(4,0,4,0,4)"
+load net {for:i#2.sva#1(18)} -pin  "main-1:for:acc" {A(0)} -attr vt dc -attr @path {/Render/Render:core/slc(for:i#2.sva#3).itm}
+load net {for:i#2.sva#1(19)} -pin  "main-1:for:acc" {A(1)} -attr vt dc -attr @path {/Render/Render:core/slc(for:i#2.sva#3).itm}
+load net {for:i#2.sva#1(20)} -pin  "main-1:for:acc" {A(2)} -attr vt dc -attr @path {/Render/Render:core/slc(for:i#2.sva#3).itm}
+load net {PWR} -pin  "main-1:for:acc" {B(0)} -attr @path {/Render/Render:core/Cn5_4}
+load net {PWR} -pin  "main-1:for:acc" {B(1)} -attr @path {/Render/Render:core/Cn5_4}
+load net {GND} -pin  "main-1:for:acc" {B(2)} -attr @path {/Render/Render:core/Cn5_4}
+load net {PWR} -pin  "main-1:for:acc" {B(3)} -attr @path {/Render/Render:core/Cn5_4}
+load net {main-1:for:acc.itm(0)} -pin  "main-1:for:acc" {Z(0)} -attr vt dc -attr @path {/Render/Render:core/main-1:for:acc.itm}
+load net {main-1:for:acc.itm(1)} -pin  "main-1:for:acc" {Z(1)} -attr vt dc -attr @path {/Render/Render:core/main-1:for:acc.itm}
+load net {main-1:for:acc.itm(2)} -pin  "main-1:for:acc" {Z(2)} -attr vt dc -attr @path {/Render/Render:core/main-1:for:acc.itm}
+load net {main-1:for:acc.itm(3)} -pin  "main-1:for:acc" {Z(3)} -attr vt dc -attr @path {/Render/Render:core/main-1:for:acc.itm}
+load inst "main-1:for:not" "not(1)" "INTERFACE" -attr xrf 7742 -attr oid 50 -attr vt c -attr @path {/Render/Render:core/main-1:for:not} -attr area 0.001000 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_not(1)"
+load net {main-1:for:acc.itm(3)} -pin  "main-1:for:not" {A(0)} -attr vt c -attr @path {/Render/Render:core/main-1:for:slc.itm}
+load net {exit:main-1:for.sva#1} -pin  "main-1:for:not" {Z(0)} -attr vt c -attr @path {/Render/Render:core/exit:main-1:for.sva#1}
+load inst "main-1:for:acc#2" "add(21,-1,1,0,21)" "INTERFACE" -attr xrf 7743 -attr oid 51 -attr vt dc -attr @path {/Render/Render:core/main-1:for:acc#2} -attr area 22.000000 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(21,0,2,1,21)"
+load net {for:i#2.lpi.dfm(0)} -pin  "main-1:for:acc#2" {A(0)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(1)} -pin  "main-1:for:acc#2" {A(1)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(2)} -pin  "main-1:for:acc#2" {A(2)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(3)} -pin  "main-1:for:acc#2" {A(3)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(4)} -pin  "main-1:for:acc#2" {A(4)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(5)} -pin  "main-1:for:acc#2" {A(5)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(6)} -pin  "main-1:for:acc#2" {A(6)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(7)} -pin  "main-1:for:acc#2" {A(7)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(8)} -pin  "main-1:for:acc#2" {A(8)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(9)} -pin  "main-1:for:acc#2" {A(9)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(10)} -pin  "main-1:for:acc#2" {A(10)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(11)} -pin  "main-1:for:acc#2" {A(11)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(12)} -pin  "main-1:for:acc#2" {A(12)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(13)} -pin  "main-1:for:acc#2" {A(13)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(14)} -pin  "main-1:for:acc#2" {A(14)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(15)} -pin  "main-1:for:acc#2" {A(15)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(16)} -pin  "main-1:for:acc#2" {A(16)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(17)} -pin  "main-1:for:acc#2" {A(17)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(18)} -pin  "main-1:for:acc#2" {A(18)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(19)} -pin  "main-1:for:acc#2" {A(19)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {for:i#2.lpi.dfm(20)} -pin  "main-1:for:acc#2" {A(20)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.lpi.dfm}
+load net {PWR} -pin  "main-1:for:acc#2" {B(0)} -attr @path {/Render/Render:core/C1_1#1}
+load net {for:i#2.sva#1(0)} -pin  "main-1:for:acc#2" {Z(0)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.sva#1}
+load net {for:i#2.sva#1(1)} -pin  "main-1:for:acc#2" {Z(1)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.sva#1}
+load net {for:i#2.sva#1(2)} -pin  "main-1:for:acc#2" {Z(2)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.sva#1}
+load net {for:i#2.sva#1(3)} -pin  "main-1:for:acc#2" {Z(3)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.sva#1}
+load net {for:i#2.sva#1(4)} -pin  "main-1:for:acc#2" {Z(4)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.sva#1}
+load net {for:i#2.sva#1(5)} -pin  "main-1:for:acc#2" {Z(5)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.sva#1}
+load net {for:i#2.sva#1(6)} -pin  "main-1:for:acc#2" {Z(6)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.sva#1}
+load net {for:i#2.sva#1(7)} -pin  "main-1:for:acc#2" {Z(7)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.sva#1}
+load net {for:i#2.sva#1(8)} -pin  "main-1:for:acc#2" {Z(8)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.sva#1}
+load net {for:i#2.sva#1(9)} -pin  "main-1:for:acc#2" {Z(9)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.sva#1}
+load net {for:i#2.sva#1(10)} -pin  "main-1:for:acc#2" {Z(10)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.sva#1}
+load net {for:i#2.sva#1(11)} -pin  "main-1:for:acc#2" {Z(11)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.sva#1}
+load net {for:i#2.sva#1(12)} -pin  "main-1:for:acc#2" {Z(12)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.sva#1}
+load net {for:i#2.sva#1(13)} -pin  "main-1:for:acc#2" {Z(13)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.sva#1}
+load net {for:i#2.sva#1(14)} -pin  "main-1:for:acc#2" {Z(14)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.sva#1}
+load net {for:i#2.sva#1(15)} -pin  "main-1:for:acc#2" {Z(15)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.sva#1}
+load net {for:i#2.sva#1(16)} -pin  "main-1:for:acc#2" {Z(16)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.sva#1}
+load net {for:i#2.sva#1(17)} -pin  "main-1:for:acc#2" {Z(17)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.sva#1}
+load net {for:i#2.sva#1(18)} -pin  "main-1:for:acc#2" {Z(18)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.sva#1}
+load net {for:i#2.sva#1(19)} -pin  "main-1:for:acc#2" {Z(19)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.sva#1}
+load net {for:i#2.sva#1(20)} -pin  "main-1:for:acc#2" {Z(20)} -attr vt dc -attr @path {/Render/Render:core/for:i#2.sva#1}
+load inst "not" "not(1)" "INTERFACE" -attr @path {/Render/Render:core/not} -attr area 0.001000 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_not(1)"
+load net {exit:main-1:for.lpi} -pin  "not" {A(0)} -attr @path {/Render/Render:core/exit:main-1:for.lpi}
+load net {not.itm} -pin  "not" {Z(0)} -attr @path {/Render/Render:core/not.itm}
+load inst "or" "or(2,1)" "INTERFACE" -attr @path {/Render/Render:core/or} -attr area 0.730832 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_or(1,2)"
+load net {exit:main-2:for.lpi} -pin  "or" {A0(0)} -attr @path {/Render/Render:core/exit:main-2:for.lpi}
+load net {not.itm} -pin  "or" {A1(0)} -attr @path {/Render/Render:core/not.itm}
+load net {or.dcpl} -pin  "or" {Z(0)} -attr @path {/Render/Render:core/or.dcpl}
+### END MODULE 
+
+module new "Render" "orig"
+load portBus {v_out:rsc.z(11:0)} output 12 {v_out:rsc.z(11)} {v_out:rsc.z(10)} {v_out:rsc.z(9)} {v_out:rsc.z(8)} {v_out:rsc.z(7)} {v_out:rsc.z(6)} {v_out:rsc.z(5)} {v_out:rsc.z(4)} {v_out:rsc.z(3)} {v_out:rsc.z(2)} {v_out:rsc.z(1)} {v_out:rsc.z(0)} -attr xrf 7744 -attr oid 52 -attr vt d -attr @path {/Render/v_out:rsc.z}
+load port {clk} input -attr xrf 7745 -attr oid 53 -attr vt d -attr @path {/Render/clk}
+load port {rst} input -attr xrf 7746 -attr oid 54 -attr vt d -attr @path {/Render/rst}
+load symbol "mgc_ioport.mgc_out_stdreg(1,12)" "INTERFACE" GEN boxcolor 0 \
+     portBus {d(11:0)} input 12 {d(11)} {d(10)} {d(9)} {d(8)} {d(7)} {d(6)} {d(5)} {d(4)} {d(3)} {d(2)} {d(1)} {d(0)} \
+     portBus {z(11:0)} output 12 {z(11)} {z(10)} {z(9)} {z(8)} {z(7)} {z(6)} {z(5)} {z(4)} {z(3)} {z(2)} {z(1)} {z(0)} \
+
+load symbol "Render:core" "orig" GEN \
+     port {clk#1} input \
+     port {rst#1} input \
+     portBus {v_out:rsc:mgc_out_stdreg.d(11:0)} output 12 {v_out:rsc:mgc_out_stdreg.d(11)} {v_out:rsc:mgc_out_stdreg.d(10)} {v_out:rsc:mgc_out_stdreg.d(9)} {v_out:rsc:mgc_out_stdreg.d(8)} {v_out:rsc:mgc_out_stdreg.d(7)} {v_out:rsc:mgc_out_stdreg.d(6)} {v_out:rsc:mgc_out_stdreg.d(5)} {v_out:rsc:mgc_out_stdreg.d(4)} {v_out:rsc:mgc_out_stdreg.d(3)} {v_out:rsc:mgc_out_stdreg.d(2)} {v_out:rsc:mgc_out_stdreg.d(1)} {v_out:rsc:mgc_out_stdreg.d(0)} \
+
+load net {v_out:rsc:mgc_out_stdreg.d#1(0)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d#1(1)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d#1(2)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d#1(3)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d#1(4)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d#1(5)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d#1(6)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d#1(7)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d#1(8)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d#1(9)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d#1(10)} -attr vt d
+load net {v_out:rsc:mgc_out_stdreg.d#1(11)} -attr vt d
+load netBundle {v_out:rsc:mgc_out_stdreg.d#1} 12 {v_out:rsc:mgc_out_stdreg.d#1(0)} {v_out:rsc:mgc_out_stdreg.d#1(1)} {v_out:rsc:mgc_out_stdreg.d#1(2)} {v_out:rsc:mgc_out_stdreg.d#1(3)} {v_out:rsc:mgc_out_stdreg.d#1(4)} {v_out:rsc:mgc_out_stdreg.d#1(5)} {v_out:rsc:mgc_out_stdreg.d#1(6)} {v_out:rsc:mgc_out_stdreg.d#1(7)} {v_out:rsc:mgc_out_stdreg.d#1(8)} {v_out:rsc:mgc_out_stdreg.d#1(9)} {v_out:rsc:mgc_out_stdreg.d#1(10)} {v_out:rsc:mgc_out_stdreg.d#1(11)} -attr xrf 7747 -attr oid 55 -attr vt d -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc.z(0)} -attr vt d
+load net {v_out:rsc.z(1)} -attr vt d
+load net {v_out:rsc.z(2)} -attr vt d
+load net {v_out:rsc.z(3)} -attr vt d
+load net {v_out:rsc.z(4)} -attr vt d
+load net {v_out:rsc.z(5)} -attr vt d
+load net {v_out:rsc.z(6)} -attr vt d
+load net {v_out:rsc.z(7)} -attr vt d
+load net {v_out:rsc.z(8)} -attr vt d
+load net {v_out:rsc.z(9)} -attr vt d
+load net {v_out:rsc.z(10)} -attr vt d
+load net {v_out:rsc.z(11)} -attr vt d
+load netBundle {v_out:rsc.z} 12 {v_out:rsc.z(0)} {v_out:rsc.z(1)} {v_out:rsc.z(2)} {v_out:rsc.z(3)} {v_out:rsc.z(4)} {v_out:rsc.z(5)} {v_out:rsc.z(6)} {v_out:rsc.z(7)} {v_out:rsc.z(8)} {v_out:rsc.z(9)} {v_out:rsc.z(10)} {v_out:rsc.z(11)} -attr xrf 7748 -attr oid 56 -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(0)} -port {v_out:rsc.z(0)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(1)} -port {v_out:rsc.z(1)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(2)} -port {v_out:rsc.z(2)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(3)} -port {v_out:rsc.z(3)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(4)} -port {v_out:rsc.z(4)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(5)} -port {v_out:rsc.z(5)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(6)} -port {v_out:rsc.z(6)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(7)} -port {v_out:rsc.z(7)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(8)} -port {v_out:rsc.z(8)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(9)} -port {v_out:rsc.z(9)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(10)} -port {v_out:rsc.z(10)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(11)} -port {v_out:rsc.z(11)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {clk} -attr xrf 7749 -attr oid 57
+load net {clk} -port {clk} -attr xrf 7750 -attr oid 58
+load net {rst} -attr xrf 7751 -attr oid 59
+load net {rst} -port {rst} -attr xrf 7752 -attr oid 60
+load inst "Render:core:inst" "Render:core" "orig" -attr xrf 7753 -attr oid 61 -attr vt dc -attr @path {/Render/Render:core:inst} -attr area 138.483598 -attr delay 3.780464 -attr hier "/Render/Render:core" -pg 1 -lvl 3
+load net {clk} -pin  "Render:core:inst" {clk#1} -attr xrf 7754 -attr oid 62 -attr @path {/Render/clk}
+load net {rst} -pin  "Render:core:inst" {rst#1} -attr xrf 7755 -attr oid 63 -attr @path {/Render/rst}
+load net {v_out:rsc:mgc_out_stdreg.d#1(0)} -pin  "Render:core:inst" {v_out:rsc:mgc_out_stdreg.d(0)} -attr vt dc -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(1)} -pin  "Render:core:inst" {v_out:rsc:mgc_out_stdreg.d(1)} -attr vt dc -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(2)} -pin  "Render:core:inst" {v_out:rsc:mgc_out_stdreg.d(2)} -attr vt dc -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(3)} -pin  "Render:core:inst" {v_out:rsc:mgc_out_stdreg.d(3)} -attr vt dc -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(4)} -pin  "Render:core:inst" {v_out:rsc:mgc_out_stdreg.d(4)} -attr vt dc -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(5)} -pin  "Render:core:inst" {v_out:rsc:mgc_out_stdreg.d(5)} -attr vt dc -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(6)} -pin  "Render:core:inst" {v_out:rsc:mgc_out_stdreg.d(6)} -attr vt dc -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(7)} -pin  "Render:core:inst" {v_out:rsc:mgc_out_stdreg.d(7)} -attr vt dc -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(8)} -pin  "Render:core:inst" {v_out:rsc:mgc_out_stdreg.d(8)} -attr vt dc -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(9)} -pin  "Render:core:inst" {v_out:rsc:mgc_out_stdreg.d(9)} -attr vt dc -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(10)} -pin  "Render:core:inst" {v_out:rsc:mgc_out_stdreg.d(10)} -attr vt dc -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(11)} -pin  "Render:core:inst" {v_out:rsc:mgc_out_stdreg.d(11)} -attr vt dc -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load inst "v_out:rsc:mgc_out_stdreg" "mgc_ioport.mgc_out_stdreg(1,12)" "INTERFACE" -attr xrf 7756 -attr oid 64 -attr vt d -attr @path {/Render/v_out:rsc:mgc_out_stdreg} -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_ioport.mgc_out_stdreg(1,12)" -pg 1 -lvl 1002
+load net {v_out:rsc:mgc_out_stdreg.d#1(0)} -pin  "v_out:rsc:mgc_out_stdreg" {d(0)} -attr vt d -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(1)} -pin  "v_out:rsc:mgc_out_stdreg" {d(1)} -attr vt d -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(2)} -pin  "v_out:rsc:mgc_out_stdreg" {d(2)} -attr vt d -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(3)} -pin  "v_out:rsc:mgc_out_stdreg" {d(3)} -attr vt d -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(4)} -pin  "v_out:rsc:mgc_out_stdreg" {d(4)} -attr vt d -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(5)} -pin  "v_out:rsc:mgc_out_stdreg" {d(5)} -attr vt d -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(6)} -pin  "v_out:rsc:mgc_out_stdreg" {d(6)} -attr vt d -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(7)} -pin  "v_out:rsc:mgc_out_stdreg" {d(7)} -attr vt d -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(8)} -pin  "v_out:rsc:mgc_out_stdreg" {d(8)} -attr vt d -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(9)} -pin  "v_out:rsc:mgc_out_stdreg" {d(9)} -attr vt d -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(10)} -pin  "v_out:rsc:mgc_out_stdreg" {d(10)} -attr vt d -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc:mgc_out_stdreg.d#1(11)} -pin  "v_out:rsc:mgc_out_stdreg" {d(11)} -attr vt d -attr @path {/Render/v_out:rsc:mgc_out_stdreg.d}
+load net {v_out:rsc.z(0)} -pin  "v_out:rsc:mgc_out_stdreg" {z(0)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(1)} -pin  "v_out:rsc:mgc_out_stdreg" {z(1)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(2)} -pin  "v_out:rsc:mgc_out_stdreg" {z(2)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(3)} -pin  "v_out:rsc:mgc_out_stdreg" {z(3)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(4)} -pin  "v_out:rsc:mgc_out_stdreg" {z(4)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(5)} -pin  "v_out:rsc:mgc_out_stdreg" {z(5)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(6)} -pin  "v_out:rsc:mgc_out_stdreg" {z(6)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(7)} -pin  "v_out:rsc:mgc_out_stdreg" {z(7)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(8)} -pin  "v_out:rsc:mgc_out_stdreg" {z(8)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(9)} -pin  "v_out:rsc:mgc_out_stdreg" {z(9)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(10)} -pin  "v_out:rsc:mgc_out_stdreg" {z(10)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+load net {v_out:rsc.z(11)} -pin  "v_out:rsc:mgc_out_stdreg" {z(11)} -attr vt d -attr @path {/Render/v_out:rsc.z}
+### END MODULE 
+

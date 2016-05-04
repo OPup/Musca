@@ -1,0 +1,24 @@
+
+# Messages from "go new"
+
+Creating project directory '\\icnas3.cc.ic.ac.uk\oh1015\MUSCA\Input Engine\ColourDetection\ColourDetection'. (PRJ-1)
+Branching solution 'solution.v1' at state 'new' (PRJ-2)
+Branching solution 'solution.v2' at state 'new' (PRJ-2)
+
+# Messages from "go analyze"
+
+Front End called with arguments: -- {\\icnas3.cc.ic.ac.uk\oh1015\MUSCA\Input Engine\ColourDetection\shift_class.h} {\\icnas3.cc.ic.ac.uk\oh1015\MUSCA\Input Engine\ColourDetection\blur.h} {\\icnas3.cc.ic.ac.uk\oh1015\MUSCA\Input Engine\ColourDetection\blur.cpp} (CIN-69)
+Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+Pragma 'hls_design<top>' detected on routine 'mean_vga' (CIN-6)
+Source file analysis completed (CIN-68)
+Starting transformation 'analyze' on solution 'solution.v2' (SOL-8)
+Completed transformation 'analyze' on solution 'solution.v2': elapsed time 1.51 seconds, memory usage 172876kB, peak memory usage 246252kB (SOL-9)
+$PROJECT_HOME/shift_class.h(54): last line of file ends without a newline (CRD-1)
+$PROJECT_HOME/blur.h(45): last line of file ends without a newline (CRD-1)
+          detected during compilation of secondary translation unit "\\icnas3.cc.ic.ac.uk\oh1015\MUSCA\Input Engine\ColourDetection\blur.h"
+$PROJECT_HOME/blur.h(45): last line of file ends without a newline (CRD-1)
+          detected during compilation of secondary translation unit "\\icnas3.cc.ic.ac.uk\oh1015\MUSCA\Input Engine\ColourDetection\blur.cpp"
+$PROJECT_HOME/shift_class.h(54): last line of file ends without a newline (CRD-1)
+          detected during compilation of secondary translation unit "\\icnas3.cc.ic.ac.uk\oh1015\MUSCA\Input Engine\ColourDetection\blur.cpp"
+$PROJECT_HOME/blur.cpp(143): last line of file ends without a newline (CRD-1)
+          detected during compilation of secondary translation unit "\\icnas3.cc.ic.ac.uk\oh1015\MUSCA\Input Engine\ColourDetection\blur.cpp"
