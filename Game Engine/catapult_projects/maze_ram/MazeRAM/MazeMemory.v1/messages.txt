@@ -1,0 +1,50 @@
+
+# Messages from "go new"
+
+
+# Messages from "go analyze"
+
+Front End called with arguments: -- {\\icnas2.cc.ic.ac.uk\kjr115\Project\Musca\Game Engine\src\MazeArray.cpp} (CIN-69)
+Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+Source file analysis completed (CIN-68)
+Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
+Completed transformation 'analyze' on solution 'solution.v1': elapsed time 0.44 seconds, memory usage 148408kB, peak memory usage 202540kB (SOL-9)
+$PROJECT_HOME/../../src/MazeArray.cpp(14): last line of file ends without a newline (CRD-1)
+
+# Messages from "go compile"
+
+Reading component library '$MGC_HOME\pkgs\siflibs\mgc_busdefs.lib' [mgc_busdefs]... (LIB-49)
+Reading component library '$MGC_HOME\pkgs\siflibs\stdops.lib' [STDOPS]... (LIB-49)
+Reading component library '$MGC_HOME\pkgs\siflibs\mgc_ioport.lib' [mgc_ioport]... (LIB-49)
+Reading component library '$MGC_HOME\pkgs\ccs_altera\Altera_accel_CycloneIII.lib' [Altera_accel_CycloneIII]... (LIB-49)
+Reading component library '$MGC_HOME\pkgs\siflibs\psr2010a_up2\mgc_Altera-Cyclone-III-6_beh_psr.lib' [mgc_Altera-Cyclone-III-6_beh_psr]... (LIB-49)
+Starting transformation 'compile' on solution 'solution.v1' (SOL-8)
+Generating synthesis internal form... (CIN-3)
+Found top design routine 'MazeMemory' specified by directive (CIN-52)
+Synthesizing routine 'MazeMemory' (CIN-13)
+Inlining routine 'MazeMemory' (CIN-14)
+Optimizing block '/MazeMemory' ... (CIN-4)
+Inout port 'out' is only used as an output. (OPT-11)
+Design 'MazeMemory' was read (SOL-1)
+Optimizing partition '/MazeMemory': (Total ops = 23, Real ops = 1, Vars = 13) (SOL-10)
+Optimizing partition '/MazeMemory/core': (Total ops = 23, Real ops = 1, Vars = 8) (SOL-10)
+Optimizing partition '/MazeMemory/core': (Total ops = 23, Real ops = 1, Vars = 8) (SOL-10)
+Optimizing partition '/MazeMemory': (Total ops = 23, Real ops = 1, Vars = 13) (SOL-10)
+Optimizing partition '/MazeMemory': (Total ops = 23, Real ops = 1, Vars = 13) (SOL-10)
+Optimizing partition '/MazeMemory/core': (Total ops = 23, Real ops = 1, Vars = 8) (SOL-10)
+Optimizing partition '/MazeMemory/core': (Total ops = 15, Real ops = 1, Vars = 6) (SOL-10)
+Optimizing partition '/MazeMemory': (Total ops = 15, Real ops = 1, Vars = 11) (SOL-10)
+Optimizing partition '/MazeMemory': (Total ops = 15, Real ops = 1, Vars = 11) (SOL-10)
+Optimizing partition '/MazeMemory/core': (Total ops = 15, Real ops = 1, Vars = 6) (SOL-10)
+Optimizing partition '/MazeMemory/core': (Total ops = 10, Real ops = 0, Vars = 4) (SOL-10)
+Optimizing partition '/MazeMemory': (Total ops = 10, Real ops = 0, Vars = 9) (SOL-10)
+Optimizing partition '/MazeMemory/core': (Total ops = 10, Real ops = 0, Vars = 4) (SOL-10)
+Optimizing partition '/MazeMemory': (Total ops = 10, Real ops = 0, Vars = 9) (SOL-10)
+Optimizing partition '/MazeMemory': (Total ops = 10, Real ops = 0, Vars = 9) (SOL-10)
+Optimizing partition '/MazeMemory/core': (Total ops = 10, Real ops = 0, Vars = 4) (SOL-10)
+Optimizing partition '/MazeMemory/core': (Total ops = 10, Real ops = 0, Vars = 4) (SOL-10)
+Optimizing partition '/MazeMemory': (Total ops = 10, Real ops = 0, Vars = 9) (SOL-10)
+Optimizing partition '/MazeMemory': (Total ops = 10, Real ops = 0, Vars = 9) (SOL-10)
+Optimizing partition '/MazeMemory/core': (Total ops = 10, Real ops = 0, Vars = 4) (SOL-10)
+Completed transformation 'compile' on solution 'MazeMemory.v1': elapsed time 0.31 seconds, memory usage 156132kB, peak memory usage 202540kB (SOL-9)
+Instantiating global variable 'maze' which may be accessed outside this scope (CIN-18)

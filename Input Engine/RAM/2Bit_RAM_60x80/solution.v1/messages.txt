@@ -1,0 +1,13 @@
+
+# Messages from "go new"
+
+Creating project directory '\\icnas2.cc.ic.ac.uk\kjr115\Project\Musca\Input Engine\RAM\2Bit_RAM_60x80'. (PRJ-1)
+
+# Messages from "go analyze"
+
+Front End called with arguments: -- {\\icnas2.cc.ic.ac.uk\kjr115\Project\Musca\Input Engine\RAM\src\60x80RAM.cpp} (CIN-69)
+Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+Source file analysis completed (CIN-68)
+Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
+Completed transformation 'analyze' on solution 'solution.v1': elapsed time 0.87 seconds, memory usage 172056kB, peak memory usage 195384kB (SOL-9)
+$PROJECT_HOME/src/60x80RAM.cpp(16): last line of file ends without a newline (CRD-1)

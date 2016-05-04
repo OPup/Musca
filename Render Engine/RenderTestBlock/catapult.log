@@ -13,13 +13,13 @@
 //  This version may only be used for academic purposes.  Some optimizations 
 //  are disabled, so results obtained from this version may be sub-optimal.
 //  
-//  Start time Wed May 04 11:30:34 2016
+//  Start time Wed May 04 14:11:47 2016
 # -------------------------------------------------
-# Logging session transcript to file "C:\Users\kjr115\AppData\Local\Temp\log2452254b5e4.0"
+# Logging session transcript to file "C:\Users\kjr115\AppData\Local\Temp\log622425ba420.0"
 # Loading options from registry.
 # Warning: set_working_dir: Directory 'C:/Windows/System32' not writable, using C:/Users/kjr115/AppData/Local/Temp
-project load //icnas2.cc.ic.ac.uk/kjr115/RenderTestBlock/RenderBlock.ccs
-# Moving session transcript to file "\\icnas2.cc.ic.ac.uk\kjr115\RenderTestBlock\catapult.log"
+project load {H:/Project/Musca/Render Engine/RenderTestBlock/RenderBlock.ccs}
+# Moving session transcript to file "H:\Project\Musca\Render Engine\RenderTestBlock\catapult.log"
 # Reading component library '$MGC_HOME\pkgs\siflibs\mgc_busdefs.lib' [mgc_busdefs]... (LIB-49)
 # Reading component library '$MGC_HOME\pkgs\siflibs\stdops.lib' [STDOPS]... (LIB-49)
 # Reading component library '$MGC_HOME\pkgs\siflibs\mgc_ioport.lib' [mgc_ioport]... (LIB-49)

@@ -1,0 +1,496 @@
+//  Catapult University Version 2011a.126 (Production Release) Wed Aug  8 00:52:07 PDT 2012
+//  
+//  Copyright (c) Calypto Design Systems, Inc., 1996-2012, All Rights Reserved.
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF CALYPTO DESIGN SYSTEMS OR ITS LICENSORS
+//  
+//  Running on Windows 7 kjr115@EEWS104A-021 Service Pack 1 6.01.7601 i686
+//  
+//  Package information: SIFLIBS v17.0_1.1, HLS_PKGS v17.0_1.1, 
+//                       DesignPad v2.78_0.0
+//  
+//  This version may only be used for academic purposes.  Some optimizations 
+//  are disabled, so results obtained from this version may be sub-optimal.
+//  
+//  Start time Wed May 04 16:05:16 2016
+# -------------------------------------------------
+# Logging session transcript to file "C:\Users\kjr115\AppData\Local\Temp\log7584253a1d0.0"
+# Loading options from registry.
+# Warning: set_working_dir: Directory 'C:/Windows/System32' not writable, using C:/Users/kjr115/AppData/Local/Temp
+project new -name MazeRAMTester
+set_working_dir {//icnas2.cc.ic.ac.uk/kjr115/Project/Musca/Game Engine/catapult_projects/maze_ram_tester}
+solution file add ../../src/MazeArrayTester.cpp
+# /INPUTFILES/1
+# File '//icnas2.cc.ic.ac.uk/kjr115/Project/Musca/Game Engine/src/MazeArrayTester.cpp' saved
+# File '//icnas2.cc.ic.ac.uk/kjr115/Project/Musca/Game Engine/src/MazeArrayTester.cpp' saved
+# File '//icnas2.cc.ic.ac.uk/kjr115/Project/Musca/Game Engine/src/MazeArrayTester.cpp' saved
+go analyze
+# Creating project directory '\\icnas2.cc.ic.ac.uk\kjr115\Project\Musca\Game Engine\catapult_projects\maze_ram_tester\MazeRAMTester'. (PRJ-1)
+# Moving session transcript to file "\\icnas2.cc.ic.ac.uk\kjr115\Project\Musca\Game Engine\catapult_projects\maze_ram_tester\catapult.log"
+# Info: Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
+# Front End called with arguments: -- {\\icnas2.cc.ic.ac.uk\kjr115\Project\Musca\Game Engine\src\MazeArrayTester.cpp} (CIN-69)
+# Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+# Warning: $PROJECT_HOME/../../src/MazeArrayTester.cpp(28): $PROJECT_HOME/../../src/MazeArrayTester.cpp(28): last line of file ends without a newline (CRD-1)
+# Source file analysis completed (CIN-68)
+# Info: Completed transformation 'analyze' on solution 'solution.v1': elapsed time 1.00 seconds, memory usage 152812kB, peak memory usage 177072kB (SOL-9)
+# File '$PROJECT_HOME/../../src/MazeArrayTester.cpp' saved
+# Input file has changed
+go new
+solution file set {$PROJECT_HOME/../../src/MazeArrayTester.cpp} -updated
+# Info: Branching solution 'solution.v2' at state 'new' (PRJ-2)
+go analyze
+# Info: Starting transformation 'analyze' on solution 'solution.v2' (SOL-8)
+# Front End called with arguments: -- {\\icnas2.cc.ic.ac.uk\kjr115\Project\Musca\Game Engine\src\MazeArrayTester.cpp} (CIN-69)
+# Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+# Source file analysis completed (CIN-68)
+# Info: Completed transformation 'analyze' on solution 'solution.v2': elapsed time 0.89 seconds, memory usage 157456kB, peak memory usage 179884kB (SOL-9)
+directive set -TECHLIBS {{Altera_accel_CycloneIII.lib Altera_accel_CycloneIII} {mgc_Altera-Cyclone-III-6_beh_psr.lib {{mgc_Altera-Cyclone-III-6_beh_psr part EP3C16F484C}}}}
+# /TECHLIBS {{Altera_accel_CycloneIII.lib Altera_accel_CycloneIII} {mgc_Altera-Cyclone-III-6_beh_psr.lib {{mgc_Altera-Cyclone-III-6_beh_psr part EP3C16F484C}}}}
+directive set -CLOCKS {clk {-CLOCK_PERIOD 20.0 -CLOCK_EDGE rising -CLOCK_HIGH_TIME 10.00 -CLOCK_OFFSET 0.000000 -CLOCK_UNCERTAINTY 0.0 -RESET_KIND sync -RESET_SYNC_NAME rst -RESET_SYNC_ACTIVE high -RESET_ASYNC_NAME arst_n -RESET_ASYNC_ACTIVE low -ENABLE_NAME {} -ENABLE_ACTIVE high}}
+# /CLOCKS {clk {-CLOCK_PERIOD 20.0 -CLOCK_EDGE rising -CLOCK_UNCERTAINTY 0.0 -CLOCK_HIGH_TIME 10.0 -RESET_SYNC_NAME rst -RESET_ASYNC_NAME arst_n -RESET_KIND sync -RESET_SYNC_ACTIVE high -RESET_ASYNC_ACTIVE low -ENABLE_NAME {} -ENABLE_ACTIVE high}}
+directive set -DESIGN_HIERARCHY MazeArrayTester
+# /DESIGN_HIERARCHY MazeArrayTester
+options set Output OutputVHDL false
+# false
+options set Output OutputVerilog true
+# true
+go extract
+# Info: Starting transformation 'compile' on solution 'solution.v2' (SOL-8)
+# Reading component library '$MGC_HOME\pkgs\siflibs\mgc_busdefs.lib' [mgc_busdefs]... (LIB-49)
+# Reading component library '$MGC_HOME\pkgs\siflibs\stdops.lib' [STDOPS]... (LIB-49)
+# Reading component library '$MGC_HOME\pkgs\siflibs\mgc_ioport.lib' [mgc_ioport]... (LIB-49)
+# Reading component library '$MGC_HOME\pkgs\ccs_altera\Altera_accel_CycloneIII.lib' [Altera_accel_CycloneIII]... (LIB-49)
+# Reading component library '$MGC_HOME\pkgs\siflibs\psr2010a_up2\mgc_Altera-Cyclone-III-6_beh_psr.lib' [mgc_Altera-Cyclone-III-6_beh_psr]... (LIB-49)
+# Generating synthesis internal form... (CIN-3)
+# $PROJECT_HOME/../../src/MazeArrayTester.cpp(7): Found top design routine 'MazeArrayTester' specified by directive (CIN-52)
+# $PROJECT_HOME/../../src/MazeArrayTester.cpp(7): Synthesizing routine 'MazeArrayTester' (CIN-13)
+# $PROJECT_HOME/../../src/MazeArrayTester.cpp(7): Inlining routine 'MazeArrayTester' (CIN-14)
+# Warning: $PROJECT_HOME/../../src/MazeArrayTester.cpp(8): Instantiating global variable 'written' which may be accessed outside this scope (CIN-18)
+# Warning: $PROJECT_HOME/../../src/MazeArrayTester.cpp(15): Instantiating global variable 'WALL' which may be accessed outside this scope (CIN-18)
+# Warning: $PROJECT_HOME/../../src/MazeArrayTester.cpp(19): Instantiating global variable 'EMPTY_CELL' which may be accessed outside this scope (CIN-18)
+# $PROJECT_HOME/../../src/MazeArrayTester.cpp(7): Optimizing block '/MazeArrayTester' ... (CIN-4)
+# $PROJECT_HOME/../../src/MazeArrayTester.cpp(7): Inout port 'row' is only used as an output. (OPT-11)
+# $PROJECT_HOME/../../src/MazeArrayTester.cpp(7): Inout port 'col' is only used as an output. (OPT-11)
+# $PROJECT_HOME/../../src/MazeArrayTester.cpp(7): Inout port 'out' is only used as an output. (OPT-11)
+# $PROJECT_HOME/../../src/MazeArrayTester.cpp(7): Inout port 'write' is only used as an output. (OPT-11)
+# Info: Optimizing partition '/MazeArrayTester': (Total ops = 69, Real ops = 11, Vars = 23) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/core': (Total ops = 69, Real ops = 11, Vars = 19) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/core': (Total ops = 69, Real ops = 11, Vars = 19) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester': (Total ops = 69, Real ops = 11, Vars = 23) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester': (Total ops = 69, Real ops = 11, Vars = 23) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/core': (Total ops = 69, Real ops = 11, Vars = 19) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/core': (Total ops = 47, Real ops = 11, Vars = 9) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester': (Total ops = 47, Real ops = 11, Vars = 13) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester': (Total ops = 47, Real ops = 11, Vars = 13) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/core': (Total ops = 45, Real ops = 11, Vars = 11) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/core': (Total ops = 166, Real ops = 13, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester': (Total ops = 166, Real ops = 13, Vars = 9) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/core': (Total ops = 166, Real ops = 13, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester': (Total ops = 166, Real ops = 13, Vars = 9) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester': (Total ops = 166, Real ops = 13, Vars = 9) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/core': (Total ops = 166, Real ops = 13, Vars = 5) (SOL-10)
+# $PROJECT_HOME/../../src/MazeArrayTester.cpp(11): Loop '/MazeArrayTester/core/if:for:for' iterated at most 64 times. (LOOP-2)
+# $PROJECT_HOME/../../src/MazeArrayTester.cpp(10): Loop '/MazeArrayTester/core/if:for' iterated at most 64 times. (LOOP-2)
+# Info: Optimizing partition '/MazeArrayTester/core': (Total ops = 67, Real ops = 10, Vars = 7) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/core': (Total ops = 43, Real ops = 4, Vars = 7) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/core': (Total ops = 41, Real ops = 4, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester': (Total ops = 41, Real ops = 4, Vars = 9) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/core': (Total ops = 39, Real ops = 4, Vars = 7) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/core': (Total ops = 39, Real ops = 4, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester': (Total ops = 39, Real ops = 4, Vars = 9) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/core': (Total ops = 39, Real ops = 4, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester': (Total ops = 39, Real ops = 4, Vars = 9) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester': (Total ops = 39, Real ops = 4, Vars = 9) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/core': (Total ops = 39, Real ops = 4, Vars = 5) (SOL-10)
+# Design 'MazeArrayTester' was read (SOL-1)
+# Info: Completed transformation 'compile' on solution 'MazeArrayTester.v1': elapsed time 0.62 seconds, memory usage 162004kB, peak memory usage 189168kB (SOL-9)
+# Info: Starting transformation 'architect' on solution 'MazeArrayTester.v1' (SOL-8)
+# $PROJECT_HOME/../../src/MazeArrayTester.cpp(11): Loop '/MazeArrayTester/core/if:for:for' is left rolled. (LOOP-4)
+# $PROJECT_HOME/../../src/MazeArrayTester.cpp(10): Loop '/MazeArrayTester/core/if:for' is left rolled. (LOOP-4)
+# $PROJECT_HOME/../../src/MazeArrayTester.cpp(7): Loop '/MazeArrayTester/core/main' is left rolled. (LOOP-4)
+# $PROJECT_HOME/../../src/MazeArrayTester.cpp(7): I/O-Port inferred - resource 'row:rsc' (from var: row) mapped to 'mgc_ioport.mgc_out_stdreg' (size: 5). (MEM-2)
+# $PROJECT_HOME/../../src/MazeArrayTester.cpp(7): I/O-Port inferred - resource 'col:rsc' (from var: col) mapped to 'mgc_ioport.mgc_out_stdreg' (size: 5). (MEM-2)
+# $PROJECT_HOME/../../src/MazeArrayTester.cpp(7): I/O-Port inferred - resource 'out:rsc' (from var: out) mapped to 'mgc_ioport.mgc_out_stdreg' (size: 4). (MEM-2)
+# $PROJECT_HOME/../../src/MazeArrayTester.cpp(7): I/O-Port inferred - resource 'write:rsc' (from var: write) mapped to 'mgc_ioport.mgc_out_stdreg' (size: 1). (MEM-2)
+# Info: Optimizing partition '/MazeArrayTester': (Total ops = 40, Real ops = 5, Vars = 11) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/core': (Total ops = 40, Real ops = 5, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/core': (Total ops = 43, Real ops = 5, Vars = 6) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/core': (Total ops = 43, Real ops = 5, Vars = 6) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester': (Total ops = 43, Real ops = 5, Vars = 12) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/core': (Total ops = 42, Real ops = 5, Vars = 7) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/core': (Total ops = 44, Real ops = 5, Vars = 7) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/core': (Total ops = 41, Real ops = 5, Vars = 6) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/core': (Total ops = 41, Real ops = 5, Vars = 6) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester': (Total ops = 41, Real ops = 5, Vars = 12) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/core': (Total ops = 41, Real ops = 5, Vars = 6) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester': (Total ops = 41, Real ops = 5, Vars = 12) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester': (Total ops = 41, Real ops = 5, Vars = 12) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/core': (Total ops = 41, Real ops = 5, Vars = 6) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/core': (Total ops = 136, Real ops = 18, Vars = 62) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/core': (Total ops = 54, Real ops = 10, Vars = 6) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/core': (Total ops = 54, Real ops = 10, Vars = 5) (SOL-10)
+# Design 'MazeArrayTester' contains '10' real operations. (SOL-11)
+# Info: Completed transformation 'architect' on solution 'MazeArrayTester.v1': elapsed time 0.70 seconds, memory usage 162280kB, peak memory usage 189168kB (SOL-9)
+# Info: Starting transformation 'allocate' on solution 'MazeArrayTester.v1' (SOL-8)
+# Performing concurrent resource allocation and scheduling on '/MazeArrayTester/core' (CRAAS-1)
+# Info: Select qualified components for data operations ... (CRAAS-3)
+# Info: Apply resource constraints on data operations ... (CRAAS-4)
+# $PROJECT_HOME/../../src/MazeArrayTester.cpp(11): Prescheduled LOOP 'if:for:for' (2 c-steps) (SCHD-7)
+# $PROJECT_HOME/../../src/MazeArrayTester.cpp(10): Prescheduled LOOP 'if:for' (1 c-steps) (SCHD-7)
+# $PROJECT_HOME/../../src/MazeArrayTester.cpp(7): Prescheduled LOOP 'main' (1 c-steps) (SCHD-7)
+# $PROJECT_HOME/../../src/MazeArrayTester.cpp(7): Prescheduled LOOP 'core:rlp' (1 c-steps) (SCHD-7)
+# $PROJECT_HOME/../../src/MazeArrayTester.cpp(7): Prescheduled SEQUENTIAL 'core' (total length 8258 c-steps) (SCHD-8)
+# Info: Initial schedule of SEQUENTIAL 'core': Latency = 8258, Area (Datapath, Register, Total) = 7.00, 0.00, 7.00 (CRAAS-11)
+# At least one feasible schedule exists. (CRAAS-9)
+# Info: Final schedule of SEQUENTIAL 'core': Latency = 8258, Area (Datapath, Register, Total) = 7.00, 0.00, 7.00 (CRAAS-12)
+# Resource allocation and scheduling done. (CRAAS-2)
+# Netlist written to file 'schedule.gnt' (NET-4)
+# Info: Completed transformation 'allocate' on solution 'MazeArrayTester.v1': elapsed time 0.05 seconds, memory usage 162280kB, peak memory usage 189168kB (SOL-9)
+# Info: Starting transformation 'schedule' on solution 'MazeArrayTester.v1' (SOL-8)
+# Performing concurrent resource allocation and scheduling on '/MazeArrayTester/core' (CRAAS-1)
+# Global signal 'row:rsc.z' added to design 'MazeArrayTester' for component 'row:rsc:mgc_out_stdreg' (LIB-3)
+# Global signal 'col:rsc.z' added to design 'MazeArrayTester' for component 'col:rsc:mgc_out_stdreg' (LIB-3)
+# Global signal 'out:rsc.z' added to design 'MazeArrayTester' for component 'out:rsc:mgc_out_stdreg' (LIB-3)
+# Global signal 'write:rsc.z' added to design 'MazeArrayTester' for component 'write:rsc:mgc_out_stdreg' (LIB-3)
+# Info: Optimizing partition '/MazeArrayTester': (Total ops = 104, Real ops = 11, Vars = 51) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core': (Total ops = 89, Real ops = 10, Vars = 40) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core/core': (Total ops = 55, Real ops = 10, Vars = 36) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core/core': (Total ops = 51, Real ops = 10, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester': (Total ops = 71, Real ops = 10, Vars = 21) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core': (Total ops = 57, Real ops = 10, Vars = 11) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core/core': (Total ops = 51, Real ops = 10, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester': (Total ops = 71, Real ops = 10, Vars = 21) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core': (Total ops = 57, Real ops = 10, Vars = 11) (SOL-10)
+# Report written to file 'cycle.rpt'
+# Netlist written to file 'cycle.v' (NET-4)
+# Info: Completed transformation 'schedule' on solution 'MazeArrayTester.v1': elapsed time 0.73 seconds, memory usage 163792kB, peak memory usage 189168kB (SOL-9)
+# Info: Starting transformation 'dpfsm' on solution 'MazeArrayTester.v1' (SOL-8)
+# Performing FSM extraction... (FSM-1)
+# Info: Optimizing partition '/MazeArrayTester': (Total ops = 189, Real ops = 56, Vars = 180) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core': (Total ops = 175, Real ops = 56, Vars = 170) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm': (Total ops = 13, Real ops = 2, Vars = 12) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm/MazeArrayTester:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester': (Total ops = 118, Real ops = 39, Vars = 33) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core': (Total ops = 104, Real ops = 39, Vars = 23) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm': (Total ops = 10, Real ops = 2, Vars = 7) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm/MazeArrayTester:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester': (Total ops = 96, Real ops = 35, Vars = 33) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core': (Total ops = 82, Real ops = 35, Vars = 23) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm': (Total ops = 10, Real ops = 2, Vars = 7) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm/MazeArrayTester:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester': (Total ops = 95, Real ops = 35, Vars = 32) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core': (Total ops = 81, Real ops = 35, Vars = 22) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm': (Total ops = 10, Real ops = 2, Vars = 7) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core': (Total ops = 81, Real ops = 35, Vars = 22) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester': (Total ops = 95, Real ops = 35, Vars = 32) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester': (Total ops = 95, Real ops = 35, Vars = 32) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core': (Total ops = 81, Real ops = 35, Vars = 22) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm': (Total ops = 10, Real ops = 2, Vars = 7) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm/MazeArrayTester:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester': (Total ops = 95, Real ops = 35, Vars = 32) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core': (Total ops = 81, Real ops = 35, Vars = 22) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm': (Total ops = 10, Real ops = 2, Vars = 7) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm/MazeArrayTester:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Completed transformation 'dpfsm' on solution 'MazeArrayTester.v1': elapsed time 0.14 seconds, memory usage 163792kB, peak memory usage 189168kB (SOL-9)
+# Info: Starting transformation 'extract' on solution 'MazeArrayTester.v1' (SOL-8)
+# Shared Operations if:for:for:acc#1,if:for:acc#1 on resource if:for:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(6,0,2,1,7):mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(6,0,2,1,7) (ASG-3)
+# Info: Optimizing partition '/MazeArrayTester': (Total ops = 148, Real ops = 46, Vars = 132) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core': (Total ops = 134, Real ops = 46, Vars = 122) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm': (Total ops = 11, Real ops = 2, Vars = 7) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm/MazeArrayTester:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester': (Total ops = 93, Real ops = 32, Vars = 32) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core': (Total ops = 79, Real ops = 32, Vars = 22) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm': (Total ops = 10, Real ops = 2, Vars = 7) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm/MazeArrayTester:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester': (Total ops = 91, Real ops = 32, Vars = 31) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core': (Total ops = 77, Real ops = 32, Vars = 21) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm': (Total ops = 10, Real ops = 2, Vars = 7) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core': (Total ops = 77, Real ops = 32, Vars = 21) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester': (Total ops = 91, Real ops = 32, Vars = 31) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester': (Total ops = 91, Real ops = 32, Vars = 31) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core': (Total ops = 77, Real ops = 32, Vars = 21) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm': (Total ops = 10, Real ops = 2, Vars = 7) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm/MazeArrayTester:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester': (Total ops = 91, Real ops = 32, Vars = 31) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core': (Total ops = 77, Real ops = 32, Vars = 21) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm': (Total ops = 10, Real ops = 2, Vars = 7) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm/MazeArrayTester:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester': (Total ops = 135, Real ops = 43, Vars = 119) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core': (Total ops = 121, Real ops = 43, Vars = 109) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm': (Total ops = 8, Real ops = 2, Vars = 7) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm/MazeArrayTester:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Netlist written to file 'schematic.nlv' (NET-4)
+# Info: Optimizing partition '/MazeArrayTester': (Total ops = 135, Real ops = 43, Vars = 119) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core': (Total ops = 121, Real ops = 43, Vars = 109) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm': (Total ops = 10, Real ops = 2, Vars = 7) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm/MazeArrayTester:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester': (Total ops = 91, Real ops = 32, Vars = 31) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core': (Total ops = 77, Real ops = 32, Vars = 21) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core': (Total ops = 76, Real ops = 33, Vars = 21) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm': (Total ops = 10, Real ops = 2, Vars = 7) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm/MazeArrayTester:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core': (Total ops = 75, Real ops = 33, Vars = 21) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm': (Total ops = 10, Real ops = 2, Vars = 7) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm/MazeArrayTester:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core': (Total ops = 75, Real ops = 33, Vars = 21) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester': (Total ops = 89, Real ops = 33, Vars = 31) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core': (Total ops = 75, Real ops = 33, Vars = 21) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm': (Total ops = 10, Real ops = 2, Vars = 7) (SOL-10)
+# Info: Optimizing partition '/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm/MazeArrayTester:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Report written to file 'rtl.rpt'
+# Netlist written to file 'rtl.v' (NET-4)
+# generate concat
+# order file name is: rtl.v_order.txt
+# Add dependent file: ./rtl_mgc_ioport.v
+# Add dependent file: ./rtl_mgc_ioport_v2001.v
+# Add dependent file: ./rtl.v
+# Finished writing concatenated file: //icnas2.cc.ic.ac.uk/kjr115/Project/Musca/Game Engine/catapult_projects/maze_ram_tester/MazeRAMTester/MazeArrayTester.v1/concat_rtl.v
+# Synthesis timing script written to file './rtl.v.psr_timing'
+# IO timing constraints written to synthesis script file
+# Synthesis script written to file 'rtl.v.psr'
+# Info: Completed transformation 'extract' on solution 'MazeArrayTester.v1': elapsed time 1.54 seconds, memory usage 166720kB, peak memory usage 189168kB (SOL-9)
+project save
+# Saving project file '//icnas2.cc.ic.ac.uk/kjr115/Project/Musca/Game Engine/catapult_projects/maze_ram_tester/MazeRAMTester.ccs'. (PRJ-5)
+project new -name 2Bit_RAM_60x80
+set_working_dir {//icnas2.cc.ic.ac.uk/kjr115/Project/Musca/Input Engine/RAM}
+solution file add ./src/60x80RAM.cpp
+# /INPUTFILES/1
+# File '//icnas2.cc.ic.ac.uk/kjr115/Project/Musca/Input Engine/RAM/src/60x80RAM.cpp' saved
+# File '//icnas2.cc.ic.ac.uk/kjr115/Project/Musca/Input Engine/RAM/src/60x80RAM.cpp' saved
+# File '//icnas2.cc.ic.ac.uk/kjr115/Project/Musca/Input Engine/RAM/src/60x80RAM.cpp' saved
+# File '//icnas2.cc.ic.ac.uk/kjr115/Project/Musca/Input Engine/RAM/src/60x80RAM.cpp' saved
+# File '//icnas2.cc.ic.ac.uk/kjr115/Project/Musca/Input Engine/RAM/src/60x80RAM.cpp' saved
+# File '//icnas2.cc.ic.ac.uk/kjr115/Project/Musca/Input Engine/RAM/src/60x80RAM.cpp' saved
+# File '//icnas2.cc.ic.ac.uk/kjr115/Project/Musca/Input Engine/RAM/src/60x80RAM.cpp' saved
+# File '//icnas2.cc.ic.ac.uk/kjr115/Project/Musca/Input Engine/RAM/src/60x80RAM.cpp' saved
+# File '//icnas2.cc.ic.ac.uk/kjr115/Project/Musca/Input Engine/RAM/src/60x80RAM.cpp' saved
+go analyze
+# Creating project directory '\\icnas2.cc.ic.ac.uk\kjr115\Project\Musca\Input Engine\RAM\2Bit_RAM_60x80'. (PRJ-1)
+# Moving session transcript to file "\\icnas2.cc.ic.ac.uk\kjr115\Project\Musca\Input Engine\RAM\catapult.log"
+# Info: Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
+# Front End called with arguments: -- {\\icnas2.cc.ic.ac.uk\kjr115\Project\Musca\Input Engine\RAM\src\60x80RAM.cpp} (CIN-69)
+# Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+# Error: $PROJECT_HOME/src/60x80RAM.cpp(9): $PROJECT_HOME/src/60x80RAM.cpp(9): expected a ";" (CRD-65)
+# Warning: $PROJECT_HOME/src/60x80RAM.cpp(16): $PROJECT_HOME/src/60x80RAM.cpp(16): last line of file ends without a newline (CRD-1)
+# Warning: $PROJECT_HOME/src/60x80RAM.cpp(16): $PROJECT_HOME/src/60x80RAM.cpp(16): parsing restarts here after previous syntax error (CRD-12)
+# Error: Compilation aborted (CIN-5)
+# Error: go analyze: Failed analyze
+# File '$PROJECT_HOME/src/60x80RAM.cpp' saved
+go analyze
+# Info: Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
+# Front End called with arguments: -- {\\icnas2.cc.ic.ac.uk\kjr115\Project\Musca\Input Engine\RAM\src\60x80RAM.cpp} (CIN-69)
+# Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+# Warning: $PROJECT_HOME/src/60x80RAM.cpp(16): $PROJECT_HOME/src/60x80RAM.cpp(16): last line of file ends without a newline (CRD-1)
+# Source file analysis completed (CIN-68)
+# Info: Completed transformation 'analyze' on solution 'solution.v1': elapsed time 0.87 seconds, memory usage 172056kB, peak memory usage 195384kB (SOL-9)
+# File '$PROJECT_HOME/src/60x80RAM.cpp' saved
+# Input file has changed
+go new
+solution file set {$PROJECT_HOME/src/60x80RAM.cpp} -updated
+# Info: Branching solution 'solution.v2' at state 'new' (PRJ-2)
+go analyze
+# Info: Starting transformation 'analyze' on solution 'solution.v2' (SOL-8)
+# Front End called with arguments: -- {\\icnas2.cc.ic.ac.uk\kjr115\Project\Musca\Input Engine\RAM\src\60x80RAM.cpp} (CIN-69)
+# Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+# Source file analysis completed (CIN-68)
+# Info: Completed transformation 'analyze' on solution 'solution.v2': elapsed time 0.81 seconds, memory usage 172536kB, peak memory usage 196260kB (SOL-9)
+directive set -TECHLIBS {{Altera_accel_CycloneIII.lib Altera_accel_CycloneIII} {mgc_Altera-Cyclone-III-6_beh_psr.lib {{mgc_Altera-Cyclone-III-6_beh_psr part EP3C16F484C}}} {ram_Altera-Cyclone-III-6_RAMSB.lib ram_Altera-Cyclone-III-6_RAMSB}}
+# /TECHLIBS {{Altera_accel_CycloneIII.lib Altera_accel_CycloneIII} {mgc_Altera-Cyclone-III-6_beh_psr.lib {{mgc_Altera-Cyclone-III-6_beh_psr part EP3C16F484C}}} {ram_Altera-Cyclone-III-6_RAMSB.lib ram_Altera-Cyclone-III-6_RAMSB}}
+directive set -CLOCKS {clk {-CLOCK_PERIOD 20.0 -CLOCK_EDGE rising -CLOCK_HIGH_TIME 10.00 -CLOCK_OFFSET 0.000000 -CLOCK_UNCERTAINTY 0.0 -RESET_KIND sync -RESET_SYNC_NAME rst -RESET_SYNC_ACTIVE high -RESET_ASYNC_NAME arst_n -RESET_ASYNC_ACTIVE low -ENABLE_NAME {} -ENABLE_ACTIVE high}}
+# /CLOCKS {clk {-CLOCK_PERIOD 20.0 -CLOCK_EDGE rising -CLOCK_UNCERTAINTY 0.0 -CLOCK_HIGH_TIME 10.0 -RESET_SYNC_NAME rst -RESET_ASYNC_NAME arst_n -RESET_KIND sync -RESET_SYNC_ACTIVE high -RESET_ASYNC_ACTIVE low -ENABLE_NAME {} -ENABLE_ACTIVE high}}
+directive set -DESIGN_HIERARCHY RAM_BLOCK
+# /DESIGN_HIERARCHY RAM_BLOCK
+go extract
+# Info: Starting transformation 'compile' on solution 'solution.v2' (SOL-8)
+# Reading component library '$MGC_HOME\pkgs\siflibs\mgc_busdefs.lib' [mgc_busdefs]... (LIB-49)
+# Reading component library '$MGC_HOME\pkgs\siflibs\stdops.lib' [STDOPS]... (LIB-49)
+# Reading component library '$MGC_HOME\pkgs\siflibs\mgc_ioport.lib' [mgc_ioport]... (LIB-49)
+# Reading component library '$MGC_HOME\pkgs\ccs_altera\Altera_accel_CycloneIII.lib' [Altera_accel_CycloneIII]... (LIB-49)
+# Reading component library '$MGC_HOME\pkgs\siflibs\psr2010a_up2\mgc_Altera-Cyclone-III-6_beh_psr.lib' [mgc_Altera-Cyclone-III-6_beh_psr]... (LIB-49)
+# Reading component library '$MGC_HOME\pkgs\siflibs\psr2010a_up2\ram_Altera-Cyclone-III-6_RAMSB.lib' [ram_Altera-Cyclone-III-6_RAMSB]... (LIB-49)
+# Generating synthesis internal form... (CIN-3)
+# $PROJECT_HOME/src/60x80RAM.cpp(9): Found top design routine 'RAM_BLOCK' specified by directive (CIN-52)
+# $PROJECT_HOME/src/60x80RAM.cpp(9): Synthesizing routine 'RAM_BLOCK' (CIN-13)
+# $PROJECT_HOME/src/60x80RAM.cpp(9): Inlining routine 'RAM_BLOCK' (CIN-14)
+# Warning: $PROJECT_HOME/src/60x80RAM.cpp(11): Instantiating global variable 'data' which may be accessed outside this scope (CIN-18)
+# $PROJECT_HOME/src/60x80RAM.cpp(9): Optimizing block '/RAM_BLOCK' ... (CIN-4)
+# $PROJECT_HOME/src/60x80RAM.cpp(9): Inout port 'data_out' is only used as an output. (OPT-11)
+# Info: Optimizing partition '/RAM_BLOCK': (Total ops = 29, Real ops = 4, Vars = 13) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/core': (Total ops = 29, Real ops = 4, Vars = 8) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/core': (Total ops = 29, Real ops = 4, Vars = 8) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK': (Total ops = 29, Real ops = 4, Vars = 13) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK': (Total ops = 29, Real ops = 4, Vars = 13) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/core': (Total ops = 29, Real ops = 4, Vars = 8) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/core': (Total ops = 21, Real ops = 4, Vars = 6) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK': (Total ops = 21, Real ops = 4, Vars = 11) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK': (Total ops = 21, Real ops = 4, Vars = 11) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/core': (Total ops = 21, Real ops = 4, Vars = 6) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/core': (Total ops = 20, Real ops = 4, Vars = 4) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK': (Total ops = 20, Real ops = 4, Vars = 9) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/core': (Total ops = 20, Real ops = 4, Vars = 4) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK': (Total ops = 20, Real ops = 4, Vars = 9) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK': (Total ops = 20, Real ops = 4, Vars = 9) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/core': (Total ops = 20, Real ops = 4, Vars = 4) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/core': (Total ops = 20, Real ops = 4, Vars = 4) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK': (Total ops = 20, Real ops = 4, Vars = 9) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK': (Total ops = 20, Real ops = 4, Vars = 9) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/core': (Total ops = 20, Real ops = 4, Vars = 4) (SOL-10)
+# Design 'RAM_BLOCK' was read (SOL-1)
+# Info: Completed transformation 'compile' on solution 'RAM_BLOCK.v1': elapsed time 0.59 seconds, memory usage 168504kB, peak memory usage 196260kB (SOL-9)
+# Info: Starting transformation 'architect' on solution 'RAM_BLOCK.v1' (SOL-8)
+# $PROJECT_HOME/src/60x80RAM.cpp(9): Loop '/RAM_BLOCK/core/main' is left rolled. (LOOP-4)
+# $PROJECT_HOME/src/60x80RAM.cpp(9): I/O-Port inferred - resource 'row:rsc' (from var: row) mapped to 'mgc_ioport.mgc_in_wire' (size: 5). (MEM-2)
+# $PROJECT_HOME/src/60x80RAM.cpp(9): I/O-Port inferred - resource 'col:rsc' (from var: col) mapped to 'mgc_ioport.mgc_in_wire' (size: 6). (MEM-2)
+# $PROJECT_HOME/src/60x80RAM.cpp(9): I/O-Port inferred - resource 'data_in:rsc' (from var: data_in) mapped to 'mgc_ioport.mgc_in_wire' (size: 2). (MEM-2)
+# $PROJECT_HOME/src/60x80RAM.cpp(9): I/O-Port inferred - resource 'write:rsc' (from var: write) mapped to 'mgc_ioport.mgc_in_wire' (size: 1). (MEM-2)
+# $PROJECT_HOME/src/60x80RAM.cpp(9): I/O-Port inferred - resource 'data_out:rsc' (from var: data_out) mapped to 'mgc_ioport.mgc_out_stdreg' (size: 2). (MEM-2)
+# $PROJECT_HOME/src/60x80RAM.cpp(7): Memory inferred - resource 'data:rsc' (from var: data) mapped to 'ram_Altera-Cyclone-III-6_RAMSB.singleport' (size: 4800 x 2). (MEM-4)
+# Info: Optimizing partition '/RAM_BLOCK': (Total ops = 32, Real ops = 7, Vars = 13) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/core': (Total ops = 32, Real ops = 7, Vars = 6) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/core': (Total ops = 42, Real ops = 7, Vars = 8) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/core': (Total ops = 39, Real ops = 7, Vars = 7) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK': (Total ops = 39, Real ops = 7, Vars = 14) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/core': (Total ops = 39, Real ops = 7, Vars = 7) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK': (Total ops = 39, Real ops = 7, Vars = 14) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK': (Total ops = 39, Real ops = 7, Vars = 14) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/core': (Total ops = 39, Real ops = 7, Vars = 7) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/core': (Total ops = 87, Real ops = 9, Vars = 36) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/core': (Total ops = 39, Real ops = 8, Vars = 7) (SOL-10)
+# Design 'RAM_BLOCK' contains '8' real operations. (SOL-11)
+# Info: Completed transformation 'architect' on solution 'RAM_BLOCK.v1': elapsed time 0.78 seconds, memory usage 169536kB, peak memory usage 196260kB (SOL-9)
+# Info: Starting transformation 'allocate' on solution 'RAM_BLOCK.v1' (SOL-8)
+# Performing concurrent resource allocation and scheduling on '/RAM_BLOCK/core' (CRAAS-1)
+# Info: Select qualified components for data operations ... (CRAAS-3)
+# Info: Apply resource constraints on data operations ... (CRAAS-4)
+# $PROJECT_HOME/src/60x80RAM.cpp(9): Prescheduled LOOP 'main' (3 c-steps) (SCHD-7)
+# $PROJECT_HOME/src/60x80RAM.cpp(11): Prescheduled LOOP 'data:vinit' (2 c-steps) (SCHD-7)
+# $PROJECT_HOME/src/60x80RAM.cpp(9): Prescheduled LOOP 'core:rlp' (1 c-steps) (SCHD-7)
+# $PROJECT_HOME/src/60x80RAM.cpp(9): Prescheduled SEQUENTIAL 'core' (total length 9604 c-steps) (SCHD-8)
+# Info: Initial schedule of SEQUENTIAL 'core': Latency = 2, Area (Datapath, Register, Total) = 37.84, 0.00, 37.84 (CRAAS-11)
+# At least one feasible schedule exists. (CRAAS-9)
+# Info: Final schedule of SEQUENTIAL 'core': Latency = 2, Area (Datapath, Register, Total) = 37.84, 0.00, 37.84 (CRAAS-12)
+# Resource allocation and scheduling done. (CRAAS-2)
+# Netlist written to file 'schedule.gnt' (NET-4)
+# Info: Completed transformation 'allocate' on solution 'RAM_BLOCK.v1': elapsed time 0.11 seconds, memory usage 169780kB, peak memory usage 196260kB (SOL-9)
+# Info: Starting transformation 'schedule' on solution 'RAM_BLOCK.v1' (SOL-8)
+# Performing concurrent resource allocation and scheduling on '/RAM_BLOCK/core' (CRAAS-1)
+# Global signal 'row:rsc.z' added to design 'RAM_BLOCK' for component 'row:rsc:mgc_in_wire' (LIB-3)
+# Global signal 'col:rsc.z' added to design 'RAM_BLOCK' for component 'col:rsc:mgc_in_wire' (LIB-3)
+# Global signal 'data_in:rsc.z' added to design 'RAM_BLOCK' for component 'data_in:rsc:mgc_in_wire' (LIB-3)
+# Global signal 'write:rsc.z' added to design 'RAM_BLOCK' for component 'write:rsc:mgc_in_wire' (LIB-3)
+# Global signal 'data_out:rsc.z' added to design 'RAM_BLOCK' for component 'data_out:rsc:mgc_out_stdreg' (LIB-3)
+# Info: Optimizing partition '/RAM_BLOCK': (Total ops = 146, Real ops = 12, Vars = 56) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core': (Total ops = 112, Real ops = 11, Vars = 36) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core/core': (Total ops = 100, Real ops = 11, Vars = 24) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core/core': (Total ops = 76, Real ops = 7, Vars = 7) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK': (Total ops = 121, Real ops = 7, Vars = 36) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core': (Total ops = 88, Real ops = 7, Vars = 19) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core/core': (Total ops = 76, Real ops = 7, Vars = 7) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK': (Total ops = 119, Real ops = 7, Vars = 36) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core': (Total ops = 88, Real ops = 7, Vars = 19) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core/core': (Total ops = 76, Real ops = 7, Vars = 7) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK': (Total ops = 119, Real ops = 7, Vars = 36) (SOL-10)
+# Report written to file 'cycle.rpt'
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core/core': (Total ops = 107, Real ops = 9, Vars = 16) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core/core': (Total ops = 92, Real ops = 9, Vars = 12) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK': (Total ops = 139, Real ops = 9, Vars = 45) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core': (Total ops = 108, Real ops = 9, Vars = 28) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core/core': (Total ops = 100, Real ops = 9, Vars = 12) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core/core': (Total ops = 100, Real ops = 9, Vars = 12) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK': (Total ops = 147, Real ops = 9, Vars = 46) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core': (Total ops = 116, Real ops = 9, Vars = 29) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core/core': (Total ops = 101, Real ops = 9, Vars = 14) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core/core': (Total ops = 101, Real ops = 9, Vars = 13) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK': (Total ops = 148, Real ops = 9, Vars = 47) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core': (Total ops = 117, Real ops = 9, Vars = 30) (SOL-10)
+# Netlist written to file 'cycle.v' (NET-4)
+# Info: Completed transformation 'schedule' on solution 'RAM_BLOCK.v1': elapsed time 0.78 seconds, memory usage 173536kB, peak memory usage 196260kB (SOL-9)
+# Info: Starting transformation 'dpfsm' on solution 'RAM_BLOCK.v1' (SOL-8)
+# Performing FSM extraction... (FSM-1)
+# Info: Optimizing partition '/RAM_BLOCK': (Total ops = 165, Real ops = 33, Vars = 133) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core': (Total ops = 134, Real ops = 33, Vars = 116) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core/RAM_BLOCK:core:fsm': (Total ops = 8, Real ops = 3, Vars = 8) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core/RAM_BLOCK:core:fsm/RAM_BLOCK:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK': (Total ops = 139, Real ops = 29, Vars = 40) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core': (Total ops = 108, Real ops = 29, Vars = 23) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core/RAM_BLOCK:core:fsm': (Total ops = 7, Real ops = 3, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core/RAM_BLOCK:core:fsm/RAM_BLOCK:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK': (Total ops = 96, Real ops = 24, Vars = 40) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core': (Total ops = 65, Real ops = 24, Vars = 23) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core/RAM_BLOCK:core:fsm': (Total ops = 7, Real ops = 3, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core/RAM_BLOCK:core:fsm/RAM_BLOCK:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK': (Total ops = 96, Real ops = 24, Vars = 40) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core': (Total ops = 65, Real ops = 24, Vars = 23) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK': (Total ops = 98, Real ops = 21, Vars = 46) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core': (Total ops = 67, Real ops = 21, Vars = 29) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core/RAM_BLOCK:core:fsm': (Total ops = 7, Real ops = 3, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core/RAM_BLOCK:core:fsm/RAM_BLOCK:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK': (Total ops = 94, Real ops = 21, Vars = 42) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core': (Total ops = 63, Real ops = 21, Vars = 25) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core/RAM_BLOCK:core:fsm': (Total ops = 7, Real ops = 3, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core': (Total ops = 63, Real ops = 21, Vars = 25) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK': (Total ops = 94, Real ops = 21, Vars = 42) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK': (Total ops = 94, Real ops = 21, Vars = 42) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core': (Total ops = 63, Real ops = 21, Vars = 25) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core/RAM_BLOCK:core:fsm': (Total ops = 7, Real ops = 3, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core/RAM_BLOCK:core:fsm/RAM_BLOCK:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK': (Total ops = 94, Real ops = 21, Vars = 42) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core': (Total ops = 63, Real ops = 21, Vars = 25) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core/RAM_BLOCK:core:fsm': (Total ops = 7, Real ops = 3, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core/RAM_BLOCK:core:fsm/RAM_BLOCK:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Completed transformation 'dpfsm' on solution 'RAM_BLOCK.v1': elapsed time 0.14 seconds, memory usage 173700kB, peak memory usage 196260kB (SOL-9)
+# Info: Starting transformation 'extract' on solution 'RAM_BLOCK.v1' (SOL-8)
+# Info: Optimizing partition '/RAM_BLOCK': (Total ops = 110, Real ops = 27, Vars = 87) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core': (Total ops = 79, Real ops = 27, Vars = 70) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core/RAM_BLOCK:core:fsm': (Total ops = 7, Real ops = 3, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core/RAM_BLOCK:core:fsm/RAM_BLOCK:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK': (Total ops = 92, Real ops = 20, Vars = 41) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core': (Total ops = 61, Real ops = 20, Vars = 24) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core/RAM_BLOCK:core:fsm': (Total ops = 7, Real ops = 3, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core/RAM_BLOCK:core:fsm/RAM_BLOCK:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK': (Total ops = 92, Real ops = 20, Vars = 41) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core': (Total ops = 61, Real ops = 20, Vars = 24) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core/RAM_BLOCK:core:fsm': (Total ops = 7, Real ops = 3, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core': (Total ops = 61, Real ops = 20, Vars = 24) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK': (Total ops = 92, Real ops = 20, Vars = 41) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK': (Total ops = 92, Real ops = 20, Vars = 41) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core': (Total ops = 61, Real ops = 20, Vars = 24) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core/RAM_BLOCK:core:fsm': (Total ops = 7, Real ops = 3, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core/RAM_BLOCK:core:fsm/RAM_BLOCK:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK': (Total ops = 92, Real ops = 20, Vars = 41) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core': (Total ops = 61, Real ops = 20, Vars = 24) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core/RAM_BLOCK:core:fsm': (Total ops = 7, Real ops = 3, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core/RAM_BLOCK:core:fsm/RAM_BLOCK:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK': (Total ops = 106, Real ops = 25, Vars = 83) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core': (Total ops = 75, Real ops = 25, Vars = 66) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core/RAM_BLOCK:core:fsm': (Total ops = 6, Real ops = 2, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core/RAM_BLOCK:core:fsm/RAM_BLOCK:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Netlist written to file 'schematic.nlv' (NET-4)
+# Info: Optimizing partition '/RAM_BLOCK': (Total ops = 106, Real ops = 25, Vars = 83) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core': (Total ops = 75, Real ops = 25, Vars = 66) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core/RAM_BLOCK:core:fsm': (Total ops = 7, Real ops = 3, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core/RAM_BLOCK:core:fsm/RAM_BLOCK:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK': (Total ops = 92, Real ops = 20, Vars = 41) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core': (Total ops = 61, Real ops = 20, Vars = 24) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK': (Total ops = 92, Real ops = 20, Vars = 41) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core': (Total ops = 61, Real ops = 20, Vars = 24) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core/RAM_BLOCK:core:fsm': (Total ops = 7, Real ops = 3, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/RAM_BLOCK/RAM_BLOCK:core/RAM_BLOCK:core:fsm/RAM_BLOCK:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Report written to file 'rtl.rpt'
+# Netlist written to file 'rtl.v' (NET-4)
+# generate concat
+# order file name is: rtl.v_order.txt
+# Add dependent file: ./rtl_mgc_ioport.v
+# Add dependent file: ./rtl_mgc_ioport_v2001.v
+# Add dependent file: C:/PROGRA~1/CALYPT~1/CATAPU~1.126/Mgc_home/pkgs/hls_pkgs/mgc_comps_src/mgc_generic_reg_beh.v
+# Add dependent file: C:/PROGRA~1/CALYPT~1/CATAPU~1.126/Mgc_home/pkgs/siflibs/ram_singleport_be_fpga.v
+# Add dependent file: ./rtl.v
+# Finished writing concatenated file: //icnas2.cc.ic.ac.uk/kjr115/Project/Musca/Input Engine/RAM/2Bit_RAM_60x80/RAM_BLOCK.v1/concat_rtl.v
+# Synthesis timing script written to file './rtl.v.psr_timing'
+# IO timing constraints written to synthesis script file
+# Synthesis script written to file 'rtl.v.psr'
+# Info: Completed transformation 'extract' on solution 'RAM_BLOCK.v1': elapsed time 1.26 seconds, memory usage 173968kB, peak memory usage 196260kB (SOL-9)
+project save
+# Saving project file '//icnas2.cc.ic.ac.uk/kjr115/Project/Musca/Input Engine/RAM/2Bit_RAM_60x80.ccs'. (PRJ-5)
+quit -f
