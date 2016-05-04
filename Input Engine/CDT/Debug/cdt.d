@@ -1,1 +1,0 @@
-cdt.d: ../cdt.cpp
