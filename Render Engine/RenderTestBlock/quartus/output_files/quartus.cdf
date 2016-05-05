@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP3C16F484) Path("/RenderTestBlock/quartus/output_files/") File("quartus.sof") MfrSpec(OpMask(1));
+		Device PartName(EP3C16F484) Path("/Project/Musca/Render Engine/RenderTestBlock/quartus/output_files/") File("quartus.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

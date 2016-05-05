@@ -3,15 +3,15 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'pin_name1'
-Slack : -4.230
-TNS   : -4.230
+Slack : -4.213
+TNS   : -4.213
 
 Type  : Slow 1200mV 85C Model Setup 'inst1|pll_inst0|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -3.244
-TNS   : -19.091
+Slack : -2.886
+TNS   : -11.205
 
 Type  : Slow 1200mV 85C Model Hold 'inst1|pll_inst0|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.358
+Slack : 0.344
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'pin_name1'
@@ -23,19 +23,19 @@ Slack : 4.384
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'pin_name1'
-Slack : 9.689
+Slack : 9.687
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'pin_name1'
-Slack : -3.851
-TNS   : -3.851
+Slack : -3.743
+TNS   : -3.743
 
 Type  : Slow 1200mV 0C Model Setup 'inst1|pll_inst0|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -2.813
-TNS   : -16.552
+Slack : -2.487
+TNS   : -9.648
 
 Type  : Slow 1200mV 0C Model Hold 'inst1|pll_inst0|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.312
+Slack : 0.299
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'pin_name1'
@@ -51,23 +51,23 @@ Slack : 9.684
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'pin_name1'
-Slack : -2.205
-TNS   : -2.205
+Slack : -2.201
+TNS   : -2.201
 
 Type  : Fast 1200mV 0C Model Setup 'inst1|pll_inst0|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -1.765
-TNS   : -10.374
+Slack : -1.569
+TNS   : -6.086
 
 Type  : Fast 1200mV 0C Model Hold 'inst1|pll_inst0|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.187
+Slack : 0.180
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'pin_name1'
-Slack : 0.194
+Slack : 0.195
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'inst1|pll_inst0|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 4.410
+Slack : 4.413
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'pin_name1'
