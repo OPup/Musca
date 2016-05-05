@@ -1,0 +1,14 @@
+
+# Messages from "go new"
+
+Creating project directory '\\icnas2.cc.ic.ac.uk\kjr115\Project\Musca\Render Engine\FrameBuffer\FrameBuffer'. (PRJ-1)
+Branching solution 'solution.v2' at state 'new' (PRJ-2)
+
+# Messages from "go analyze"
+
+Front End called with arguments: -- {\\icnas2.cc.ic.ac.uk\kjr115\Project\Musca\src\Frame_Buffer.cpp} (CIN-69)
+Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+Source file analysis completed (CIN-68)
+Starting transformation 'analyze' on solution 'solution.v2' (SOL-8)
+Completed transformation 'analyze' on solution 'solution.v2': elapsed time 0.87 seconds, memory usage 184612kB, peak memory usage 208920kB (SOL-9)
+$PROJECT_HOME/../../src/Frame_Buffer.cpp(14): last line of file ends without a newline (CRD-1)

@@ -68,9 +68,16 @@ applicable agreement for further details.
 	(port
 		(pt 0 128)
 		(input)
+		(text "init_rsc_mgc_in_wire_d" (rect 0 0 95 12)(font "Arial" ))
+		(text "init_rsc_mgc_in_wire_d" (rect 21 123 116 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 1))
+	)
+	(port
+		(pt 0 144)
+		(input)
 		(text "maze_rsc_singleport_data_out[3..0]" (rect 0 0 142 12)(font "Arial" ))
-		(text "maze_rsc_singleport_data_out[3..0]" (rect 21 123 163 135)(font "Arial" ))
-		(line (pt 0 128)(pt 16 128)(line_width 3))
+		(text "maze_rsc_singleport_data_out[3..0]" (rect 21 139 163 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 3))
 	)
 	(port
 		(pt 384 32)

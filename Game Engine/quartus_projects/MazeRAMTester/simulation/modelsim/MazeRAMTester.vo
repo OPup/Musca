@@ -1,0 +1,3362 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version"
+
+// DATE "05/05/2016 15:37:13"
+
+// 
+// Device: Altera EP3C16F484C6 Package FBGA484
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module MazeRAMTester (
+	\OUTPUT ,
+	CLK);
+output 	[3:0] \OUTPUT ;
+input 	CLK;
+
+// Design Ports Information
+// OUTPUT[3]	=>  Location: PIN_R5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// OUTPUT[2]	=>  Location: PIN_D10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// OUTPUT[1]	=>  Location: PIN_F15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// OUTPUT[0]	=>  Location: PIN_AA13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// CLK	=>  Location: PIN_G2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \inst1|MazeMemory_core_inst|if_if_acc_itm[3]~17_combout ;
+wire \inst1|MazeMemory_core_inst|maze_rsc_singleport_we~0_combout ;
+wire \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main_2~q ;
+wire \inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~0_combout ;
+wire \inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~1_combout ;
+wire \inst|MazeArrayTester_core_inst|and_5_cse~0_combout ;
+wire \inst1|MazeMemory_core_inst|if_if_nor_itm~2_combout ;
+wire \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main_2~feeder_combout ;
+wire \inst1|maze_rsc_singleport|mem_rtl_0_bypass[0]~feeder_combout ;
+wire \OUTPUT[3]~output_o ;
+wire \OUTPUT[2]~output_o ;
+wire \OUTPUT[1]~output_o ;
+wire \OUTPUT[0]~output_o ;
+wire \CLK~input_o ;
+wire \CLK~inputclkctrl_outclk ;
+wire \inst1|MazeMemory_core_inst|if_if_acc_itm[1]~12_cout ;
+wire \inst1|MazeMemory_core_inst|if_if_acc_itm[1]~14 ;
+wire \inst1|MazeMemory_core_inst|if_if_acc_itm[2]~15_combout ;
+wire \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[2]~feeder_combout ;
+wire \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|Selector0~0_combout ;
+wire \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_maze_vinit~q ;
+wire \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_maze_vinit_1~q ;
+wire \inst1|MazeMemory_core_inst|if_if_acc_itm[2]~16 ;
+wire \inst1|MazeMemory_core_inst|if_if_acc_itm[3]~18 ;
+wire \inst1|MazeMemory_core_inst|if_if_acc_itm[4]~19_combout ;
+wire \inst1|MazeMemory_core_inst|if_if_acc_itm[4]~20 ;
+wire \inst1|MazeMemory_core_inst|if_if_acc_itm[5]~21_combout ;
+wire \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[5]~feeder_combout ;
+wire \inst1|MazeMemory_core_inst|if_if_acc_itm[5]~22 ;
+wire \inst1|MazeMemory_core_inst|if_if_acc_itm[6]~23_combout ;
+wire \inst1|MazeMemory_core_inst|if_if_acc_itm[6]~24 ;
+wire \inst1|MazeMemory_core_inst|if_if_acc_itm[7]~25_combout ;
+wire \inst1|MazeMemory_core_inst|if_if_nor_itm~1_combout ;
+wire \inst1|MazeMemory_core_inst|if_if_acc_itm[1]~13_combout ;
+wire \inst1|MazeMemory_core_inst|if_if_acc_itm[0]~35_combout ;
+wire \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[0]~feeder_combout ;
+wire \inst1|MazeMemory_core_inst|if_if_nor_itm~0_combout ;
+wire \inst1|MazeMemory_core_inst|if_if_nor_itm~3_combout ;
+wire \inst1|MazeMemory_core_inst|if_if_nor_itm~feeder_combout ;
+wire \inst1|MazeMemory_core_inst|if_if_nor_itm~q ;
+wire \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|Selector1~0_combout ;
+wire \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main~q ;
+wire \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main_1~feeder_combout ;
+wire \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main_1~q ;
+wire \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_core_rlp~feeder_combout ;
+wire \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_core_rlp~q ;
+wire \inst|MazeArrayTester_core_inst|write_rsc_mgc_out_stdreg_d~2_combout ;
+wire \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|Selector0~0_combout ;
+wire \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_main~q ;
+wire \inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~0_combout ;
+wire \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~6_combout ;
+wire \inst|MazeArrayTester_core_inst|mux_7_nl[0]~0_combout ;
+wire \inst|MazeArrayTester_core_inst|Add0~16_combout ;
+wire \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|Selector1~0_combout ;
+wire \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|Selector1~1_combout ;
+wire \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for_for~q ;
+wire \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for_for_1~q ;
+wire \inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~1_combout ;
+wire \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2[1]~feeder_combout ;
+wire \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~9_combout ;
+wire \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2[1]~feeder_combout ;
+wire \inst|MazeArrayTester_core_inst|mux_7_nl[1]~1_combout ;
+wire \inst|MazeArrayTester_core_inst|Add0~11_combout ;
+wire \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~10_combout ;
+wire \inst|MazeArrayTester_core_inst|mux_7_nl[2]~2_combout ;
+wire \inst|MazeArrayTester_core_inst|Add0~12_combout ;
+wire \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~11_combout ;
+wire \inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~3_combout ;
+wire \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2[3]~feeder_combout ;
+wire \inst|MazeArrayTester_core_inst|mux_7_nl[3]~3_combout ;
+wire \inst|MazeArrayTester_core_inst|Add0~13_combout ;
+wire \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~8_combout ;
+wire \inst|MazeArrayTester_core_inst|Add0~17_combout ;
+wire \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2~0_combout ;
+wire \inst|MazeArrayTester_core_inst|mux_7_nl[4]~4_combout ;
+wire \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~7_combout ;
+wire \inst|MazeArrayTester_core_inst|Add0~15_combout ;
+wire \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2~1_combout ;
+wire \inst|MazeArrayTester_core_inst|mux_7_nl[5]~5_combout ;
+wire \inst|MazeArrayTester_core_inst|Add0~14_combout ;
+wire \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var_NS.st_if_for~0_combout ;
+wire \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q ;
+wire \inst|MazeArrayTester_core_inst|and_dcpl_8~0_combout ;
+wire \inst|MazeArrayTester_core_inst|written_sva~q ;
+wire \inst|MazeArrayTester_core_inst|write_rsc_mgc_out_stdreg_d~0_combout ;
+wire \inst|MazeArrayTester_core_inst|Add0~8_combout ;
+wire \inst|MazeArrayTester_core_inst|Add0~9_combout ;
+wire \inst|MazeArrayTester_core_inst|write_rsc_mgc_out_stdreg_d~1_combout ;
+wire \inst|MazeArrayTester_core_inst|write_rsc_mgc_out_stdreg_d~q ;
+wire \inst1|MazeMemory_core_inst|write_1_sva~feeder_combout ;
+wire \inst1|MazeMemory_core_inst|write_1_sva~q ;
+wire \inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~2_combout ;
+wire \inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~3_combout ;
+wire \inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~2_combout ;
+wire \inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~4_combout ;
+wire \inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~5_combout ;
+wire \inst1|MazeMemory_core_inst|out_rsc_mgc_out_stdreg_d[0]~0_combout ;
+wire \inst|MazeArrayTester_core_inst|Add0~10_combout ;
+wire \inst|MazeArrayTester_core_inst|and_5_cse~1_combout ;
+wire \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[0]~0_combout ;
+wire \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[1]~1_combout ;
+wire \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[2]~2_combout ;
+wire \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[3]~3_combout ;
+wire \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[4]~4_combout ;
+wire \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[5]~5_combout ;
+wire \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[6]~6_combout ;
+wire \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[7]~7_combout ;
+wire \inst1|MazeMemory_core_inst|if_if_acc_itm[7]~26 ;
+wire \inst1|MazeMemory_core_inst|if_if_acc_itm[8]~27_combout ;
+wire \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[8]~feeder_combout ;
+wire \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[8]~8_combout ;
+wire \inst1|MazeMemory_core_inst|if_if_acc_itm[8]~28 ;
+wire \inst1|MazeMemory_core_inst|if_if_acc_itm[9]~29_combout ;
+wire \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[9]~feeder_combout ;
+wire \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[9]~9_combout ;
+wire \inst1|MazeMemory_core_inst|if_if_acc_itm[9]~30 ;
+wire \inst1|MazeMemory_core_inst|if_if_acc_itm[10]~31_combout ;
+wire \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[10]~feeder_combout ;
+wire \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[10]~10_combout ;
+wire \inst1|MazeMemory_core_inst|if_if_acc_itm[10]~32 ;
+wire \inst1|MazeMemory_core_inst|if_if_acc_itm[11]~33_combout ;
+wire \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[11]~11_combout ;
+wire \inst1|maze_rsc_singleport|mem_rtl_0|auto_generated|ram_block1a0~portbdataout ;
+wire \inst1|MazeMemory_core_inst|out_rsc_mgc_out_stdreg_d[0]~1_combout ;
+wire \inst1|MazeMemory_core_inst|out_rsc_mgc_out_stdreg_d[0]~2_combout ;
+wire [0:1] \inst1|maze_rsc_singleport|mem_rtl_0_bypass ;
+wire [3:0] \inst1|MazeMemory_core_inst|out_rsc_mgc_out_stdreg_d ;
+wire [11:0] \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva ;
+wire [3:0] \inst1|MazeMemory_core_inst|maze_rsc_singleport_data_in_reg ;
+wire [3:0] \inst1|MazeMemory_core_inst|maze_rsc_singleport_data_in ;
+wire [11:0] \inst1|MazeMemory_core_inst|if_if_acc_itm ;
+wire [4:0] \inst|MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d ;
+wire [3:0] \inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d ;
+wire [5:0] \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 ;
+wire [5:0] \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 ;
+wire [6:0] \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1 ;
+wire [4:0] \inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d ;
+
+wire [1:0] \inst1|maze_rsc_singleport|mem_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus ;
+
+assign \inst1|maze_rsc_singleport|mem_rtl_0|auto_generated|ram_block1a0~portbdataout  = \inst1|maze_rsc_singleport|mem_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [0];
+
+// Location: FF_X23_Y8_N9
+dffeas \inst1|MazeMemory_core_inst|if_if_acc_itm[3] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst1|MazeMemory_core_inst|if_if_acc_itm[3]~17_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst1|MazeMemory_core_inst|if_if_acc_itm [3]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[3] .is_wysiwyg = "true";
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[3] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y8_N8
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|if_if_acc_itm[3]~17 (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|if_if_acc_itm[3]~17_combout  = (\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [3] & (\inst1|MazeMemory_core_inst|if_if_acc_itm[2]~16  & VCC)) # (!\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [3] & 
+// (!\inst1|MazeMemory_core_inst|if_if_acc_itm[2]~16 ))
+// \inst1|MazeMemory_core_inst|if_if_acc_itm[3]~18  = CARRY((!\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [3] & !\inst1|MazeMemory_core_inst|if_if_acc_itm[2]~16 ))
+
+	.dataa(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [3]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\inst1|MazeMemory_core_inst|if_if_acc_itm[2]~16 ),
+	.combout(\inst1|MazeMemory_core_inst|if_if_acc_itm[3]~17_combout ),
+	.cout(\inst1|MazeMemory_core_inst|if_if_acc_itm[3]~18 ));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[3]~17 .lut_mask = 16'hA505;
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[3]~17 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X24_Y8_N7
+dffeas \inst1|maze_rsc_singleport|mem_rtl_0_bypass[0] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst1|maze_rsc_singleport|mem_rtl_0_bypass[0]~feeder_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst1|maze_rsc_singleport|mem_rtl_0_bypass [0]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst1|maze_rsc_singleport|mem_rtl_0_bypass[0] .is_wysiwyg = "true";
+defparam \inst1|maze_rsc_singleport|mem_rtl_0_bypass[0] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y8_N22
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|maze_rsc_singleport_we~0 (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|maze_rsc_singleport_we~0_combout  = (\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_maze_vinit~q ) # ((\inst|MazeArrayTester_core_inst|write_rsc_mgc_out_stdreg_d~q  & 
+// \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main~q ))
+
+	.dataa(gnd),
+	.datab(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_maze_vinit~q ),
+	.datac(\inst|MazeArrayTester_core_inst|write_rsc_mgc_out_stdreg_d~q ),
+	.datad(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main~q ),
+	.cin(gnd),
+	.combout(\inst1|MazeMemory_core_inst|maze_rsc_singleport_we~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|maze_rsc_singleport_we~0 .lut_mask = 16'hFCCC;
+defparam \inst1|MazeMemory_core_inst|maze_rsc_singleport_we~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X22_Y8_N13
+dffeas \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[3] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(gnd),
+	.asdata(\inst1|MazeMemory_core_inst|if_if_acc_itm [3]),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_maze_vinit_1~q ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [3]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[3] .is_wysiwyg = "true";
+defparam \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[3] .power_up = "low";
+// synopsys translate_on
+
+// Location: FF_X24_Y8_N27
+dffeas \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main_2 (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main_2~feeder_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main_2~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main_2 .is_wysiwyg = "true";
+defparam \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main_2 .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y7_N26
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~0 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~0_combout  = (!\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [0] & (!\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [2] & (!\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [3] & 
+// !\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [1])))
+
+	.dataa(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [0]),
+	.datab(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [2]),
+	.datac(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [3]),
+	.datad(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [1]),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~0 .lut_mask = 16'h0001;
+defparam \inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X21_Y7_N16
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~1 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~1_combout  = (!\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [5] & (!\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [4] & 
+// (\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for_for~q  & \inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~0_combout )))
+
+	.dataa(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [5]),
+	.datab(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [4]),
+	.datac(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for_for~q ),
+	.datad(\inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~0_combout ),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~1 .lut_mask = 16'h1000;
+defparam \inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X21_Y7_N14
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|and_5_cse~0 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|and_5_cse~0_combout  = (\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [5] & \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [4])
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [5]),
+	.datad(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [4]),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|and_5_cse~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|and_5_cse~0 .lut_mask = 16'hF000;
+defparam \inst|MazeArrayTester_core_inst|and_5_cse~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y8_N30
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|if_if_nor_itm~2 (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|if_if_nor_itm~2_combout  = (\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [8]) # ((\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [9]) # ((\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [11]) # 
+// (\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [10])))
+
+	.dataa(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [8]),
+	.datab(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [9]),
+	.datac(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [11]),
+	.datad(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [10]),
+	.cin(gnd),
+	.combout(\inst1|MazeMemory_core_inst|if_if_nor_itm~2_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|if_if_nor_itm~2 .lut_mask = 16'hFFFE;
+defparam \inst1|MazeMemory_core_inst|if_if_nor_itm~2 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y8_N26
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main_2~feeder (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main_2~feeder_combout  = \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main_1~q 
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main_1~q ),
+	.cin(gnd),
+	.combout(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main_2~feeder_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main_2~feeder .lut_mask = 16'hFF00;
+defparam \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main_2~feeder .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y8_N6
+cycloneiii_lcell_comb \inst1|maze_rsc_singleport|mem_rtl_0_bypass[0]~feeder (
+// Equation(s):
+// \inst1|maze_rsc_singleport|mem_rtl_0_bypass[0]~feeder_combout  = \inst1|MazeMemory_core_inst|maze_rsc_singleport_we~0_combout 
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\inst1|MazeMemory_core_inst|maze_rsc_singleport_we~0_combout ),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\inst1|maze_rsc_singleport|mem_rtl_0_bypass[0]~feeder_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst1|maze_rsc_singleport|mem_rtl_0_bypass[0]~feeder .lut_mask = 16'hF0F0;
+defparam \inst1|maze_rsc_singleport|mem_rtl_0_bypass[0]~feeder .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y4_N16
+cycloneiii_io_obuf \OUTPUT[3]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\OUTPUT[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \OUTPUT[3]~output .bus_hold = "false";
+defparam \OUTPUT[3]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X16_Y29_N2
+cycloneiii_io_obuf \OUTPUT[2]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\OUTPUT[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \OUTPUT[2]~output .bus_hold = "false";
+defparam \OUTPUT[2]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X39_Y29_N16
+cycloneiii_io_obuf \OUTPUT[1]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\OUTPUT[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \OUTPUT[1]~output .bus_hold = "false";
+defparam \OUTPUT[1]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X23_Y0_N30
+cycloneiii_io_obuf \OUTPUT[0]~output (
+	.i(\inst1|MazeMemory_core_inst|out_rsc_mgc_out_stdreg_d [0]),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\OUTPUT[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \OUTPUT[0]~output .bus_hold = "false";
+defparam \OUTPUT[0]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y14_N1
+cycloneiii_io_ibuf \CLK~input (
+	.i(CLK),
+	.ibar(gnd),
+	.o(\CLK~input_o ));
+// synopsys translate_off
+defparam \CLK~input .bus_hold = "false";
+defparam \CLK~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: CLKCTRL_G4
+cycloneiii_clkctrl \CLK~inputclkctrl (
+	.ena(vcc),
+	.inclk({vcc,vcc,vcc,\CLK~input_o }),
+	.clkselect(2'b00),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.outclk(\CLK~inputclkctrl_outclk ));
+// synopsys translate_off
+defparam \CLK~inputclkctrl .clock_type = "global clock";
+defparam \CLK~inputclkctrl .ena_register_mode = "none";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y8_N2
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|if_if_acc_itm[1]~12 (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|if_if_acc_itm[1]~12_cout  = CARRY(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [0])
+
+	.dataa(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [0]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(gnd),
+	.combout(),
+	.cout(\inst1|MazeMemory_core_inst|if_if_acc_itm[1]~12_cout ));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[1]~12 .lut_mask = 16'h00AA;
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[1]~12 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y8_N4
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|if_if_acc_itm[1]~13 (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|if_if_acc_itm[1]~13_combout  = (\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [1] & (\inst1|MazeMemory_core_inst|if_if_acc_itm[1]~12_cout  & VCC)) # (!\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [1] & 
+// (!\inst1|MazeMemory_core_inst|if_if_acc_itm[1]~12_cout ))
+// \inst1|MazeMemory_core_inst|if_if_acc_itm[1]~14  = CARRY((!\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [1] & !\inst1|MazeMemory_core_inst|if_if_acc_itm[1]~12_cout ))
+
+	.dataa(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [1]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\inst1|MazeMemory_core_inst|if_if_acc_itm[1]~12_cout ),
+	.combout(\inst1|MazeMemory_core_inst|if_if_acc_itm[1]~13_combout ),
+	.cout(\inst1|MazeMemory_core_inst|if_if_acc_itm[1]~14 ));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[1]~13 .lut_mask = 16'hA505;
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[1]~13 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y8_N6
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|if_if_acc_itm[2]~15 (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|if_if_acc_itm[2]~15_combout  = (\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [2] & ((GND) # (!\inst1|MazeMemory_core_inst|if_if_acc_itm[1]~14 ))) # (!\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [2] & 
+// (\inst1|MazeMemory_core_inst|if_if_acc_itm[1]~14  $ (GND)))
+// \inst1|MazeMemory_core_inst|if_if_acc_itm[2]~16  = CARRY((\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [2]) # (!\inst1|MazeMemory_core_inst|if_if_acc_itm[1]~14 ))
+
+	.dataa(gnd),
+	.datab(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [2]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\inst1|MazeMemory_core_inst|if_if_acc_itm[1]~14 ),
+	.combout(\inst1|MazeMemory_core_inst|if_if_acc_itm[2]~15_combout ),
+	.cout(\inst1|MazeMemory_core_inst|if_if_acc_itm[2]~16 ));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[2]~15 .lut_mask = 16'h3CCF;
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[2]~15 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X23_Y8_N7
+dffeas \inst1|MazeMemory_core_inst|if_if_acc_itm[2] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst1|MazeMemory_core_inst|if_if_acc_itm[2]~15_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst1|MazeMemory_core_inst|if_if_acc_itm [2]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[2] .is_wysiwyg = "true";
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[2] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y8_N28
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[2]~feeder (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[2]~feeder_combout  = \inst1|MazeMemory_core_inst|if_if_acc_itm [2]
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(\inst1|MazeMemory_core_inst|if_if_acc_itm [2]),
+	.cin(gnd),
+	.combout(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[2]~feeder_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[2]~feeder .lut_mask = 16'hFF00;
+defparam \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[2]~feeder .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y8_N8
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|Selector0~0 (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|Selector0~0_combout  = ((!\inst1|MazeMemory_core_inst|if_if_nor_itm~q  & \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_maze_vinit_1~q )) # 
+// (!\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_core_rlp~q )
+
+	.dataa(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_core_rlp~q ),
+	.datab(gnd),
+	.datac(\inst1|MazeMemory_core_inst|if_if_nor_itm~q ),
+	.datad(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_maze_vinit_1~q ),
+	.cin(gnd),
+	.combout(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|Selector0~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|Selector0~0 .lut_mask = 16'h5F55;
+defparam \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|Selector0~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X24_Y8_N9
+dffeas \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_maze_vinit (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|Selector0~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_maze_vinit~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_maze_vinit .is_wysiwyg = "true";
+defparam \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_maze_vinit .power_up = "low";
+// synopsys translate_on
+
+// Location: FF_X24_Y8_N3
+dffeas \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_maze_vinit_1 (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(gnd),
+	.asdata(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_maze_vinit~q ),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_maze_vinit_1~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_maze_vinit_1 .is_wysiwyg = "true";
+defparam \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_maze_vinit_1 .power_up = "low";
+// synopsys translate_on
+
+// Location: FF_X22_Y8_N29
+dffeas \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[2] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[2]~feeder_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_maze_vinit_1~q ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [2]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[2] .is_wysiwyg = "true";
+defparam \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[2] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y8_N10
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|if_if_acc_itm[4]~19 (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|if_if_acc_itm[4]~19_combout  = (\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [4] & ((GND) # (!\inst1|MazeMemory_core_inst|if_if_acc_itm[3]~18 ))) # (!\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [4] & 
+// (\inst1|MazeMemory_core_inst|if_if_acc_itm[3]~18  $ (GND)))
+// \inst1|MazeMemory_core_inst|if_if_acc_itm[4]~20  = CARRY((\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [4]) # (!\inst1|MazeMemory_core_inst|if_if_acc_itm[3]~18 ))
+
+	.dataa(gnd),
+	.datab(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [4]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\inst1|MazeMemory_core_inst|if_if_acc_itm[3]~18 ),
+	.combout(\inst1|MazeMemory_core_inst|if_if_acc_itm[4]~19_combout ),
+	.cout(\inst1|MazeMemory_core_inst|if_if_acc_itm[4]~20 ));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[4]~19 .lut_mask = 16'h3CCF;
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[4]~19 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X23_Y8_N11
+dffeas \inst1|MazeMemory_core_inst|if_if_acc_itm[4] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst1|MazeMemory_core_inst|if_if_acc_itm[4]~19_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst1|MazeMemory_core_inst|if_if_acc_itm [4]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[4] .is_wysiwyg = "true";
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[4] .power_up = "low";
+// synopsys translate_on
+
+// Location: FF_X23_Y8_N29
+dffeas \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[4] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(gnd),
+	.asdata(\inst1|MazeMemory_core_inst|if_if_acc_itm [4]),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_maze_vinit_1~q ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [4]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[4] .is_wysiwyg = "true";
+defparam \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[4] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y8_N12
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|if_if_acc_itm[5]~21 (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|if_if_acc_itm[5]~21_combout  = (\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [5] & (\inst1|MazeMemory_core_inst|if_if_acc_itm[4]~20  & VCC)) # (!\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [5] & 
+// (!\inst1|MazeMemory_core_inst|if_if_acc_itm[4]~20 ))
+// \inst1|MazeMemory_core_inst|if_if_acc_itm[5]~22  = CARRY((!\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [5] & !\inst1|MazeMemory_core_inst|if_if_acc_itm[4]~20 ))
+
+	.dataa(gnd),
+	.datab(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [5]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\inst1|MazeMemory_core_inst|if_if_acc_itm[4]~20 ),
+	.combout(\inst1|MazeMemory_core_inst|if_if_acc_itm[5]~21_combout ),
+	.cout(\inst1|MazeMemory_core_inst|if_if_acc_itm[5]~22 ));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[5]~21 .lut_mask = 16'hC303;
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[5]~21 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X23_Y8_N13
+dffeas \inst1|MazeMemory_core_inst|if_if_acc_itm[5] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst1|MazeMemory_core_inst|if_if_acc_itm[5]~21_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst1|MazeMemory_core_inst|if_if_acc_itm [5]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[5] .is_wysiwyg = "true";
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[5] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y8_N24
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[5]~feeder (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[5]~feeder_combout  = \inst1|MazeMemory_core_inst|if_if_acc_itm [5]
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(\inst1|MazeMemory_core_inst|if_if_acc_itm [5]),
+	.cin(gnd),
+	.combout(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[5]~feeder_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[5]~feeder .lut_mask = 16'hFF00;
+defparam \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[5]~feeder .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X24_Y8_N25
+dffeas \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[5] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[5]~feeder_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_maze_vinit_1~q ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [5]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[5] .is_wysiwyg = "true";
+defparam \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[5] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y8_N14
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|if_if_acc_itm[6]~23 (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|if_if_acc_itm[6]~23_combout  = (\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [6] & ((GND) # (!\inst1|MazeMemory_core_inst|if_if_acc_itm[5]~22 ))) # (!\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [6] & 
+// (\inst1|MazeMemory_core_inst|if_if_acc_itm[5]~22  $ (GND)))
+// \inst1|MazeMemory_core_inst|if_if_acc_itm[6]~24  = CARRY((\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [6]) # (!\inst1|MazeMemory_core_inst|if_if_acc_itm[5]~22 ))
+
+	.dataa(gnd),
+	.datab(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [6]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\inst1|MazeMemory_core_inst|if_if_acc_itm[5]~22 ),
+	.combout(\inst1|MazeMemory_core_inst|if_if_acc_itm[6]~23_combout ),
+	.cout(\inst1|MazeMemory_core_inst|if_if_acc_itm[6]~24 ));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[6]~23 .lut_mask = 16'h3CCF;
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[6]~23 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X23_Y8_N15
+dffeas \inst1|MazeMemory_core_inst|if_if_acc_itm[6] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst1|MazeMemory_core_inst|if_if_acc_itm[6]~23_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst1|MazeMemory_core_inst|if_if_acc_itm [6]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[6] .is_wysiwyg = "true";
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[6] .power_up = "low";
+// synopsys translate_on
+
+// Location: FF_X23_Y8_N3
+dffeas \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[6] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(gnd),
+	.asdata(\inst1|MazeMemory_core_inst|if_if_acc_itm [6]),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_maze_vinit_1~q ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [6]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[6] .is_wysiwyg = "true";
+defparam \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[6] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y8_N16
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|if_if_acc_itm[7]~25 (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|if_if_acc_itm[7]~25_combout  = (\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [7] & (\inst1|MazeMemory_core_inst|if_if_acc_itm[6]~24  & VCC)) # (!\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [7] & 
+// (!\inst1|MazeMemory_core_inst|if_if_acc_itm[6]~24 ))
+// \inst1|MazeMemory_core_inst|if_if_acc_itm[7]~26  = CARRY((!\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [7] & !\inst1|MazeMemory_core_inst|if_if_acc_itm[6]~24 ))
+
+	.dataa(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [7]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\inst1|MazeMemory_core_inst|if_if_acc_itm[6]~24 ),
+	.combout(\inst1|MazeMemory_core_inst|if_if_acc_itm[7]~25_combout ),
+	.cout(\inst1|MazeMemory_core_inst|if_if_acc_itm[7]~26 ));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[7]~25 .lut_mask = 16'hA505;
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[7]~25 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X23_Y8_N17
+dffeas \inst1|MazeMemory_core_inst|if_if_acc_itm[7] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst1|MazeMemory_core_inst|if_if_acc_itm[7]~25_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst1|MazeMemory_core_inst|if_if_acc_itm [7]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[7] .is_wysiwyg = "true";
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[7] .power_up = "low";
+// synopsys translate_on
+
+// Location: FF_X23_Y8_N27
+dffeas \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[7] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(gnd),
+	.asdata(\inst1|MazeMemory_core_inst|if_if_acc_itm [7]),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_maze_vinit_1~q ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [7]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[7] .is_wysiwyg = "true";
+defparam \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[7] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y8_N26
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|if_if_nor_itm~1 (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|if_if_nor_itm~1_combout  = (\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [4]) # ((\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [6]) # ((\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [7]) # 
+// (\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [5])))
+
+	.dataa(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [4]),
+	.datab(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [6]),
+	.datac(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [7]),
+	.datad(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [5]),
+	.cin(gnd),
+	.combout(\inst1|MazeMemory_core_inst|if_if_nor_itm~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|if_if_nor_itm~1 .lut_mask = 16'hFFFE;
+defparam \inst1|MazeMemory_core_inst|if_if_nor_itm~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X23_Y8_N5
+dffeas \inst1|MazeMemory_core_inst|if_if_acc_itm[1] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst1|MazeMemory_core_inst|if_if_acc_itm[1]~13_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst1|MazeMemory_core_inst|if_if_acc_itm [1]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[1] .is_wysiwyg = "true";
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[1] .power_up = "low";
+// synopsys translate_on
+
+// Location: FF_X23_Y8_N1
+dffeas \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[1] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(gnd),
+	.asdata(\inst1|MazeMemory_core_inst|if_if_acc_itm [1]),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_maze_vinit_1~q ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [1]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[1] .is_wysiwyg = "true";
+defparam \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[1] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X21_Y8_N24
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|if_if_acc_itm[0]~35 (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|if_if_acc_itm[0]~35_combout  = !\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [0]
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [0]),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\inst1|MazeMemory_core_inst|if_if_acc_itm[0]~35_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[0]~35 .lut_mask = 16'h0F0F;
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[0]~35 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X21_Y8_N25
+dffeas \inst1|MazeMemory_core_inst|if_if_acc_itm[0] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst1|MazeMemory_core_inst|if_if_acc_itm[0]~35_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst1|MazeMemory_core_inst|if_if_acc_itm [0]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[0] .is_wysiwyg = "true";
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[0] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y8_N14
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[0]~feeder (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[0]~feeder_combout  = \inst1|MazeMemory_core_inst|if_if_acc_itm [0]
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(\inst1|MazeMemory_core_inst|if_if_acc_itm [0]),
+	.cin(gnd),
+	.combout(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[0]~feeder_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[0]~feeder .lut_mask = 16'hFF00;
+defparam \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[0]~feeder .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X22_Y8_N15
+dffeas \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[0] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[0]~feeder_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_maze_vinit_1~q ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [0]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[0] .is_wysiwyg = "true";
+defparam \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[0] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y8_N0
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|if_if_nor_itm~0 (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|if_if_nor_itm~0_combout  = (\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [3]) # ((\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [2]) # ((\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [1]) # 
+// (\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [0])))
+
+	.dataa(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [3]),
+	.datab(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [2]),
+	.datac(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [1]),
+	.datad(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [0]),
+	.cin(gnd),
+	.combout(\inst1|MazeMemory_core_inst|if_if_nor_itm~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|if_if_nor_itm~0 .lut_mask = 16'hFFFE;
+defparam \inst1|MazeMemory_core_inst|if_if_nor_itm~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y8_N28
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|if_if_nor_itm~3 (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|if_if_nor_itm~3_combout  = (!\inst1|MazeMemory_core_inst|if_if_nor_itm~2_combout  & (!\inst1|MazeMemory_core_inst|if_if_nor_itm~1_combout  & !\inst1|MazeMemory_core_inst|if_if_nor_itm~0_combout ))
+
+	.dataa(\inst1|MazeMemory_core_inst|if_if_nor_itm~2_combout ),
+	.datab(\inst1|MazeMemory_core_inst|if_if_nor_itm~1_combout ),
+	.datac(gnd),
+	.datad(\inst1|MazeMemory_core_inst|if_if_nor_itm~0_combout ),
+	.cin(gnd),
+	.combout(\inst1|MazeMemory_core_inst|if_if_nor_itm~3_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|if_if_nor_itm~3 .lut_mask = 16'h0011;
+defparam \inst1|MazeMemory_core_inst|if_if_nor_itm~3 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y8_N14
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|if_if_nor_itm~feeder (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|if_if_nor_itm~feeder_combout  = \inst1|MazeMemory_core_inst|if_if_nor_itm~3_combout 
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(\inst1|MazeMemory_core_inst|if_if_nor_itm~3_combout ),
+	.cin(gnd),
+	.combout(\inst1|MazeMemory_core_inst|if_if_nor_itm~feeder_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|if_if_nor_itm~feeder .lut_mask = 16'hFF00;
+defparam \inst1|MazeMemory_core_inst|if_if_nor_itm~feeder .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X24_Y8_N15
+dffeas \inst1|MazeMemory_core_inst|if_if_nor_itm (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst1|MazeMemory_core_inst|if_if_nor_itm~feeder_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst1|MazeMemory_core_inst|if_if_nor_itm~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|if_if_nor_itm .is_wysiwyg = "true";
+defparam \inst1|MazeMemory_core_inst|if_if_nor_itm .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y8_N16
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|Selector1~0 (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|Selector1~0_combout  = (\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main_2~q ) # ((\inst1|MazeMemory_core_inst|if_if_nor_itm~q  & 
+// \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_maze_vinit_1~q ))
+
+	.dataa(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main_2~q ),
+	.datab(gnd),
+	.datac(\inst1|MazeMemory_core_inst|if_if_nor_itm~q ),
+	.datad(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_maze_vinit_1~q ),
+	.cin(gnd),
+	.combout(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|Selector1~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|Selector1~0 .lut_mask = 16'hFAAA;
+defparam \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|Selector1~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X24_Y8_N17
+dffeas \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|Selector1~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main .is_wysiwyg = "true";
+defparam \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y8_N20
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main_1~feeder (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main_1~feeder_combout  = \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main~q 
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main~q ),
+	.cin(gnd),
+	.combout(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main_1~feeder_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main_1~feeder .lut_mask = 16'hFF00;
+defparam \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main_1~feeder .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X24_Y8_N21
+dffeas \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main_1 (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main_1~feeder_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main_1~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main_1 .is_wysiwyg = "true";
+defparam \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main_1 .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y7_N20
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_core_rlp~feeder (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_core_rlp~feeder_combout  = VCC
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_core_rlp~feeder_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_core_rlp~feeder .lut_mask = 16'hFFFF;
+defparam \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_core_rlp~feeder .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X23_Y7_N21
+dffeas \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_core_rlp (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_core_rlp~feeder_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_core_rlp~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_core_rlp .is_wysiwyg = "true";
+defparam \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_core_rlp .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y7_N14
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|write_rsc_mgc_out_stdreg_d~2 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|write_rsc_mgc_out_stdreg_d~2_combout  = (\inst|MazeArrayTester_core_inst|written_sva~q  & \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_main~q )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\inst|MazeArrayTester_core_inst|written_sva~q ),
+	.datad(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_main~q ),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|write_rsc_mgc_out_stdreg_d~2_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|write_rsc_mgc_out_stdreg_d~2 .lut_mask = 16'hF000;
+defparam \inst|MazeArrayTester_core_inst|write_rsc_mgc_out_stdreg_d~2 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y7_N26
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|Selector0~0 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|Selector0~0_combout  = ((\inst|MazeArrayTester_core_inst|write_rsc_mgc_out_stdreg_d~2_combout ) # ((\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q  & 
+// \inst|MazeArrayTester_core_inst|Add0~14_combout ))) # (!\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_core_rlp~q )
+
+	.dataa(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q ),
+	.datab(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_core_rlp~q ),
+	.datac(\inst|MazeArrayTester_core_inst|write_rsc_mgc_out_stdreg_d~2_combout ),
+	.datad(\inst|MazeArrayTester_core_inst|Add0~14_combout ),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|Selector0~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|Selector0~0 .lut_mask = 16'hFBF3;
+defparam \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|Selector0~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X23_Y7_N27
+dffeas \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_main (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|Selector0~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_main~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_main .is_wysiwyg = "true";
+defparam \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_main .power_up = "low";
+// synopsys translate_on
+
+// Location: FF_X22_Y7_N17
+dffeas \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1[0] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(gnd),
+	.asdata(\inst|MazeArrayTester_core_inst|mux_7_nl[0]~0_combout ),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1 [0]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1[0] .is_wysiwyg = "true";
+defparam \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1[0] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y7_N16
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~0 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~0_combout  = (\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for_for_1~q  & \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1 [0])
+
+	.dataa(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for_for_1~q ),
+	.datab(gnd),
+	.datac(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1 [0]),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~0 .lut_mask = 16'hA0A0;
+defparam \inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X22_Y7_N15
+dffeas \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2[0] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(gnd),
+	.asdata(\inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~0_combout ),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [0]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2[0] .is_wysiwyg = "true";
+defparam \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2[0] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y7_N24
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~6 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~6_combout  = (!\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_main~q  & (\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q  $ 
+// (\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [0])))
+
+	.dataa(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q ),
+	.datab(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_main~q ),
+	.datac(gnd),
+	.datad(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [0]),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~6_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~6 .lut_mask = 16'h1122;
+defparam \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~6 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X22_Y7_N3
+dffeas \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2[0] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(gnd),
+	.asdata(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~6_combout ),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [0]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2[0] .is_wysiwyg = "true";
+defparam \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2[0] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y7_N14
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|mux_7_nl[0]~0 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|mux_7_nl[0]~0_combout  = (\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q  & ((!\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [0]))) # 
+// (!\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q  & (!\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [0]))
+
+	.dataa(gnd),
+	.datab(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q ),
+	.datac(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [0]),
+	.datad(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [0]),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|mux_7_nl[0]~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|mux_7_nl[0]~0 .lut_mask = 16'h03CF;
+defparam \inst|MazeArrayTester_core_inst|mux_7_nl[0]~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y7_N0
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|Add0~16 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|Add0~16_combout  = \inst|MazeArrayTester_core_inst|mux_7_nl[1]~1_combout  $ (((\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q  & ((\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [0]))) 
+// # (!\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q  & (\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [0]))))
+
+	.dataa(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q ),
+	.datab(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [0]),
+	.datac(\inst|MazeArrayTester_core_inst|mux_7_nl[1]~1_combout ),
+	.datad(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [0]),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|Add0~16_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|Add0~16 .lut_mask = 16'h1EB4;
+defparam \inst|MazeArrayTester_core_inst|Add0~16 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X23_Y7_N11
+dffeas \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1[1] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(gnd),
+	.asdata(\inst|MazeArrayTester_core_inst|Add0~16_combout ),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1 [1]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1[1] .is_wysiwyg = "true";
+defparam \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1[1] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X21_Y7_N12
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|Selector1~0 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|Selector1~0_combout  = (\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1 [6] & (((\inst|MazeArrayTester_core_inst|written_sva~q ) # 
+// (!\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_main~q )))) # (!\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1 [6] & (!\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for_for_1~q  & 
+// ((\inst|MazeArrayTester_core_inst|written_sva~q ) # (!\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_main~q ))))
+
+	.dataa(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1 [6]),
+	.datab(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for_for_1~q ),
+	.datac(\inst|MazeArrayTester_core_inst|written_sva~q ),
+	.datad(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_main~q ),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|Selector1~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|Selector1~0 .lut_mask = 16'hB0BB;
+defparam \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|Selector1~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X21_Y7_N4
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|Selector1~1 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|Selector1~1_combout  = ((\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q  & !\inst|MazeArrayTester_core_inst|Add0~14_combout )) # 
+// (!\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|Selector1~0_combout )
+
+	.dataa(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q ),
+	.datab(gnd),
+	.datac(\inst|MazeArrayTester_core_inst|Add0~14_combout ),
+	.datad(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|Selector1~0_combout ),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|Selector1~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|Selector1~1 .lut_mask = 16'h0AFF;
+defparam \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|Selector1~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X21_Y7_N5
+dffeas \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for_for (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|Selector1~1_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for_for~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for_for .is_wysiwyg = "true";
+defparam \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for_for .power_up = "low";
+// synopsys translate_on
+
+// Location: FF_X21_Y7_N17
+dffeas \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for_for_1 (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(gnd),
+	.asdata(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for_for~q ),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for_for_1~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for_for_1 .is_wysiwyg = "true";
+defparam \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for_for_1 .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y7_N10
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~1 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~1_combout  = (\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1 [1] & \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for_for_1~q )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1 [1]),
+	.datad(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for_for_1~q ),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~1 .lut_mask = 16'hF000;
+defparam \inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y7_N2
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2[1]~feeder (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2[1]~feeder_combout  = \inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~1_combout 
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(\inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~1_combout ),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2[1]~feeder_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2[1]~feeder .lut_mask = 16'hFF00;
+defparam \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2[1]~feeder .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X23_Y7_N3
+dffeas \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2[1] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2[1]~feeder_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [1]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2[1] .is_wysiwyg = "true";
+defparam \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2[1] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y7_N6
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~9 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~9_combout  = (!\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_main~q  & ((\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q  & 
+// ((\inst|MazeArrayTester_core_inst|Add0~16_combout ))) # (!\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q  & (\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [1]))))
+
+	.dataa(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_main~q ),
+	.datab(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [1]),
+	.datac(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q ),
+	.datad(\inst|MazeArrayTester_core_inst|Add0~16_combout ),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~9_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~9 .lut_mask = 16'h5404;
+defparam \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~9 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y7_N18
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2[1]~feeder (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2[1]~feeder_combout  = \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~9_combout 
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~9_combout ),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2[1]~feeder_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2[1]~feeder .lut_mask = 16'hFF00;
+defparam \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2[1]~feeder .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X23_Y7_N19
+dffeas \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2[1] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2[1]~feeder_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [1]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2[1] .is_wysiwyg = "true";
+defparam \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2[1] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y7_N4
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|mux_7_nl[1]~1 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|mux_7_nl[1]~1_combout  = (\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q  & ((\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [1]))) # 
+// (!\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q  & (\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [1]))
+
+	.dataa(gnd),
+	.datab(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [1]),
+	.datac(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q ),
+	.datad(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [1]),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|mux_7_nl[1]~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|mux_7_nl[1]~1 .lut_mask = 16'hFC0C;
+defparam \inst|MazeArrayTester_core_inst|mux_7_nl[1]~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y7_N8
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|Add0~11 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|Add0~11_combout  = \inst|MazeArrayTester_core_inst|mux_7_nl[2]~2_combout  $ (((\inst|MazeArrayTester_core_inst|mux_7_nl[1]~1_combout  & !\inst|MazeArrayTester_core_inst|mux_7_nl[0]~0_combout )))
+
+	.dataa(\inst|MazeArrayTester_core_inst|mux_7_nl[2]~2_combout ),
+	.datab(gnd),
+	.datac(\inst|MazeArrayTester_core_inst|mux_7_nl[1]~1_combout ),
+	.datad(\inst|MazeArrayTester_core_inst|mux_7_nl[0]~0_combout ),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|Add0~11_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|Add0~11 .lut_mask = 16'hAA5A;
+defparam \inst|MazeArrayTester_core_inst|Add0~11 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y7_N8
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~10 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~10_combout  = (!\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_main~q  & ((\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q  & 
+// (\inst|MazeArrayTester_core_inst|Add0~11_combout )) # (!\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q  & ((\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [2])))))
+
+	.dataa(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q ),
+	.datab(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_main~q ),
+	.datac(\inst|MazeArrayTester_core_inst|Add0~11_combout ),
+	.datad(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [2]),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~10_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~10 .lut_mask = 16'h3120;
+defparam \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~10 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X22_Y7_N25
+dffeas \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2[2] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(gnd),
+	.asdata(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~10_combout ),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [2]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2[2] .is_wysiwyg = "true";
+defparam \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2[2] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y7_N22
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|mux_7_nl[2]~2 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|mux_7_nl[2]~2_combout  = (\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q  & ((\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [2]))) # 
+// (!\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q  & (\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [2]))
+
+	.dataa(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [2]),
+	.datab(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [2]),
+	.datac(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q ),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|mux_7_nl[2]~2_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|mux_7_nl[2]~2 .lut_mask = 16'hCACA;
+defparam \inst|MazeArrayTester_core_inst|mux_7_nl[2]~2 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y7_N18
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|Add0~12 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|Add0~12_combout  = \inst|MazeArrayTester_core_inst|mux_7_nl[3]~3_combout  $ (((\inst|MazeArrayTester_core_inst|mux_7_nl[1]~1_combout  & (!\inst|MazeArrayTester_core_inst|mux_7_nl[0]~0_combout  & 
+// \inst|MazeArrayTester_core_inst|mux_7_nl[2]~2_combout ))))
+
+	.dataa(\inst|MazeArrayTester_core_inst|mux_7_nl[1]~1_combout ),
+	.datab(\inst|MazeArrayTester_core_inst|mux_7_nl[3]~3_combout ),
+	.datac(\inst|MazeArrayTester_core_inst|mux_7_nl[0]~0_combout ),
+	.datad(\inst|MazeArrayTester_core_inst|mux_7_nl[2]~2_combout ),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|Add0~12_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|Add0~12 .lut_mask = 16'hC6CC;
+defparam \inst|MazeArrayTester_core_inst|Add0~12 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y7_N30
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~11 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~11_combout  = (!\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_main~q  & ((\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q  & 
+// ((\inst|MazeArrayTester_core_inst|Add0~12_combout ))) # (!\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q  & (\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [3]))))
+
+	.dataa(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [3]),
+	.datab(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_main~q ),
+	.datac(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q ),
+	.datad(\inst|MazeArrayTester_core_inst|Add0~12_combout ),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~11_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~11 .lut_mask = 16'h3202;
+defparam \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~11 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X22_Y7_N27
+dffeas \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2[3] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(gnd),
+	.asdata(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~11_combout ),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [3]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2[3] .is_wysiwyg = "true";
+defparam \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2[3] .power_up = "low";
+// synopsys translate_on
+
+// Location: FF_X23_Y7_N31
+dffeas \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1[3] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(gnd),
+	.asdata(\inst|MazeArrayTester_core_inst|Add0~12_combout ),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1 [3]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1[3] .is_wysiwyg = "true";
+defparam \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1[3] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y7_N30
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~3 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~3_combout  = (\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1 [3] & \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for_for_1~q )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1 [3]),
+	.datad(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for_for_1~q ),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~3_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~3 .lut_mask = 16'hF000;
+defparam \inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~3 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y7_N28
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2[3]~feeder (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2[3]~feeder_combout  = \inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~3_combout 
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~3_combout ),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2[3]~feeder_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2[3]~feeder .lut_mask = 16'hF0F0;
+defparam \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2[3]~feeder .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X23_Y7_N29
+dffeas \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2[3] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2[3]~feeder_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [3]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2[3] .is_wysiwyg = "true";
+defparam \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2[3] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y7_N20
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|mux_7_nl[3]~3 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|mux_7_nl[3]~3_combout  = (\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q  & (\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [3])) # 
+// (!\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q  & ((\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [3])))
+
+	.dataa(gnd),
+	.datab(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q ),
+	.datac(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [3]),
+	.datad(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [3]),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|mux_7_nl[3]~3_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|mux_7_nl[3]~3 .lut_mask = 16'hF3C0;
+defparam \inst|MazeArrayTester_core_inst|mux_7_nl[3]~3 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y7_N28
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|Add0~13 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|Add0~13_combout  = (\inst|MazeArrayTester_core_inst|mux_7_nl[1]~1_combout  & (\inst|MazeArrayTester_core_inst|mux_7_nl[3]~3_combout  & (!\inst|MazeArrayTester_core_inst|mux_7_nl[0]~0_combout  & 
+// \inst|MazeArrayTester_core_inst|mux_7_nl[2]~2_combout )))
+
+	.dataa(\inst|MazeArrayTester_core_inst|mux_7_nl[1]~1_combout ),
+	.datab(\inst|MazeArrayTester_core_inst|mux_7_nl[3]~3_combout ),
+	.datac(\inst|MazeArrayTester_core_inst|mux_7_nl[0]~0_combout ),
+	.datad(\inst|MazeArrayTester_core_inst|mux_7_nl[2]~2_combout ),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|Add0~13_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|Add0~13 .lut_mask = 16'h0800;
+defparam \inst|MazeArrayTester_core_inst|Add0~13 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X21_Y7_N2
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~8 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~8_combout  = (!\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_main~q  & (\inst|MazeArrayTester_core_inst|mux_7_nl[4]~4_combout  $ (\inst|MazeArrayTester_core_inst|Add0~13_combout 
+// )))
+
+	.dataa(gnd),
+	.datab(\inst|MazeArrayTester_core_inst|mux_7_nl[4]~4_combout ),
+	.datac(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_main~q ),
+	.datad(\inst|MazeArrayTester_core_inst|Add0~13_combout ),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~8_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~8 .lut_mask = 16'h030C;
+defparam \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~8 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X21_Y7_N3
+dffeas \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2[4] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~8_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(\inst|MazeArrayTester_core_inst|and_dcpl_8~0_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [4]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2[4] .is_wysiwyg = "true";
+defparam \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2[4] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X21_Y7_N30
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|Add0~17 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|Add0~17_combout  = \inst|MazeArrayTester_core_inst|Add0~13_combout  $ (((\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q  & ((\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [4]))) # 
+// (!\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q  & (\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [4]))))
+
+	.dataa(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [4]),
+	.datab(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [4]),
+	.datac(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q ),
+	.datad(\inst|MazeArrayTester_core_inst|Add0~13_combout ),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|Add0~17_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|Add0~17 .lut_mask = 16'h35CA;
+defparam \inst|MazeArrayTester_core_inst|Add0~17 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X21_Y7_N31
+dffeas \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1[4] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst|MazeArrayTester_core_inst|Add0~17_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1 [4]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1[4] .is_wysiwyg = "true";
+defparam \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1[4] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X21_Y7_N28
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2~0 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2~0_combout  = (\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1 [4] & \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for_for_1~q )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1 [4]),
+	.datad(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for_for_1~q ),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2~0 .lut_mask = 16'hF000;
+defparam \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X21_Y7_N29
+dffeas \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2[4] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [4]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2[4] .is_wysiwyg = "true";
+defparam \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2[4] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X21_Y7_N26
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|mux_7_nl[4]~4 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|mux_7_nl[4]~4_combout  = (\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q  & (\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [4])) # 
+// (!\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q  & ((\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [4])))
+
+	.dataa(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q ),
+	.datab(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [4]),
+	.datac(gnd),
+	.datad(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [4]),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|mux_7_nl[4]~4_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|mux_7_nl[4]~4 .lut_mask = 16'hDD88;
+defparam \inst|MazeArrayTester_core_inst|mux_7_nl[4]~4 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X21_Y7_N8
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~7 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~7_combout  = (!\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_main~q  & (\inst|MazeArrayTester_core_inst|mux_7_nl[5]~5_combout  $ 
+// (((\inst|MazeArrayTester_core_inst|mux_7_nl[4]~4_combout  & \inst|MazeArrayTester_core_inst|Add0~13_combout )))))
+
+	.dataa(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_main~q ),
+	.datab(\inst|MazeArrayTester_core_inst|mux_7_nl[4]~4_combout ),
+	.datac(\inst|MazeArrayTester_core_inst|mux_7_nl[5]~5_combout ),
+	.datad(\inst|MazeArrayTester_core_inst|Add0~13_combout ),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~7_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~7 .lut_mask = 16'h1450;
+defparam \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~7 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X21_Y7_N9
+dffeas \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2[5] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~7_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(\inst|MazeArrayTester_core_inst|and_dcpl_8~0_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [5]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2[5] .is_wysiwyg = "true";
+defparam \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2[5] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X21_Y7_N24
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|Add0~15 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|Add0~15_combout  = \inst|MazeArrayTester_core_inst|mux_7_nl[5]~5_combout  $ (((\inst|MazeArrayTester_core_inst|mux_7_nl[4]~4_combout  & \inst|MazeArrayTester_core_inst|Add0~13_combout )))
+
+	.dataa(gnd),
+	.datab(\inst|MazeArrayTester_core_inst|mux_7_nl[4]~4_combout ),
+	.datac(\inst|MazeArrayTester_core_inst|mux_7_nl[5]~5_combout ),
+	.datad(\inst|MazeArrayTester_core_inst|Add0~13_combout ),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|Add0~15_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|Add0~15 .lut_mask = 16'h3CF0;
+defparam \inst|MazeArrayTester_core_inst|Add0~15 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X21_Y7_N25
+dffeas \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1[5] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst|MazeArrayTester_core_inst|Add0~15_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1 [5]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1[5] .is_wysiwyg = "true";
+defparam \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1[5] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X21_Y7_N20
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2~1 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2~1_combout  = (\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1 [5] & \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for_for_1~q )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1 [5]),
+	.datad(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for_for_1~q ),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2~1 .lut_mask = 16'hF000;
+defparam \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X21_Y7_N21
+dffeas \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2[5] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2~1_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [5]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2[5] .is_wysiwyg = "true";
+defparam \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2[5] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X21_Y7_N18
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|mux_7_nl[5]~5 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|mux_7_nl[5]~5_combout  = (\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q  & (\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [5])) # 
+// (!\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q  & ((\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [5])))
+
+	.dataa(gnd),
+	.datab(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [5]),
+	.datac(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q ),
+	.datad(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [5]),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|mux_7_nl[5]~5_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|mux_7_nl[5]~5 .lut_mask = 16'hCFC0;
+defparam \inst|MazeArrayTester_core_inst|mux_7_nl[5]~5 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X21_Y7_N6
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|Add0~14 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|Add0~14_combout  = (\inst|MazeArrayTester_core_inst|mux_7_nl[4]~4_combout  & (\inst|MazeArrayTester_core_inst|mux_7_nl[5]~5_combout  & \inst|MazeArrayTester_core_inst|Add0~13_combout ))
+
+	.dataa(gnd),
+	.datab(\inst|MazeArrayTester_core_inst|mux_7_nl[4]~4_combout ),
+	.datac(\inst|MazeArrayTester_core_inst|mux_7_nl[5]~5_combout ),
+	.datad(\inst|MazeArrayTester_core_inst|Add0~13_combout ),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|Add0~14_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|Add0~14 .lut_mask = 16'hC000;
+defparam \inst|MazeArrayTester_core_inst|Add0~14 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X21_Y7_N27
+dffeas \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1[6] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(gnd),
+	.asdata(\inst|MazeArrayTester_core_inst|Add0~14_combout ),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1 [6]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1[6] .is_wysiwyg = "true";
+defparam \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1[6] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X21_Y7_N22
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var_NS.st_if_for~0 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var_NS.st_if_for~0_combout  = (\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1 [6] & \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for_for_1~q )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1 [6]),
+	.datad(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for_for_1~q ),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var_NS.st_if_for~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var_NS.st_if_for~0 .lut_mask = 16'hF000;
+defparam \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var_NS.st_if_for~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X21_Y7_N23
+dffeas \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var_NS.st_if_for~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for .is_wysiwyg = "true";
+defparam \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X21_Y7_N10
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|and_dcpl_8~0 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|and_dcpl_8~0_combout  = (\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q ) # (\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_main~q )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q ),
+	.datad(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_main~q ),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|and_dcpl_8~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|and_dcpl_8~0 .lut_mask = 16'hFFF0;
+defparam \inst|MazeArrayTester_core_inst|and_dcpl_8~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X21_Y7_N11
+dffeas \inst|MazeArrayTester_core_inst|written_sva (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst|MazeArrayTester_core_inst|and_dcpl_8~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|MazeArrayTester_core_inst|written_sva~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|written_sva .is_wysiwyg = "true";
+defparam \inst|MazeArrayTester_core_inst|written_sva .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y7_N24
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|write_rsc_mgc_out_stdreg_d~0 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|write_rsc_mgc_out_stdreg_d~0_combout  = (\inst|MazeArrayTester_core_inst|write_rsc_mgc_out_stdreg_d~q  & ((!\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_main~q ) # 
+// (!\inst|MazeArrayTester_core_inst|written_sva~q )))
+
+	.dataa(\inst|MazeArrayTester_core_inst|write_rsc_mgc_out_stdreg_d~q ),
+	.datab(\inst|MazeArrayTester_core_inst|written_sva~q ),
+	.datac(gnd),
+	.datad(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_main~q ),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|write_rsc_mgc_out_stdreg_d~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|write_rsc_mgc_out_stdreg_d~0 .lut_mask = 16'h22AA;
+defparam \inst|MazeArrayTester_core_inst|write_rsc_mgc_out_stdreg_d~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y7_N0
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|Add0~8 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|Add0~8_combout  = (\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [4] & (\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [3] & \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [2]))
+
+	.dataa(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [4]),
+	.datab(gnd),
+	.datac(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [3]),
+	.datad(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [2]),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|Add0~8_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|Add0~8 .lut_mask = 16'hA000;
+defparam \inst|MazeArrayTester_core_inst|Add0~8 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y7_N10
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|Add0~9 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|Add0~9_combout  = (\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [5] & (\inst|MazeArrayTester_core_inst|Add0~8_combout  & (\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [0] & 
+// \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [1])))
+
+	.dataa(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [5]),
+	.datab(\inst|MazeArrayTester_core_inst|Add0~8_combout ),
+	.datac(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [0]),
+	.datad(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [1]),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|Add0~9_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|Add0~9 .lut_mask = 16'h8000;
+defparam \inst|MazeArrayTester_core_inst|Add0~9 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y7_N12
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|write_rsc_mgc_out_stdreg_d~1 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|write_rsc_mgc_out_stdreg_d~1_combout  = ((\inst|MazeArrayTester_core_inst|write_rsc_mgc_out_stdreg_d~0_combout  & ((!\inst|MazeArrayTester_core_inst|Add0~9_combout ) # 
+// (!\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q )))) # (!\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_core_rlp~q )
+
+	.dataa(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q ),
+	.datab(\inst|MazeArrayTester_core_inst|write_rsc_mgc_out_stdreg_d~0_combout ),
+	.datac(\inst|MazeArrayTester_core_inst|Add0~9_combout ),
+	.datad(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_core_rlp~q ),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|write_rsc_mgc_out_stdreg_d~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|write_rsc_mgc_out_stdreg_d~1 .lut_mask = 16'h4CFF;
+defparam \inst|MazeArrayTester_core_inst|write_rsc_mgc_out_stdreg_d~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X23_Y7_N13
+dffeas \inst|MazeArrayTester_core_inst|write_rsc_mgc_out_stdreg_d (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst|MazeArrayTester_core_inst|write_rsc_mgc_out_stdreg_d~1_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|MazeArrayTester_core_inst|write_rsc_mgc_out_stdreg_d~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|write_rsc_mgc_out_stdreg_d .is_wysiwyg = "true";
+defparam \inst|MazeArrayTester_core_inst|write_rsc_mgc_out_stdreg_d .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y8_N18
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|write_1_sva~feeder (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|write_1_sva~feeder_combout  = \inst|MazeArrayTester_core_inst|write_rsc_mgc_out_stdreg_d~q 
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\inst|MazeArrayTester_core_inst|write_rsc_mgc_out_stdreg_d~q ),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\inst1|MazeMemory_core_inst|write_1_sva~feeder_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|write_1_sva~feeder .lut_mask = 16'hF0F0;
+defparam \inst1|MazeMemory_core_inst|write_1_sva~feeder .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X24_Y8_N19
+dffeas \inst1|MazeMemory_core_inst|write_1_sva (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst1|MazeMemory_core_inst|write_1_sva~feeder_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst1|MazeMemory_core_inst|write_1_sva~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|write_1_sva .is_wysiwyg = "true";
+defparam \inst1|MazeMemory_core_inst|write_1_sva .power_up = "low";
+// synopsys translate_on
+
+// Location: FF_X23_Y7_N17
+dffeas \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1[2] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(gnd),
+	.asdata(\inst|MazeArrayTester_core_inst|Add0~11_combout ),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1 [2]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1[2] .is_wysiwyg = "true";
+defparam \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1[2] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y7_N16
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~2 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~2_combout  = (\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1 [2] & \inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for_for_1~q )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_1 [2]),
+	.datad(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for_for_1~q ),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~2_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~2 .lut_mask = 16'hF000;
+defparam \inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~2 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X23_Y7_N25
+dffeas \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2[2] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(gnd),
+	.asdata(\inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~2_combout ),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [2]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2[2] .is_wysiwyg = "true";
+defparam \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2[2] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y7_N12
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~3 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~3_combout  = (\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [1] & (((\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [3] & \inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [2])) # 
+// (!\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [0]))) # (!\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [1] & (!\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [0] & ((\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [3]) # 
+// (\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [2]))))
+
+	.dataa(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [1]),
+	.datab(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [3]),
+	.datac(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [2]),
+	.datad(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [0]),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~3_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~3 .lut_mask = 16'h80FE;
+defparam \inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~3 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y7_N4
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~2 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~2_combout  = (\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [5] & ((\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [4]) # (!\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 
+// [1]))) # (!\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [5] & (\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [4] & !\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [1]))
+
+	.dataa(gnd),
+	.datab(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [5]),
+	.datac(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [4]),
+	.datad(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [1]),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~2_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~2 .lut_mask = 16'hC0FC;
+defparam \inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~2 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y7_N22
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~4 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~4_combout  = (!\inst|MazeArrayTester_core_inst|Add0~9_combout  & ((\inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~3_combout  & ((!\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 
+// [0]) # (!\inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~2_combout ))) # (!\inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~3_combout  & ((\inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~2_combout ) # 
+// (\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [0])))))
+
+	.dataa(\inst|MazeArrayTester_core_inst|Add0~9_combout ),
+	.datab(\inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~3_combout ),
+	.datac(\inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~2_combout ),
+	.datad(\inst|MazeArrayTester_core_inst|if_for_for_j_1_sva_2 [0]),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~4_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~4 .lut_mask = 16'h1554;
+defparam \inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~4 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X21_Y7_N0
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~5 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~5_combout  = (\inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~1_combout ) # ((\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for_for~q  & 
+// ((!\inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~4_combout ))) # (!\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for_for~q  & (\inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d [0])))
+
+	.dataa(\inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~1_combout ),
+	.datab(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for_for~q ),
+	.datac(\inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d [0]),
+	.datad(\inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~4_combout ),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~5_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~5 .lut_mask = 16'hBAFE;
+defparam \inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~5 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X21_Y7_N1
+dffeas \inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~5_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d [0]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0] .is_wysiwyg = "true";
+defparam \inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y8_N4
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|maze_rsc_singleport_data_in[0] (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|maze_rsc_singleport_data_in [0] = (\inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d [0] & \inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main~q )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\inst|MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d [0]),
+	.datad(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main~q ),
+	.cin(gnd),
+	.combout(\inst1|MazeMemory_core_inst|maze_rsc_singleport_data_in [0]),
+	.cout());
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|maze_rsc_singleport_data_in[0] .lut_mask = 16'hF000;
+defparam \inst1|MazeMemory_core_inst|maze_rsc_singleport_data_in[0] .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X24_Y8_N31
+dffeas \inst1|MazeMemory_core_inst|maze_rsc_singleport_data_in_reg[0] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(gnd),
+	.asdata(\inst1|MazeMemory_core_inst|maze_rsc_singleport_data_in [0]),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst1|MazeMemory_core_inst|maze_rsc_singleport_data_in_reg [0]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|maze_rsc_singleport_data_in_reg[0] .is_wysiwyg = "true";
+defparam \inst1|MazeMemory_core_inst|maze_rsc_singleport_data_in_reg[0] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y8_N30
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|out_rsc_mgc_out_stdreg_d[0]~0 (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|out_rsc_mgc_out_stdreg_d[0]~0_combout  = (\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main_1~q  & (((\inst1|MazeMemory_core_inst|write_1_sva~q  & \inst1|MazeMemory_core_inst|maze_rsc_singleport_data_in_reg 
+// [0])))) # (!\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main_1~q  & (\inst1|MazeMemory_core_inst|out_rsc_mgc_out_stdreg_d [0]))
+
+	.dataa(\inst1|MazeMemory_core_inst|out_rsc_mgc_out_stdreg_d [0]),
+	.datab(\inst1|MazeMemory_core_inst|write_1_sva~q ),
+	.datac(\inst1|MazeMemory_core_inst|maze_rsc_singleport_data_in_reg [0]),
+	.datad(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main_1~q ),
+	.cin(gnd),
+	.combout(\inst1|MazeMemory_core_inst|out_rsc_mgc_out_stdreg_d[0]~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|out_rsc_mgc_out_stdreg_d[0]~0 .lut_mask = 16'hC0AA;
+defparam \inst1|MazeMemory_core_inst|out_rsc_mgc_out_stdreg_d[0]~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X24_Y8_N11
+dffeas \inst1|maze_rsc_singleport|mem_rtl_0_bypass[1] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(gnd),
+	.asdata(\inst1|MazeMemory_core_inst|maze_rsc_singleport_data_in [0]),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst1|maze_rsc_singleport|mem_rtl_0_bypass [1]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst1|maze_rsc_singleport|mem_rtl_0_bypass[1] .is_wysiwyg = "true";
+defparam \inst1|maze_rsc_singleport|mem_rtl_0_bypass[1] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y7_N2
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|Add0~10 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|Add0~10_combout  = (\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [3] & (\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [2] & (\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [0] & 
+// \inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [1])))
+
+	.dataa(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [3]),
+	.datab(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [2]),
+	.datac(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [0]),
+	.datad(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2 [1]),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|Add0~10_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|Add0~10 .lut_mask = 16'h8000;
+defparam \inst|MazeArrayTester_core_inst|Add0~10 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y7_N6
+cycloneiii_lcell_comb \inst|MazeArrayTester_core_inst|and_5_cse~1 (
+// Equation(s):
+// \inst|MazeArrayTester_core_inst|and_5_cse~1_combout  = ((\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q  & ((!\inst|MazeArrayTester_core_inst|Add0~10_combout ) # (!\inst|MazeArrayTester_core_inst|and_5_cse~0_combout 
+// )))) # (!\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|Selector1~0_combout )
+
+	.dataa(\inst|MazeArrayTester_core_inst|and_5_cse~0_combout ),
+	.datab(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|state_var.st_if_for~q ),
+	.datac(\inst|MazeArrayTester_core_inst|Add0~10_combout ),
+	.datad(\inst|MazeArrayTester_core_inst|MazeArrayTester_core_fsm_inst|Selector1~0_combout ),
+	.cin(gnd),
+	.combout(\inst|MazeArrayTester_core_inst|and_5_cse~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|and_5_cse~1 .lut_mask = 16'h4CFF;
+defparam \inst|MazeArrayTester_core_inst|and_5_cse~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X22_Y8_N9
+dffeas \inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d[0] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(gnd),
+	.asdata(\inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~0_combout ),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(\inst|MazeArrayTester_core_inst|and_5_cse~1_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d [0]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d[0] .is_wysiwyg = "true";
+defparam \inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d[0] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y8_N8
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[0]~0 (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[0]~0_combout  = (\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main~q  & ((\inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d [0]))) # 
+// (!\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main~q  & (\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [0]))
+
+	.dataa(gnd),
+	.datab(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [0]),
+	.datac(\inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d [0]),
+	.datad(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main~q ),
+	.cin(gnd),
+	.combout(\inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[0]~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[0]~0 .lut_mask = 16'hF0CC;
+defparam \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[0]~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X22_Y8_N25
+dffeas \inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d[1] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(gnd),
+	.asdata(\inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~1_combout ),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(\inst|MazeArrayTester_core_inst|and_5_cse~1_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d [1]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d[1] .is_wysiwyg = "true";
+defparam \inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d[1] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y8_N24
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[1]~1 (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[1]~1_combout  = (\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main~q  & ((\inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d [1]))) # 
+// (!\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main~q  & (\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [1]))
+
+	.dataa(gnd),
+	.datab(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [1]),
+	.datac(\inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d [1]),
+	.datad(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main~q ),
+	.cin(gnd),
+	.combout(\inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[1]~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[1]~1 .lut_mask = 16'hF0CC;
+defparam \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[1]~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X22_Y8_N11
+dffeas \inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d[2] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(gnd),
+	.asdata(\inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~2_combout ),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(\inst|MazeArrayTester_core_inst|and_5_cse~1_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d [2]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d[2] .is_wysiwyg = "true";
+defparam \inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d[2] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y8_N10
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[2]~2 (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[2]~2_combout  = (\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main~q  & ((\inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d [2]))) # 
+// (!\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main~q  & (\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [2]))
+
+	.dataa(gnd),
+	.datab(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [2]),
+	.datac(\inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d [2]),
+	.datad(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main~q ),
+	.cin(gnd),
+	.combout(\inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[2]~2_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[2]~2 .lut_mask = 16'hF0CC;
+defparam \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[2]~2 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X22_Y8_N31
+dffeas \inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d[3] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(gnd),
+	.asdata(\inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~3_combout ),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(\inst|MazeArrayTester_core_inst|and_5_cse~1_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d [3]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d[3] .is_wysiwyg = "true";
+defparam \inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d[3] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y8_N30
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[3]~3 (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[3]~3_combout  = (\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main~q  & ((\inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d [3]))) # 
+// (!\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main~q  & (\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [3]))
+
+	.dataa(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [3]),
+	.datab(gnd),
+	.datac(\inst|MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d [3]),
+	.datad(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main~q ),
+	.cin(gnd),
+	.combout(\inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[3]~3_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[3]~3 .lut_mask = 16'hF0AA;
+defparam \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[3]~3 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y8_N2
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[4]~4 (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[4]~4_combout  = (\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [4] & !\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main~q )
+
+	.dataa(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [4]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main~q ),
+	.cin(gnd),
+	.combout(\inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[4]~4_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[4]~4 .lut_mask = 16'h00AA;
+defparam \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[4]~4 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y8_N12
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[5]~5 (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[5]~5_combout  = (!\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main~q  & \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [5])
+
+	.dataa(gnd),
+	.datab(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main~q ),
+	.datac(gnd),
+	.datad(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [5]),
+	.cin(gnd),
+	.combout(\inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[5]~5_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[5]~5 .lut_mask = 16'h3300;
+defparam \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[5]~5 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X22_Y8_N7
+dffeas \inst|MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d[0] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(gnd),
+	.asdata(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~6_combout ),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(\inst|MazeArrayTester_core_inst|and_5_cse~1_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d [0]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d[0] .is_wysiwyg = "true";
+defparam \inst|MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d[0] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y8_N6
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[6]~6 (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[6]~6_combout  = (\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main~q  & ((\inst|MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d [0]))) # 
+// (!\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main~q  & (\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [6]))
+
+	.dataa(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [6]),
+	.datab(gnd),
+	.datac(\inst|MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d [0]),
+	.datad(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main~q ),
+	.cin(gnd),
+	.combout(\inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[6]~6_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[6]~6 .lut_mask = 16'hF0AA;
+defparam \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[6]~6 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X22_Y8_N5
+dffeas \inst|MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d[1] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(gnd),
+	.asdata(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~9_combout ),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(\inst|MazeArrayTester_core_inst|and_5_cse~1_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d [1]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d[1] .is_wysiwyg = "true";
+defparam \inst|MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d[1] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y8_N4
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[7]~7 (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[7]~7_combout  = (\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main~q  & ((\inst|MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d [1]))) # 
+// (!\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main~q  & (\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [7]))
+
+	.dataa(gnd),
+	.datab(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [7]),
+	.datac(\inst|MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d [1]),
+	.datad(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main~q ),
+	.cin(gnd),
+	.combout(\inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[7]~7_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[7]~7 .lut_mask = 16'hF0CC;
+defparam \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[7]~7 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X22_Y7_N9
+dffeas \inst|MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d[2] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~10_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(\inst|MazeArrayTester_core_inst|and_5_cse~1_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d [2]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d[2] .is_wysiwyg = "true";
+defparam \inst|MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d[2] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y8_N18
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|if_if_acc_itm[8]~27 (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|if_if_acc_itm[8]~27_combout  = (\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [8] & ((GND) # (!\inst1|MazeMemory_core_inst|if_if_acc_itm[7]~26 ))) # (!\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [8] & 
+// (\inst1|MazeMemory_core_inst|if_if_acc_itm[7]~26  $ (GND)))
+// \inst1|MazeMemory_core_inst|if_if_acc_itm[8]~28  = CARRY((\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [8]) # (!\inst1|MazeMemory_core_inst|if_if_acc_itm[7]~26 ))
+
+	.dataa(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [8]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\inst1|MazeMemory_core_inst|if_if_acc_itm[7]~26 ),
+	.combout(\inst1|MazeMemory_core_inst|if_if_acc_itm[8]~27_combout ),
+	.cout(\inst1|MazeMemory_core_inst|if_if_acc_itm[8]~28 ));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[8]~27 .lut_mask = 16'h5AAF;
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[8]~27 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X23_Y8_N19
+dffeas \inst1|MazeMemory_core_inst|if_if_acc_itm[8] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst1|MazeMemory_core_inst|if_if_acc_itm[8]~27_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst1|MazeMemory_core_inst|if_if_acc_itm [8]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[8] .is_wysiwyg = "true";
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[8] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y8_N26
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[8]~feeder (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[8]~feeder_combout  = \inst1|MazeMemory_core_inst|if_if_acc_itm [8]
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(\inst1|MazeMemory_core_inst|if_if_acc_itm [8]),
+	.cin(gnd),
+	.combout(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[8]~feeder_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[8]~feeder .lut_mask = 16'hFF00;
+defparam \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[8]~feeder .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X22_Y8_N27
+dffeas \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[8] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[8]~feeder_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_maze_vinit_1~q ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [8]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[8] .is_wysiwyg = "true";
+defparam \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[8] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y8_N16
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[8]~8 (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[8]~8_combout  = (\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main~q  & (\inst|MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d [2])) # 
+// (!\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main~q  & ((\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [8])))
+
+	.dataa(gnd),
+	.datab(\inst|MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d [2]),
+	.datac(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [8]),
+	.datad(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main~q ),
+	.cin(gnd),
+	.combout(\inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[8]~8_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[8]~8 .lut_mask = 16'hCCF0;
+defparam \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[8]~8 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y8_N20
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|if_if_acc_itm[9]~29 (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|if_if_acc_itm[9]~29_combout  = (\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [9] & (\inst1|MazeMemory_core_inst|if_if_acc_itm[8]~28  & VCC)) # (!\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [9] & 
+// (!\inst1|MazeMemory_core_inst|if_if_acc_itm[8]~28 ))
+// \inst1|MazeMemory_core_inst|if_if_acc_itm[9]~30  = CARRY((!\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [9] & !\inst1|MazeMemory_core_inst|if_if_acc_itm[8]~28 ))
+
+	.dataa(gnd),
+	.datab(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [9]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\inst1|MazeMemory_core_inst|if_if_acc_itm[8]~28 ),
+	.combout(\inst1|MazeMemory_core_inst|if_if_acc_itm[9]~29_combout ),
+	.cout(\inst1|MazeMemory_core_inst|if_if_acc_itm[9]~30 ));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[9]~29 .lut_mask = 16'hC303;
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[9]~29 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X23_Y8_N21
+dffeas \inst1|MazeMemory_core_inst|if_if_acc_itm[9] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst1|MazeMemory_core_inst|if_if_acc_itm[9]~29_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst1|MazeMemory_core_inst|if_if_acc_itm [9]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[9] .is_wysiwyg = "true";
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[9] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y8_N20
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[9]~feeder (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[9]~feeder_combout  = \inst1|MazeMemory_core_inst|if_if_acc_itm [9]
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(\inst1|MazeMemory_core_inst|if_if_acc_itm [9]),
+	.cin(gnd),
+	.combout(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[9]~feeder_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[9]~feeder .lut_mask = 16'hFF00;
+defparam \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[9]~feeder .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X22_Y8_N21
+dffeas \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[9] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[9]~feeder_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_maze_vinit_1~q ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [9]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[9] .is_wysiwyg = "true";
+defparam \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[9] .power_up = "low";
+// synopsys translate_on
+
+// Location: FF_X22_Y8_N19
+dffeas \inst|MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d[3] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(gnd),
+	.asdata(\inst|MazeArrayTester_core_inst|if_for_i_1_sva_2~11_combout ),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(\inst|MazeArrayTester_core_inst|and_5_cse~1_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d [3]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d[3] .is_wysiwyg = "true";
+defparam \inst|MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d[3] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y8_N18
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[9]~9 (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[9]~9_combout  = (\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main~q  & ((\inst|MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d [3]))) # 
+// (!\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main~q  & (\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [9]))
+
+	.dataa(gnd),
+	.datab(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [9]),
+	.datac(\inst|MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d [3]),
+	.datad(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main~q ),
+	.cin(gnd),
+	.combout(\inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[9]~9_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[9]~9 .lut_mask = 16'hF0CC;
+defparam \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[9]~9 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y8_N22
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|if_if_acc_itm[10]~31 (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|if_if_acc_itm[10]~31_combout  = (\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [10] & ((GND) # (!\inst1|MazeMemory_core_inst|if_if_acc_itm[9]~30 ))) # (!\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [10] & 
+// (\inst1|MazeMemory_core_inst|if_if_acc_itm[9]~30  $ (GND)))
+// \inst1|MazeMemory_core_inst|if_if_acc_itm[10]~32  = CARRY((\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [10]) # (!\inst1|MazeMemory_core_inst|if_if_acc_itm[9]~30 ))
+
+	.dataa(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [10]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\inst1|MazeMemory_core_inst|if_if_acc_itm[9]~30 ),
+	.combout(\inst1|MazeMemory_core_inst|if_if_acc_itm[10]~31_combout ),
+	.cout(\inst1|MazeMemory_core_inst|if_if_acc_itm[10]~32 ));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[10]~31 .lut_mask = 16'h5AAF;
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[10]~31 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X23_Y8_N23
+dffeas \inst1|MazeMemory_core_inst|if_if_acc_itm[10] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst1|MazeMemory_core_inst|if_if_acc_itm[10]~31_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst1|MazeMemory_core_inst|if_if_acc_itm [10]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[10] .is_wysiwyg = "true";
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[10] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y8_N2
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[10]~feeder (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[10]~feeder_combout  = \inst1|MazeMemory_core_inst|if_if_acc_itm [10]
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(\inst1|MazeMemory_core_inst|if_if_acc_itm [10]),
+	.cin(gnd),
+	.combout(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[10]~feeder_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[10]~feeder .lut_mask = 16'hFF00;
+defparam \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[10]~feeder .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X22_Y8_N3
+dffeas \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[10] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[10]~feeder_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_maze_vinit_1~q ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [10]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[10] .is_wysiwyg = "true";
+defparam \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[10] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y8_N0
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[10]~10 (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[10]~10_combout  = (\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [10] & !\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main~q )
+
+	.dataa(gnd),
+	.datab(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [10]),
+	.datac(gnd),
+	.datad(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main~q ),
+	.cin(gnd),
+	.combout(\inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[10]~10_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[10]~10 .lut_mask = 16'h00CC;
+defparam \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[10]~10 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y8_N24
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|if_if_acc_itm[11]~33 (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|if_if_acc_itm[11]~33_combout  = \inst1|MazeMemory_core_inst|if_if_acc_itm[10]~32  $ (!\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [11])
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [11]),
+	.cin(\inst1|MazeMemory_core_inst|if_if_acc_itm[10]~32 ),
+	.combout(\inst1|MazeMemory_core_inst|if_if_acc_itm[11]~33_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[11]~33 .lut_mask = 16'hF00F;
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[11]~33 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X23_Y8_N25
+dffeas \inst1|MazeMemory_core_inst|if_if_acc_itm[11] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst1|MazeMemory_core_inst|if_if_acc_itm[11]~33_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst1|MazeMemory_core_inst|if_if_acc_itm [11]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[11] .is_wysiwyg = "true";
+defparam \inst1|MazeMemory_core_inst|if_if_acc_itm[11] .power_up = "low";
+// synopsys translate_on
+
+// Location: FF_X23_Y8_N31
+dffeas \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[11] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(gnd),
+	.asdata(\inst1|MazeMemory_core_inst|if_if_acc_itm [11]),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_maze_vinit_1~q ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [11]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[11] .is_wysiwyg = "true";
+defparam \inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva[11] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y8_N28
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[11]~11 (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[11]~11_combout  = (\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [11] & !\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main~q )
+
+	.dataa(gnd),
+	.datab(\inst1|MazeMemory_core_inst|maze_vinit_ndx_1_sva [11]),
+	.datac(gnd),
+	.datad(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main~q ),
+	.cin(gnd),
+	.combout(\inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[11]~11_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[11]~11 .lut_mask = 16'h00CC;
+defparam \inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[11]~11 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: M9K_X25_Y8_N0
+cycloneiii_ram_block \inst1|maze_rsc_singleport|mem_rtl_0|auto_generated|ram_block1a0 (
+	.portawe(\inst1|MazeMemory_core_inst|maze_rsc_singleport_we~0_combout ),
+	.portare(vcc),
+	.portaaddrstall(gnd),
+	.portbwe(gnd),
+	.portbre(vcc),
+	.portbaddrstall(gnd),
+	.clk0(\CLK~inputclkctrl_outclk ),
+	.clk1(gnd),
+	.ena0(vcc),
+	.ena1(vcc),
+	.ena2(vcc),
+	.ena3(vcc),
+	.clr0(gnd),
+	.clr1(gnd),
+	.portadatain({gnd,\inst1|MazeMemory_core_inst|maze_rsc_singleport_data_in [0]}),
+	.portaaddr({\inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[11]~11_combout ,\inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[10]~10_combout ,\inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[9]~9_combout ,
+\inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[8]~8_combout ,\inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[7]~7_combout ,\inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[6]~6_combout ,
+\inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[5]~5_combout ,\inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[4]~4_combout ,\inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[3]~3_combout ,
+\inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[2]~2_combout ,\inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[1]~1_combout ,\inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[0]~0_combout }),
+	.portabyteenamasks(1'b1),
+	.portbdatain(2'b00),
+	.portbaddr({\inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[11]~11_combout ,\inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[10]~10_combout ,\inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[9]~9_combout ,
+\inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[8]~8_combout ,\inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[7]~7_combout ,\inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[6]~6_combout ,
+\inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[5]~5_combout ,\inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[4]~4_combout ,\inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[3]~3_combout ,
+\inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[2]~2_combout ,\inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[1]~1_combout ,\inst1|MazeMemory_core_inst|maze_rsc_singleport_addr[0]~0_combout }),
+	.portbbyteenamasks(1'b1),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.portadataout(),
+	.portbdataout(\inst1|maze_rsc_singleport|mem_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus ));
+// synopsys translate_off
+defparam \inst1|maze_rsc_singleport|mem_rtl_0|auto_generated|ram_block1a0 .data_interleave_offset_in_bits = 1;
+defparam \inst1|maze_rsc_singleport|mem_rtl_0|auto_generated|ram_block1a0 .data_interleave_width_in_bits = 1;
+defparam \inst1|maze_rsc_singleport|mem_rtl_0|auto_generated|ram_block1a0 .logical_ram_name = "MazeMemory:inst1|singleport_ram_be:maze_rsc_singleport|altsyncram:mem_rtl_0|altsyncram_l1h1:auto_generated|ALTSYNCRAM";
+defparam \inst1|maze_rsc_singleport|mem_rtl_0|auto_generated|ram_block1a0 .mixed_port_feed_through_mode = "old";
+defparam \inst1|maze_rsc_singleport|mem_rtl_0|auto_generated|ram_block1a0 .operation_mode = "dual_port";
+defparam \inst1|maze_rsc_singleport|mem_rtl_0|auto_generated|ram_block1a0 .port_a_address_clear = "none";
+defparam \inst1|maze_rsc_singleport|mem_rtl_0|auto_generated|ram_block1a0 .port_a_address_width = 12;
+defparam \inst1|maze_rsc_singleport|mem_rtl_0|auto_generated|ram_block1a0 .port_a_byte_enable_clock = "none";
+defparam \inst1|maze_rsc_singleport|mem_rtl_0|auto_generated|ram_block1a0 .port_a_data_out_clear = "none";
+defparam \inst1|maze_rsc_singleport|mem_rtl_0|auto_generated|ram_block1a0 .port_a_data_out_clock = "none";
+defparam \inst1|maze_rsc_singleport|mem_rtl_0|auto_generated|ram_block1a0 .port_a_data_width = 2;
+defparam \inst1|maze_rsc_singleport|mem_rtl_0|auto_generated|ram_block1a0 .port_a_first_address = 0;
+defparam \inst1|maze_rsc_singleport|mem_rtl_0|auto_generated|ram_block1a0 .port_a_first_bit_number = 0;
+defparam \inst1|maze_rsc_singleport|mem_rtl_0|auto_generated|ram_block1a0 .port_a_last_address = 4095;
+defparam \inst1|maze_rsc_singleport|mem_rtl_0|auto_generated|ram_block1a0 .port_a_logical_ram_depth = 4096;
+defparam \inst1|maze_rsc_singleport|mem_rtl_0|auto_generated|ram_block1a0 .port_a_logical_ram_width = 1;
+defparam \inst1|maze_rsc_singleport|mem_rtl_0|auto_generated|ram_block1a0 .port_a_read_during_write_mode = "new_data_with_nbe_read";
+defparam \inst1|maze_rsc_singleport|mem_rtl_0|auto_generated|ram_block1a0 .port_b_address_clear = "none";
+defparam \inst1|maze_rsc_singleport|mem_rtl_0|auto_generated|ram_block1a0 .port_b_address_clock = "clock0";
+defparam \inst1|maze_rsc_singleport|mem_rtl_0|auto_generated|ram_block1a0 .port_b_address_width = 12;
+defparam \inst1|maze_rsc_singleport|mem_rtl_0|auto_generated|ram_block1a0 .port_b_data_out_clear = "none";
+defparam \inst1|maze_rsc_singleport|mem_rtl_0|auto_generated|ram_block1a0 .port_b_data_out_clock = "none";
+defparam \inst1|maze_rsc_singleport|mem_rtl_0|auto_generated|ram_block1a0 .port_b_data_width = 2;
+defparam \inst1|maze_rsc_singleport|mem_rtl_0|auto_generated|ram_block1a0 .port_b_first_address = 0;
+defparam \inst1|maze_rsc_singleport|mem_rtl_0|auto_generated|ram_block1a0 .port_b_first_bit_number = 0;
+defparam \inst1|maze_rsc_singleport|mem_rtl_0|auto_generated|ram_block1a0 .port_b_last_address = 4095;
+defparam \inst1|maze_rsc_singleport|mem_rtl_0|auto_generated|ram_block1a0 .port_b_logical_ram_depth = 4096;
+defparam \inst1|maze_rsc_singleport|mem_rtl_0|auto_generated|ram_block1a0 .port_b_logical_ram_width = 1;
+defparam \inst1|maze_rsc_singleport|mem_rtl_0|auto_generated|ram_block1a0 .port_b_read_during_write_mode = "new_data_with_nbe_read";
+defparam \inst1|maze_rsc_singleport|mem_rtl_0|auto_generated|ram_block1a0 .port_b_read_enable_clock = "clock0";
+defparam \inst1|maze_rsc_singleport|mem_rtl_0|auto_generated|ram_block1a0 .ram_block_type = "M9K";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y8_N10
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|out_rsc_mgc_out_stdreg_d[0]~1 (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|out_rsc_mgc_out_stdreg_d[0]~1_combout  = (!\inst1|MazeMemory_core_inst|write_1_sva~q  & ((\inst1|maze_rsc_singleport|mem_rtl_0_bypass [0] & (\inst1|maze_rsc_singleport|mem_rtl_0_bypass [1])) # 
+// (!\inst1|maze_rsc_singleport|mem_rtl_0_bypass [0] & ((\inst1|maze_rsc_singleport|mem_rtl_0|auto_generated|ram_block1a0~portbdataout )))))
+
+	.dataa(\inst1|maze_rsc_singleport|mem_rtl_0_bypass [0]),
+	.datab(\inst1|MazeMemory_core_inst|write_1_sva~q ),
+	.datac(\inst1|maze_rsc_singleport|mem_rtl_0_bypass [1]),
+	.datad(\inst1|maze_rsc_singleport|mem_rtl_0|auto_generated|ram_block1a0~portbdataout ),
+	.cin(gnd),
+	.combout(\inst1|MazeMemory_core_inst|out_rsc_mgc_out_stdreg_d[0]~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|out_rsc_mgc_out_stdreg_d[0]~1 .lut_mask = 16'h3120;
+defparam \inst1|MazeMemory_core_inst|out_rsc_mgc_out_stdreg_d[0]~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y8_N0
+cycloneiii_lcell_comb \inst1|MazeMemory_core_inst|out_rsc_mgc_out_stdreg_d[0]~2 (
+// Equation(s):
+// \inst1|MazeMemory_core_inst|out_rsc_mgc_out_stdreg_d[0]~2_combout  = (\inst1|MazeMemory_core_inst|out_rsc_mgc_out_stdreg_d[0]~0_combout ) # ((\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main_1~q  & 
+// \inst1|MazeMemory_core_inst|out_rsc_mgc_out_stdreg_d[0]~1_combout ))
+
+	.dataa(gnd),
+	.datab(\inst1|MazeMemory_core_inst|MazeMemory_core_fsm_inst|state_var.st_main_1~q ),
+	.datac(\inst1|MazeMemory_core_inst|out_rsc_mgc_out_stdreg_d[0]~0_combout ),
+	.datad(\inst1|MazeMemory_core_inst|out_rsc_mgc_out_stdreg_d[0]~1_combout ),
+	.cin(gnd),
+	.combout(\inst1|MazeMemory_core_inst|out_rsc_mgc_out_stdreg_d[0]~2_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|out_rsc_mgc_out_stdreg_d[0]~2 .lut_mask = 16'hFCF0;
+defparam \inst1|MazeMemory_core_inst|out_rsc_mgc_out_stdreg_d[0]~2 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X24_Y8_N1
+dffeas \inst1|MazeMemory_core_inst|out_rsc_mgc_out_stdreg_d[0] (
+	.clk(\CLK~inputclkctrl_outclk ),
+	.d(\inst1|MazeMemory_core_inst|out_rsc_mgc_out_stdreg_d[0]~2_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst1|MazeMemory_core_inst|out_rsc_mgc_out_stdreg_d [0]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst1|MazeMemory_core_inst|out_rsc_mgc_out_stdreg_d[0] .is_wysiwyg = "true";
+defparam \inst1|MazeMemory_core_inst|out_rsc_mgc_out_stdreg_d[0] .power_up = "low";
+// synopsys translate_on
+
+assign \OUTPUT [3] = \OUTPUT[3]~output_o ;
+
+assign \OUTPUT [2] = \OUTPUT[2]~output_o ;
+
+assign \OUTPUT [1] = \OUTPUT[1]~output_o ;
+
+assign \OUTPUT [0] = \OUTPUT[0]~output_o ;
+
+endmodule

@@ -5,7 +5,7 @@
 //            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
 //          PROPERTY OF CALYPTO DESIGN SYSTEMS OR ITS LICENSORS
 //  
-//  Running on Windows 7 kjr115@EEWS104A-021 Service Pack 1 6.01.7601 i686
+//  Running on Windows 7 kjr115@EEWS104A-005 Service Pack 1 6.01.7601 i686
 //  
 //  Package information: SIFLIBS v17.0_1.1, HLS_PKGS v17.0_1.1, 
 //                       DesignPad v2.78_0.0

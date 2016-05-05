@@ -1,0 +1,6 @@
+
+# Messages from "go new"
+
+Creating project directory '\\icnas2.cc.ic.ac.uk\kjr115\Project\Musca\Game Engine\catapult_projects\maze_ram_tester\MazeRAMTester'. (PRJ-1)
+Branching solution 'solution.v2' at state 'new' (PRJ-2)
+Branching solution 'solution.v2' at state 'new' (PRJ-2)
