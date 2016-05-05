@@ -1,0 +1,7 @@
+./rtl_funcs.vhd
+./rtl_mux_pkg.vhdl
+./rtl_mgc_ioport.vhd
+C:/PROGRA~1/CALYPT~1/CATAPU~1.126/Mgc_home/pkgs/hls_pkgs/mgc_comps_src/mgc_comps.vhd
+C:/PROGRA~1/CALYPT~1/CATAPU~1.126/Mgc_home/pkgs/hls_pkgs/mgc_comps_src/mgc_generic_reg_beh.vhd
+C:/PROGRA~1/CALYPT~1/CATAPU~1.126/Mgc_home/pkgs/siflibs/ram_singleport_be_fpga.vhd
+./rtl.vhdl

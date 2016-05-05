@@ -1,0 +1,13 @@
+
+# Messages from "go new"
+
+Creating project directory '\\icnas2.cc.ic.ac.uk\cm2715\Project\Musca\Render Engine\MemoryAccessCounter\MemoryAccessCounter'. (PRJ-1)
+
+# Messages from "go analyze"
+
+Front End called with arguments: -- {\\icnas2.cc.ic.ac.uk\cm2715\Project\Musca\src\AccessCount.cpp} (CIN-69)
+Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+Source file analysis completed (CIN-68)
+Saving project file '//icnas2.cc.ic.ac.uk/cm2715/Project/Musca/Render Engine/MemoryAccessCounter/MemoryAccessCounter.ccs'. (PRJ-5)
+Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
+Completed transformation 'analyze' on solution 'solution.v1': elapsed time 0.03 seconds, memory usage 149620kB, peak memory usage 150592kB (SOL-9)

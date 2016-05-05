@@ -1,0 +1,235 @@
+Analysis & Synthesis report for MazeRAMTester
+Wed May 04 16:55:56 2016
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                          ;
++------------------------------------+--------------------------------------------------+
+; Analysis & Synthesis Status        ; Failed - Wed May 04 16:55:56 2016                ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
+; Revision Name                      ; MazeRAMTester                                    ;
+; Top-level Entity Name              ; MazeRAMTester                                    ;
+; Family                             ; Cyclone III                                      ;
+; Total logic elements               ; N/A until Partition Merge                        ;
+;     Total combinational functions  ; N/A until Partition Merge                        ;
+;     Dedicated logic registers      ; N/A until Partition Merge                        ;
+; Total registers                    ; N/A until Partition Merge                        ;
+; Total pins                         ; N/A until Partition Merge                        ;
+; Total virtual pins                 ; N/A until Partition Merge                        ;
+; Total memory bits                  ; N/A until Partition Merge                        ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                        ;
+; Total PLLs                         ; N/A until Partition Merge                        ;
++------------------------------------+--------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP3C16F484C6       ;                    ;
+; Top-level entity name                                                      ; MazeRAMTester      ; MazeRAMTester      ;
+; Family name                                                                ; Cyclone III        ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-8         ;   0.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+    Info: Processing started: Wed May 04 16:55:53 2016
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MazeRAMTester -c MazeRAMTester
+Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+Info (12021): Found 3 design units, including 3 entities, in source file //icnas2.cc.ic.ac.uk/kjr115/project/musca/game engine/catapult_projects/maze_ram_tester/mazeramtester/mazearraytester.v1/rtl.v
+    Info (12023): Found entity 1: MazeArrayTester_core_fsm
+    Info (12023): Found entity 2: MazeArrayTester_core
+    Info (12023): Found entity 3: MazeArrayTester
+Info (12021): Found 1 design units, including 1 entities, in source file //icnas2.cc.ic.ac.uk/kjr115/project/musca/render engine/rendertestblock/vga_driver/pll_pixel_clk.v
+    Info (12023): Found entity 1: PLL_PIXEL_CLK
+Info (12021): Found 1 design units, including 1 entities, in source file //icnas2.cc.ic.ac.uk/kjr115/project/musca/render engine/rendertestblock/vga_driver/de0_vga.v
+    Info (12023): Found entity 1: DE0_VGA
+Info (12021): Found 7 design units, including 7 entities, in source file //icnas2.cc.ic.ac.uk/kjr115/project/musca/game engine/catapult_projects/maze_ram/mazeram/mazememory.v3/rtl_mgc_ioport_v2001.v
+    Info (12023): Found entity 1: mgc_out_reg_pos
+    Info (12023): Found entity 2: mgc_out_reg_neg
+    Info (12023): Found entity 3: mgc_out_reg
+    Info (12023): Found entity 4: mgc_out_buf_wait
+    Info (12023): Found entity 5: mgc_out_fifo_wait
+    Info (12023): Found entity 6: mgc_out_fifo_wait_core
+    Info (12023): Found entity 7: mgc_pipe
+Info (12021): Found 20 design units, including 20 entities, in source file //icnas2.cc.ic.ac.uk/kjr115/project/musca/game engine/catapult_projects/maze_ram/mazeram/mazememory.v3/rtl_mgc_ioport.v
+    Info (12023): Found entity 1: mgc_in_wire
+    Info (12023): Found entity 2: mgc_in_wire_en
+    Info (12023): Found entity 3: mgc_in_wire_wait
+    Info (12023): Found entity 4: mgc_chan_in
+    Info (12023): Found entity 5: mgc_out_stdreg
+    Info (12023): Found entity 6: mgc_out_stdreg_en
+    Info (12023): Found entity 7: mgc_out_stdreg_wait
+    Info (12023): Found entity 8: mgc_out_prereg_en
+    Info (12023): Found entity 9: mgc_inout_stdreg_en
+    Info (12023): Found entity 10: hid_tribuf
+    Info (12023): Found entity 11: mgc_inout_stdreg_wait
+    Info (12023): Found entity 12: mgc_inout_buf_wait
+    Info (12023): Found entity 13: mgc_inout_fifo_wait
+    Info (12023): Found entity 14: mgc_io_sync
+    Info (12023): Found entity 15: mgc_bsync_rdy
+    Info (12023): Found entity 16: mgc_bsync_vld
+    Info (12023): Found entity 17: mgc_bsync_rv
+    Info (12023): Found entity 18: mgc_sync
+    Info (12023): Found entity 19: funccall_inout
+    Info (12023): Found entity 20: modulario_en_in
+Info (12021): Found 3 design units, including 3 entities, in source file //icnas2.cc.ic.ac.uk/kjr115/project/musca/game engine/catapult_projects/maze_ram/mazeram/mazememory.v3/rtl.v
+    Info (12023): Found entity 1: MazeMemory_core_fsm
+    Info (12023): Found entity 2: MazeMemory_core
+    Info (12023): Found entity 3: MazeMemory
+Info (12021): Found 1 design units, including 1 entities, in source file mazeramtester.bdf
+    Info (12023): Found entity 1: MazeRAMTester
+Info (12127): Elaborating entity "MazeRAMTester" for the top level hierarchy
+Info (12128): Elaborating entity "MazeMemory" for hierarchy "MazeMemory:inst"
+Info (12128): Elaborating entity "mgc_in_wire" for hierarchy "MazeMemory:inst|mgc_in_wire:row_rsc_mgc_in_wire"
+Info (12128): Elaborating entity "mgc_in_wire" for hierarchy "MazeMemory:inst|mgc_in_wire:col_rsc_mgc_in_wire"
+Info (12128): Elaborating entity "mgc_in_wire" for hierarchy "MazeMemory:inst|mgc_in_wire:val_rsc_mgc_in_wire"
+Info (12128): Elaborating entity "mgc_in_wire" for hierarchy "MazeMemory:inst|mgc_in_wire:write_rsc_mgc_in_wire"
+Info (12128): Elaborating entity "mgc_out_stdreg" for hierarchy "MazeMemory:inst|mgc_out_stdreg:out_rsc_mgc_out_stdreg"
+Info (12128): Elaborating entity "MazeMemory_core" for hierarchy "MazeMemory:inst|MazeMemory_core:MazeMemory_core_inst"
+Info (12128): Elaborating entity "MazeMemory_core_fsm" for hierarchy "MazeMemory:inst|MazeMemory_core:MazeMemory_core_inst|MazeMemory_core_fsm:MazeMemory_core_fsm_inst"
+Info (12128): Elaborating entity "MazeArrayTester" for hierarchy "MazeArrayTester:inst1"
+Info (12128): Elaborating entity "mgc_out_stdreg" for hierarchy "MazeArrayTester:inst1|mgc_out_stdreg:row_rsc_mgc_out_stdreg"
+Info (12128): Elaborating entity "mgc_out_stdreg" for hierarchy "MazeArrayTester:inst1|mgc_out_stdreg:col_rsc_mgc_out_stdreg"
+Info (12128): Elaborating entity "mgc_out_stdreg" for hierarchy "MazeArrayTester:inst1|mgc_out_stdreg:out_rsc_mgc_out_stdreg"
+Info (12128): Elaborating entity "mgc_out_stdreg" for hierarchy "MazeArrayTester:inst1|mgc_out_stdreg:write_rsc_mgc_out_stdreg"
+Info (12128): Elaborating entity "MazeArrayTester_core" for hierarchy "MazeArrayTester:inst1|MazeArrayTester_core:MazeArrayTester_core_inst"
+Info (12128): Elaborating entity "MazeArrayTester_core_fsm" for hierarchy "MazeArrayTester:inst1|MazeArrayTester_core:MazeArrayTester_core_inst|MazeArrayTester_core_fsm:MazeArrayTester_core_fsm_inst"
+Error (12006): Node instance "maze_rsc_singleport" instantiates undefined entity "singleport_ram_be" File: //icnas2.cc.ic.ac.uk/kjr115/Project/Musca/Game Engine/catapult_projects/maze_ram/MazeRAM/MazeMemory.v3/rtl.v Line: 295
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 1 error, 0 warnings
+    Error: Peak virtual memory: 438 megabytes
+    Error: Processing ended: Wed May 04 16:55:56 2016
+    Error: Elapsed time: 00:00:03
+    Error: Total CPU time (on all processors): 00:00:01
+
+

@@ -78,6 +78,9 @@ set_global_assignment -name RESERVE_DATA1_AFTER_CONFIGURATION "USE AS REGULAR IO
 set_global_assignment -name RESERVE_FLASH_NCE_AFTER_CONFIGURATION "USE AS REGULAR IO"
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name VERILOG_FILE ../../MemoryAccessCounter/MemoryAccessCounter/Counter.v3/rtl.v
+set_global_assignment -name VERILOG_FILE ../../MemoryAccessCounter/MemoryAccessCounter/Counter.v3/rtl_mgc_ioport.v
+set_global_assignment -name VERILOG_FILE ../../MemoryAccessCounter/MemoryAccessCounter/Counter.v3/rtl_mgc_ioport_v2001.v
 set_global_assignment -name VERILOG_FILE ../RenderBlock++/Render.v4/rtl_mgc_ioport_v2001.v
 set_global_assignment -name VERILOG_FILE ../RenderBlock++/Render.v4/rtl_mgc_ioport.v
 set_global_assignment -name VERILOG_FILE ../RenderBlock++/Render.v4/rtl.v

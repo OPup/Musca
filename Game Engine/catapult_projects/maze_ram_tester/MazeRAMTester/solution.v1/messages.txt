@@ -1,0 +1,13 @@
+
+# Messages from "go new"
+
+Creating project directory '\\icnas2.cc.ic.ac.uk\kjr115\Project\Musca\Game Engine\catapult_projects\maze_ram_tester\MazeRAMTester'. (PRJ-1)
+
+# Messages from "go analyze"
+
+Front End called with arguments: -- {\\icnas2.cc.ic.ac.uk\kjr115\Project\Musca\Game Engine\src\MazeArrayTester.cpp} (CIN-69)
+Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+Source file analysis completed (CIN-68)
+Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
+Completed transformation 'analyze' on solution 'solution.v1': elapsed time 1.00 seconds, memory usage 152812kB, peak memory usage 177072kB (SOL-9)
+$PROJECT_HOME/../../src/MazeArrayTester.cpp(28): last line of file ends without a newline (CRD-1)
