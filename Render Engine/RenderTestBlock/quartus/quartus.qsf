@@ -78,12 +78,13 @@ set_global_assignment -name RESERVE_DATA1_AFTER_CONFIGURATION "USE AS REGULAR IO
 set_global_assignment -name RESERVE_FLASH_NCE_AFTER_CONFIGURATION "USE AS REGULAR IO"
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_global_assignment -name VERILOG_FILE ../RenderBlock/Render.v28/rtl_mgc_ioport_v2001.v
-set_global_assignment -name VERILOG_FILE ../RenderBlock/Render.v28/rtl_mgc_ioport.v
-set_global_assignment -name VERILOG_FILE ../RenderBlock/Render.v28/rtl.v
-set_global_assignment -name VERILOG_FILE "../../DE0_Drivers-master/DE0_Drivers-master/DE0_VGA/DE0_VGA_Test.v"
-set_global_assignment -name VERILOG_FILE "../../DE0_Drivers-master/DE0_Drivers-master/DE0_VGA/PLL_PIXEL_CLK.v"
-set_global_assignment -name VERILOG_FILE "../../DE0_Drivers-master/DE0_Drivers-master/DE0_VGA/DE0_VGA.v"
+set_global_assignment -name VERILOG_FILE ../RenderBlock++/Render.v4/rtl_mgc_ioport_v2001.v
+set_global_assignment -name VERILOG_FILE ../RenderBlock++/Render.v4/rtl_mgc_ioport.v
+set_global_assignment -name VERILOG_FILE ../RenderBlock++/Render.v4/rtl.v
+set_global_assignment -name SOURCE_FILE mux_t.cmp
+set_global_assignment -name VHDL_FILE mux_t.vhd
+set_global_assignment -name VERILOG_FILE ../vga_driver/PLL_PIXEL_CLK.v
+set_global_assignment -name VERILOG_FILE ../vga_driver/DE0_VGA.v
 set_global_assignment -name BDF_FILE quartus.bdf
 set_global_assignment -name CDF_FILE ../RenderBlock/Render.v2/Chain1.cdf
 set_global_assignment -name CDF_FILE ../RenderBlock/Render.v11/Chain12.cdf

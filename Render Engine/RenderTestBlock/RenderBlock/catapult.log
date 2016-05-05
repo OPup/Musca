@@ -1,0 +1,47 @@
+//  Catapult University Version 2011a.126 (Production Release) Wed Aug  8 00:52:07 PDT 2012
+//  
+//  Copyright (c) Calypto Design Systems, Inc., 1996-2012, All Rights Reserved.
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF CALYPTO DESIGN SYSTEMS OR ITS LICENSORS
+//  
+//  Running on Windows 7 cm2715@EEWS104A-016 Service Pack 1 6.01.7601 i686
+//  
+//  Package information: SIFLIBS v17.0_1.1, HLS_PKGS v17.0_1.1, 
+//                       DesignPad v2.78_0.0
+//  
+//  This version may only be used for academic purposes.  Some optimizations 
+//  are disabled, so results obtained from this version may be sub-optimal.
+//  
+//  Start time Wed May 04 14:19:23 2016
+# -------------------------------------------------
+# Logging session transcript to file "C:\Users\cm2715\AppData\Local\Temp\log666825da67c.0"
+# Loading options from registry.
+# Warning: set_working_dir: Directory 'C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Catapult 2011a.126' not writable, using C:/Users/cm2715/AppData/Local/Temp
+project new -name RenderEngine2.0
+project new -name Render.v29
+set_working_dir {//icnas2.cc.ic.ac.uk/cm2715/Project/Musca/Render Engine/RenderTestBlock/RenderBlock}
+solution file add ../src/Render.cpp
+# /INPUTFILES/1
+project save
+# Creating project directory '\\icnas2.cc.ic.ac.uk\cm2715\Project\Musca\Render Engine\RenderTestBlock\RenderBlock\Render.v29'. (PRJ-1)
+# Moving session transcript to file "\\icnas2.cc.ic.ac.uk\cm2715\Project\Musca\Render Engine\RenderTestBlock\RenderBlock\catapult.log"
+# Saving project file '//icnas2.cc.ic.ac.uk/cm2715/Project/Musca/Render Engine/RenderTestBlock/RenderBlock/Render.v29.ccs'. (PRJ-5)
+go analyze
+# Info: Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
+# Front End called with arguments: -- {\\icnas2.cc.ic.ac.uk\cm2715\Project\Musca\Render Engine\RenderTestBlock\src\Render.cpp} (CIN-69)
+# Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+# Source file analysis completed (CIN-68)
+# Info: Completed transformation 'analyze' on solution 'solution.v1': elapsed time 0.83 seconds, memory usage 149864kB, peak memory usage 178716kB (SOL-9)
+# File '$PROJECT_HOME/../src/Render.cpp' saved
+# Input file has changed
+go new
+solution file set {$PROJECT_HOME/../src/Render.cpp} -updated
+# Info: Branching solution 'solution.v2' at state 'new' (PRJ-2)
+go analyze
+# Info: Starting transformation 'analyze' on solution 'solution.v2' (SOL-8)
+# Front End called with arguments: -- {\\icnas2.cc.ic.ac.uk\cm2715\Project\Musca\Render Engine\RenderTestBlock\src\Render.cpp} (CIN-69)
+# Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+# Source file analysis completed (CIN-68)
+# Info: Completed transformation 'analyze' on solution 'solution.v2': elapsed time 0.83 seconds, memory usage 154192kB, peak memory usage 183184kB (SOL-9)
+quit -f

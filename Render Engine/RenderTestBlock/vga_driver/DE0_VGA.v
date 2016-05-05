@@ -48,7 +48,7 @@ parameter VBCK_PRCH_END	= VSNC_END + 38;
 parameter VVSBL_END		= VBCK_PRCH_END + 1024;
 
 //Use counters to assign X_pix and Y_pix locations. 
-assign X_pix = (HS_counter - HBCK_PRCH_END) > 0 ? (HS_counter - HBCK_PRCH_END) : 0;
+assign X_pix = (HS_counter - HBCK_PRCH_END) > 0 ? (HS_counter - HBCK_PRCH_END) : 0; //CORRRRRRECT!!!!!!!
 assign Y_pix = (VS_counter - VBCK_PRCH_END) > 0 ? (VS_counter - VBCK_PRCH_END) : 0;
 
 initial
