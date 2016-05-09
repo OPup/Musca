@@ -1,5 +1,5 @@
 Fitter report for MazeRAMTester
-Thu May 05 15:34:54 2016
+Fri May 06 17:56:05 2016
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -28,20 +28,19 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Ver
  20. Control Signals
  21. Global & Other Fast Signals
  22. Non-Global High Fan-Out Signals
- 23. Fitter RAM Summary
- 24. Other Routing Usage Summary
- 25. LAB Logic Elements
- 26. LAB-wide Signals
- 27. LAB Signals Sourced
- 28. LAB Signals Sourced Out
- 29. LAB Distinct Inputs
- 30. I/O Rules Summary
- 31. I/O Rules Details
- 32. I/O Rules Matrix
- 33. Fitter Device Options
- 34. Operating Settings and Conditions
- 35. Fitter Messages
- 36. Fitter Suppressed Messages
+ 23. Other Routing Usage Summary
+ 24. LAB Logic Elements
+ 25. LAB-wide Signals
+ 26. LAB Signals Sourced
+ 27. LAB Signals Sourced Out
+ 28. LAB Distinct Inputs
+ 29. I/O Rules Summary
+ 30. I/O Rules Details
+ 31. I/O Rules Matrix
+ 32. Fitter Device Options
+ 33. Operating Settings and Conditions
+ 34. Fitter Messages
+ 35. Fitter Suppressed Messages
 
 
 
@@ -67,20 +66,20 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                        ;
 +------------------------------------+--------------------------------------------------+
-; Fitter Status                      ; Successful - Thu May 05 15:34:54 2016            ;
+; Fitter Status                      ; Successful - Fri May 06 17:56:05 2016            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; MazeRAMTester                                    ;
 ; Top-level Entity Name              ; MazeRAMTester                                    ;
 ; Family                             ; Cyclone III                                      ;
 ; Device                             ; EP3C16F484C6                                     ;
 ; Timing Models                      ; Final                                            ;
-; Total logic elements               ; 96 / 15,408 ( < 1 % )                            ;
-;     Total combinational functions  ; 81 / 15,408 ( < 1 % )                            ;
-;     Dedicated logic registers      ; 70 / 15,408 ( < 1 % )                            ;
-; Total registers                    ; 70                                               ;
-; Total pins                         ; 5 / 347 ( 1 % )                                  ;
+; Total logic elements               ; 67 / 15,408 ( < 1 % )                            ;
+;     Total combinational functions  ; 67 / 15,408 ( < 1 % )                            ;
+;     Dedicated logic registers      ; 39 / 15,408 ( < 1 % )                            ;
+; Total registers                    ; 39                                               ;
+; Total pins                         ; 18 / 347 ( 5 % )                                 ;
 ; Total virtual pins                 ; 0                                                ;
-; Total memory bits                  ; 4,096 / 516,096 ( < 1 % )                        ;
+; Total memory bits                  ; 0 / 516,096 ( 0 % )                              ;
 ; Embedded Multiplier 9-bit elements ; 0 / 112 ( 0 % )                                  ;
 ; Total PLLs                         ; 0 / 4 ( 0 % )                                    ;
 +------------------------------------+--------------------------------------------------+
@@ -154,27 +153,40 @@ applicable agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.00        ;
+; Average used               ; 1.50        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ; < 0.1%      ;
+;     Processors 2-4         ;  16.7%      ;
 ;     Processors 5-8         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-------------------------------------------+
-; I/O Assignment Warnings                   ;
-+-----------+-------------------------------+
-; Pin Name  ; Reason                        ;
-+-----------+-------------------------------+
-; OUTPUT[3] ; Incomplete set of assignments ;
-; OUTPUT[2] ; Incomplete set of assignments ;
-; OUTPUT[1] ; Incomplete set of assignments ;
-; OUTPUT[0] ; Incomplete set of assignments ;
-; CLK       ; Incomplete set of assignments ;
-+-----------+-------------------------------+
++------------------------------------------+
+; I/O Assignment Warnings                  ;
++----------+-------------------------------+
+; Pin Name ; Reason                        ;
++----------+-------------------------------+
+; WRITE    ; Incomplete set of assignments ;
+; COL[5]   ; Incomplete set of assignments ;
+; COL[4]   ; Incomplete set of assignments ;
+; COL[3]   ; Incomplete set of assignments ;
+; COL[2]   ; Incomplete set of assignments ;
+; COL[1]   ; Incomplete set of assignments ;
+; COL[0]   ; Incomplete set of assignments ;
+; OUT[3]   ; Incomplete set of assignments ;
+; OUT[2]   ; Incomplete set of assignments ;
+; OUT[1]   ; Incomplete set of assignments ;
+; OUT[0]   ; Incomplete set of assignments ;
+; ROW[5]   ; Incomplete set of assignments ;
+; ROW[4]   ; Incomplete set of assignments ;
+; ROW[3]   ; Incomplete set of assignments ;
+; ROW[2]   ; Incomplete set of assignments ;
+; ROW[1]   ; Incomplete set of assignments ;
+; ROW[0]   ; Incomplete set of assignments ;
+; CLK      ; Incomplete set of assignments ;
++----------+-------------------------------+
 
 
 +----------------------------------------------+
@@ -183,8 +195,8 @@ applicable agreement for further details.
 ; Type                ; Value                  ;
 +---------------------+------------------------+
 ; Placement (by node) ;                        ;
-;     -- Requested    ; 0 / 173 ( 0.00 % )     ;
-;     -- Achieved     ; 0 / 173 ( 0.00 % )     ;
+;     -- Requested    ; 0 / 153 ( 0.00 % )     ;
+;     -- Achieved     ; 0 / 153 ( 0.00 % )     ;
 ;                     ;                        ;
 ; Routing (by net)    ;                        ;
 ;     -- Requested    ; 0 / 0 ( 0.00 % )       ;
@@ -207,7 +219,7 @@ applicable agreement for further details.
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name                 ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
-; Top                            ; 163     ; 0                 ; N/A                     ; Source File       ;
+; Top                            ; 143     ; 0                 ; N/A                     ; Source File       ;
 ; hard_block:auto_generated_inst ; 10      ; 0                 ; N/A                     ; Source File       ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 
@@ -218,54 +230,54 @@ applicable agreement for further details.
 The pin-out file can be found in /Project/Musca/Game Engine/quartus_projects/MazeRAMTester/output_files/MazeRAMTester.pin.
 
 
-+-------------------------------------------------------------------------+
-; Fitter Resource Usage Summary                                           ;
-+---------------------------------------------+---------------------------+
-; Resource                                    ; Usage                     ;
-+---------------------------------------------+---------------------------+
-; Total logic elements                        ; 96 / 15,408 ( < 1 % )     ;
-;     -- Combinational with no register       ; 26                        ;
-;     -- Register only                        ; 15                        ;
-;     -- Combinational with a register        ; 55                        ;
-;                                             ;                           ;
-; Logic element usage by number of LUT inputs ;                           ;
-;     -- 4 input functions                    ; 24                        ;
-;     -- 3 input functions                    ; 28                        ;
-;     -- <=2 input functions                  ; 29                        ;
-;     -- Register only                        ; 15                        ;
-;                                             ;                           ;
-; Logic elements by mode                      ;                           ;
-;     -- normal mode                          ; 70                        ;
-;     -- arithmetic mode                      ; 11                        ;
-;                                             ;                           ;
-; Total registers*                            ; 70 / 17,068 ( < 1 % )     ;
-;     -- Dedicated logic registers            ; 70 / 15,408 ( < 1 % )     ;
-;     -- I/O registers                        ; 0 / 1,660 ( 0 % )         ;
-;                                             ;                           ;
-; Total LABs:  partially or completely used   ; 7 / 963 ( < 1 % )         ;
-; Virtual pins                                ; 0                         ;
-; I/O pins                                    ; 5 / 347 ( 1 % )           ;
-;     -- Clock pins                           ; 1 / 8 ( 13 % )            ;
-;     -- Dedicated input pins                 ; 0 / 9 ( 0 % )             ;
-;                                             ;                           ;
-; Global signals                              ; 1                         ;
-; M9Ks                                        ; 1 / 56 ( 2 % )            ;
-; Total block memory bits                     ; 4,096 / 516,096 ( < 1 % ) ;
-; Total block memory implementation bits      ; 9,216 / 516,096 ( 2 % )   ;
-; Embedded Multiplier 9-bit elements          ; 0 / 112 ( 0 % )           ;
-; PLLs                                        ; 0 / 4 ( 0 % )             ;
-; Global clocks                               ; 1 / 20 ( 5 % )            ;
-; JTAGs                                       ; 0 / 1 ( 0 % )             ;
-; CRC blocks                                  ; 0 / 1 ( 0 % )             ;
-; ASMI blocks                                 ; 0 / 1 ( 0 % )             ;
-; Impedance control blocks                    ; 0 / 4 ( 0 % )             ;
-; Average interconnect usage (total/H/V)      ; 0% / 0% / 0%              ;
-; Peak interconnect usage (total/H/V)         ; 0% / 0% / 0%              ;
-; Maximum fan-out                             ; 71                        ;
-; Highest non-global fan-out                  ; 17                        ;
-; Total fan-out                               ; 437                       ;
-; Average fan-out                             ; 2.34                      ;
-+---------------------------------------------+---------------------------+
++---------------------------------------------------------------------+
+; Fitter Resource Usage Summary                                       ;
++---------------------------------------------+-----------------------+
+; Resource                                    ; Usage                 ;
++---------------------------------------------+-----------------------+
+; Total logic elements                        ; 67 / 15,408 ( < 1 % ) ;
+;     -- Combinational with no register       ; 28                    ;
+;     -- Register only                        ; 0                     ;
+;     -- Combinational with a register        ; 39                    ;
+;                                             ;                       ;
+; Logic element usage by number of LUT inputs ;                       ;
+;     -- 4 input functions                    ; 30                    ;
+;     -- 3 input functions                    ; 17                    ;
+;     -- <=2 input functions                  ; 20                    ;
+;     -- Register only                        ; 0                     ;
+;                                             ;                       ;
+; Logic elements by mode                      ;                       ;
+;     -- normal mode                          ; 67                    ;
+;     -- arithmetic mode                      ; 0                     ;
+;                                             ;                       ;
+; Total registers*                            ; 39 / 17,068 ( < 1 % ) ;
+;     -- Dedicated logic registers            ; 39 / 15,408 ( < 1 % ) ;
+;     -- I/O registers                        ; 0 / 1,660 ( 0 % )     ;
+;                                             ;                       ;
+; Total LABs:  partially or completely used   ; 6 / 963 ( < 1 % )     ;
+; Virtual pins                                ; 0                     ;
+; I/O pins                                    ; 18 / 347 ( 5 % )      ;
+;     -- Clock pins                           ; 1 / 8 ( 13 % )        ;
+;     -- Dedicated input pins                 ; 0 / 9 ( 0 % )         ;
+;                                             ;                       ;
+; Global signals                              ; 1                     ;
+; M9Ks                                        ; 0 / 56 ( 0 % )        ;
+; Total block memory bits                     ; 0 / 516,096 ( 0 % )   ;
+; Total block memory implementation bits      ; 0 / 516,096 ( 0 % )   ;
+; Embedded Multiplier 9-bit elements          ; 0 / 112 ( 0 % )       ;
+; PLLs                                        ; 0 / 4 ( 0 % )         ;
+; Global clocks                               ; 1 / 20 ( 5 % )        ;
+; JTAGs                                       ; 0 / 1 ( 0 % )         ;
+; CRC blocks                                  ; 0 / 1 ( 0 % )         ;
+; ASMI blocks                                 ; 0 / 1 ( 0 % )         ;
+; Impedance control blocks                    ; 0 / 4 ( 0 % )         ;
+; Average interconnect usage (total/H/V)      ; 0% / 0% / 0%          ;
+; Peak interconnect usage (total/H/V)         ; 0% / 1% / 0%          ;
+; Maximum fan-out                             ; 39                    ;
+; Highest non-global fan-out                  ; 16                    ;
+; Total fan-out                               ; 337                   ;
+; Average fan-out                             ; 2.20                  ;
++---------------------------------------------+-----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
 
@@ -277,32 +289,31 @@ The pin-out file can be found in /Project/Musca/Game Engine/quartus_projects/Maz
 +---------------------------------------------+----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                  ; Low                            ;
 ;                                             ;                      ;                                ;
-; Total logic elements                        ; 96 / 15408 ( < 1 % ) ; 0 / 15408 ( 0 % )              ;
-;     -- Combinational with no register       ; 26                   ; 0                              ;
-;     -- Register only                        ; 15                   ; 0                              ;
-;     -- Combinational with a register        ; 55                   ; 0                              ;
+; Total logic elements                        ; 67 / 15408 ( < 1 % ) ; 0 / 15408 ( 0 % )              ;
+;     -- Combinational with no register       ; 28                   ; 0                              ;
+;     -- Register only                        ; 0                    ; 0                              ;
+;     -- Combinational with a register        ; 39                   ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic element usage by number of LUT inputs ;                      ;                                ;
-;     -- 4 input functions                    ; 24                   ; 0                              ;
-;     -- 3 input functions                    ; 28                   ; 0                              ;
-;     -- <=2 input functions                  ; 29                   ; 0                              ;
-;     -- Register only                        ; 15                   ; 0                              ;
+;     -- 4 input functions                    ; 30                   ; 0                              ;
+;     -- 3 input functions                    ; 17                   ; 0                              ;
+;     -- <=2 input functions                  ; 20                   ; 0                              ;
+;     -- Register only                        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic elements by mode                      ;                      ;                                ;
-;     -- normal mode                          ; 70                   ; 0                              ;
-;     -- arithmetic mode                      ; 11                   ; 0                              ;
+;     -- normal mode                          ; 67                   ; 0                              ;
+;     -- arithmetic mode                      ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
-; Total registers                             ; 70                   ; 0                              ;
-;     -- Dedicated logic registers            ; 70 / 15408 ( < 1 % ) ; 0 / 15408 ( 0 % )              ;
+; Total registers                             ; 39                   ; 0                              ;
+;     -- Dedicated logic registers            ; 39 / 15408 ( < 1 % ) ; 0 / 15408 ( 0 % )              ;
 ;                                             ;                      ;                                ;
-; Total LABs:  partially or completely used   ; 7 / 963 ( < 1 % )    ; 0 / 963 ( 0 % )                ;
+; Total LABs:  partially or completely used   ; 6 / 963 ( < 1 % )    ; 0 / 963 ( 0 % )                ;
 ;                                             ;                      ;                                ;
 ; Virtual pins                                ; 0                    ; 0                              ;
-; I/O pins                                    ; 5                    ; 0                              ;
+; I/O pins                                    ; 18                   ; 0                              ;
 ; Embedded Multiplier 9-bit elements          ; 0 / 112 ( 0 % )      ; 0 / 112 ( 0 % )                ;
-; Total memory bits                           ; 4096                 ; 0                              ;
-; Total RAM block bits                        ; 9216                 ; 0                              ;
-; M9K                                         ; 1 / 56 ( 1 % )       ; 0 / 56 ( 0 % )                 ;
+; Total memory bits                           ; 0                    ; 0                              ;
+; Total RAM block bits                        ; 0                    ; 0                              ;
 ; Clock control block                         ; 1 / 24 ( 4 % )       ; 0 / 24 ( 0 % )                 ;
 ;                                             ;                      ;                                ;
 ; Connections                                 ;                      ;                                ;
@@ -312,8 +323,8 @@ The pin-out file can be found in /Project/Musca/Game Engine/quartus_projects/Maz
 ;     -- Registered Output Connections        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Internal Connections                        ;                      ;                                ;
-;     -- Total Connections                    ; 444                  ; 5                              ;
-;     -- Registered Connections               ; 204                  ; 0                              ;
+;     -- Total Connections                    ; 332                  ; 5                              ;
+;     -- Registered Connections               ; 132                  ; 0                              ;
 ;                                             ;                      ;                                ;
 ; External Connections                        ;                      ;                                ;
 ;     -- Top                                  ; 0                    ; 0                              ;
@@ -321,7 +332,7 @@ The pin-out file can be found in /Project/Musca/Game Engine/quartus_projects/Maz
 ;                                             ;                      ;                                ;
 ; Partition Interface                         ;                      ;                                ;
 ;     -- Input Ports                          ; 1                    ; 0                              ;
-;     -- Output Ports                         ; 4                    ; 0                              ;
+;     -- Output Ports                         ; 17                   ; 0                              ;
 ;     -- Bidir Ports                          ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Registered Ports                            ;                      ;                                ;
@@ -345,57 +356,74 @@ The pin-out file can be found in /Project/Musca/Game Engine/quartus_projects/Maz
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+
-; CLK  ; G2    ; 1        ; 0            ; 14           ; 0            ; 71                    ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ;
+; CLK  ; G2    ; 1        ; 0            ; 14           ; 0            ; 39                    ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Output Pins                                                                                                                                                                                                                                                                                                                                                                                                                                                ;
-+-----------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
-; Name      ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Power Up High ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Location assigned by ; Output Enable Source ; Output Enable Group ;
-+-----------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
-; OUTPUT[0] ; AA13  ; 4        ; 23           ; 0            ; 28           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; OUTPUT[1] ; F15   ; 7        ; 39           ; 29           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; OUTPUT[2] ; D10   ; 8        ; 16           ; 29           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; OUTPUT[3] ; R5    ; 2        ; 0            ; 4            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-+-----------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Output Pins                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
++--------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
+; Name   ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Power Up High ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Location assigned by ; Output Enable Source ; Output Enable Group ;
++--------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
+; COL[0] ; H12   ; 7        ; 26           ; 29           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; COL[1] ; B17   ; 7        ; 30           ; 29           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; COL[2] ; A16   ; 7        ; 30           ; 29           ; 28           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; COL[3] ; F13   ; 7        ; 26           ; 29           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; COL[4] ; G13   ; 7        ; 30           ; 29           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; COL[5] ; E15   ; 7        ; 30           ; 29           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; OUT[0] ; F12   ; 7        ; 28           ; 29           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; OUT[1] ; R15   ; 4        ; 39           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; OUT[2] ; AB8   ; 3        ; 16           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; OUT[3] ; Y4    ; 3        ; 3            ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; ROW[0] ; C15   ; 7        ; 28           ; 29           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; ROW[1] ; B16   ; 7        ; 28           ; 29           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; ROW[2] ; E14   ; 7        ; 28           ; 29           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; ROW[3] ; D15   ; 7        ; 32           ; 29           ; 28           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; ROW[4] ; B19   ; 7        ; 32           ; 29           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; ROW[5] ; A17   ; 7        ; 30           ; 29           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; WRITE  ; H13   ; 7        ; 28           ; 29           ; 28           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
++--------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------+
-; Dual Purpose and Dedicated Pins                                                                                         ;
-+----------+-----------------------------+--------------------------+-------------------------+---------------------------+
-; Location ; Pin Name                    ; Reserved As              ; User Signal Name        ; Pin Type                  ;
-+----------+-----------------------------+--------------------------+-------------------------+---------------------------+
-; D1       ; DIFFIO_L4n, DATA1, ASDO     ; As input tri-stated      ; ~ALTERA_ASDO_DATA1~     ; Dual Purpose Pin          ;
-; E2       ; DIFFIO_L6p, FLASH_nCE, nCSO ; As input tri-stated      ; ~ALTERA_FLASH_nCE_nCSO~ ; Dual Purpose Pin          ;
-; K6       ; nSTATUS                     ; -                        ; -                       ; Dedicated Programming Pin ;
-; K2       ; DCLK                        ; As output driving ground ; ~ALTERA_DCLK~           ; Dual Purpose Pin          ;
-; K1       ; DATA0                       ; As input tri-stated      ; ~ALTERA_DATA0~          ; Dual Purpose Pin          ;
-; K5       ; nCONFIG                     ; -                        ; -                       ; Dedicated Programming Pin ;
-; L3       ; nCE                         ; -                        ; -                       ; Dedicated Programming Pin ;
-; M18      ; CONF_DONE                   ; -                        ; -                       ; Dedicated Programming Pin ;
-; M17      ; MSEL0                       ; -                        ; -                       ; Dedicated Programming Pin ;
-; L18      ; MSEL1                       ; -                        ; -                       ; Dedicated Programming Pin ;
-; L17      ; MSEL2                       ; -                        ; -                       ; Dedicated Programming Pin ;
-; K20      ; MSEL3                       ; -                        ; -                       ; Dedicated Programming Pin ;
-; K22      ; DIFFIO_R16n, nCEO           ; Use as programming pin   ; ~ALTERA_nCEO~           ; Dual Purpose Pin          ;
-+----------+-----------------------------+--------------------------+-------------------------+---------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Dual Purpose and Dedicated Pins                                                                                                   ;
++----------+---------------------------------------+--------------------------+-------------------------+---------------------------+
+; Location ; Pin Name                              ; Reserved As              ; User Signal Name        ; Pin Type                  ;
++----------+---------------------------------------+--------------------------+-------------------------+---------------------------+
+; D1       ; DIFFIO_L4n, DATA1, ASDO               ; As input tri-stated      ; ~ALTERA_ASDO_DATA1~     ; Dual Purpose Pin          ;
+; E2       ; DIFFIO_L6p, FLASH_nCE, nCSO           ; As input tri-stated      ; ~ALTERA_FLASH_nCE_nCSO~ ; Dual Purpose Pin          ;
+; K6       ; nSTATUS                               ; -                        ; -                       ; Dedicated Programming Pin ;
+; K2       ; DCLK                                  ; As output driving ground ; ~ALTERA_DCLK~           ; Dual Purpose Pin          ;
+; K1       ; DATA0                                 ; As input tri-stated      ; ~ALTERA_DATA0~          ; Dual Purpose Pin          ;
+; K5       ; nCONFIG                               ; -                        ; -                       ; Dedicated Programming Pin ;
+; L3       ; nCE                                   ; -                        ; -                       ; Dedicated Programming Pin ;
+; M18      ; CONF_DONE                             ; -                        ; -                       ; Dedicated Programming Pin ;
+; M17      ; MSEL0                                 ; -                        ; -                       ; Dedicated Programming Pin ;
+; L18      ; MSEL1                                 ; -                        ; -                       ; Dedicated Programming Pin ;
+; L17      ; MSEL2                                 ; -                        ; -                       ; Dedicated Programming Pin ;
+; K20      ; MSEL3                                 ; -                        ; -                       ; Dedicated Programming Pin ;
+; K22      ; DIFFIO_R16n, nCEO                     ; Use as programming pin   ; ~ALTERA_nCEO~           ; Dual Purpose Pin          ;
+; A17      ; DIFFIO_T25n, PADD1                    ; Use as regular IO        ; ROW[5]                  ; Dual Purpose Pin          ;
+; B17      ; DIFFIO_T25p, PADD2                    ; Use as regular IO        ; COL[1]                  ; Dual Purpose Pin          ;
+; E14      ; DIFFIO_T23n, PADD3                    ; Use as regular IO        ; ROW[2]                  ; Dual Purpose Pin          ;
+; F13      ; DIFFIO_T21p, PADD4, DQS2T/CQ3T,DPCLK8 ; Use as regular IO        ; COL[3]                  ; Dual Purpose Pin          ;
++----------+---------------------------------------+--------------------------+-------------------------+---------------------------+
 
 
-+-----------------------------------------------------------+
-; I/O Bank Usage                                            ;
-+----------+-----------------+---------------+--------------+
-; I/O Bank ; Usage           ; VCCIO Voltage ; VREF Voltage ;
-+----------+-----------------+---------------+--------------+
-; 1        ; 5 / 33 ( 15 % ) ; 2.5V          ; --           ;
-; 2        ; 1 / 48 ( 2 % )  ; 2.5V          ; --           ;
-; 3        ; 0 / 46 ( 0 % )  ; 2.5V          ; --           ;
-; 4        ; 1 / 41 ( 2 % )  ; 2.5V          ; --           ;
-; 5        ; 0 / 46 ( 0 % )  ; 2.5V          ; --           ;
-; 6        ; 1 / 43 ( 2 % )  ; 2.5V          ; --           ;
-; 7        ; 1 / 47 ( 2 % )  ; 2.5V          ; --           ;
-; 8        ; 1 / 43 ( 2 % )  ; 2.5V          ; --           ;
-+----------+-----------------+---------------+--------------+
++------------------------------------------------------------+
+; I/O Bank Usage                                             ;
++----------+------------------+---------------+--------------+
+; I/O Bank ; Usage            ; VCCIO Voltage ; VREF Voltage ;
++----------+------------------+---------------+--------------+
+; 1        ; 5 / 33 ( 15 % )  ; 2.5V          ; --           ;
+; 2        ; 0 / 48 ( 0 % )   ; 2.5V          ; --           ;
+; 3        ; 2 / 46 ( 4 % )   ; 2.5V          ; --           ;
+; 4        ; 1 / 41 ( 2 % )   ; 2.5V          ; --           ;
+; 5        ; 0 / 46 ( 0 % )   ; 2.5V          ; --           ;
+; 6        ; 1 / 43 ( 2 % )   ; 2.5V          ; --           ;
+; 7        ; 14 / 47 ( 30 % ) ; 2.5V          ; --           ;
+; 8        ; 0 / 43 ( 0 % )   ; 2.5V          ; --           ;
++----------+------------------+---------------+--------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -418,8 +446,8 @@ The pin-out file can be found in /Project/Musca/Game Engine/quartus_projects/Maz
 ; A13      ; 314        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; A14      ; 312        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; A15      ; 307        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; A16      ; 298        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; A17      ; 296        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; A16      ; 298        ; 7        ; COL[2]                                                    ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; A17      ; 296        ; 7        ; ROW[5]                                                    ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; A18      ; 291        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; A19      ; 290        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; A20      ; 284        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -437,7 +465,7 @@ The pin-out file can be found in /Project/Musca/Game Engine/quartus_projects/Maz
 ; AA10     ; 132        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AA11     ; 134        ; 3        ; GND+                                                      ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; AA12     ; 136        ; 4        ; GND+                                                      ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
-; AA13     ; 138        ; 4        ; OUTPUT[0]                                                 ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; AA13     ; 138        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AA14     ; 140        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AA15     ; 145        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AA16     ; 149        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -454,7 +482,7 @@ The pin-out file can be found in /Project/Musca/Game Engine/quartus_projects/Maz
 ; AB5      ; 109        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AB6      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AB7      ; 116        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; AB8      ; 124        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; AB8      ; 124        ; 3        ; OUT[2]                                                    ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; AB9      ; 127        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AB10     ; 133        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AB11     ; 135        ; 3        ; GND+                                                      ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
@@ -484,10 +512,10 @@ The pin-out file can be found in /Project/Musca/Game Engine/quartus_projects/Maz
 ; B13      ; 315        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; B14      ; 313        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; B15      ; 308        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; B16      ; 299        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; B17      ; 297        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; B16      ; 299        ; 7        ; ROW[1]                                                    ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; B17      ; 297        ; 7        ; COL[1]                                                    ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; B18      ; 292        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; B19      ; 289        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; B19      ; 289        ; 7        ; ROW[4]                                                    ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; B20      ; 285        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; B21      ; 269        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; B22      ; 268        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -505,7 +533,7 @@ The pin-out file can be found in /Project/Musca/Game Engine/quartus_projects/Maz
 ; C12      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; C13      ; 309        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; C14      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; C15      ; 300        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
+; C15      ; 300        ; 7        ; ROW[0]                                                    ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; C16      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; C17      ; 286        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; C18      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -522,12 +550,12 @@ The pin-out file can be found in /Project/Musca/Game Engine/quartus_projects/Maz
 ; D7       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; D8       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; D9       ;            ; 8        ; VCCIO8                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; D10      ; 324        ; 8        ; OUTPUT[2]                                                 ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; D10      ; 324        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D11      ;            ; 8        ; VCCIO8                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; D12      ;            ; 7        ; VCCIO7                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; D13      ; 310        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D14      ;            ; 7        ; VCCIO7                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; D15      ; 293        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; D15      ; 293        ; 7        ; ROW[3]                                                    ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; D16      ;            ; 7        ; VCCIO7                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; D17      ; 281        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; D18      ;            ; 7        ; VCCIO7                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
@@ -548,8 +576,8 @@ The pin-out file can be found in /Project/Musca/Game Engine/quartus_projects/Maz
 ; E11      ; 317        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; E12      ; 316        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; E13      ; 311        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; E14      ; 301        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; E15      ; 294        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; E14      ; 301        ; 7        ; ROW[2]                                                    ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; E15      ; 294        ; 7        ; COL[5]                                                    ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; E16      ; 275        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; E17      ;            ;          ; VCCD_PLL2                                                 ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; E18      ;            ;          ; GNDA2                                                     ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -568,10 +596,10 @@ The pin-out file can be found in /Project/Musca/Game Engine/quartus_projects/Maz
 ; F9       ; 347        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; F10      ; 348        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; F11      ; 318        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; F12      ; 302        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; F13      ; 306        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; F12      ; 302        ; 7        ; OUT[0]                                                    ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; F13      ; 306        ; 7        ; COL[3]                                                    ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; F14      ; 279        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; F15      ; 276        ; 7        ; OUTPUT[1]                                                 ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; F15      ; 276        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; F16      ; 274        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; F17      ; 272        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; F18      ;            ; --       ; VCCA2                                                     ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
@@ -591,7 +619,7 @@ The pin-out file can be found in /Project/Musca/Game Engine/quartus_projects/Maz
 ; G10      ; 341        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; G11      ; 331        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; G12      ; 305        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; G13      ; 295        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; G13      ; 295        ; 7        ; COL[4]                                                    ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; G14      ; 280        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; G15      ; 278        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; G16      ; 277        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -612,8 +640,8 @@ The pin-out file can be found in /Project/Musca/Game Engine/quartus_projects/Maz
 ; H9       ; 344        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; H10      ; 343        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; H11      ; 323        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; H12      ; 304        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; H13      ; 303        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; H12      ; 304        ; 7        ; COL[0]                                                    ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; H13      ; 303        ; 7        ; WRITE                                                     ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; H14      ; 288        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; H15      ; 287        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; H16      ; 259        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -759,7 +787,7 @@ The pin-out file can be found in /Project/Musca/Game Engine/quartus_projects/Maz
 ; R2       ; 54         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; R3       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; R4       ;            ; 2        ; VCCIO2                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; R5       ; 80         ; 2        ; OUTPUT[3]                                                 ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; R5       ; 80         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; R6       ; 83         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; R7       ; 84         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; R8       ; 87         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -769,7 +797,7 @@ The pin-out file can be found in /Project/Musca/Game Engine/quartus_projects/Maz
 ; R12      ; 98         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; R13      ; 153        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; R14      ; 175        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; R15      ; 176        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; R15      ; 176        ; 4        ; OUT[1]                                                    ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; R16      ; 172        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; R17      ; 194        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; R18      ; 203        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -868,7 +896,7 @@ The pin-out file can be found in /Project/Musca/Game Engine/quartus_projects/Maz
 ; Y1       ; 71         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; Y2       ; 70         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; Y3       ; 99         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; Y4       ; 96         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
+; Y4       ; 96         ; 3        ; OUT[3]                                                    ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; Y5       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; Y6       ; 101        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; Y7       ; 111        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -891,36 +919,43 @@ The pin-out file can be found in /Project/Musca/Game Engine/quartus_projects/Maz
 Note: Pin directions (input, output or bidir) are based on device operating in user mode.
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                                                        ;
-+-------------------------------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node                                        ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                                                                                       ; Library Name ;
-+-------------------------------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |MazeRAMTester                                                    ; 96 (0)      ; 70 (0)                    ; 0 (0)         ; 4096        ; 1    ; 0            ; 0       ; 0         ; 5    ; 0            ; 26 (0)       ; 15 (0)            ; 55 (0)           ; |MazeRAMTester                                                                                                                            ; work         ;
-;    |MazeArrayTester:inst|                                         ; 55 (0)      ; 35 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 20 (0)       ; 3 (0)             ; 32 (0)           ; |MazeRAMTester|MazeArrayTester:inst                                                                                                       ; work         ;
-;       |MazeArrayTester_core:MazeArrayTester_core_inst|            ; 55 (50)     ; 35 (30)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 20 (19)      ; 3 (3)             ; 32 (28)          ; |MazeRAMTester|MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst                                                        ; work         ;
-;          |MazeArrayTester_core_fsm:MazeArrayTester_core_fsm_inst| ; 6 (6)       ; 5 (5)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 5 (5)            ; |MazeRAMTester|MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|MazeArrayTester_core_fsm:MazeArrayTester_core_fsm_inst ; work         ;
-;    |MazeMemory:inst1|                                             ; 48 (0)      ; 35 (0)                    ; 0 (0)         ; 4096        ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 6 (0)        ; 12 (0)            ; 30 (0)           ; |MazeRAMTester|MazeMemory:inst1                                                                                                           ; work         ;
-;       |MazeMemory_core:MazeMemory_core_inst|                      ; 47 (43)     ; 33 (28)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 6 (6)        ; 11 (9)            ; 30 (28)          ; |MazeRAMTester|MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst                                                                      ; work         ;
-;          |MazeMemory_core_fsm:MazeMemory_core_fsm_inst|           ; 5 (5)       ; 5 (5)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 3 (3)            ; |MazeRAMTester|MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|MazeMemory_core_fsm:MazeMemory_core_fsm_inst                         ; work         ;
-;       |singleport_ram_be:maze_rsc_singleport|                     ; 2 (2)       ; 2 (2)                     ; 0 (0)         ; 4096        ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 1 (1)            ; |MazeRAMTester|MazeMemory:inst1|singleport_ram_be:maze_rsc_singleport                                                                     ; work         ;
-;          |altsyncram:mem_rtl_0|                                   ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 4096        ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |MazeRAMTester|MazeMemory:inst1|singleport_ram_be:maze_rsc_singleport|altsyncram:mem_rtl_0                                                ; work         ;
-;             |altsyncram_l1h1:auto_generated|                      ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 4096        ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |MazeRAMTester|MazeMemory:inst1|singleport_ram_be:maze_rsc_singleport|altsyncram:mem_rtl_0|altsyncram_l1h1:auto_generated                 ; work         ;
-+-------------------------------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------------------------------------------------------------------------------------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                                                         ;
++-------------------------------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+--------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                                        ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                                                                                        ; Library Name ;
++-------------------------------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+--------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; |MazeRAMTester                                                    ; 67 (0)      ; 39 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 18   ; 0            ; 28 (0)       ; 0 (0)             ; 39 (0)           ; |MazeRAMTester                                                                                                                             ; work         ;
+;    |MazeArrayTester:inst7|                                        ; 67 (0)      ; 39 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 28 (0)       ; 0 (0)             ; 39 (0)           ; |MazeRAMTester|MazeArrayTester:inst7                                                                                                       ; work         ;
+;       |MazeArrayTester_core:MazeArrayTester_core_inst|            ; 67 (61)     ; 39 (34)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 28 (27)      ; 0 (0)             ; 39 (36)          ; |MazeRAMTester|MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst                                                        ; work         ;
+;          |MazeArrayTester_core_fsm:MazeArrayTester_core_fsm_inst| ; 6 (6)       ; 5 (5)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 5 (5)            ; |MazeRAMTester|MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|MazeArrayTester_core_fsm:MazeArrayTester_core_fsm_inst ; work         ;
++-------------------------------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+--------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-------------------------------------------------------------------------------------------+
-; Delay Chain Summary                                                                       ;
-+-----------+----------+---------------+---------------+-----------------------+-----+------+
-; Name      ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ; TCOE ;
-+-----------+----------+---------------+---------------+-----------------------+-----+------+
-; OUTPUT[3] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; OUTPUT[2] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; OUTPUT[1] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; OUTPUT[0] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; CLK       ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
-+-----------+----------+---------------+---------------+-----------------------+-----+------+
++----------------------------------------------------------------------------------------+
+; Delay Chain Summary                                                                    ;
++--------+----------+---------------+---------------+-----------------------+-----+------+
+; Name   ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ; TCOE ;
++--------+----------+---------------+---------------+-----------------------+-----+------+
+; WRITE  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; COL[5] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; COL[4] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; COL[3] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; COL[2] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; COL[1] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; COL[0] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; OUT[3] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; OUT[2] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; OUT[1] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; OUT[0] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; ROW[5] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; ROW[4] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; ROW[3] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; ROW[2] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; ROW[1] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; ROW[0] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; CLK    ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
++--------+----------+---------------+---------------+-----------------------+-----+------+
 
 
 +---------------------------------------------------+
@@ -932,17 +967,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------+-------------------+---------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                                                                                                                          ;
-+------------------------------------------------------------------------------------------------------------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; Name                                                                                                                         ; Location          ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+------------------------------------------------------------------------------------------------------------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; CLK                                                                                                                          ; PIN_G2            ; 71      ; Clock        ; yes    ; Global Clock         ; GCLK4            ; --                        ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|and_5_cse~1                                              ; LCCOMB_X22_Y7_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|and_dcpl_8~0                                             ; LCCOMB_X21_Y7_N10 ; 3       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|MazeMemory_core_fsm:MazeMemory_core_fsm_inst|state_var.st_maze_vinit_1 ; FF_X24_Y8_N3      ; 14      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|maze_rsc_singleport_we~0                                               ; LCCOMB_X24_Y8_N22 ; 2       ; Write enable ; no     ; --                   ; --               ; --                        ;
-+------------------------------------------------------------------------------------------------------------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                                                                                              ;
++-------------------------------------------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; Name                                                                                            ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++-------------------------------------------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; CLK                                                                                             ; PIN_G2             ; 39      ; Clock        ; yes    ; Global Clock         ; GCLK4            ; --                        ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~8 ; LCCOMB_X30_Y27_N0  ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_i_1_sva_2~1         ; LCCOMB_X31_Y27_N14 ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
++-------------------------------------------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------+
@@ -950,188 +983,122 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; Name ; Location ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; CLK  ; PIN_G2   ; 71      ; 11                                   ; Global Clock         ; GCLK4            ; --                        ;
+; CLK  ; PIN_G2   ; 39      ; 10                                   ; Global Clock         ; GCLK4            ; --                        ;
 +------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Non-Global High Fan-Out Signals                                                                                                                                   ;
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; Name                                                                                                                                                    ; Fan-Out ;
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|MazeArrayTester_core_fsm:MazeArrayTester_core_fsm_inst|state_var.st_if_for          ; 17      ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|MazeMemory_core_fsm:MazeMemory_core_fsm_inst|state_var.st_main                                    ; 15      ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|MazeMemory_core_fsm:MazeMemory_core_fsm_inst|state_var.st_maze_vinit_1                            ; 14      ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|MazeArrayTester_core_fsm:MazeArrayTester_core_fsm_inst|state_var.st_main            ; 10      ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|and_5_cse~1                                                                         ; 8       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|MazeArrayTester_core_fsm:MazeArrayTester_core_fsm_inst|state_var.st_if_for_for_1    ; 8       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_i_1_sva_2[0]                                                                 ; 6       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|Add0~13                                                                             ; 5       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_i_1_sva_2[3]                                                                 ; 5       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_i_1_sva_2[2]                                                                 ; 5       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_i_1_sva_2[4]                                                                 ; 5       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_i_1_sva_2[1]                                                                 ; 5       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|mux_7_nl[4]~4                                                                       ; 4       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|mux_7_nl[1]~1                                                                       ; 4       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|mux_7_nl[0]~0                                                                       ; 4       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_for_j_1_sva_2[0]                                                             ; 4       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_i_1_sva_2[5]                                                                 ; 4       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|maze_vinit_ndx_1_sva[0]                                                                           ; 4       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|Add0~14                                                                             ; 3       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|mux_7_nl[5]~5                                                                       ; 3       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|mux_7_nl[2]~2                                                                       ; 3       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|and_dcpl_8~0                                                                        ; 3       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_for_j_1_sva_2[4]                                                             ; 3       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_for_j_1_sva_2[1]                                                             ; 3       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|MazeArrayTester_core_fsm:MazeArrayTester_core_fsm_inst|state_var.st_if_for_for      ; 3       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|MazeArrayTester_core_fsm:MazeArrayTester_core_fsm_inst|state_var.st_core_rlp        ; 3       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|written_sva                                                                         ; 3       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|maze_vinit_ndx_1_sva[11]                                                                          ; 3       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|maze_vinit_ndx_1_sva[10]                                                                          ; 3       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|maze_vinit_ndx_1_sva[9]                                                                           ; 3       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|maze_vinit_ndx_1_sva[8]                                                                           ; 3       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|maze_vinit_ndx_1_sva[7]                                                                           ; 3       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|maze_vinit_ndx_1_sva[6]                                                                           ; 3       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|maze_vinit_ndx_1_sva[5]                                                                           ; 3       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|maze_vinit_ndx_1_sva[4]                                                                           ; 3       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|maze_vinit_ndx_1_sva[3]                                                                           ; 3       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|maze_vinit_ndx_1_sva[2]                                                                           ; 3       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|maze_vinit_ndx_1_sva[1]                                                                           ; 3       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|maze_rsc_singleport_data_in[0]                                                                    ; 3       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|write_rsc_mgc_out_stdreg_d                                                          ; 3       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|MazeMemory_core_fsm:MazeMemory_core_fsm_inst|state_var.st_main_1                                  ; 3       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_i_1_sva_2~11                                                                 ; 2       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_i_1_sva_2~10                                                                 ; 2       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_i_1_sva_2~9                                                                  ; 2       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|Add0~16                                                                             ; 2       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|Add0~12                                                                             ; 2       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|mux_7_nl[3]~3                                                                       ; 2       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|Add0~11                                                                             ; 2       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_i_1_sva_2~6                                                                  ; 2       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~3                                                          ; 2       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~2                                                          ; 2       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~1                                                          ; 2       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|MazeArrayTester_core_fsm:MazeArrayTester_core_fsm_inst|Selector1~0                  ; 2       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_for_j_1_sva_1[6]                                                             ; 2       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~0                                                          ; 2       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_for_j_1_sva_2[3]                                                             ; 2       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_for_j_1_sva_2[2]                                                             ; 2       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_for_j_1_sva_2[5]                                                             ; 2       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|if_if_nor_itm                                                                                     ; 2       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|Add0~9                                                                              ; 2       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|maze_rsc_singleport_addr[11]~11                                                                   ; 2       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|maze_rsc_singleport_addr[10]~10                                                                   ; 2       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|maze_rsc_singleport_addr[9]~9                                                                     ; 2       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|maze_rsc_singleport_addr[8]~8                                                                     ; 2       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|maze_rsc_singleport_addr[7]~7                                                                     ; 2       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|maze_rsc_singleport_addr[6]~6                                                                     ; 2       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|maze_rsc_singleport_addr[5]~5                                                                     ; 2       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|maze_rsc_singleport_addr[4]~4                                                                     ; 2       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|maze_rsc_singleport_addr[3]~3                                                                     ; 2       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|maze_rsc_singleport_addr[2]~2                                                                     ; 2       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|maze_rsc_singleport_addr[1]~1                                                                     ; 2       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|maze_rsc_singleport_addr[0]~0                                                                     ; 2       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|maze_rsc_singleport_we~0                                                                          ; 2       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|MazeMemory_core_fsm:MazeMemory_core_fsm_inst|state_var.st_maze_vinit                              ; 2       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]                                                         ; 2       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|write_1_sva                                                                                       ; 2       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|out_rsc_mgc_out_stdreg_d[0]                                                                       ; 2       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|MazeArrayTester_core_fsm:MazeArrayTester_core_fsm_inst|state_var.st_core_rlp~feeder ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|if_if_acc_itm[0]~35                                                                               ; 1       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|Add0~17                                                                             ; 1       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|Add0~15                                                                             ; 1       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_for_j_1_sva_2~1                                                              ; 1       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_for_j_1_sva_1[5]                                                             ; 1       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_for_j_1_sva_2~0                                                              ; 1       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_for_j_1_sva_1[4]                                                             ; 1       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|MazeArrayTester_core_fsm:MazeArrayTester_core_fsm_inst|Selector1~1                  ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|if_if_nor_itm~3                                                                                   ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|if_if_nor_itm~2                                                                                   ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|if_if_nor_itm~1                                                                                   ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|if_if_nor_itm~0                                                                                   ; 1       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_i_1_sva_2~8                                                                  ; 1       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_i_1_sva_2~7                                                                  ; 1       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|MazeArrayTester_core_fsm:MazeArrayTester_core_fsm_inst|state_var_NS.st_if_for~0     ; 1       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|MazeArrayTester_core_fsm:MazeArrayTester_core_fsm_inst|Selector0~0                  ; 1       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|write_rsc_mgc_out_stdreg_d~2                                                        ; 1       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_for_j_1_sva_1[3]                                                             ; 1       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_for_j_1_sva_1[2]                                                             ; 1       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_for_j_1_sva_1[1]                                                             ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|if_if_acc_itm[0]                                                                                  ; 1       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|and_5_cse~0                                                                         ; 1       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|Add0~10                                                                             ; 1       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_for_j_1_sva_1[0]                                                             ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|MazeMemory_core_fsm:MazeMemory_core_fsm_inst|Selector0~0                                          ; 1       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~5                                                       ; 1       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~4                                                       ; 1       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~3                                                       ; 1       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~2                                                       ; 1       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~1                                                       ; 1       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~0                                                       ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|MazeMemory_core_fsm:MazeMemory_core_fsm_inst|Selector1~0                                          ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|MazeMemory_core_fsm:MazeMemory_core_fsm_inst|state_var.st_main_2                                  ; 1       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|write_rsc_mgc_out_stdreg_d~1                                                        ; 1       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|Add0~8                                                                              ; 1       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|write_rsc_mgc_out_stdreg_d~0                                                        ; 1       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d[3]                                                         ; 1       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d[2]                                                         ; 1       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d[1]                                                         ; 1       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d[0]                                                         ; 1       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d[3]                                                         ; 1       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d[2]                                                         ; 1       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d[1]                                                         ; 1       ;
-; MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d[0]                                                         ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|out_rsc_mgc_out_stdreg_d[0]~2                                                                     ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|out_rsc_mgc_out_stdreg_d[0]~1                                                                     ; 1       ;
-; MazeMemory:inst1|singleport_ram_be:maze_rsc_singleport|mem_rtl_0_bypass[0]                                                                              ; 1       ;
-; MazeMemory:inst1|singleport_ram_be:maze_rsc_singleport|mem_rtl_0_bypass[1]                                                                              ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|out_rsc_mgc_out_stdreg_d[0]~0                                                                     ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|maze_rsc_singleport_data_in_reg[0]                                                                ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|if_if_acc_itm[11]~33                                                                              ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|if_if_acc_itm[10]~32                                                                              ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|if_if_acc_itm[10]~31                                                                              ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|if_if_acc_itm[9]~30                                                                               ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|if_if_acc_itm[9]~29                                                                               ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|if_if_acc_itm[8]~28                                                                               ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|if_if_acc_itm[8]~27                                                                               ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|if_if_acc_itm[7]~26                                                                               ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|if_if_acc_itm[7]~25                                                                               ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|if_if_acc_itm[6]~24                                                                               ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|if_if_acc_itm[6]~23                                                                               ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|if_if_acc_itm[5]~22                                                                               ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|if_if_acc_itm[5]~21                                                                               ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|if_if_acc_itm[4]~20                                                                               ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|if_if_acc_itm[4]~19                                                                               ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|if_if_acc_itm[3]~18                                                                               ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|if_if_acc_itm[3]~17                                                                               ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|if_if_acc_itm[2]~16                                                                               ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|if_if_acc_itm[2]~15                                                                               ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|if_if_acc_itm[1]~14                                                                               ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|if_if_acc_itm[1]~13                                                                               ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|if_if_acc_itm[1]~12                                                                               ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|if_if_acc_itm[11]                                                                                 ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|if_if_acc_itm[10]                                                                                 ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|if_if_acc_itm[9]                                                                                  ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|if_if_acc_itm[8]                                                                                  ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|if_if_acc_itm[7]                                                                                  ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|if_if_acc_itm[6]                                                                                  ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|if_if_acc_itm[5]                                                                                  ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|if_if_acc_itm[4]                                                                                  ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|if_if_acc_itm[3]                                                                                  ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|if_if_acc_itm[2]                                                                                  ; 1       ;
-; MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|if_if_acc_itm[1]                                                                                  ; 1       ;
-; MazeMemory:inst1|singleport_ram_be:maze_rsc_singleport|altsyncram:mem_rtl_0|altsyncram_l1h1:auto_generated|ram_block1a0                                 ; 1       ;
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter RAM Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
-+-----------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+------+---------------+----------------------+-----------------+-----------------+
-; Name                                                                                                                  ; Type ; Mode             ; Clock Mode   ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M9Ks ; MIF  ; Location      ; Mixed Width RDW Mode ; Port A RDW Mode ; Port B RDW Mode ;
-+-----------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+------+---------------+----------------------+-----------------+-----------------+
-; MazeMemory:inst1|singleport_ram_be:maze_rsc_singleport|altsyncram:mem_rtl_0|altsyncram_l1h1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; Single Clock ; 4096         ; 1            ; 4096         ; 1            ; yes                    ; no                      ; yes                    ; no                      ; 4096 ; 4096                        ; 1                           ; 4096                        ; 1                           ; 4096                ; 1    ; None ; M9K_X25_Y8_N0 ; Old data             ; Old data        ; Old data        ;
-+-----------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+------+---------------+----------------------+-----------------+-----------------+
-Note: Fitter may spread logical memories into multiple blocks to improve timing. The actual required RAM blocks can be found in the Fitter Resource Usage section.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Non-Global High Fan-Out Signals                                                                                                                                    ;
++----------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; Name                                                                                                                                                     ; Fan-Out ;
++----------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|MazeArrayTester_core_fsm:MazeArrayTester_core_fsm_inst|state_var.st_if_for          ; 16      ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|MazeArrayTester_core_fsm:MazeArrayTester_core_fsm_inst|state_var.st_if_for_for_1    ; 11      ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|MazeArrayTester_core_fsm:MazeArrayTester_core_fsm_inst|state_var.st_main            ; 10      ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|and_8_cse~0                                                                         ; 9       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|mux_4_nl[0]~2                                                                       ; 8       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_i_1_sva_2~1                                                                  ; 7       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_i_1_sva_2[4]                                                                 ; 7       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~8                                                          ; 6       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_i_1_sva_2[5]                                                                 ; 6       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d~18                                                         ; 5       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d~5                                                          ; 5       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d~4                                                          ; 5       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|Add0~11                                                                             ; 5       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|mux_4_nl[1]~1                                                                       ; 5       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_for_j_1_sva_1[6]                                                             ; 5       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|and_dcpl_5                                                                          ; 5       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|Add0~9                                                                              ; 5       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_i_1_sva_2[1]                                                                 ; 5       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_i_1_sva_2[0]                                                                 ; 5       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|mux_4_nl[4]~5                                                                       ; 4       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|mux_4_nl[2]~3                                                                       ; 4       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_for_j_1_sva_2[0]                                                             ; 4       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|MazeArrayTester_core_fsm:MazeArrayTester_core_fsm_inst|state_var.st_if_for_for      ; 4       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_i_1_sva_2[3]                                                                 ; 4       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_i_1_sva_2[2]                                                                 ; 4       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|Add0~15                                                                             ; 3       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|Add0~13                                                                             ; 3       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|mux_4_nl[5]~0                                                                       ; 3       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_for_j_1_sva_2[1]                                                             ; 3       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_for_j_1_sva_2[4]                                                             ; 3       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|written_sva                                                                         ; 3       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|Add0~10                                                                             ; 3       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|Add0~17                                                                             ; 2       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|Add0~16                                                                             ; 2       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|Add0~14                                                                             ; 2       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|Add0~12                                                                             ; 2       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|mux_4_nl[3]~4                                                                       ; 2       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_for_j_1_sva_2[3]                                                             ; 2       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_for_j_1_sva_2[2]                                                             ; 2       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_for_j_1_sva_2[5]                                                             ; 2       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_for_j_1_sva_1[0]                                                             ; 2       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_for_j_1_sva_1[1]                                                             ; 2       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_for_j_1_sva_1[2]                                                             ; 2       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_for_j_1_sva_1[3]                                                             ; 2       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_for_j_1_sva_1[4]                                                             ; 2       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|and_8_cse~1                                                                         ; 2       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_for_j_1_sva_1[5]                                                             ; 2       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|MazeArrayTester_core_fsm:MazeArrayTester_core_fsm_inst|state_var.st_core_rlp        ; 2       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|write_rsc_mgc_out_stdreg_d~2                                                        ; 2       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d[0]                                                         ; 2       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d[1]                                                         ; 2       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d[2]                                                         ; 2       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d[3]                                                         ; 2       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d[4]                                                         ; 2       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d[5]                                                         ; 2       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]                                                         ; 2       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|write_rsc_mgc_out_stdreg_d                                                          ; 2       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|MazeArrayTester_core_fsm:MazeArrayTester_core_fsm_inst|state_var.st_core_rlp~feeder ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|and_dcpl_4                                                                          ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|write_rsc_mgc_out_stdreg_d~4                                                        ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_for_j_1_sva_2~5                                                              ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_for_j_1_sva_2~4                                                              ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_for_j_1_sva_2~3                                                              ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_for_j_1_sva_2~2                                                              ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_for_j_1_sva_2~1                                                              ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_for_j_1_sva_2~0                                                              ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|MazeArrayTester_core_fsm:MazeArrayTester_core_fsm_inst|Selector1~0                  ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|MazeArrayTester_core_fsm:MazeArrayTester_core_fsm_inst|Selector0~0                  ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_i_1_sva_2~6                                                                  ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_i_1_sva_2~5                                                                  ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_i_1_sva_2~4                                                                  ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_i_1_sva_2~3                                                                  ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_i_1_sva_2~2                                                                  ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|if_for_i_1_sva_2~0                                                                  ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|MazeArrayTester_core_fsm:MazeArrayTester_core_fsm_inst|state_var_NS.st_if_for~0     ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d~17                                                         ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d~16                                                         ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d~15                                                         ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d~14                                                         ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d~13                                                         ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d~12                                                         ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d~11                                                         ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d~10                                                         ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d~9                                                          ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d~8                                                          ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d~7                                                          ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|row_rsc_mgc_out_stdreg_d~6                                                          ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~5                                                       ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~4                                                       ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~3                                                       ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~2                                                       ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~1                                                       ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|out_rsc_mgc_out_stdreg_d[0]~0                                                       ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~7                                                          ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~6                                                          ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~5                                                          ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~4                                                          ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~3                                                          ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d~2                                                          ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|write_rsc_mgc_out_stdreg_d~3                                                        ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d[0]                                                         ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d[1]                                                         ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d[2]                                                         ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d[3]                                                         ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d[4]                                                         ; 1       ;
+; MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|col_rsc_mgc_out_stdreg_d[5]                                                         ; 1       ;
++----------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +------------------------------------------------------+
@@ -1139,24 +1106,24 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +-----------------------------+------------------------+
 ; Other Routing Resource Type ; Usage                  ;
 +-----------------------------+------------------------+
-; Block interconnects         ; 116 / 47,787 ( < 1 % ) ;
+; Block interconnects         ; 113 / 47,787 ( < 1 % ) ;
 ; C16 interconnects           ; 0 / 1,804 ( 0 % )      ;
-; C4 interconnects            ; 13 / 31,272 ( < 1 % )  ;
-; Direct links                ; 63 / 47,787 ( < 1 % )  ;
+; C4 interconnects            ; 17 / 31,272 ( < 1 % )  ;
+; Direct links                ; 36 / 47,787 ( < 1 % )  ;
 ; Global clocks               ; 1 / 20 ( 5 % )         ;
-; Local interconnects         ; 61 / 15,408 ( < 1 % )  ;
+; Local interconnects         ; 45 / 15,408 ( < 1 % )  ;
 ; R24 interconnects           ; 0 / 1,775 ( 0 % )      ;
-; R4 interconnects            ; 36 / 41,310 ( < 1 % )  ;
+; R4 interconnects            ; 66 / 41,310 ( < 1 % )  ;
 +-----------------------------+------------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Logic Elements                                                        ;
 +---------------------------------------------+-----------------------------+
-; Number of Logic Elements  (Average = 13.71) ; Number of LABs  (Total = 7) ;
+; Number of Logic Elements  (Average = 11.17) ; Number of LABs  (Total = 6) ;
 +---------------------------------------------+-----------------------------+
 ; 1                                           ; 1                           ;
-; 2                                           ; 0                           ;
+; 2                                           ; 1                           ;
 ; 3                                           ; 0                           ;
 ; 4                                           ; 0                           ;
 ; 5                                           ; 0                           ;
@@ -1169,31 +1136,29 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 ; 12                                          ; 0                           ;
 ; 13                                          ; 0                           ;
 ; 14                                          ; 0                           ;
-; 15                                          ; 1                           ;
-; 16                                          ; 5                           ;
+; 15                                          ; 0                           ;
+; 16                                          ; 4                           ;
 +---------------------------------------------+-----------------------------+
 
 
 +------------------------------------------------------------------+
 ; LAB-wide Signals                                                 ;
 +------------------------------------+-----------------------------+
-; LAB-wide Signals  (Average = 1.29) ; Number of LABs  (Total = 7) ;
+; LAB-wide Signals  (Average = 1.00) ; Number of LABs  (Total = 6) ;
 +------------------------------------+-----------------------------+
-; 1 Clock                            ; 7                           ;
-; 1 Clock enable                     ; 1                           ;
-; 2 Clock enables                    ; 1                           ;
+; 1 Clock                            ; 6                           ;
 +------------------------------------+-----------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                        ;
 +----------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 23.43) ; Number of LABs  (Total = 7) ;
+; Number of Signals Sourced  (Average = 17.67) ; Number of LABs  (Total = 6) ;
 +----------------------------------------------+-----------------------------+
 ; 0                                            ; 0                           ;
 ; 1                                            ; 0                           ;
 ; 2                                            ; 1                           ;
-; 3                                            ; 0                           ;
+; 3                                            ; 1                           ;
 ; 4                                            ; 0                           ;
 ; 5                                            ; 0                           ;
 ; 6                                            ; 0                           ;
@@ -1211,71 +1176,81 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 ; 18                                           ; 0                           ;
 ; 19                                           ; 0                           ;
 ; 20                                           ; 0                           ;
-; 21                                           ; 0                           ;
-; 22                                           ; 1                           ;
+; 21                                           ; 1                           ;
+; 22                                           ; 0                           ;
 ; 23                                           ; 0                           ;
 ; 24                                           ; 0                           ;
-; 25                                           ; 0                           ;
-; 26                                           ; 1                           ;
+; 25                                           ; 1                           ;
+; 26                                           ; 0                           ;
 ; 27                                           ; 1                           ;
-; 28                                           ; 2                           ;
-; 29                                           ; 0                           ;
-; 30                                           ; 0                           ;
-; 31                                           ; 1                           ;
+; 28                                           ; 1                           ;
 +----------------------------------------------+-----------------------------+
 
 
 +--------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                        ;
 +--------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 10.86) ; Number of LABs  (Total = 7) ;
+; Number of Signals Sourced Out  (Average = 10.33) ; Number of LABs  (Total = 6) ;
 +--------------------------------------------------+-----------------------------+
 ; 0                                                ; 0                           ;
 ; 1                                                ; 1                           ;
-; 2                                                ; 0                           ;
+; 2                                                ; 1                           ;
 ; 3                                                ; 0                           ;
 ; 4                                                ; 0                           ;
 ; 5                                                ; 0                           ;
 ; 6                                                ; 0                           ;
 ; 7                                                ; 0                           ;
-; 8                                                ; 0                           ;
-; 9                                                ; 1                           ;
+; 8                                                ; 1                           ;
+; 9                                                ; 0                           ;
 ; 10                                               ; 0                           ;
-; 11                                               ; 1                           ;
-; 12                                               ; 1                           ;
+; 11                                               ; 0                           ;
+; 12                                               ; 0                           ;
 ; 13                                               ; 0                           ;
-; 14                                               ; 2                           ;
-; 15                                               ; 1                           ;
+; 14                                               ; 1                           ;
+; 15                                               ; 0                           ;
+; 16                                               ; 0                           ;
+; 17                                               ; 1                           ;
+; 18                                               ; 0                           ;
+; 19                                               ; 0                           ;
+; 20                                               ; 1                           ;
 +--------------------------------------------------+-----------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                        ;
 +----------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 10.57) ; Number of LABs  (Total = 7) ;
+; Number of Distinct Inputs  (Average = 14.00) ; Number of LABs  (Total = 6) ;
 +----------------------------------------------+-----------------------------+
 ; 0                                            ; 0                           ;
 ; 1                                            ; 0                           ;
-; 2                                            ; 1                           ;
-; 3                                            ; 0                           ;
+; 2                                            ; 0                           ;
+; 3                                            ; 1                           ;
 ; 4                                            ; 0                           ;
 ; 5                                            ; 1                           ;
 ; 6                                            ; 0                           ;
 ; 7                                            ; 0                           ;
 ; 8                                            ; 0                           ;
-; 9                                            ; 2                           ;
+; 9                                            ; 0                           ;
 ; 10                                           ; 0                           ;
-; 11                                           ; 1                           ;
+; 11                                           ; 0                           ;
 ; 12                                           ; 0                           ;
-; 13                                           ; 0                           ;
+; 13                                           ; 1                           ;
 ; 14                                           ; 0                           ;
 ; 15                                           ; 0                           ;
 ; 16                                           ; 0                           ;
-; 17                                           ; 1                           ;
+; 17                                           ; 2                           ;
 ; 18                                           ; 0                           ;
 ; 19                                           ; 0                           ;
 ; 20                                           ; 0                           ;
-; 21                                           ; 1                           ;
+; 21                                           ; 0                           ;
+; 22                                           ; 0                           ;
+; 23                                           ; 0                           ;
+; 24                                           ; 0                           ;
+; 25                                           ; 0                           ;
+; 26                                           ; 0                           ;
+; 27                                           ; 0                           ;
+; 28                                           ; 0                           ;
+; 29                                           ; 1                           ;
 +----------------------------------------------+-----------------------------+
 
 
@@ -1336,14 +1311,27 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 ; Pin/Rules          ; IO_000001    ; IO_000002    ; IO_000003    ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007    ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000046    ; IO_000047    ; IO_000033 ; IO_000034    ; IO_000042    ;
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
-; Total Pass         ; 0            ; 0            ; 0            ; 0            ; 0            ; 5         ; 0            ; 0            ; 5         ; 5         ; 0            ; 4            ; 0            ; 0            ; 1            ; 0            ; 4            ; 1            ; 0            ; 0            ; 0            ; 4            ; 0            ; 0            ; 0            ; 0            ; 0            ; 5         ; 0            ; 0            ;
+; Total Pass         ; 0            ; 0            ; 0            ; 0            ; 0            ; 18        ; 0            ; 0            ; 18        ; 18        ; 0            ; 17           ; 0            ; 0            ; 1            ; 0            ; 17           ; 1            ; 0            ; 0            ; 0            ; 17           ; 0            ; 0            ; 0            ; 0            ; 0            ; 18        ; 0            ; 0            ;
 ; Total Unchecked    ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
-; Total Inapplicable ; 5            ; 5            ; 5            ; 5            ; 5            ; 0         ; 5            ; 5            ; 0         ; 0         ; 5            ; 1            ; 5            ; 5            ; 4            ; 5            ; 1            ; 4            ; 5            ; 5            ; 5            ; 1            ; 5            ; 5            ; 5            ; 5            ; 5            ; 0         ; 5            ; 5            ;
+; Total Inapplicable ; 18           ; 18           ; 18           ; 18           ; 18           ; 0         ; 18           ; 18           ; 0         ; 0         ; 18           ; 1            ; 18           ; 18           ; 17           ; 18           ; 1            ; 17           ; 18           ; 18           ; 18           ; 1            ; 18           ; 18           ; 18           ; 18           ; 18           ; 0         ; 18           ; 18           ;
 ; Total Fail         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
-; OUTPUT[3]          ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; OUTPUT[2]          ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; OUTPUT[1]          ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; OUTPUT[0]          ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; WRITE              ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; COL[5]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; COL[4]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; COL[3]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; COL[2]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; COL[1]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; COL[0]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; OUT[3]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; OUT[2]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; OUT[1]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; OUT[0]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; ROW[5]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; ROW[4]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; ROW[3]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; ROW[2]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; ROW[1]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; ROW[0]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; CLK                ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 
@@ -1405,12 +1393,24 @@ Info (169124): Fitter converted 5 user pins into dedicated programming pins
     Info (169125): Pin ~ALTERA_DATA0~ is reserved at location K1
     Info (169125): Pin ~ALTERA_nCEO~ is reserved at location K22
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
-Info (176045): Design uses memory blocks. Violating setup or hold times of memory block address registers for either read or write operations could cause memory contents to be corrupted. Make sure that all memory block address registers meet the setup and hold time requirements.
-Critical Warning (169085): No exact pin location assignment(s) for 5 pins of 5 total pins
-    Info (169086): Pin OUTPUT[3] not assigned to an exact location on the device
-    Info (169086): Pin OUTPUT[2] not assigned to an exact location on the device
-    Info (169086): Pin OUTPUT[1] not assigned to an exact location on the device
-    Info (169086): Pin OUTPUT[0] not assigned to an exact location on the device
+Critical Warning (169085): No exact pin location assignment(s) for 18 pins of 18 total pins
+    Info (169086): Pin WRITE not assigned to an exact location on the device
+    Info (169086): Pin COL[5] not assigned to an exact location on the device
+    Info (169086): Pin COL[4] not assigned to an exact location on the device
+    Info (169086): Pin COL[3] not assigned to an exact location on the device
+    Info (169086): Pin COL[2] not assigned to an exact location on the device
+    Info (169086): Pin COL[1] not assigned to an exact location on the device
+    Info (169086): Pin COL[0] not assigned to an exact location on the device
+    Info (169086): Pin OUT[3] not assigned to an exact location on the device
+    Info (169086): Pin OUT[2] not assigned to an exact location on the device
+    Info (169086): Pin OUT[1] not assigned to an exact location on the device
+    Info (169086): Pin OUT[0] not assigned to an exact location on the device
+    Info (169086): Pin ROW[5] not assigned to an exact location on the device
+    Info (169086): Pin ROW[4] not assigned to an exact location on the device
+    Info (169086): Pin ROW[3] not assigned to an exact location on the device
+    Info (169086): Pin ROW[2] not assigned to an exact location on the device
+    Info (169086): Pin ROW[1] not assigned to an exact location on the device
+    Info (169086): Pin ROW[0] not assigned to an exact location on the device
     Info (169086): Pin CLK not assigned to an exact location on the device
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'MazeRAMTester.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
@@ -1423,7 +1423,7 @@ Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
 Info (176214): Statistics of I/O pins that need to be placed that use the same VCCIO and VREF, before I/O pin placement
-    Info (176211): Number of I/O pins in group: 4 (unused VREF, 2.5V VCCIO, 0 input, 4 output, 0 bidirectional)
+    Info (176211): Number of I/O pins in group: 17 (unused VREF, 2.5V VCCIO, 0 input, 17 output, 0 bidirectional)
         Info (176212): I/O standards used: 2.5 V.
 Info (176215): I/O bank details before I/O pin placement
     Info (176214): Statistics of I/O banks
@@ -1443,11 +1443,11 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:00
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X21_Y0 to location X30_Y9
+    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X21_Y20 to location X30_Y29
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.16 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.11 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1455,10 +1455,10 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file /Project/Musca/Game Engine/quartus_projects/MazeRAMTester/output_files/MazeRAMTester.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 1131 megabytes
-    Info: Processing ended: Thu May 05 15:34:55 2016
+    Info: Peak virtual memory: 1127 megabytes
+    Info: Processing ended: Fri May 06 17:56:05 2016
     Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:07
+    Info: Total CPU time (on all processors): 00:00:06
 
 
 +----------------------------+

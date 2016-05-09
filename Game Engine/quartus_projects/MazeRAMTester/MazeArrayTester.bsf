@@ -40,15 +40,15 @@ applicable agreement for further details.
 	(port
 		(pt 176 32)
 		(output)
-		(text "row_rsc_z[4..0]" (rect 0 0 63 12)(font "Arial" ))
-		(text "row_rsc_z[4..0]" (rect 92 27 155 39)(font "Arial" ))
+		(text "row_rsc_z[5..0]" (rect 0 0 62 12)(font "Arial" ))
+		(text "row_rsc_z[5..0]" (rect 93 27 155 39)(font "Arial" ))
 		(line (pt 176 32)(pt 160 32)(line_width 3))
 	)
 	(port
 		(pt 176 48)
 		(output)
-		(text "col_rsc_z[4..0]" (rect 0 0 60 12)(font "Arial" ))
-		(text "col_rsc_z[4..0]" (rect 95 43 155 55)(font "Arial" ))
+		(text "col_rsc_z[5..0]" (rect 0 0 59 12)(font "Arial" ))
+		(text "col_rsc_z[5..0]" (rect 96 43 155 55)(font "Arial" ))
 		(line (pt 176 48)(pt 160 48)(line_width 3))
 	)
 	(port

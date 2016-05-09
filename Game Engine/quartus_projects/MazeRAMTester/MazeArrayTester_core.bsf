@@ -40,15 +40,15 @@ applicable agreement for further details.
 	(port
 		(pt 248 32)
 		(output)
-		(text "row_rsc_mgc_out_stdreg_d[4..0]" (rect 0 0 136 12)(font "Arial" ))
-		(text "row_rsc_mgc_out_stdreg_d[4..0]" (rect 91 27 227 39)(font "Arial" ))
+		(text "row_rsc_mgc_out_stdreg_d[5..0]" (rect 0 0 135 12)(font "Arial" ))
+		(text "row_rsc_mgc_out_stdreg_d[5..0]" (rect 92 27 227 39)(font "Arial" ))
 		(line (pt 248 32)(pt 232 32)(line_width 3))
 	)
 	(port
 		(pt 248 48)
 		(output)
-		(text "col_rsc_mgc_out_stdreg_d[4..0]" (rect 0 0 133 12)(font "Arial" ))
-		(text "col_rsc_mgc_out_stdreg_d[4..0]" (rect 94 43 227 55)(font "Arial" ))
+		(text "col_rsc_mgc_out_stdreg_d[5..0]" (rect 0 0 132 12)(font "Arial" ))
+		(text "col_rsc_mgc_out_stdreg_d[5..0]" (rect 95 43 227 55)(font "Arial" ))
 		(line (pt 248 48)(pt 232 48)(line_width 3))
 	)
 	(port

@@ -16,19 +16,16 @@
 # vsim -L cycloneiii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.MazeRAMTester_vlg_vec_tst 
 # Loading work.MazeRAMTester_vlg_vec_tst
 # Loading work.MazeRAMTester
-# Loading altera_ver.dffeas
 # Loading cycloneiii_ver.cycloneiii_lcell_comb
 # Loading cycloneiii_ver.cycloneiii_io_obuf
 # Loading cycloneiii_ver.cycloneiii_io_ibuf
 # Loading cycloneiii_ver.cycloneiii_clkctrl
 # Loading cycloneiii_ver.cycloneiii_mux41
 # Loading cycloneiii_ver.cycloneiii_ena_reg
-# Loading cycloneiii_ver.cycloneiii_ram_block
-# Loading cycloneiii_ver.cycloneiii_ram_register
-# Loading cycloneiii_ver.cycloneiii_ram_pulse_generator
+# Loading altera_ver.dffeas
 # Loading work.MazeRAMTester_vlg_sample_tst
 # Loading work.MazeRAMTester_vlg_check_tst
 # Loading altera_ver.PRIM_GDFF_LOW
 # Simulation passed !
-# ** Note: $finish    : MazeRAMTester.vt(201)
+# ** Note: $finish    : MazeRAMTester.vt(460)
 #    Time: 1 us  Iteration: 0  Instance: /MazeRAMTester_vlg_vec_tst/tb_out

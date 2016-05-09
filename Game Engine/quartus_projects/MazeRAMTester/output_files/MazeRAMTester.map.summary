@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Thu May 05 15:34:25 2016
+Analysis & Synthesis Status : Successful - Fri May 06 17:55:56 2016
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
 Revision Name : MazeRAMTester
 Top-level Entity Name : MazeRAMTester
 Family : Cyclone III
-Total logic elements : 107
-    Total combinational functions : 80
-    Dedicated logic registers : 70
-Total registers : 70
-Total pins : 5
+Total logic elements : 68
+    Total combinational functions : 66
+    Dedicated logic registers : 39
+Total registers : 39
+Total pins : 18
 Total virtual pins : 0
-Total memory bits : 4,096
+Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
 Total PLLs : 0

@@ -1,0 +1,236 @@
+//  Catapult University Version 2011a.126 (Production Release) Wed Aug  8 00:52:07 PDT 2012
+//  
+//  Copyright (c) Calypto Design Systems, Inc., 1996-2012, All Rights Reserved.
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF CALYPTO DESIGN SYSTEMS OR ITS LICENSORS
+//  
+//  Running on Windows 7 kjr115@EEWS104A-022 Service Pack 1 6.01.7601 i686
+//  
+//  Package information: SIFLIBS v17.0_1.1, HLS_PKGS v17.0_1.1, 
+//                       DesignPad v2.78_0.0
+//  
+//  This version may only be used for academic purposes.  Some optimizations 
+//  are disabled, so results obtained from this version may be sub-optimal.
+//  
+//  Start time Mon May 09 15:35:43 2016
+# -------------------------------------------------
+# Logging session transcript to file "C:\Users\kjr115\AppData\Local\Temp\log8064244a3f0.0"
+# Loading options from registry.
+# Warning: set_working_dir: Directory 'C:/Windows/System32' not writable, using C:/Users/kjr115/AppData/Local/Temp
+project new -name 27X27Ram
+set_working_dir {//icnas2.cc.ic.ac.uk/kjr115/Project/Musca/Game Engine/catapult_projects/27x27RAM}
+solution file add ../../src/27X27Ram.cpp
+# /INPUTFILES/1
+# File '//icnas2.cc.ic.ac.uk/kjr115/Project/Musca/Game Engine/src/27X27Ram.cpp' saved
+# File '//icnas2.cc.ic.ac.uk/kjr115/Project/Musca/Game Engine/src/27X27Ram.cpp' saved
+# File '//icnas2.cc.ic.ac.uk/kjr115/Project/Musca/Game Engine/src/27X27Ram.cpp' saved
+# File '//icnas2.cc.ic.ac.uk/kjr115/Project/Musca/Game Engine/src/27X27Ram.cpp' saved
+# File '//icnas2.cc.ic.ac.uk/kjr115/Project/Musca/Game Engine/src/27X27Ram.cpp' saved
+# File '//icnas2.cc.ic.ac.uk/kjr115/Project/Musca/Game Engine/src/27X27Ram.cpp' saved
+go analyze
+# Creating project directory '\\icnas2.cc.ic.ac.uk\kjr115\Project\Musca\Game Engine\catapult_projects\27x27RAM\27X27Ram'. (PRJ-1)
+# Moving session transcript to file "\\icnas2.cc.ic.ac.uk\kjr115\Project\Musca\Game Engine\catapult_projects\27x27RAM\catapult.log"
+# Info: Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
+# Front End called with arguments: -- {\\icnas2.cc.ic.ac.uk\kjr115\Project\Musca\Game Engine\src\27X27Ram.cpp} (CIN-69)
+# Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+# Warning: $PROJECT_HOME/../../src/27X27Ram.cpp(14): $PROJECT_HOME/../../src/27X27Ram.cpp(14): last line of file ends without a newline (CRD-1)
+# Source file analysis completed (CIN-68)
+# Info: Completed transformation 'analyze' on solution 'solution.v1': elapsed time 0.58 seconds, memory usage 148060kB, peak memory usage 174764kB (SOL-9)
+directive set -TECHLIBS {{Altera_accel_CycloneIII.lib Altera_accel_CycloneIII} {mgc_Altera-Cyclone-III-6_beh_psr.lib {{mgc_Altera-Cyclone-III-6_beh_psr part EP3C16F484C}}} {ram_Altera-Cyclone-III-6_RAMSB.lib ram_Altera-Cyclone-III-6_RAMSB}}
+# /TECHLIBS {{Altera_accel_CycloneIII.lib Altera_accel_CycloneIII} {mgc_Altera-Cyclone-III-6_beh_psr.lib {{mgc_Altera-Cyclone-III-6_beh_psr part EP3C16F484C}}} {ram_Altera-Cyclone-III-6_RAMSB.lib ram_Altera-Cyclone-III-6_RAMSB}}
+directive set -CLOCKS {clk {-CLOCK_PERIOD 20.0 -CLOCK_EDGE rising -CLOCK_HIGH_TIME 10.00 -CLOCK_OFFSET 0.000000 -CLOCK_UNCERTAINTY 0.0 -RESET_KIND sync -RESET_SYNC_NAME rst -RESET_SYNC_ACTIVE high -RESET_ASYNC_NAME arst_n -RESET_ASYNC_ACTIVE low -ENABLE_NAME {} -ENABLE_ACTIVE high}}
+# /CLOCKS {clk {-CLOCK_PERIOD 20.0 -CLOCK_EDGE rising -CLOCK_UNCERTAINTY 0.0 -CLOCK_HIGH_TIME 10.0 -RESET_SYNC_NAME rst -RESET_ASYNC_NAME arst_n -RESET_KIND sync -RESET_SYNC_ACTIVE high -RESET_ASYNC_ACTIVE low -ENABLE_NAME {} -ENABLE_ACTIVE high}}
+directive set -DESIGN_HIERARCHY RAMBlock
+# /DESIGN_HIERARCHY RAMBlock
+options set Output OutputVHDL false
+# false
+options set Output OutputVerilog true
+# true
+go extract
+# Info: Starting transformation 'compile' on solution 'solution.v1' (SOL-8)
+# Reading component library '$MGC_HOME\pkgs\siflibs\mgc_busdefs.lib' [mgc_busdefs]... (LIB-49)
+# Reading component library '$MGC_HOME\pkgs\siflibs\stdops.lib' [STDOPS]... (LIB-49)
+# Reading component library '$MGC_HOME\pkgs\siflibs\mgc_ioport.lib' [mgc_ioport]... (LIB-49)
+# Reading component library '$MGC_HOME\pkgs\ccs_altera\Altera_accel_CycloneIII.lib' [Altera_accel_CycloneIII]... (LIB-49)
+# Reading component library '$MGC_HOME\pkgs\siflibs\psr2010a_up2\mgc_Altera-Cyclone-III-6_beh_psr.lib' [mgc_Altera-Cyclone-III-6_beh_psr]... (LIB-49)
+# Reading component library '$MGC_HOME\pkgs\siflibs\psr2010a_up2\ram_Altera-Cyclone-III-6_RAMSB.lib' [ram_Altera-Cyclone-III-6_RAMSB]... (LIB-49)
+# Generating synthesis internal form... (CIN-3)
+# $PROJECT_HOME/../../src/27X27Ram.cpp(7): Found top design routine 'RAMBlock' specified by directive (CIN-52)
+# $PROJECT_HOME/../../src/27X27Ram.cpp(7): Synthesizing routine 'RAMBlock' (CIN-13)
+# $PROJECT_HOME/../../src/27X27Ram.cpp(7): Inlining routine 'RAMBlock' (CIN-14)
+# Warning: $PROJECT_HOME/../../src/27X27Ram.cpp(9): Instantiating global variable 'data' which may be accessed outside this scope (CIN-18)
+# $PROJECT_HOME/../../src/27X27Ram.cpp(7): Optimizing block '/RAMBlock' ... (CIN-4)
+# $PROJECT_HOME/../../src/27X27Ram.cpp(7): Inout port 'data_out' is only used as an output. (OPT-11)
+# Info: Optimizing partition '/RAMBlock': (Total ops = 23, Real ops = 4, Vars = 13) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/core': (Total ops = 23, Real ops = 4, Vars = 8) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/core': (Total ops = 23, Real ops = 4, Vars = 8) (SOL-10)
+# Info: Optimizing partition '/RAMBlock': (Total ops = 23, Real ops = 4, Vars = 13) (SOL-10)
+# Info: Optimizing partition '/RAMBlock': (Total ops = 23, Real ops = 4, Vars = 13) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/core': (Total ops = 23, Real ops = 4, Vars = 8) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/core': (Total ops = 15, Real ops = 4, Vars = 6) (SOL-10)
+# Info: Optimizing partition '/RAMBlock': (Total ops = 15, Real ops = 4, Vars = 11) (SOL-10)
+# Info: Optimizing partition '/RAMBlock': (Total ops = 15, Real ops = 4, Vars = 11) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/core': (Total ops = 15, Real ops = 4, Vars = 6) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/core': (Total ops = 12, Real ops = 4, Vars = 4) (SOL-10)
+# Info: Optimizing partition '/RAMBlock': (Total ops = 12, Real ops = 4, Vars = 9) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/core': (Total ops = 12, Real ops = 4, Vars = 4) (SOL-10)
+# Info: Optimizing partition '/RAMBlock': (Total ops = 12, Real ops = 4, Vars = 9) (SOL-10)
+# Info: Optimizing partition '/RAMBlock': (Total ops = 12, Real ops = 4, Vars = 9) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/core': (Total ops = 12, Real ops = 4, Vars = 4) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/core': (Total ops = 12, Real ops = 3, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/core': (Total ops = 10, Real ops = 2, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/core': (Total ops = 8, Real ops = 2, Vars = 3) (SOL-10)
+# Info: Optimizing partition '/RAMBlock': (Total ops = 8, Real ops = 2, Vars = 8) (SOL-10)
+# Info: Optimizing partition '/RAMBlock': (Total ops = 8, Real ops = 2, Vars = 8) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/core': (Total ops = 8, Real ops = 2, Vars = 3) (SOL-10)
+# Design 'RAMBlock' was read (SOL-1)
+# Info: Completed transformation 'compile' on solution 'RAMBlock.v1': elapsed time 0.34 seconds, memory usage 155676kB, peak memory usage 175284kB (SOL-9)
+# Info: Starting transformation 'architect' on solution 'RAMBlock.v1' (SOL-8)
+# $PROJECT_HOME/../../src/27X27Ram.cpp(7): Loop '/RAMBlock/core/main' is left rolled. (LOOP-4)
+# $PROJECT_HOME/../../src/27X27Ram.cpp(7): I/O-Port inferred - resource 'row:rsc' (from var: row) mapped to 'mgc_ioport.mgc_in_wire' (size: 5). (MEM-2)
+# $PROJECT_HOME/../../src/27X27Ram.cpp(7): I/O-Port inferred - resource 'col:rsc' (from var: col) mapped to 'mgc_ioport.mgc_in_wire' (size: 5). (MEM-2)
+# $PROJECT_HOME/../../src/27X27Ram.cpp(7): I/O-Port inferred - resource 'write_en:rsc' (from var: write_en) mapped to 'mgc_ioport.mgc_in_wire' (size: 1). (MEM-2)
+# $PROJECT_HOME/../../src/27X27Ram.cpp(7): I/O-Port inferred - resource 'data_in:rsc' (from var: data_in) mapped to 'mgc_ioport.mgc_in_wire' (size: 3). (MEM-2)
+# $PROJECT_HOME/../../src/27X27Ram.cpp(7): I/O-Port inferred - resource 'data_out:rsc' (from var: data_out) mapped to 'mgc_ioport.mgc_out_stdreg' (size: 3). (MEM-2)
+# $PROJECT_HOME/../../src/27X27Ram.cpp(5): Memory inferred - resource 'data:rsc' (from var: data) mapped to 'ram_Altera-Cyclone-III-6_RAMSB.singleport' (size: 729 x 3). (MEM-4)
+# Info: Optimizing partition '/RAMBlock': (Total ops = 20, Real ops = 5, Vars = 12) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/core': (Total ops = 20, Real ops = 5, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/core': (Total ops = 29, Real ops = 5, Vars = 7) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/core': (Total ops = 26, Real ops = 5, Vars = 6) (SOL-10)
+# Info: Optimizing partition '/RAMBlock': (Total ops = 26, Real ops = 5, Vars = 13) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/core': (Total ops = 26, Real ops = 5, Vars = 6) (SOL-10)
+# Info: Optimizing partition '/RAMBlock': (Total ops = 26, Real ops = 5, Vars = 13) (SOL-10)
+# Info: Optimizing partition '/RAMBlock': (Total ops = 26, Real ops = 5, Vars = 13) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/core': (Total ops = 26, Real ops = 5, Vars = 6) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/core': (Total ops = 67, Real ops = 7, Vars = 31) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/core': (Total ops = 26, Real ops = 6, Vars = 6) (SOL-10)
+# Design 'RAMBlock' contains '6' real operations. (SOL-11)
+# Info: Completed transformation 'architect' on solution 'RAMBlock.v1': elapsed time 0.48 seconds, memory usage 156100kB, peak memory usage 175284kB (SOL-9)
+# Info: Starting transformation 'allocate' on solution 'RAMBlock.v1' (SOL-8)
+# Performing concurrent resource allocation and scheduling on '/RAMBlock/core' (CRAAS-1)
+# Info: Select qualified components for data operations ... (CRAAS-3)
+# Info: Apply resource constraints on data operations ... (CRAAS-4)
+# $PROJECT_HOME/../../src/27X27Ram.cpp(7): Prescheduled LOOP 'main' (3 c-steps) (SCHD-7)
+# $PROJECT_HOME/../../src/27X27Ram.cpp(9): Prescheduled LOOP 'data:vinit' (2 c-steps) (SCHD-7)
+# $PROJECT_HOME/../../src/27X27Ram.cpp(7): Prescheduled LOOP 'core:rlp' (1 c-steps) (SCHD-7)
+# $PROJECT_HOME/../../src/27X27Ram.cpp(7): Prescheduled SEQUENTIAL 'core' (total length 1462 c-steps) (SCHD-8)
+# Info: Initial schedule of SEQUENTIAL 'core': Latency = 2, Area (Datapath, Register, Total) = 355.27, 0.00, 355.27 (CRAAS-11)
+# At least one feasible schedule exists. (CRAAS-9)
+# Info: Final schedule of SEQUENTIAL 'core': Latency = 2, Area (Datapath, Register, Total) = 355.27, 0.00, 355.27 (CRAAS-12)
+# Resource allocation and scheduling done. (CRAAS-2)
+# Netlist written to file 'schedule.gnt' (NET-4)
+# Info: Completed transformation 'allocate' on solution 'RAMBlock.v1': elapsed time 0.11 seconds, memory usage 156100kB, peak memory usage 175284kB (SOL-9)
+# Info: Starting transformation 'schedule' on solution 'RAMBlock.v1' (SOL-8)
+# Performing concurrent resource allocation and scheduling on '/RAMBlock/core' (CRAAS-1)
+# Global signal 'row:rsc.z' added to design 'RAMBlock' for component 'row:rsc:mgc_in_wire' (LIB-3)
+# Global signal 'col:rsc.z' added to design 'RAMBlock' for component 'col:rsc:mgc_in_wire' (LIB-3)
+# Global signal 'write_en:rsc.z' added to design 'RAMBlock' for component 'write_en:rsc:mgc_in_wire' (LIB-3)
+# Global signal 'data_in:rsc.z' added to design 'RAMBlock' for component 'data_in:rsc:mgc_in_wire' (LIB-3)
+# Global signal 'data_out:rsc.z' added to design 'RAMBlock' for component 'data_out:rsc:mgc_out_stdreg' (LIB-3)
+# Info: Optimizing partition '/RAMBlock': (Total ops = 124, Real ops = 10, Vars = 52) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core': (Total ops = 90, Real ops = 9, Vars = 32) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core/core': (Total ops = 78, Real ops = 9, Vars = 20) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core/core': (Total ops = 57, Real ops = 5, Vars = 6) (SOL-10)
+# Info: Optimizing partition '/RAMBlock': (Total ops = 102, Real ops = 5, Vars = 35) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core': (Total ops = 69, Real ops = 5, Vars = 18) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core/core': (Total ops = 57, Real ops = 5, Vars = 6) (SOL-10)
+# Info: Optimizing partition '/RAMBlock': (Total ops = 100, Real ops = 5, Vars = 35) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core': (Total ops = 69, Real ops = 5, Vars = 18) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core/core': (Total ops = 57, Real ops = 5, Vars = 6) (SOL-10)
+# Info: Optimizing partition '/RAMBlock': (Total ops = 100, Real ops = 5, Vars = 35) (SOL-10)
+# Report written to file 'cycle.rpt'
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core/core': (Total ops = 85, Real ops = 7, Vars = 14) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core/core': (Total ops = 71, Real ops = 7, Vars = 10) (SOL-10)
+# Info: Optimizing partition '/RAMBlock': (Total ops = 118, Real ops = 7, Vars = 43) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core': (Total ops = 87, Real ops = 7, Vars = 26) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core/core': (Total ops = 71, Real ops = 7, Vars = 10) (SOL-10)
+# Info: Optimizing partition '/RAMBlock': (Total ops = 118, Real ops = 7, Vars = 43) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core': (Total ops = 87, Real ops = 7, Vars = 26) (SOL-10)
+# Netlist written to file 'cycle.v' (NET-4)
+# Info: Completed transformation 'schedule' on solution 'RAMBlock.v1': elapsed time 0.73 seconds, memory usage 160032kB, peak memory usage 177488kB (SOL-9)
+# Info: Starting transformation 'dpfsm' on solution 'RAMBlock.v1' (SOL-8)
+# Performing FSM extraction... (FSM-1)
+# Info: Optimizing partition '/RAMBlock': (Total ops = 146, Real ops = 33, Vars = 104) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core': (Total ops = 115, Real ops = 33, Vars = 87) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core/RAMBlock:core:fsm': (Total ops = 8, Real ops = 3, Vars = 7) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core/RAMBlock:core:fsm/RAMBlock:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/RAMBlock': (Total ops = 130, Real ops = 29, Vars = 40) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core': (Total ops = 99, Real ops = 29, Vars = 23) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core/RAMBlock:core:fsm': (Total ops = 7, Real ops = 3, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core/RAMBlock:core:fsm/RAMBlock:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/RAMBlock': (Total ops = 93, Real ops = 24, Vars = 40) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core': (Total ops = 62, Real ops = 24, Vars = 23) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core/RAMBlock:core:fsm': (Total ops = 7, Real ops = 3, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core/RAMBlock:core:fsm/RAMBlock:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/RAMBlock': (Total ops = 93, Real ops = 24, Vars = 40) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core': (Total ops = 62, Real ops = 24, Vars = 23) (SOL-10)
+# Info: Optimizing partition '/RAMBlock': (Total ops = 95, Real ops = 21, Vars = 46) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core': (Total ops = 64, Real ops = 21, Vars = 29) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core/RAMBlock:core:fsm': (Total ops = 7, Real ops = 3, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core/RAMBlock:core:fsm/RAMBlock:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/RAMBlock': (Total ops = 91, Real ops = 21, Vars = 42) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core': (Total ops = 60, Real ops = 21, Vars = 25) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core/RAMBlock:core:fsm': (Total ops = 7, Real ops = 3, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core': (Total ops = 60, Real ops = 21, Vars = 25) (SOL-10)
+# Info: Optimizing partition '/RAMBlock': (Total ops = 91, Real ops = 21, Vars = 42) (SOL-10)
+# Info: Optimizing partition '/RAMBlock': (Total ops = 91, Real ops = 21, Vars = 42) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core': (Total ops = 60, Real ops = 21, Vars = 25) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core/RAMBlock:core:fsm': (Total ops = 7, Real ops = 3, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core/RAMBlock:core:fsm/RAMBlock:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/RAMBlock': (Total ops = 91, Real ops = 21, Vars = 42) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core': (Total ops = 60, Real ops = 21, Vars = 25) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core/RAMBlock:core:fsm': (Total ops = 7, Real ops = 3, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core/RAMBlock:core:fsm/RAMBlock:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Completed transformation 'dpfsm' on solution 'RAMBlock.v1': elapsed time 0.17 seconds, memory usage 160032kB, peak memory usage 177488kB (SOL-9)
+# Info: Starting transformation 'extract' on solution 'RAMBlock.v1' (SOL-8)
+# Info: Optimizing partition '/RAMBlock': (Total ops = 101, Real ops = 27, Vars = 78) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core': (Total ops = 70, Real ops = 27, Vars = 61) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core/RAMBlock:core:fsm': (Total ops = 7, Real ops = 3, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core/RAMBlock:core:fsm/RAMBlock:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/RAMBlock': (Total ops = 89, Real ops = 20, Vars = 41) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core': (Total ops = 58, Real ops = 20, Vars = 24) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core/RAMBlock:core:fsm': (Total ops = 7, Real ops = 3, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core/RAMBlock:core:fsm/RAMBlock:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/RAMBlock': (Total ops = 89, Real ops = 20, Vars = 41) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core': (Total ops = 58, Real ops = 20, Vars = 24) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core/RAMBlock:core:fsm': (Total ops = 7, Real ops = 3, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core': (Total ops = 58, Real ops = 20, Vars = 24) (SOL-10)
+# Info: Optimizing partition '/RAMBlock': (Total ops = 89, Real ops = 20, Vars = 41) (SOL-10)
+# Info: Optimizing partition '/RAMBlock': (Total ops = 89, Real ops = 20, Vars = 41) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core': (Total ops = 58, Real ops = 20, Vars = 24) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core/RAMBlock:core:fsm': (Total ops = 7, Real ops = 3, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core/RAMBlock:core:fsm/RAMBlock:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/RAMBlock': (Total ops = 89, Real ops = 20, Vars = 41) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core': (Total ops = 58, Real ops = 20, Vars = 24) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core/RAMBlock:core:fsm': (Total ops = 7, Real ops = 3, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core/RAMBlock:core:fsm/RAMBlock:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/RAMBlock': (Total ops = 97, Real ops = 25, Vars = 74) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core': (Total ops = 66, Real ops = 25, Vars = 57) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core/RAMBlock:core:fsm': (Total ops = 6, Real ops = 2, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core/RAMBlock:core:fsm/RAMBlock:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Netlist written to file 'schematic.nlv' (NET-4)
+# Info: Optimizing partition '/RAMBlock': (Total ops = 97, Real ops = 25, Vars = 74) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core': (Total ops = 66, Real ops = 25, Vars = 57) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core/RAMBlock:core:fsm': (Total ops = 7, Real ops = 3, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core/RAMBlock:core:fsm/RAMBlock:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/RAMBlock': (Total ops = 89, Real ops = 20, Vars = 41) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core': (Total ops = 58, Real ops = 20, Vars = 24) (SOL-10)
+# Info: Optimizing partition '/RAMBlock': (Total ops = 89, Real ops = 20, Vars = 41) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core': (Total ops = 58, Real ops = 20, Vars = 24) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core/RAMBlock:core:fsm': (Total ops = 7, Real ops = 3, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/RAMBlock/RAMBlock:core/RAMBlock:core:fsm/RAMBlock:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Report written to file 'rtl.rpt'
+# Netlist written to file 'rtl.v' (NET-4)
+# generate concat
+# order file name is: rtl.v_order.txt
+# Add dependent file: ./rtl_mgc_ioport.v
+# Add dependent file: ./rtl_mgc_ioport_v2001.v
+# Add dependent file: C:/PROGRA~1/CALYPT~1/CATAPU~1.126/Mgc_home/pkgs/hls_pkgs/mgc_comps_src/mgc_generic_reg_beh.v
+# Add dependent file: C:/PROGRA~1/CALYPT~1/CATAPU~1.126/Mgc_home/pkgs/siflibs/ram_singleport_be_fpga.v
+# Add dependent file: ./rtl.v
+# Finished writing concatenated file: //icnas2.cc.ic.ac.uk/kjr115/Project/Musca/Game Engine/catapult_projects/27x27RAM/27X27Ram/RAMBlock.v1/concat_rtl.v
+# Synthesis timing script written to file './rtl.v.psr_timing'
+# IO timing constraints written to synthesis script file
+# Synthesis script written to file 'rtl.v.psr'
+# Info: Completed transformation 'extract' on solution 'RAMBlock.v1': elapsed time 0.91 seconds, memory usage 160032kB, peak memory usage 177488kB (SOL-9)

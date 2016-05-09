@@ -5,7 +5,7 @@
 #define COLOUR_WIDTH 4
 #define PIXEL_WIDTH COLOUR_WIDTH * 3
 
-void Counter(ac_int<5, false>*row_count, ac_int<5, false>*col_count){
+void Counter(ac_int<5, false>*row_count, ac_int<5, false>*col_count, ac_int<11, false>*frame_row, ac_int<11, false>*frame_col){
     
     for( int i = 0; i < ROWS; i++){
         

@@ -4,11 +4,8 @@
 //SIZE definitions
 #define ROWS 64
 #define COLS 64
-<<<<<<< HEAD
 #define SCREEN_WIDTH 1280
 #define SCREEN_HEIGHT 1024
-=======
->>>>>>> 21f8c019cfcc156e4944f9613ccca946cadd2478
 #define CELL_SIZE 15
 
 

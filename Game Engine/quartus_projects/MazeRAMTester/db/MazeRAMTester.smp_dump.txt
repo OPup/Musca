@@ -1,17 +1,8 @@
 
-State Machine - |MazeRAMTester|MazeArrayTester:inst|MazeArrayTester_core:MazeArrayTester_core_inst|MazeArrayTester_core_fsm:MazeArrayTester_core_fsm_inst|state_var
+State Machine - |MazeRAMTester|MazeArrayTester:inst7|MazeArrayTester_core:MazeArrayTester_core_inst|MazeArrayTester_core_fsm:MazeArrayTester_core_fsm_inst|state_var
 Name state_var.st_if_for_for_1 state_var.st_if_for_for state_var.st_main state_var.st_core_rlp state_var.st_if_for 
 state_var.st_core_rlp 0 0 0 0 0 
 state_var.st_main 0 0 1 1 0 
 state_var.st_if_for_for 0 1 0 1 0 
 state_var.st_if_for_for_1 1 0 0 1 0 
 state_var.st_if_for 0 0 0 1 1 
-
-State Machine - |MazeRAMTester|MazeMemory:inst1|MazeMemory_core:MazeMemory_core_inst|MazeMemory_core_fsm:MazeMemory_core_fsm_inst|state_var
-Name state_var.st_main_2 state_var.st_main_1 state_var.st_main state_var.st_maze_vinit_1 state_var.st_maze_vinit state_var.st_core_rlp 
-state_var.st_core_rlp 0 0 0 0 0 0 
-state_var.st_maze_vinit 0 0 0 0 1 1 
-state_var.st_maze_vinit_1 0 0 0 1 0 1 
-state_var.st_main 0 0 1 0 0 1 
-state_var.st_main_1 0 1 0 0 0 1 
-state_var.st_main_2 1 0 0 0 0 1 
