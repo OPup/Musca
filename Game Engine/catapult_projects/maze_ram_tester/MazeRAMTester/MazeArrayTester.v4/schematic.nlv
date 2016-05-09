@@ -1,0 +1,846 @@
+
+# Program: Catapult University Version
+# Version: 2011a.126
+#    File: Nlview netlist
+
+module new "MazeArrayTester:core:fsm" "orig"
+load port {clk} input -attr xrf 3500 -attr oid 1 -attr @path {/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm/clk}
+load port {rst} input -attr xrf 3501 -attr oid 2 -attr @path {/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm/rst}
+load portBus {fsm_output(4:0)} output 5 {fsm_output(4)} {fsm_output(3)} {fsm_output(2)} {fsm_output(1)} {fsm_output(0)} -attr xrf 3502 -attr oid 3 -attr @path {/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm/fsm_output}
+load port {st(main)_tr0} input -attr @path {/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm/st(main)_tr0}
+load port {st(if:for:for)#1_tr0} input -attr @path {/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm/st(if:for:for)#1_tr0}
+load port {st(if:for)_tr0} input -attr @path {/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm/st(if:for)_tr0}
+load net {clk} -attr xrf 3503 -attr oid 4
+load net {clk} -port {clk} -attr xrf 3504 -attr oid 5
+load net {rst} -attr xrf 3505 -attr oid 6
+load net {rst} -port {rst} -attr xrf 3506 -attr oid 7
+load net {fsm_output(0)} -attr vt d
+load net {fsm_output(1)} -attr vt d
+load net {fsm_output(2)} -attr vt d
+load net {fsm_output(3)} -attr vt d
+load net {fsm_output(4)} -attr vt d
+load netBundle {fsm_output} 5 {fsm_output(0)} {fsm_output(1)} {fsm_output(2)} {fsm_output(3)} {fsm_output(4)} -attr xrf 3507 -attr oid 8 -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm/fsm_output}
+load net {fsm_output(0)} -port {fsm_output(0)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm/fsm_output}
+load net {fsm_output(1)} -port {fsm_output(1)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm/fsm_output}
+load net {fsm_output(2)} -port {fsm_output(2)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm/fsm_output}
+load net {fsm_output(3)} -port {fsm_output(3)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm/fsm_output}
+load net {fsm_output(4)} -port {fsm_output(4)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm/fsm_output}
+load net {st(main)_tr0} -attr vt d
+load net {st(main)_tr0} -port {st(main)_tr0}
+load net {st(if:for:for)#1_tr0} -attr vt d
+load net {st(if:for:for)#1_tr0} -port {st(if:for:for)#1_tr0}
+load net {st(if:for)_tr0} -attr vt d
+load net {st(if:for)_tr0} -port {st(if:for)_tr0}
+### END MODULE 
+
+module new "MazeArrayTester:core" "orig"
+load port {clk} input -attr xrf 3508 -attr oid 9 -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/clk}
+load port {rst} input -attr xrf 3509 -attr oid 10 -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/rst}
+load portBus {row:rsc:mgc_out_stdreg.d(5:0)} output 6 {row:rsc:mgc_out_stdreg.d(5)} {row:rsc:mgc_out_stdreg.d(4)} {row:rsc:mgc_out_stdreg.d(3)} {row:rsc:mgc_out_stdreg.d(2)} {row:rsc:mgc_out_stdreg.d(1)} {row:rsc:mgc_out_stdreg.d(0)} -attr xrf 3510 -attr oid 11 -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/row:rsc:mgc_out_stdreg.d}
+load portBus {col:rsc:mgc_out_stdreg.d(5:0)} output 6 {col:rsc:mgc_out_stdreg.d(5)} {col:rsc:mgc_out_stdreg.d(4)} {col:rsc:mgc_out_stdreg.d(3)} {col:rsc:mgc_out_stdreg.d(2)} {col:rsc:mgc_out_stdreg.d(1)} {col:rsc:mgc_out_stdreg.d(0)} -attr xrf 3511 -attr oid 12 -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/col:rsc:mgc_out_stdreg.d}
+load portBus {out:rsc:mgc_out_stdreg.d(3:0)} output 4 {out:rsc:mgc_out_stdreg.d(3)} {out:rsc:mgc_out_stdreg.d(2)} {out:rsc:mgc_out_stdreg.d(1)} {out:rsc:mgc_out_stdreg.d(0)} -attr xrf 3512 -attr oid 13 -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/out:rsc:mgc_out_stdreg.d}
+load port {write:rsc:mgc_out_stdreg.d} output -attr xrf 3513 -attr oid 14 -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/write:rsc:mgc_out_stdreg.d}
+load symbol "mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(6,0,5,0,6)" "INTERFACE" RTL(+) boxcolor 0 \
+     portBus {a(5:0)} input 6 {a(5)} {a(4)} {a(3)} {a(2)} {a(1)} {a(0)} \
+     portBus {b(4:0)} input 5 {b(4)} {b(3)} {b(2)} {b(1)} {b(0)} \
+     portBus {z(5:0)} output 6 {z(5)} {z(4)} {z(3)} {z(2)} {z(1)} {z(0)} \
+
+load symbol "mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(5,0,2,1,5)" "INTERFACE" RTL(+) boxcolor 0 \
+     portBus {a(4:0)} input 5 {a(4)} {a(3)} {a(2)} {a(1)} {a(0)} \
+     portBus {b(1:0)} input 2 {b(1)} {b(0)} \
+     portBus {z(4:0)} output 5 {z(4)} {z(3)} {z(2)} {z(1)} {z(0)} \
+
+load symbol "MazeArrayTester:core:fsm" "orig" GEN \
+     port {clk#1} input \
+     port {rst#1} input \
+     portBus {fsm_output(4:0)} output 5 {fsm_output(4)} {fsm_output(3)} {fsm_output(2)} {fsm_output(1)} {fsm_output(0)} \
+     port {st(main)_tr0} input \
+     port {st(if:for:for)#1_tr0} input \
+     port {st(if:for)_tr0} input \
+
+load symbol "and(2,1)" "INTERFACE" AND boxcolor 0 \
+     portBus {A0(0:0)} input 1 {A0(0)} \
+     portBus {A1(0:0)} input 1 {A1(0)} \
+     portBus {Z(0:0)} output 1 {Z(0)} \
+
+load symbol "not(1)" "INTERFACE" INV boxcolor 0 \
+     portBus {A(0:0)} input 1 {A(0)} \
+     portBus {Z(0:0)} output 1 {Z(0)} \
+
+load symbol "nor(2,1)" "INTERFACE" NOR boxcolor 0 \
+     portBus {A0(0:0)} input 1 {A0(0)} \
+     portBus {A1(0:0)} input 1 {A1(0)} \
+     portBus {Z(0:0)} output 1 {Z(0)} \
+
+load symbol "or(2,1)" "INTERFACE" OR boxcolor 0 \
+     portBus {A0(0:0)} input 1 {A0(0)} \
+     portBus {A1(0:0)} input 1 {A1(0)} \
+     portBus {Z(0:0)} output 1 {Z(0)} \
+
+load symbol "reg(1,1,0,0,1)" "INTERFACE" GEN boxcolor 1 \
+     portBus {D(0:0)} input 1 {D(0)} \
+     portBus {DRs(0:0)} input 1 {DRs(0)} \
+     port {clk} input.clk \
+     portBus {Rs(0:0)} input 1 {Rs(0)} \
+     portBus {Z(0:0)} output 1 {Z(0)} \
+
+load symbol "nand(4,1)" "INTERFACE" NAND boxcolor 0 \
+     portBus {A0(0:0)} input 1 {A0(0)} \
+     portBus {A1(0:0)} input 1 {A1(0)} \
+     portBus {A2(0:0)} input 1 {A2(0)} \
+     portBus {A3(0:0)} input 1 {A3(0)} \
+     portBus {Z(0:0)} output 1 {Z(0)} \
+
+load symbol "or(5,1)" "INTERFACE" OR boxcolor 0 \
+     portBus {A0(0:0)} input 1 {A0(0)} \
+     portBus {A1(0:0)} input 1 {A1(0)} \
+     portBus {A2(0:0)} input 1 {A2(0)} \
+     portBus {A3(0:0)} input 1 {A3(0)} \
+     portBus {A4(0:0)} input 1 {A4(0)} \
+     portBus {Z(0:0)} output 1 {Z(0)} \
+
+load symbol "nand(2,1)" "INTERFACE" NAND boxcolor 0 \
+     portBus {A0(0:0)} input 1 {A0(0)} \
+     portBus {A1(0:0)} input 1 {A1(0)} \
+     portBus {Z(0:0)} output 1 {Z(0)} \
+
+load symbol "mux(2,4)" "INTERFACE" MUX boxcolor 0 \
+     portBus {A0(3:0)} input 4 {A0(3)} {A0(2)} {A0(1)} {A0(0)} \
+     portBus {A1(3:0)} input 4 {A1(3)} {A1(2)} {A1(1)} {A1(0)} \
+     portBus {S(0:0)} input.top 1 {S(0)} \
+     portBus {Z(3:0)} output 4 {Z(3)} {Z(2)} {Z(1)} {Z(0)} \
+
+load symbol "reg(4,1,0,0,1)" "INTERFACE" GEN boxcolor 1 \
+     portBus {D(3:0)} input 4 {D(3)} {D(2)} {D(1)} {D(0)} \
+     portBus {DRs(3:0)} input 4 {DRs(3)} {DRs(2)} {DRs(1)} {DRs(0)} \
+     port {clk} input.clk \
+     portBus {Rs(0:0)} input 1 {Rs(0)} \
+     portBus {Z(3:0)} output 4 {Z(3)} {Z(2)} {Z(1)} {Z(0)} \
+
+load symbol "and(3,1)" "INTERFACE" AND boxcolor 0 \
+     portBus {A0(0:0)} input 1 {A0(0)} \
+     portBus {A1(0:0)} input 1 {A1(0)} \
+     portBus {A2(0:0)} input 1 {A2(0)} \
+     portBus {Z(0:0)} output 1 {Z(0)} \
+
+load symbol "and(2,5)" "INTERFACE" AND boxcolor 0 \
+     portBus {A0(4:0)} input 5 {A0(4)} {A0(3)} {A0(2)} {A0(1)} {A0(0)} \
+     portBus {A1(4:0)} input 5 {A1(4)} {A1(3)} {A1(2)} {A1(1)} {A1(0)} \
+     portBus {Z(4:0)} output 5 {Z(4)} {Z(3)} {Z(2)} {Z(1)} {Z(0)} \
+
+load symbol "mux(2,6)" "INTERFACE" MUX boxcolor 0 \
+     portBus {A0(5:0)} input 6 {A0(5)} {A0(4)} {A0(3)} {A0(2)} {A0(1)} {A0(0)} \
+     portBus {A1(5:0)} input 6 {A1(5)} {A1(4)} {A1(3)} {A1(2)} {A1(1)} {A1(0)} \
+     portBus {S(0:0)} input.top 1 {S(0)} \
+     portBus {Z(5:0)} output 6 {Z(5)} {Z(4)} {Z(3)} {Z(2)} {Z(1)} {Z(0)} \
+
+load symbol "reg(6,1,0,0,1)" "INTERFACE" GEN boxcolor 1 \
+     portBus {D(5:0)} input 6 {D(5)} {D(4)} {D(3)} {D(2)} {D(1)} {D(0)} \
+     portBus {DRs(5:0)} input 6 {DRs(5)} {DRs(4)} {DRs(3)} {DRs(2)} {DRs(1)} {DRs(0)} \
+     port {clk} input.clk \
+     portBus {Rs(0:0)} input 1 {Rs(0)} \
+     portBus {Z(5:0)} output 6 {Z(5)} {Z(4)} {Z(3)} {Z(2)} {Z(1)} {Z(0)} \
+
+load symbol "mux(2,5)" "INTERFACE" MUX boxcolor 0 \
+     portBus {A0(4:0)} input 5 {A0(4)} {A0(3)} {A0(2)} {A0(1)} {A0(0)} \
+     portBus {A1(4:0)} input 5 {A1(4)} {A1(3)} {A1(2)} {A1(1)} {A1(0)} \
+     portBus {S(0:0)} input.top 1 {S(0)} \
+     portBus {Z(4:0)} output 5 {Z(4)} {Z(3)} {Z(2)} {Z(1)} {Z(0)} \
+
+load symbol "reg(5,1,0,0,1)" "INTERFACE" GEN boxcolor 1 \
+     portBus {D(4:0)} input 5 {D(4)} {D(3)} {D(2)} {D(1)} {D(0)} \
+     portBus {DRs(4:0)} input 5 {DRs(4)} {DRs(3)} {DRs(2)} {DRs(1)} {DRs(0)} \
+     port {clk} input.clk \
+     portBus {Rs(0:0)} input 1 {Rs(0)} \
+     portBus {Z(4:0)} output 5 {Z(4)} {Z(3)} {Z(2)} {Z(1)} {Z(0)} \
+
+load net {if:for:i#1.sva(0)} -attr vt d
+load net {if:for:i#1.sva(1)} -attr vt d
+load net {if:for:i#1.sva(2)} -attr vt d
+load net {if:for:i#1.sva(3)} -attr vt d
+load net {if:for:i#1.sva(4)} -attr vt d
+load netBundle {if:for:i#1.sva} 5 {if:for:i#1.sva(0)} {if:for:i#1.sva(1)} {if:for:i#1.sva(2)} {if:for:i#1.sva(3)} {if:for:i#1.sva(4)} -attr xrf 3514 -attr oid 15 -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:i#1.sva}
+load net {if:for:for:j#1.sva(0)} -attr vt d
+load net {if:for:for:j#1.sva(1)} -attr vt d
+load net {if:for:for:j#1.sva(2)} -attr vt d
+load net {if:for:for:j#1.sva(3)} -attr vt d
+load net {if:for:for:j#1.sva(4)} -attr vt d
+load netBundle {if:for:for:j#1.sva} 5 {if:for:for:j#1.sva(0)} {if:for:for:j#1.sva(1)} {if:for:for:j#1.sva(2)} {if:for:for:j#1.sva(3)} {if:for:for:j#1.sva(4)} -attr xrf 3515 -attr oid 16 -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:j#1.sva}
+load net {if:for:for:j#1.sva#1(0)} -attr vt d
+load net {if:for:for:j#1.sva#1(1)} -attr vt d
+load net {if:for:for:j#1.sva#1(2)} -attr vt d
+load net {if:for:for:j#1.sva#1(3)} -attr vt d
+load net {if:for:for:j#1.sva#1(4)} -attr vt d
+load netBundle {if:for:for:j#1.sva#1} 5 {if:for:for:j#1.sva#1(0)} {if:for:for:j#1.sva#1(1)} {if:for:for:j#1.sva#1(2)} {if:for:for:j#1.sva#1(3)} {if:for:for:j#1.sva#1(4)} -attr xrf 3516 -attr oid 17 -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:j#1.sva#1}
+load net {z.out#1(0)} -attr vt d
+load net {z.out#1(1)} -attr vt d
+load net {z.out#1(2)} -attr vt d
+load net {z.out#1(3)} -attr vt d
+load net {z.out#1(4)} -attr vt d
+load netBundle {z.out#1} 5 {z.out#1(0)} {z.out#1(1)} {z.out#1(2)} {z.out#1(3)} {z.out#1(4)} -attr xrf 3517 -attr oid 18 -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/z.out#1}
+load net {and#14.cse(0)} -attr vt d
+load net {and#14.cse(1)} -attr vt d
+load net {and#14.cse(2)} -attr vt d
+load net {and#14.cse(3)} -attr vt d
+load net {and#14.cse(4)} -attr vt d
+load netBundle {and#14.cse} 5 {and#14.cse(0)} {and#14.cse(1)} {and#14.cse(2)} {and#14.cse(3)} {and#14.cse(4)} -attr xrf 3518 -attr oid 19 -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/and#14.cse}
+load net {and#13.cse(0)} -attr vt d
+load net {and#13.cse(1)} -attr vt d
+load net {and#13.cse(2)} -attr vt d
+load net {and#13.cse(3)} -attr vt d
+load net {and#13.cse(4)} -attr vt d
+load netBundle {and#13.cse} 5 {and#13.cse(0)} {and#13.cse(1)} {and#13.cse(2)} {and#13.cse(3)} {and#13.cse(4)} -attr xrf 3519 -attr oid 20 -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/and#13.cse}
+load net {mux.itm(0)} -attr vt d
+load net {mux.itm(1)} -attr vt d
+load net {mux.itm(2)} -attr vt d
+load net {mux.itm(3)} -attr vt d
+load netBundle {mux.itm} 4 {mux.itm(0)} {mux.itm(1)} {mux.itm(2)} {mux.itm(3)} -attr xrf 3520 -attr oid 21 -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/mux.itm}
+load net {conc.itm(0)} -attr vt d
+load net {conc.itm(1)} -attr vt d
+load net {conc.itm(2)} -attr vt d
+load net {conc.itm(3)} -attr vt d
+load netBundle {conc.itm} 4 {conc.itm(0)} {conc.itm(1)} {conc.itm(2)} {conc.itm(3)} -attr xrf 3521 -attr oid 22 -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/conc.itm}
+load net {exs.itm(0)} -attr vt d
+load net {exs.itm(1)} -attr vt d
+load net {exs.itm(2)} -attr vt d
+load net {exs.itm(3)} -attr vt d
+load net {exs.itm(4)} -attr vt d
+load netBundle {exs.itm} 5 {exs.itm(0)} {exs.itm(1)} {exs.itm(2)} {exs.itm(3)} {exs.itm(4)} -attr xrf 3522 -attr oid 23 -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/exs.itm}
+load net {mux#1.itm(0)} -attr vt d
+load net {mux#1.itm(1)} -attr vt d
+load net {mux#1.itm(2)} -attr vt d
+load net {mux#1.itm(3)} -attr vt d
+load net {mux#1.itm(4)} -attr vt d
+load net {mux#1.itm(5)} -attr vt d
+load netBundle {mux#1.itm} 6 {mux#1.itm(0)} {mux#1.itm(1)} {mux#1.itm(2)} {mux#1.itm(3)} {mux#1.itm(4)} {mux#1.itm(5)} -attr xrf 3523 -attr oid 24 -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#1.itm}
+load net {conc#23.itm(0)} -attr vt d
+load net {conc#23.itm(1)} -attr vt d
+load net {conc#23.itm(2)} -attr vt d
+load net {conc#23.itm(3)} -attr vt d
+load net {conc#23.itm(4)} -attr vt d
+load net {conc#23.itm(5)} -attr vt d
+load netBundle {conc#23.itm} 6 {conc#23.itm(0)} {conc#23.itm(1)} {conc#23.itm(2)} {conc#23.itm(3)} {conc#23.itm(4)} {conc#23.itm(5)} -attr xrf 3524 -attr oid 25 -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/conc#23.itm}
+load net {mux#6.itm(0)} -attr vt d
+load net {mux#6.itm(1)} -attr vt d
+load net {mux#6.itm(2)} -attr vt d
+load net {mux#6.itm(3)} -attr vt d
+load net {mux#6.itm(4)} -attr vt d
+load netBundle {mux#6.itm} 5 {mux#6.itm(0)} {mux#6.itm(1)} {mux#6.itm(2)} {mux#6.itm(3)} {mux#6.itm(4)} -attr xrf 3525 -attr oid 26 -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#6.itm}
+load net {exs#1.itm(0)} -attr vt d
+load net {exs#1.itm(1)} -attr vt d
+load net {exs#1.itm(2)} -attr vt d
+load net {exs#1.itm(3)} -attr vt d
+load net {exs#1.itm(4)} -attr vt d
+load netBundle {exs#1.itm} 5 {exs#1.itm(0)} {exs#1.itm(1)} {exs#1.itm(2)} {exs#1.itm(3)} {exs#1.itm(4)} -attr xrf 3526 -attr oid 27 -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/exs#1.itm}
+load net {mux#2.itm(0)} -attr vt d
+load net {mux#2.itm(1)} -attr vt d
+load net {mux#2.itm(2)} -attr vt d
+load net {mux#2.itm(3)} -attr vt d
+load net {mux#2.itm(4)} -attr vt d
+load net {mux#2.itm(5)} -attr vt d
+load netBundle {mux#2.itm} 6 {mux#2.itm(0)} {mux#2.itm(1)} {mux#2.itm(2)} {mux#2.itm(3)} {mux#2.itm(4)} {mux#2.itm(5)} -attr xrf 3527 -attr oid 28 -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#2.itm}
+load net {conc#24.itm(0)} -attr vt d
+load net {conc#24.itm(1)} -attr vt d
+load net {conc#24.itm(2)} -attr vt d
+load net {conc#24.itm(3)} -attr vt d
+load net {conc#24.itm(4)} -attr vt d
+load net {conc#24.itm(5)} -attr vt d
+load netBundle {conc#24.itm} 6 {conc#24.itm(0)} {conc#24.itm(1)} {conc#24.itm(2)} {conc#24.itm(3)} {conc#24.itm(4)} {conc#24.itm(5)} -attr xrf 3528 -attr oid 29 -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/conc#24.itm}
+load net {mux#7.itm(0)} -attr vt d
+load net {mux#7.itm(1)} -attr vt d
+load net {mux#7.itm(2)} -attr vt d
+load net {mux#7.itm(3)} -attr vt d
+load net {mux#7.itm(4)} -attr vt d
+load netBundle {mux#7.itm} 5 {mux#7.itm(0)} {mux#7.itm(1)} {mux#7.itm(2)} {mux#7.itm(3)} {mux#7.itm(4)} -attr xrf 3529 -attr oid 30 -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#7.itm}
+load net {clk} -attr xrf 3530 -attr oid 31
+load net {clk} -port {clk} -attr xrf 3531 -attr oid 32
+load net {rst} -attr xrf 3532 -attr oid 33
+load net {rst} -port {rst} -attr xrf 3533 -attr oid 34
+load net {row:rsc:mgc_out_stdreg.d(0)} -attr vt d
+load net {row:rsc:mgc_out_stdreg.d(1)} -attr vt d
+load net {row:rsc:mgc_out_stdreg.d(2)} -attr vt d
+load net {row:rsc:mgc_out_stdreg.d(3)} -attr vt d
+load net {row:rsc:mgc_out_stdreg.d(4)} -attr vt d
+load net {row:rsc:mgc_out_stdreg.d(5)} -attr vt d
+load netBundle {row:rsc:mgc_out_stdreg.d} 6 {row:rsc:mgc_out_stdreg.d(0)} {row:rsc:mgc_out_stdreg.d(1)} {row:rsc:mgc_out_stdreg.d(2)} {row:rsc:mgc_out_stdreg.d(3)} {row:rsc:mgc_out_stdreg.d(4)} {row:rsc:mgc_out_stdreg.d(5)} -attr xrf 3534 -attr oid 35 -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/row:rsc:mgc_out_stdreg.d}
+load net {row:rsc:mgc_out_stdreg.d(0)} -port {row:rsc:mgc_out_stdreg.d(0)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/row:rsc:mgc_out_stdreg.d}
+load net {row:rsc:mgc_out_stdreg.d(1)} -port {row:rsc:mgc_out_stdreg.d(1)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/row:rsc:mgc_out_stdreg.d}
+load net {row:rsc:mgc_out_stdreg.d(2)} -port {row:rsc:mgc_out_stdreg.d(2)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/row:rsc:mgc_out_stdreg.d}
+load net {row:rsc:mgc_out_stdreg.d(3)} -port {row:rsc:mgc_out_stdreg.d(3)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/row:rsc:mgc_out_stdreg.d}
+load net {row:rsc:mgc_out_stdreg.d(4)} -port {row:rsc:mgc_out_stdreg.d(4)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/row:rsc:mgc_out_stdreg.d}
+load net {row:rsc:mgc_out_stdreg.d(5)} -port {row:rsc:mgc_out_stdreg.d(5)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/row:rsc:mgc_out_stdreg.d}
+load net {col:rsc:mgc_out_stdreg.d(0)} -attr vt d
+load net {col:rsc:mgc_out_stdreg.d(1)} -attr vt d
+load net {col:rsc:mgc_out_stdreg.d(2)} -attr vt d
+load net {col:rsc:mgc_out_stdreg.d(3)} -attr vt d
+load net {col:rsc:mgc_out_stdreg.d(4)} -attr vt d
+load net {col:rsc:mgc_out_stdreg.d(5)} -attr vt d
+load netBundle {col:rsc:mgc_out_stdreg.d} 6 {col:rsc:mgc_out_stdreg.d(0)} {col:rsc:mgc_out_stdreg.d(1)} {col:rsc:mgc_out_stdreg.d(2)} {col:rsc:mgc_out_stdreg.d(3)} {col:rsc:mgc_out_stdreg.d(4)} {col:rsc:mgc_out_stdreg.d(5)} -attr xrf 3535 -attr oid 36 -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/col:rsc:mgc_out_stdreg.d}
+load net {col:rsc:mgc_out_stdreg.d(0)} -port {col:rsc:mgc_out_stdreg.d(0)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/col:rsc:mgc_out_stdreg.d}
+load net {col:rsc:mgc_out_stdreg.d(1)} -port {col:rsc:mgc_out_stdreg.d(1)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/col:rsc:mgc_out_stdreg.d}
+load net {col:rsc:mgc_out_stdreg.d(2)} -port {col:rsc:mgc_out_stdreg.d(2)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/col:rsc:mgc_out_stdreg.d}
+load net {col:rsc:mgc_out_stdreg.d(3)} -port {col:rsc:mgc_out_stdreg.d(3)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/col:rsc:mgc_out_stdreg.d}
+load net {col:rsc:mgc_out_stdreg.d(4)} -port {col:rsc:mgc_out_stdreg.d(4)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/col:rsc:mgc_out_stdreg.d}
+load net {col:rsc:mgc_out_stdreg.d(5)} -port {col:rsc:mgc_out_stdreg.d(5)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/col:rsc:mgc_out_stdreg.d}
+load net {out:rsc:mgc_out_stdreg.d(0)} -attr vt d
+load net {out:rsc:mgc_out_stdreg.d(1)} -attr vt d
+load net {out:rsc:mgc_out_stdreg.d(2)} -attr vt d
+load net {out:rsc:mgc_out_stdreg.d(3)} -attr vt d
+load netBundle {out:rsc:mgc_out_stdreg.d} 4 {out:rsc:mgc_out_stdreg.d(0)} {out:rsc:mgc_out_stdreg.d(1)} {out:rsc:mgc_out_stdreg.d(2)} {out:rsc:mgc_out_stdreg.d(3)} -attr xrf 3536 -attr oid 37 -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/out:rsc:mgc_out_stdreg.d}
+load net {out:rsc:mgc_out_stdreg.d(0)} -port {out:rsc:mgc_out_stdreg.d(0)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/out:rsc:mgc_out_stdreg.d}
+load net {out:rsc:mgc_out_stdreg.d(1)} -port {out:rsc:mgc_out_stdreg.d(1)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/out:rsc:mgc_out_stdreg.d}
+load net {out:rsc:mgc_out_stdreg.d(2)} -port {out:rsc:mgc_out_stdreg.d(2)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/out:rsc:mgc_out_stdreg.d}
+load net {out:rsc:mgc_out_stdreg.d(3)} -port {out:rsc:mgc_out_stdreg.d(3)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/out:rsc:mgc_out_stdreg.d}
+load net {write:rsc:mgc_out_stdreg.d} -attr xrf 3537 -attr oid 38 -attr vt d
+load net {write:rsc:mgc_out_stdreg.d} -port {write:rsc:mgc_out_stdreg.d} -attr xrf 3538 -attr oid 39 -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/write:rsc:mgc_out_stdreg.d}
+load inst "MazeArrayTester:core:fsm:inst" "MazeArrayTester:core:fsm" "orig" -attr xrf 3539 -attr oid 40 -attr @path {/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm:inst} -attr area 2.000000 -attr hier "/MazeArrayTester/MazeArrayTester:core/MazeArrayTester:core:fsm" -pg 1 -lvl 3
+load net {clk} -pin  "MazeArrayTester:core:fsm:inst" {clk#1} -attr xrf 3540 -attr oid 41 -attr @path {/MazeArrayTester/MazeArrayTester:core/clk}
+load net {rst} -pin  "MazeArrayTester:core:fsm:inst" {rst#1} -attr xrf 3541 -attr oid 42 -attr @path {/MazeArrayTester/MazeArrayTester:core/rst}
+load net {fsm_output#1(0)} -pin  "MazeArrayTester:core:fsm:inst" {fsm_output(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/fsm_output}
+load net {fsm_output#1(1)} -pin  "MazeArrayTester:core:fsm:inst" {fsm_output(1)} -attr @path {/MazeArrayTester/MazeArrayTester:core/fsm_output}
+load net {fsm_output#1(2)} -pin  "MazeArrayTester:core:fsm:inst" {fsm_output(2)} -attr @path {/MazeArrayTester/MazeArrayTester:core/fsm_output}
+load net {fsm_output#1(3)} -pin  "MazeArrayTester:core:fsm:inst" {fsm_output(3)} -attr @path {/MazeArrayTester/MazeArrayTester:core/fsm_output}
+load net {fsm_output#1(4)} -pin  "MazeArrayTester:core:fsm:inst" {fsm_output(4)} -attr @path {/MazeArrayTester/MazeArrayTester:core/fsm_output}
+load net {written.sva} -pin  "MazeArrayTester:core:fsm:inst" {st(main)_tr0} -attr xrf 3542 -attr oid 43 -attr @path {/MazeArrayTester/MazeArrayTester:core/written.sva}
+load net {not#2.itm} -pin  "MazeArrayTester:core:fsm:inst" {st(if:for:for)#1_tr0} -attr @path {/MazeArrayTester/MazeArrayTester:core/not#2.itm}
+load net {not#3.itm} -pin  "MazeArrayTester:core:fsm:inst" {st(if:for)_tr0} -attr @path {/MazeArrayTester/MazeArrayTester:core/not#3.itm}
+load inst "if:for:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(6_0_5_0_6)" "mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(6,0,5,0,6)" "INTERFACE" -attr xrf 3543 -attr oid 44 -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(6,0,5,0,6)} -attr area 7.279752 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(6,0,5,0,6)"
+load net {PWR} -pin  "if:for:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(6_0_5_0_6)" {a(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/Cn27_6#1}
+load net {GND} -pin  "if:for:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(6_0_5_0_6)" {a(1)} -attr @path {/MazeArrayTester/MazeArrayTester:core/Cn27_6#1}
+load net {PWR} -pin  "if:for:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(6_0_5_0_6)" {a(2)} -attr @path {/MazeArrayTester/MazeArrayTester:core/Cn27_6#1}
+load net {GND} -pin  "if:for:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(6_0_5_0_6)" {a(3)} -attr @path {/MazeArrayTester/MazeArrayTester:core/Cn27_6#1}
+load net {GND} -pin  "if:for:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(6_0_5_0_6)" {a(4)} -attr @path {/MazeArrayTester/MazeArrayTester:core/Cn27_6#1}
+load net {PWR} -pin  "if:for:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(6_0_5_0_6)" {a(5)} -attr @path {/MazeArrayTester/MazeArrayTester:core/Cn27_6#1}
+load net {z.out#1(0)} -pin  "if:for:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(6_0_5_0_6)" {b(0)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/z.out#1}
+load net {z.out#1(1)} -pin  "if:for:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(6_0_5_0_6)" {b(1)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/z.out#1}
+load net {z.out#1(2)} -pin  "if:for:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(6_0_5_0_6)" {b(2)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/z.out#1}
+load net {z.out#1(3)} -pin  "if:for:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(6_0_5_0_6)" {b(3)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/z.out#1}
+load net {z.out#1(4)} -pin  "if:for:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(6_0_5_0_6)" {b(4)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/z.out#1}
+load net {z.out(0)} -pin  "if:for:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(6_0_5_0_6)" {z(0)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/z.out}
+load net {z.out(1)} -pin  "if:for:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(6_0_5_0_6)" {z(1)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/z.out}
+load net {z.out(2)} -pin  "if:for:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(6_0_5_0_6)" {z(2)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/z.out}
+load net {z.out(3)} -pin  "if:for:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(6_0_5_0_6)" {z(3)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/z.out}
+load net {z.out(4)} -pin  "if:for:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(6_0_5_0_6)" {z(4)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/z.out}
+load net {z.out(5)} -pin  "if:for:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(6_0_5_0_6)" {z(5)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/z.out}
+load inst "if:for:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(5_0_2_1_5)" "mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(5,0,2,1,5)" "INTERFACE" -attr xrf 3544 -attr oid 45 -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(5,0,2,1,5)} -attr area 6.000000 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(5,0,2,1,5)"
+load net {mux#7.itm(0)} -pin  "if:for:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(5_0_2_1_5)" {a(0)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#7.itm}
+load net {mux#7.itm(1)} -pin  "if:for:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(5_0_2_1_5)" {a(1)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#7.itm}
+load net {mux#7.itm(2)} -pin  "if:for:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(5_0_2_1_5)" {a(2)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#7.itm}
+load net {mux#7.itm(3)} -pin  "if:for:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(5_0_2_1_5)" {a(3)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#7.itm}
+load net {mux#7.itm(4)} -pin  "if:for:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(5_0_2_1_5)" {a(4)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#7.itm}
+load net {PWR} -pin  "if:for:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(5_0_2_1_5)" {b(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/C1_2}
+load net {GND} -pin  "if:for:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(5_0_2_1_5)" {b(1)} -attr @path {/MazeArrayTester/MazeArrayTester:core/C1_2}
+load net {z.out#1(0)} -pin  "if:for:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(5_0_2_1_5)" {z(0)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/z.out#1}
+load net {z.out#1(1)} -pin  "if:for:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(5_0_2_1_5)" {z(1)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/z.out#1}
+load net {z.out#1(2)} -pin  "if:for:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(5_0_2_1_5)" {z(2)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/z.out#1}
+load net {z.out#1(3)} -pin  "if:for:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(5_0_2_1_5)" {z(3)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/z.out#1}
+load net {z.out#1(4)} -pin  "if:for:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(5_0_2_1_5)" {z(4)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/z.out#1}
+load inst "and#1" "and(2,1)" "INTERFACE" -attr @path {/MazeArrayTester/MazeArrayTester:core/and#1} -attr area 0.730832 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_and(1,2)"
+load net {written.sva} -pin  "and#1" {A0(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/written.sva}
+load net {fsm_output#1(1)} -pin  "and#1" {A1(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/slc(fsm_output)#6.itm}
+load net {and#1.itm} -pin  "and#1" {Z(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/and#1.itm}
+load inst "not#12" "not(1)" "INTERFACE" -attr @path {/MazeArrayTester/MazeArrayTester:core/not#12} -attr area 0.001000 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_not(1)"
+load net {z.out(5)} -pin  "not#12" {A(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:slc#4.itm}
+load net {not#12.itm} -pin  "not#12" {Z(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/not#12.itm}
+load inst "and" "and(2,1)" "INTERFACE" -attr @path {/MazeArrayTester/MazeArrayTester:core/and} -attr area 0.730832 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_and(1,2)"
+load net {fsm_output#1(4)} -pin  "and" {A0(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/slc(fsm_output)#12.itm}
+load net {not#12.itm} -pin  "and" {A1(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/not#12.itm}
+load net {and.itm} -pin  "and" {Z(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/and.itm}
+load inst "nor#3" "nor(2,1)" "INTERFACE" -attr @path {/MazeArrayTester/MazeArrayTester:core/nor#3} -attr area 0.730832 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_nor(1,2)"
+load net {and#1.itm} -pin  "nor#3" {A0(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/and#1.itm}
+load net {and.itm} -pin  "nor#3" {A1(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/and.itm}
+load net {nor#3.itm} -pin  "nor#3" {Z(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/nor#3.itm}
+load inst "and#10" "and(2,1)" "INTERFACE" -attr xrf 3545 -attr oid 46 -attr @path {/MazeArrayTester/MazeArrayTester:core/and#10} -attr area 0.730832 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_and(1,2)"
+load net {write:rsc:mgc_out_stdreg.d} -pin  "and#10" {A0(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/write:rsc:mgc_out_stdreg.d}
+load net {nor#3.itm} -pin  "and#10" {A1(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/nor#3.itm}
+load net {and#10.itm} -pin  "and#10" {Z(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/and#10.itm}
+load inst "or#12" "or(2,1)" "INTERFACE" -attr xrf 3546 -attr oid 47 -attr @path {/MazeArrayTester/MazeArrayTester:core/or#12} -attr area 0.730832 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_or(1,2)"
+load net {and#10.itm} -pin  "or#12" {A0(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/and#10.itm}
+load net {fsm_output#1(0)} -pin  "or#12" {A1(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/slc(fsm_output).itm}
+load net {or#12.itm} -pin  "or#12" {Z(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/or#12.itm}
+load inst "reg(write:rsc:mgc_out_stdreg.d)" "reg(1,1,0,0,1)" "INTERFACE" -attr xrf 3547 -attr oid 48 -attr @path {/MazeArrayTester/MazeArrayTester:core/reg(write:rsc:mgc_out_stdreg.d)}
+load net {or#12.itm} -pin  "reg(write:rsc:mgc_out_stdreg.d)" {D(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/or#12.itm}
+load net {GND} -pin  "reg(write:rsc:mgc_out_stdreg.d)" {DRs(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/C0_1#1}
+load net {clk} -pin  "reg(write:rsc:mgc_out_stdreg.d)" {clk} -attr xrf 3548 -attr oid 49 -attr @path {/MazeArrayTester/MazeArrayTester:core/clk}
+load net {rst} -pin  "reg(write:rsc:mgc_out_stdreg.d)" {Rs(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/rst}
+load net {write:rsc:mgc_out_stdreg.d} -pin  "reg(write:rsc:mgc_out_stdreg.d)" {Z(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/write:rsc:mgc_out_stdreg.d}
+load inst "if:for:for:else:oelse:nor" "nor(2,1)" "INTERFACE" -attr xrf 3549 -attr oid 50 -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:else:oelse:nor} -attr area 0.730832 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_nor(1,2)"
+load net {if:for:i#1.sva(2)} -pin  "if:for:for:else:oelse:nor" {A0(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/slc(if:for:i#1.sva)#7.itm}
+load net {if:for:i#1.sva(0)} -pin  "if:for:for:else:oelse:nor" {A1(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/slc(if:for:i#1.sva)#5.itm}
+load net {if:for:for:else:oelse:nor.itm} -pin  "if:for:for:else:oelse:nor" {Z(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:else:oelse:nor.itm}
+load inst "if:for:for:else:if:nand#1" "nand(4,1)" "INTERFACE" -attr xrf 3550 -attr oid 51 -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:else:if:nand#1} -attr area 1.380120 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_nand(1,4)"
+load net {if:for:i#1.sva(4)} -pin  "if:for:for:else:if:nand#1" {A0(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/slc(if:for:i#1.sva)#9.itm}
+load net {if:for:i#1.sva(3)} -pin  "if:for:for:else:if:nand#1" {A1(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/slc(if:for:i#1.sva)#8.itm}
+load net {if:for:i#1.sva(1)} -pin  "if:for:for:else:if:nand#1" {A2(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/slc(if:for:i#1.sva)#6.itm}
+load net {if:for:for:else:oelse:nor.itm} -pin  "if:for:for:else:if:nand#1" {A3(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:else:oelse:nor.itm}
+load net {if:for:for:else:if:nand#1.itm} -pin  "if:for:for:else:if:nand#1" {Z(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:else:if:nand#1.itm}
+load inst "if:for:for:else:if:or" "or(5,1)" "INTERFACE" -attr xrf 3551 -attr oid 52 -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:else:if:or} -attr area 1.704764 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_or(1,5)"
+load net {if:for:i#1.sva(4)} -pin  "if:for:for:else:if:or" {A0(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/slc(if:for:i#1.sva).itm}
+load net {if:for:i#1.sva(3)} -pin  "if:for:for:else:if:or" {A1(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/slc(if:for:i#1.sva)#1.itm}
+load net {if:for:i#1.sva(2)} -pin  "if:for:for:else:if:or" {A2(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/slc(if:for:i#1.sva)#3.itm}
+load net {if:for:i#1.sva(1)} -pin  "if:for:for:else:if:or" {A3(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/slc(if:for:i#1.sva)#2.itm}
+load net {if:for:i#1.sva(0)} -pin  "if:for:for:else:if:or" {A4(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/slc(if:for:i#1.sva)#4.itm}
+load net {if:for:for:else:if:or.itm} -pin  "if:for:for:else:if:or" {Z(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:else:if:or.itm}
+load inst "if:for:for:else:if:nand" "nand(2,1)" "INTERFACE" -attr xrf 3552 -attr oid 53 -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:else:if:nand} -attr area 0.730832 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_nand(1,2)"
+load net {if:for:for:else:if:nand#1.itm} -pin  "if:for:for:else:if:nand" {A0(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:else:if:nand#1.itm}
+load net {if:for:for:else:if:or.itm} -pin  "if:for:for:else:if:nand" {A1(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:else:if:or.itm}
+load net {if:for:for:else:if:nand.itm} -pin  "if:for:for:else:if:nand" {Z(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:else:if:nand.itm}
+load inst "if:for:for:oelse:nor" "nor(2,1)" "INTERFACE" -attr xrf 3553 -attr oid 54 -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:oelse:nor} -attr area 0.730832 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_nor(1,2)"
+load net {if:for:for:j#1.sva(2)} -pin  "if:for:for:oelse:nor" {A0(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/slc(if:for:for:j#1.sva)#7.itm}
+load net {if:for:for:j#1.sva(0)} -pin  "if:for:for:oelse:nor" {A1(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/slc(if:for:for:j#1.sva)#8.itm}
+load net {if:for:for:oelse:nor.itm} -pin  "if:for:for:oelse:nor" {Z(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:oelse:nor.itm}
+load inst "if:for:for:if:nand#1" "nand(4,1)" "INTERFACE" -attr xrf 3554 -attr oid 55 -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:if:nand#1} -attr area 1.380120 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_nand(1,4)"
+load net {if:for:for:j#1.sva(4)} -pin  "if:for:for:if:nand#1" {A0(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/slc(if:for:for:j#1.sva)#6.itm}
+load net {if:for:for:j#1.sva(3)} -pin  "if:for:for:if:nand#1" {A1(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/slc(if:for:for:j#1.sva)#9.itm}
+load net {if:for:for:j#1.sva(1)} -pin  "if:for:for:if:nand#1" {A2(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/slc(if:for:for:j#1.sva)#5.itm}
+load net {if:for:for:oelse:nor.itm} -pin  "if:for:for:if:nand#1" {A3(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:oelse:nor.itm}
+load net {if:for:for:if:nand#1.itm} -pin  "if:for:for:if:nand#1" {Z(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:if:nand#1.itm}
+load inst "if:for:for:if:or" "or(5,1)" "INTERFACE" -attr xrf 3555 -attr oid 56 -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:if:or} -attr area 1.704764 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_or(1,5)"
+load net {if:for:for:j#1.sva(4)} -pin  "if:for:for:if:or" {A0(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/slc(if:for:for:j#1.sva).itm}
+load net {if:for:for:j#1.sva(3)} -pin  "if:for:for:if:or" {A1(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/slc(if:for:for:j#1.sva)#1.itm}
+load net {if:for:for:j#1.sva(2)} -pin  "if:for:for:if:or" {A2(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/slc(if:for:for:j#1.sva)#3.itm}
+load net {if:for:for:j#1.sva(1)} -pin  "if:for:for:if:or" {A3(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/slc(if:for:for:j#1.sva)#2.itm}
+load net {if:for:for:j#1.sva(0)} -pin  "if:for:for:if:or" {A4(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/slc(if:for:for:j#1.sva)#4.itm}
+load net {if:for:for:if:or.itm} -pin  "if:for:for:if:or" {Z(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:if:or.itm}
+load inst "if:for:for:if:nand" "nand(2,1)" "INTERFACE" -attr xrf 3556 -attr oid 57 -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:if:nand} -attr area 0.730832 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_nand(1,2)"
+load net {if:for:for:if:nand#1.itm} -pin  "if:for:for:if:nand" {A0(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:if:nand#1.itm}
+load net {if:for:for:if:or.itm} -pin  "if:for:for:if:nand" {A1(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:if:or.itm}
+load net {if:for:for:if:nand.itm} -pin  "if:for:for:if:nand" {Z(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:if:nand.itm}
+load inst "if:for:for:or" "or(2,1)" "INTERFACE" -attr xrf 3557 -attr oid 58 -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:or} -attr area 0.730832 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_or(1,2)"
+load net {if:for:for:else:if:nand.itm} -pin  "if:for:for:or" {A0(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:else:if:nand.itm}
+load net {if:for:for:if:nand.itm} -pin  "if:for:for:or" {A1(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:if:nand.itm}
+load net {if:for:for:or.itm} -pin  "if:for:for:or" {Z(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:or.itm}
+load inst "mux" "mux(2,4)" "INTERFACE" -attr xrf 3558 -attr oid 59 -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/mux} -attr area 3.678692 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_mux(4,1,2)"
+load net {if:for:for:or.itm} -pin  "mux" {A0(0)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/conc.itm}
+load net {GND} -pin  "mux" {A0(1)} -attr @path {/MazeArrayTester/MazeArrayTester:core/conc.itm}
+load net {GND} -pin  "mux" {A0(2)} -attr @path {/MazeArrayTester/MazeArrayTester:core/conc.itm}
+load net {GND} -pin  "mux" {A0(3)} -attr @path {/MazeArrayTester/MazeArrayTester:core/conc.itm}
+load net {out:rsc:mgc_out_stdreg.d(0)} -pin  "mux" {A1(0)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/out:rsc:mgc_out_stdreg.d}
+load net {out:rsc:mgc_out_stdreg.d(1)} -pin  "mux" {A1(1)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/out:rsc:mgc_out_stdreg.d}
+load net {out:rsc:mgc_out_stdreg.d(2)} -pin  "mux" {A1(2)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/out:rsc:mgc_out_stdreg.d}
+load net {out:rsc:mgc_out_stdreg.d(3)} -pin  "mux" {A1(3)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/out:rsc:mgc_out_stdreg.d}
+load net {fsm_output#1(2)} -pin  "mux" {S(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/slc(fsm_output)#2.itm}
+load net {mux.itm(0)} -pin  "mux" {Z(0)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/mux.itm}
+load net {mux.itm(1)} -pin  "mux" {Z(1)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/mux.itm}
+load net {mux.itm(2)} -pin  "mux" {Z(2)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/mux.itm}
+load net {mux.itm(3)} -pin  "mux" {Z(3)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/mux.itm}
+load inst "reg(out:rsc:mgc_out_stdreg.d)" "reg(4,1,0,0,1)" "INTERFACE" -attr xrf 3559 -attr oid 60 -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/reg(out:rsc:mgc_out_stdreg.d)}
+load net {mux.itm(0)} -pin  "reg(out:rsc:mgc_out_stdreg.d)" {D(0)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/mux.itm}
+load net {mux.itm(1)} -pin  "reg(out:rsc:mgc_out_stdreg.d)" {D(1)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/mux.itm}
+load net {mux.itm(2)} -pin  "reg(out:rsc:mgc_out_stdreg.d)" {D(2)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/mux.itm}
+load net {mux.itm(3)} -pin  "reg(out:rsc:mgc_out_stdreg.d)" {D(3)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/mux.itm}
+load net {GND} -pin  "reg(out:rsc:mgc_out_stdreg.d)" {DRs(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/C0_4}
+load net {GND} -pin  "reg(out:rsc:mgc_out_stdreg.d)" {DRs(1)} -attr @path {/MazeArrayTester/MazeArrayTester:core/C0_4}
+load net {GND} -pin  "reg(out:rsc:mgc_out_stdreg.d)" {DRs(2)} -attr @path {/MazeArrayTester/MazeArrayTester:core/C0_4}
+load net {GND} -pin  "reg(out:rsc:mgc_out_stdreg.d)" {DRs(3)} -attr @path {/MazeArrayTester/MazeArrayTester:core/C0_4}
+load net {clk} -pin  "reg(out:rsc:mgc_out_stdreg.d)" {clk} -attr xrf 3560 -attr oid 61 -attr @path {/MazeArrayTester/MazeArrayTester:core/clk}
+load net {rst} -pin  "reg(out:rsc:mgc_out_stdreg.d)" {Rs(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/rst}
+load net {out:rsc:mgc_out_stdreg.d(0)} -pin  "reg(out:rsc:mgc_out_stdreg.d)" {Z(0)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/out:rsc:mgc_out_stdreg.d}
+load net {out:rsc:mgc_out_stdreg.d(1)} -pin  "reg(out:rsc:mgc_out_stdreg.d)" {Z(1)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/out:rsc:mgc_out_stdreg.d}
+load net {out:rsc:mgc_out_stdreg.d(2)} -pin  "reg(out:rsc:mgc_out_stdreg.d)" {Z(2)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/out:rsc:mgc_out_stdreg.d}
+load net {out:rsc:mgc_out_stdreg.d(3)} -pin  "reg(out:rsc:mgc_out_stdreg.d)" {Z(3)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/out:rsc:mgc_out_stdreg.d}
+load inst "not#17" "not(1)" "INTERFACE" -attr @path {/MazeArrayTester/MazeArrayTester:core/not#17} -attr area 0.001000 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_not(1)"
+load net {fsm_output#1(1)} -pin  "not#17" {A(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/slc(fsm_output)#19.itm}
+load net {not#17.itm} -pin  "not#17" {Z(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/not#17.itm}
+load inst "or#7" "or(2,1)" "INTERFACE" -attr @path {/MazeArrayTester/MazeArrayTester:core/or#7} -attr area 0.730832 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_or(1,2)"
+load net {written.sva} -pin  "or#7" {A0(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/written.sva}
+load net {not#17.itm} -pin  "or#7" {A1(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/not#17.itm}
+load net {or#7.itm} -pin  "or#7" {Z(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/or#7.itm}
+load inst "nand#1" "nand(2,1)" "INTERFACE" -attr @path {/MazeArrayTester/MazeArrayTester:core/nand#1} -attr area 0.730832 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_nand(1,2)"
+load net {fsm_output#1(4)} -pin  "nand#1" {A0(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/slc(fsm_output)#20.itm}
+load net {z.out(5)} -pin  "nand#1" {A1(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:slc.itm}
+load net {nand#1.itm} -pin  "nand#1" {Z(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/nand#1.itm}
+load inst "nand" "nand(2,1)" "INTERFACE" -attr @path {/MazeArrayTester/MazeArrayTester:core/nand} -attr area 0.730832 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_nand(1,2)"
+load net {fsm_output#1(3)} -pin  "nand" {A0(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/slc(fsm_output)#10.itm}
+load net {if:for:for:slc.itm} -pin  "nand" {A1(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:slc.itm}
+load net {nand.itm} -pin  "nand" {Z(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/nand.itm}
+load inst "and#5" "and(3,1)" "INTERFACE" -attr @path {/MazeArrayTester/MazeArrayTester:core/and#5} -attr area 1.055476 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_and(1,3)"
+load net {or#7.itm} -pin  "and#5" {A0(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/or#7.itm}
+load net {nand#1.itm} -pin  "and#5" {A1(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/nand#1.itm}
+load net {nand.itm} -pin  "and#5" {A2(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/nand.itm}
+load net {and#5.cse} -pin  "and#5" {Z(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/and#5.cse}
+load inst "and#13" "and(2,5)" "INTERFACE" -attr xrf 3561 -attr oid 62 -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/and#13} -attr area 3.650162 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_and(5,2)"
+load net {if:for:for:j#1.sva#1(0)} -pin  "and#13" {A0(0)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:j#1.sva#1}
+load net {if:for:for:j#1.sva#1(1)} -pin  "and#13" {A0(1)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:j#1.sva#1}
+load net {if:for:for:j#1.sva#1(2)} -pin  "and#13" {A0(2)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:j#1.sva#1}
+load net {if:for:for:j#1.sva#1(3)} -pin  "and#13" {A0(3)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:j#1.sva#1}
+load net {if:for:for:j#1.sva#1(4)} -pin  "and#13" {A0(4)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:j#1.sva#1}
+load net {fsm_output#1(3)} -pin  "and#13" {A1(0)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/exs.itm}
+load net {fsm_output#1(3)} -pin  "and#13" {A1(1)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/exs.itm}
+load net {fsm_output#1(3)} -pin  "and#13" {A1(2)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/exs.itm}
+load net {fsm_output#1(3)} -pin  "and#13" {A1(3)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/exs.itm}
+load net {fsm_output#1(3)} -pin  "and#13" {A1(4)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/exs.itm}
+load net {and#13.cse(0)} -pin  "and#13" {Z(0)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/and#13.cse}
+load net {and#13.cse(1)} -pin  "and#13" {Z(1)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/and#13.cse}
+load net {and#13.cse(2)} -pin  "and#13" {Z(2)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/and#13.cse}
+load net {and#13.cse(3)} -pin  "and#13" {Z(3)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/and#13.cse}
+load net {and#13.cse(4)} -pin  "and#13" {Z(4)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/and#13.cse}
+load inst "mux#1" "mux(2,6)" "INTERFACE" -attr xrf 3562 -attr oid 63 -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#1} -attr area 5.517538 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_mux(6,1,2)"
+load net {col:rsc:mgc_out_stdreg.d(0)} -pin  "mux#1" {A0(0)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/col:rsc:mgc_out_stdreg.d}
+load net {col:rsc:mgc_out_stdreg.d(1)} -pin  "mux#1" {A0(1)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/col:rsc:mgc_out_stdreg.d}
+load net {col:rsc:mgc_out_stdreg.d(2)} -pin  "mux#1" {A0(2)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/col:rsc:mgc_out_stdreg.d}
+load net {col:rsc:mgc_out_stdreg.d(3)} -pin  "mux#1" {A0(3)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/col:rsc:mgc_out_stdreg.d}
+load net {col:rsc:mgc_out_stdreg.d(4)} -pin  "mux#1" {A0(4)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/col:rsc:mgc_out_stdreg.d}
+load net {col:rsc:mgc_out_stdreg.d(5)} -pin  "mux#1" {A0(5)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/col:rsc:mgc_out_stdreg.d}
+load net {and#13.cse(0)} -pin  "mux#1" {A1(0)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/conc#23.itm}
+load net {and#13.cse(1)} -pin  "mux#1" {A1(1)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/conc#23.itm}
+load net {and#13.cse(2)} -pin  "mux#1" {A1(2)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/conc#23.itm}
+load net {and#13.cse(3)} -pin  "mux#1" {A1(3)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/conc#23.itm}
+load net {and#13.cse(4)} -pin  "mux#1" {A1(4)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/conc#23.itm}
+load net {GND} -pin  "mux#1" {A1(5)} -attr @path {/MazeArrayTester/MazeArrayTester:core/conc#23.itm}
+load net {and#5.cse} -pin  "mux#1" {S(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/and#5.cse}
+load net {mux#1.itm(0)} -pin  "mux#1" {Z(0)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#1.itm}
+load net {mux#1.itm(1)} -pin  "mux#1" {Z(1)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#1.itm}
+load net {mux#1.itm(2)} -pin  "mux#1" {Z(2)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#1.itm}
+load net {mux#1.itm(3)} -pin  "mux#1" {Z(3)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#1.itm}
+load net {mux#1.itm(4)} -pin  "mux#1" {Z(4)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#1.itm}
+load net {mux#1.itm(5)} -pin  "mux#1" {Z(5)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#1.itm}
+load inst "reg(col:rsc:mgc_out_stdreg.d)" "reg(6,1,0,0,1)" "INTERFACE" -attr xrf 3563 -attr oid 64 -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/reg(col:rsc:mgc_out_stdreg.d)}
+load net {mux#1.itm(0)} -pin  "reg(col:rsc:mgc_out_stdreg.d)" {D(0)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#1.itm}
+load net {mux#1.itm(1)} -pin  "reg(col:rsc:mgc_out_stdreg.d)" {D(1)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#1.itm}
+load net {mux#1.itm(2)} -pin  "reg(col:rsc:mgc_out_stdreg.d)" {D(2)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#1.itm}
+load net {mux#1.itm(3)} -pin  "reg(col:rsc:mgc_out_stdreg.d)" {D(3)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#1.itm}
+load net {mux#1.itm(4)} -pin  "reg(col:rsc:mgc_out_stdreg.d)" {D(4)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#1.itm}
+load net {mux#1.itm(5)} -pin  "reg(col:rsc:mgc_out_stdreg.d)" {D(5)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#1.itm}
+load net {GND} -pin  "reg(col:rsc:mgc_out_stdreg.d)" {DRs(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/C0_6}
+load net {GND} -pin  "reg(col:rsc:mgc_out_stdreg.d)" {DRs(1)} -attr @path {/MazeArrayTester/MazeArrayTester:core/C0_6}
+load net {GND} -pin  "reg(col:rsc:mgc_out_stdreg.d)" {DRs(2)} -attr @path {/MazeArrayTester/MazeArrayTester:core/C0_6}
+load net {GND} -pin  "reg(col:rsc:mgc_out_stdreg.d)" {DRs(3)} -attr @path {/MazeArrayTester/MazeArrayTester:core/C0_6}
+load net {GND} -pin  "reg(col:rsc:mgc_out_stdreg.d)" {DRs(4)} -attr @path {/MazeArrayTester/MazeArrayTester:core/C0_6}
+load net {GND} -pin  "reg(col:rsc:mgc_out_stdreg.d)" {DRs(5)} -attr @path {/MazeArrayTester/MazeArrayTester:core/C0_6}
+load net {clk} -pin  "reg(col:rsc:mgc_out_stdreg.d)" {clk} -attr xrf 3564 -attr oid 65 -attr @path {/MazeArrayTester/MazeArrayTester:core/clk}
+load net {rst} -pin  "reg(col:rsc:mgc_out_stdreg.d)" {Rs(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/rst}
+load net {col:rsc:mgc_out_stdreg.d(0)} -pin  "reg(col:rsc:mgc_out_stdreg.d)" {Z(0)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/col:rsc:mgc_out_stdreg.d}
+load net {col:rsc:mgc_out_stdreg.d(1)} -pin  "reg(col:rsc:mgc_out_stdreg.d)" {Z(1)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/col:rsc:mgc_out_stdreg.d}
+load net {col:rsc:mgc_out_stdreg.d(2)} -pin  "reg(col:rsc:mgc_out_stdreg.d)" {Z(2)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/col:rsc:mgc_out_stdreg.d}
+load net {col:rsc:mgc_out_stdreg.d(3)} -pin  "reg(col:rsc:mgc_out_stdreg.d)" {Z(3)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/col:rsc:mgc_out_stdreg.d}
+load net {col:rsc:mgc_out_stdreg.d(4)} -pin  "reg(col:rsc:mgc_out_stdreg.d)" {Z(4)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/col:rsc:mgc_out_stdreg.d}
+load net {col:rsc:mgc_out_stdreg.d(5)} -pin  "reg(col:rsc:mgc_out_stdreg.d)" {Z(5)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/col:rsc:mgc_out_stdreg.d}
+load inst "nor" "nor(2,1)" "INTERFACE" -attr @path {/MazeArrayTester/MazeArrayTester:core/nor} -attr area 0.730832 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_nor(1,2)"
+load net {fsm_output#1(1)} -pin  "nor" {A0(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/slc(fsm_output)#7.itm}
+load net {fsm_output#1(4)} -pin  "nor" {A1(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/slc(fsm_output)#13.itm}
+load net {nor.itm} -pin  "nor" {Z(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/nor.itm}
+load inst "mux#6" "mux(2,5)" "INTERFACE" -attr xrf 3565 -attr oid 66 -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#6} -attr area 4.598115 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_mux(5,1,2)"
+load net {if:for:i#1.sva(0)} -pin  "mux#6" {A0(0)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:i#1.sva}
+load net {if:for:i#1.sva(1)} -pin  "mux#6" {A0(1)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:i#1.sva}
+load net {if:for:i#1.sva(2)} -pin  "mux#6" {A0(2)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:i#1.sva}
+load net {if:for:i#1.sva(3)} -pin  "mux#6" {A0(3)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:i#1.sva}
+load net {if:for:i#1.sva(4)} -pin  "mux#6" {A0(4)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:i#1.sva}
+load net {z.out#1(0)} -pin  "mux#6" {A1(0)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/z.out#1}
+load net {z.out#1(1)} -pin  "mux#6" {A1(1)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/z.out#1}
+load net {z.out#1(2)} -pin  "mux#6" {A1(2)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/z.out#1}
+load net {z.out#1(3)} -pin  "mux#6" {A1(3)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/z.out#1}
+load net {z.out#1(4)} -pin  "mux#6" {A1(4)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/z.out#1}
+load net {nor.itm} -pin  "mux#6" {S(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/nor.itm}
+load net {mux#6.itm(0)} -pin  "mux#6" {Z(0)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#6.itm}
+load net {mux#6.itm(1)} -pin  "mux#6" {Z(1)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#6.itm}
+load net {mux#6.itm(2)} -pin  "mux#6" {Z(2)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#6.itm}
+load net {mux#6.itm(3)} -pin  "mux#6" {Z(3)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#6.itm}
+load net {mux#6.itm(4)} -pin  "mux#6" {Z(4)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#6.itm}
+load inst "not#19" "not(1)" "INTERFACE" -attr @path {/MazeArrayTester/MazeArrayTester:core/not#19} -attr area 0.001000 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_not(1)"
+load net {fsm_output#1(1)} -pin  "not#19" {A(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/slc(fsm_output)#9.itm}
+load net {not#19.itm} -pin  "not#19" {Z(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/not#19.itm}
+load inst "and#14" "and(2,5)" "INTERFACE" -attr xrf 3566 -attr oid 67 -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/and#14} -attr area 3.650162 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_and(5,2)"
+load net {mux#6.itm(0)} -pin  "and#14" {A0(0)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#6.itm}
+load net {mux#6.itm(1)} -pin  "and#14" {A0(1)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#6.itm}
+load net {mux#6.itm(2)} -pin  "and#14" {A0(2)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#6.itm}
+load net {mux#6.itm(3)} -pin  "and#14" {A0(3)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#6.itm}
+load net {mux#6.itm(4)} -pin  "and#14" {A0(4)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#6.itm}
+load net {not#19.itm} -pin  "and#14" {A1(0)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/exs#1.itm}
+load net {not#19.itm} -pin  "and#14" {A1(1)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/exs#1.itm}
+load net {not#19.itm} -pin  "and#14" {A1(2)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/exs#1.itm}
+load net {not#19.itm} -pin  "and#14" {A1(3)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/exs#1.itm}
+load net {not#19.itm} -pin  "and#14" {A1(4)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/exs#1.itm}
+load net {and#14.cse(0)} -pin  "and#14" {Z(0)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/and#14.cse}
+load net {and#14.cse(1)} -pin  "and#14" {Z(1)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/and#14.cse}
+load net {and#14.cse(2)} -pin  "and#14" {Z(2)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/and#14.cse}
+load net {and#14.cse(3)} -pin  "and#14" {Z(3)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/and#14.cse}
+load net {and#14.cse(4)} -pin  "and#14" {Z(4)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/and#14.cse}
+load inst "mux#2" "mux(2,6)" "INTERFACE" -attr xrf 3567 -attr oid 68 -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#2} -attr area 5.517538 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_mux(6,1,2)"
+load net {row:rsc:mgc_out_stdreg.d(0)} -pin  "mux#2" {A0(0)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/row:rsc:mgc_out_stdreg.d}
+load net {row:rsc:mgc_out_stdreg.d(1)} -pin  "mux#2" {A0(1)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/row:rsc:mgc_out_stdreg.d}
+load net {row:rsc:mgc_out_stdreg.d(2)} -pin  "mux#2" {A0(2)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/row:rsc:mgc_out_stdreg.d}
+load net {row:rsc:mgc_out_stdreg.d(3)} -pin  "mux#2" {A0(3)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/row:rsc:mgc_out_stdreg.d}
+load net {row:rsc:mgc_out_stdreg.d(4)} -pin  "mux#2" {A0(4)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/row:rsc:mgc_out_stdreg.d}
+load net {row:rsc:mgc_out_stdreg.d(5)} -pin  "mux#2" {A0(5)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/row:rsc:mgc_out_stdreg.d}
+load net {and#14.cse(0)} -pin  "mux#2" {A1(0)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/conc#24.itm}
+load net {and#14.cse(1)} -pin  "mux#2" {A1(1)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/conc#24.itm}
+load net {and#14.cse(2)} -pin  "mux#2" {A1(2)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/conc#24.itm}
+load net {and#14.cse(3)} -pin  "mux#2" {A1(3)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/conc#24.itm}
+load net {and#14.cse(4)} -pin  "mux#2" {A1(4)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/conc#24.itm}
+load net {GND} -pin  "mux#2" {A1(5)} -attr @path {/MazeArrayTester/MazeArrayTester:core/conc#24.itm}
+load net {and#5.cse} -pin  "mux#2" {S(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/and#5.cse}
+load net {mux#2.itm(0)} -pin  "mux#2" {Z(0)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#2.itm}
+load net {mux#2.itm(1)} -pin  "mux#2" {Z(1)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#2.itm}
+load net {mux#2.itm(2)} -pin  "mux#2" {Z(2)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#2.itm}
+load net {mux#2.itm(3)} -pin  "mux#2" {Z(3)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#2.itm}
+load net {mux#2.itm(4)} -pin  "mux#2" {Z(4)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#2.itm}
+load net {mux#2.itm(5)} -pin  "mux#2" {Z(5)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#2.itm}
+load inst "reg(row:rsc:mgc_out_stdreg.d)" "reg(6,1,0,0,1)" "INTERFACE" -attr xrf 3568 -attr oid 69 -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/reg(row:rsc:mgc_out_stdreg.d)}
+load net {mux#2.itm(0)} -pin  "reg(row:rsc:mgc_out_stdreg.d)" {D(0)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#2.itm}
+load net {mux#2.itm(1)} -pin  "reg(row:rsc:mgc_out_stdreg.d)" {D(1)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#2.itm}
+load net {mux#2.itm(2)} -pin  "reg(row:rsc:mgc_out_stdreg.d)" {D(2)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#2.itm}
+load net {mux#2.itm(3)} -pin  "reg(row:rsc:mgc_out_stdreg.d)" {D(3)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#2.itm}
+load net {mux#2.itm(4)} -pin  "reg(row:rsc:mgc_out_stdreg.d)" {D(4)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#2.itm}
+load net {mux#2.itm(5)} -pin  "reg(row:rsc:mgc_out_stdreg.d)" {D(5)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#2.itm}
+load net {GND} -pin  "reg(row:rsc:mgc_out_stdreg.d)" {DRs(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/C0_6}
+load net {GND} -pin  "reg(row:rsc:mgc_out_stdreg.d)" {DRs(1)} -attr @path {/MazeArrayTester/MazeArrayTester:core/C0_6}
+load net {GND} -pin  "reg(row:rsc:mgc_out_stdreg.d)" {DRs(2)} -attr @path {/MazeArrayTester/MazeArrayTester:core/C0_6}
+load net {GND} -pin  "reg(row:rsc:mgc_out_stdreg.d)" {DRs(3)} -attr @path {/MazeArrayTester/MazeArrayTester:core/C0_6}
+load net {GND} -pin  "reg(row:rsc:mgc_out_stdreg.d)" {DRs(4)} -attr @path {/MazeArrayTester/MazeArrayTester:core/C0_6}
+load net {GND} -pin  "reg(row:rsc:mgc_out_stdreg.d)" {DRs(5)} -attr @path {/MazeArrayTester/MazeArrayTester:core/C0_6}
+load net {clk} -pin  "reg(row:rsc:mgc_out_stdreg.d)" {clk} -attr xrf 3569 -attr oid 70 -attr @path {/MazeArrayTester/MazeArrayTester:core/clk}
+load net {rst} -pin  "reg(row:rsc:mgc_out_stdreg.d)" {Rs(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/rst}
+load net {row:rsc:mgc_out_stdreg.d(0)} -pin  "reg(row:rsc:mgc_out_stdreg.d)" {Z(0)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/row:rsc:mgc_out_stdreg.d}
+load net {row:rsc:mgc_out_stdreg.d(1)} -pin  "reg(row:rsc:mgc_out_stdreg.d)" {Z(1)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/row:rsc:mgc_out_stdreg.d}
+load net {row:rsc:mgc_out_stdreg.d(2)} -pin  "reg(row:rsc:mgc_out_stdreg.d)" {Z(2)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/row:rsc:mgc_out_stdreg.d}
+load net {row:rsc:mgc_out_stdreg.d(3)} -pin  "reg(row:rsc:mgc_out_stdreg.d)" {Z(3)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/row:rsc:mgc_out_stdreg.d}
+load net {row:rsc:mgc_out_stdreg.d(4)} -pin  "reg(row:rsc:mgc_out_stdreg.d)" {Z(4)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/row:rsc:mgc_out_stdreg.d}
+load net {row:rsc:mgc_out_stdreg.d(5)} -pin  "reg(row:rsc:mgc_out_stdreg.d)" {Z(5)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/row:rsc:mgc_out_stdreg.d}
+load inst "or#11" "or(2,1)" "INTERFACE" -attr @path {/MazeArrayTester/MazeArrayTester:core/or#11} -attr area 0.730832 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_or(1,2)"
+load net {fsm_output#1(1)} -pin  "or#11" {A0(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/slc(fsm_output)#8.itm}
+load net {fsm_output#1(4)} -pin  "or#11" {A1(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/slc(fsm_output)#14.itm}
+load net {or#11.itm} -pin  "or#11" {Z(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/or#11.itm}
+load inst "reg(written.sva)" "reg(1,1,0,0,1)" "INTERFACE" -attr xrf 3570 -attr oid 71 -attr @path {/MazeArrayTester/MazeArrayTester:core/reg(written.sva)}
+load net {or#11.itm} -pin  "reg(written.sva)" {D(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/or#11.itm}
+load net {GND} -pin  "reg(written.sva)" {DRs(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/C0_1#1}
+load net {clk} -pin  "reg(written.sva)" {clk} -attr xrf 3571 -attr oid 72 -attr @path {/MazeArrayTester/MazeArrayTester:core/clk}
+load net {rst} -pin  "reg(written.sva)" {Rs(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/rst}
+load net {written.sva} -pin  "reg(written.sva)" {Z(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/written.sva}
+load inst "reg(if:for:i#1.sva)" "reg(5,1,0,0,1)" "INTERFACE" -attr xrf 3572 -attr oid 73 -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/reg(if:for:i#1.sva)}
+load net {and#14.cse(0)} -pin  "reg(if:for:i#1.sva)" {D(0)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/and#14.cse}
+load net {and#14.cse(1)} -pin  "reg(if:for:i#1.sva)" {D(1)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/and#14.cse}
+load net {and#14.cse(2)} -pin  "reg(if:for:i#1.sva)" {D(2)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/and#14.cse}
+load net {and#14.cse(3)} -pin  "reg(if:for:i#1.sva)" {D(3)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/and#14.cse}
+load net {and#14.cse(4)} -pin  "reg(if:for:i#1.sva)" {D(4)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/and#14.cse}
+load net {GND} -pin  "reg(if:for:i#1.sva)" {DRs(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/C0_5}
+load net {GND} -pin  "reg(if:for:i#1.sva)" {DRs(1)} -attr @path {/MazeArrayTester/MazeArrayTester:core/C0_5}
+load net {GND} -pin  "reg(if:for:i#1.sva)" {DRs(2)} -attr @path {/MazeArrayTester/MazeArrayTester:core/C0_5}
+load net {GND} -pin  "reg(if:for:i#1.sva)" {DRs(3)} -attr @path {/MazeArrayTester/MazeArrayTester:core/C0_5}
+load net {GND} -pin  "reg(if:for:i#1.sva)" {DRs(4)} -attr @path {/MazeArrayTester/MazeArrayTester:core/C0_5}
+load net {clk} -pin  "reg(if:for:i#1.sva)" {clk} -attr xrf 3573 -attr oid 74 -attr @path {/MazeArrayTester/MazeArrayTester:core/clk}
+load net {rst} -pin  "reg(if:for:i#1.sva)" {Rs(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/rst}
+load net {if:for:i#1.sva(0)} -pin  "reg(if:for:i#1.sva)" {Z(0)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:i#1.sva}
+load net {if:for:i#1.sva(1)} -pin  "reg(if:for:i#1.sva)" {Z(1)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:i#1.sva}
+load net {if:for:i#1.sva(2)} -pin  "reg(if:for:i#1.sva)" {Z(2)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:i#1.sva}
+load net {if:for:i#1.sva(3)} -pin  "reg(if:for:i#1.sva)" {Z(3)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:i#1.sva}
+load net {if:for:i#1.sva(4)} -pin  "reg(if:for:i#1.sva)" {Z(4)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:i#1.sva}
+load inst "reg(if:for:for:j#1.sva)" "reg(5,1,0,0,1)" "INTERFACE" -attr xrf 3574 -attr oid 75 -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/reg(if:for:for:j#1.sva)}
+load net {and#13.cse(0)} -pin  "reg(if:for:for:j#1.sva)" {D(0)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/and#13.cse}
+load net {and#13.cse(1)} -pin  "reg(if:for:for:j#1.sva)" {D(1)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/and#13.cse}
+load net {and#13.cse(2)} -pin  "reg(if:for:for:j#1.sva)" {D(2)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/and#13.cse}
+load net {and#13.cse(3)} -pin  "reg(if:for:for:j#1.sva)" {D(3)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/and#13.cse}
+load net {and#13.cse(4)} -pin  "reg(if:for:for:j#1.sva)" {D(4)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/and#13.cse}
+load net {GND} -pin  "reg(if:for:for:j#1.sva)" {DRs(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/C0_5}
+load net {GND} -pin  "reg(if:for:for:j#1.sva)" {DRs(1)} -attr @path {/MazeArrayTester/MazeArrayTester:core/C0_5}
+load net {GND} -pin  "reg(if:for:for:j#1.sva)" {DRs(2)} -attr @path {/MazeArrayTester/MazeArrayTester:core/C0_5}
+load net {GND} -pin  "reg(if:for:for:j#1.sva)" {DRs(3)} -attr @path {/MazeArrayTester/MazeArrayTester:core/C0_5}
+load net {GND} -pin  "reg(if:for:for:j#1.sva)" {DRs(4)} -attr @path {/MazeArrayTester/MazeArrayTester:core/C0_5}
+load net {clk} -pin  "reg(if:for:for:j#1.sva)" {clk} -attr xrf 3575 -attr oid 76 -attr @path {/MazeArrayTester/MazeArrayTester:core/clk}
+load net {rst} -pin  "reg(if:for:for:j#1.sva)" {Rs(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/rst}
+load net {if:for:for:j#1.sva(0)} -pin  "reg(if:for:for:j#1.sva)" {Z(0)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:j#1.sva}
+load net {if:for:for:j#1.sva(1)} -pin  "reg(if:for:for:j#1.sva)" {Z(1)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:j#1.sva}
+load net {if:for:for:j#1.sva(2)} -pin  "reg(if:for:for:j#1.sva)" {Z(2)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:j#1.sva}
+load net {if:for:for:j#1.sva(3)} -pin  "reg(if:for:for:j#1.sva)" {Z(3)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:j#1.sva}
+load net {if:for:for:j#1.sva(4)} -pin  "reg(if:for:for:j#1.sva)" {Z(4)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:j#1.sva}
+load inst "reg(if:for:for:slc.itm)" "reg(1,1,0,0,1)" "INTERFACE" -attr xrf 3576 -attr oid 77 -attr @path {/MazeArrayTester/MazeArrayTester:core/reg(if:for:for:slc.itm)}
+load net {z.out(5)} -pin  "reg(if:for:for:slc.itm)" {D(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:slc.itm#1}
+load net {GND} -pin  "reg(if:for:for:slc.itm)" {DRs(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/C0_1#1}
+load net {clk} -pin  "reg(if:for:for:slc.itm)" {clk} -attr xrf 3577 -attr oid 78 -attr @path {/MazeArrayTester/MazeArrayTester:core/clk}
+load net {rst} -pin  "reg(if:for:for:slc.itm)" {Rs(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/rst}
+load net {if:for:for:slc.itm} -pin  "reg(if:for:for:slc.itm)" {Z(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:slc.itm}
+load inst "reg(if:for:for:j#1.sva#1)" "reg(5,1,0,0,1)" "INTERFACE" -attr xrf 3578 -attr oid 79 -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/reg(if:for:for:j#1.sva#1)}
+load net {z.out#1(0)} -pin  "reg(if:for:for:j#1.sva#1)" {D(0)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/z.out#1}
+load net {z.out#1(1)} -pin  "reg(if:for:for:j#1.sva#1)" {D(1)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/z.out#1}
+load net {z.out#1(2)} -pin  "reg(if:for:for:j#1.sva#1)" {D(2)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/z.out#1}
+load net {z.out#1(3)} -pin  "reg(if:for:for:j#1.sva#1)" {D(3)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/z.out#1}
+load net {z.out#1(4)} -pin  "reg(if:for:for:j#1.sva#1)" {D(4)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/z.out#1}
+load net {GND} -pin  "reg(if:for:for:j#1.sva#1)" {DRs(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/C0_5}
+load net {GND} -pin  "reg(if:for:for:j#1.sva#1)" {DRs(1)} -attr @path {/MazeArrayTester/MazeArrayTester:core/C0_5}
+load net {GND} -pin  "reg(if:for:for:j#1.sva#1)" {DRs(2)} -attr @path {/MazeArrayTester/MazeArrayTester:core/C0_5}
+load net {GND} -pin  "reg(if:for:for:j#1.sva#1)" {DRs(3)} -attr @path {/MazeArrayTester/MazeArrayTester:core/C0_5}
+load net {GND} -pin  "reg(if:for:for:j#1.sva#1)" {DRs(4)} -attr @path {/MazeArrayTester/MazeArrayTester:core/C0_5}
+load net {clk} -pin  "reg(if:for:for:j#1.sva#1)" {clk} -attr xrf 3579 -attr oid 80 -attr @path {/MazeArrayTester/MazeArrayTester:core/clk}
+load net {rst} -pin  "reg(if:for:for:j#1.sva#1)" {Rs(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/rst}
+load net {if:for:for:j#1.sva#1(0)} -pin  "reg(if:for:for:j#1.sva#1)" {Z(0)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:j#1.sva#1}
+load net {if:for:for:j#1.sva#1(1)} -pin  "reg(if:for:for:j#1.sva#1)" {Z(1)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:j#1.sva#1}
+load net {if:for:for:j#1.sva#1(2)} -pin  "reg(if:for:for:j#1.sva#1)" {Z(2)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:j#1.sva#1}
+load net {if:for:for:j#1.sva#1(3)} -pin  "reg(if:for:for:j#1.sva#1)" {Z(3)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:j#1.sva#1}
+load net {if:for:for:j#1.sva#1(4)} -pin  "reg(if:for:for:j#1.sva#1)" {Z(4)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:j#1.sva#1}
+load inst "mux#7" "mux(2,5)" "INTERFACE" -attr xrf 3580 -attr oid 81 -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#7} -attr area 4.598115 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_mux(5,1,2)"
+load net {if:for:i#1.sva(0)} -pin  "mux#7" {A0(0)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:i#1.sva}
+load net {if:for:i#1.sva(1)} -pin  "mux#7" {A0(1)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:i#1.sva}
+load net {if:for:i#1.sva(2)} -pin  "mux#7" {A0(2)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:i#1.sva}
+load net {if:for:i#1.sva(3)} -pin  "mux#7" {A0(3)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:i#1.sva}
+load net {if:for:i#1.sva(4)} -pin  "mux#7" {A0(4)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:i#1.sva}
+load net {if:for:for:j#1.sva(0)} -pin  "mux#7" {A1(0)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:j#1.sva}
+load net {if:for:for:j#1.sva(1)} -pin  "mux#7" {A1(1)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:j#1.sva}
+load net {if:for:for:j#1.sva(2)} -pin  "mux#7" {A1(2)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:j#1.sva}
+load net {if:for:for:j#1.sva(3)} -pin  "mux#7" {A1(3)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:j#1.sva}
+load net {if:for:for:j#1.sva(4)} -pin  "mux#7" {A1(4)} -attr vt d -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:j#1.sva}
+load net {fsm_output#1(4)} -pin  "mux#7" {S(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/slc(fsm_output)#17.itm}
+load net {mux#7.itm(0)} -pin  "mux#7" {Z(0)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#7.itm}
+load net {mux#7.itm(1)} -pin  "mux#7" {Z(1)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#7.itm}
+load net {mux#7.itm(2)} -pin  "mux#7" {Z(2)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#7.itm}
+load net {mux#7.itm(3)} -pin  "mux#7" {Z(3)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#7.itm}
+load net {mux#7.itm(4)} -pin  "mux#7" {Z(4)} -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core/mux#7.itm}
+load inst "not#2" "not(1)" "INTERFACE" -attr @path {/MazeArrayTester/MazeArrayTester:core/not#2} -attr area 0.001000 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_not(1)"
+load net {if:for:for:slc.itm} -pin  "not#2" {A(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:for:slc.itm}
+load net {not#2.itm} -pin  "not#2" {Z(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/not#2.itm}
+load inst "not#3" "not(1)" "INTERFACE" -attr @path {/MazeArrayTester/MazeArrayTester:core/not#3} -attr area 0.001000 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_not(1)"
+load net {z.out(5)} -pin  "not#3" {A(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/if:for:slc#3.itm}
+load net {not#3.itm} -pin  "not#3" {Z(0)} -attr @path {/MazeArrayTester/MazeArrayTester:core/not#3.itm}
+### END MODULE 
+
+module new "MazeArrayTester" "orig"
+load portBus {row:rsc.z(5:0)} output 6 {row:rsc.z(5)} {row:rsc.z(4)} {row:rsc.z(3)} {row:rsc.z(2)} {row:rsc.z(1)} {row:rsc.z(0)} -attr xrf 3581 -attr oid 82 -attr vt d -attr @path {/MazeArrayTester/row:rsc.z}
+load portBus {col:rsc.z(5:0)} output 6 {col:rsc.z(5)} {col:rsc.z(4)} {col:rsc.z(3)} {col:rsc.z(2)} {col:rsc.z(1)} {col:rsc.z(0)} -attr xrf 3582 -attr oid 83 -attr vt d -attr @path {/MazeArrayTester/col:rsc.z}
+load portBus {out:rsc.z(3:0)} output 4 {out:rsc.z(3)} {out:rsc.z(2)} {out:rsc.z(1)} {out:rsc.z(0)} -attr xrf 3583 -attr oid 84 -attr vt d -attr @path {/MazeArrayTester/out:rsc.z}
+load port {write:rsc.z} output -attr xrf 3584 -attr oid 85 -attr vt d -attr @path {/MazeArrayTester/write:rsc.z}
+load port {clk} input -attr xrf 3585 -attr oid 86 -attr vt d -attr @path {/MazeArrayTester/clk}
+load port {rst} input -attr xrf 3586 -attr oid 87 -attr vt d -attr @path {/MazeArrayTester/rst}
+load symbol "mgc_ioport.mgc_out_stdreg(1,6)" "INTERFACE" GEN boxcolor 0 \
+     portBus {d(5:0)} input 6 {d(5)} {d(4)} {d(3)} {d(2)} {d(1)} {d(0)} \
+     portBus {z(5:0)} output 6 {z(5)} {z(4)} {z(3)} {z(2)} {z(1)} {z(0)} \
+
+load symbol "mgc_ioport.mgc_out_stdreg(2,6)" "INTERFACE" GEN boxcolor 0 \
+     portBus {d(5:0)} input 6 {d(5)} {d(4)} {d(3)} {d(2)} {d(1)} {d(0)} \
+     portBus {z(5:0)} output 6 {z(5)} {z(4)} {z(3)} {z(2)} {z(1)} {z(0)} \
+
+load symbol "mgc_ioport.mgc_out_stdreg(3,4)" "INTERFACE" GEN boxcolor 0 \
+     portBus {d(3:0)} input 4 {d(3)} {d(2)} {d(1)} {d(0)} \
+     portBus {z(3:0)} output 4 {z(3)} {z(2)} {z(1)} {z(0)} \
+
+load symbol "mgc_ioport.mgc_out_stdreg(4,1)" "INTERFACE" GEN boxcolor 0 \
+     portBus {d(0:0)} input 1 {d(0)} \
+     portBus {z(0:0)} output 1 {z(0)} \
+
+load symbol "MazeArrayTester:core" "orig" GEN \
+     port {clk#1} input \
+     port {rst#1} input \
+     portBus {row:rsc:mgc_out_stdreg.d(5:0)} output 6 {row:rsc:mgc_out_stdreg.d(5)} {row:rsc:mgc_out_stdreg.d(4)} {row:rsc:mgc_out_stdreg.d(3)} {row:rsc:mgc_out_stdreg.d(2)} {row:rsc:mgc_out_stdreg.d(1)} {row:rsc:mgc_out_stdreg.d(0)} \
+     portBus {col:rsc:mgc_out_stdreg.d(5:0)} output 6 {col:rsc:mgc_out_stdreg.d(5)} {col:rsc:mgc_out_stdreg.d(4)} {col:rsc:mgc_out_stdreg.d(3)} {col:rsc:mgc_out_stdreg.d(2)} {col:rsc:mgc_out_stdreg.d(1)} {col:rsc:mgc_out_stdreg.d(0)} \
+     portBus {out:rsc:mgc_out_stdreg.d(3:0)} output 4 {out:rsc:mgc_out_stdreg.d(3)} {out:rsc:mgc_out_stdreg.d(2)} {out:rsc:mgc_out_stdreg.d(1)} {out:rsc:mgc_out_stdreg.d(0)} \
+     port {write:rsc:mgc_out_stdreg.d} output \
+
+load net {row:rsc:mgc_out_stdreg.d#1(0)} -attr vt d
+load net {row:rsc:mgc_out_stdreg.d#1(1)} -attr vt d
+load net {row:rsc:mgc_out_stdreg.d#1(2)} -attr vt d
+load net {row:rsc:mgc_out_stdreg.d#1(3)} -attr vt d
+load net {row:rsc:mgc_out_stdreg.d#1(4)} -attr vt d
+load net {row:rsc:mgc_out_stdreg.d#1(5)} -attr vt d
+load netBundle {row:rsc:mgc_out_stdreg.d#1} 6 {row:rsc:mgc_out_stdreg.d#1(0)} {row:rsc:mgc_out_stdreg.d#1(1)} {row:rsc:mgc_out_stdreg.d#1(2)} {row:rsc:mgc_out_stdreg.d#1(3)} {row:rsc:mgc_out_stdreg.d#1(4)} {row:rsc:mgc_out_stdreg.d#1(5)} -attr xrf 3587 -attr oid 88 -attr vt d -attr @path {/MazeArrayTester/row:rsc:mgc_out_stdreg.d}
+load net {col:rsc:mgc_out_stdreg.d#1(0)} -attr vt d
+load net {col:rsc:mgc_out_stdreg.d#1(1)} -attr vt d
+load net {col:rsc:mgc_out_stdreg.d#1(2)} -attr vt d
+load net {col:rsc:mgc_out_stdreg.d#1(3)} -attr vt d
+load net {col:rsc:mgc_out_stdreg.d#1(4)} -attr vt d
+load net {col:rsc:mgc_out_stdreg.d#1(5)} -attr vt d
+load netBundle {col:rsc:mgc_out_stdreg.d#1} 6 {col:rsc:mgc_out_stdreg.d#1(0)} {col:rsc:mgc_out_stdreg.d#1(1)} {col:rsc:mgc_out_stdreg.d#1(2)} {col:rsc:mgc_out_stdreg.d#1(3)} {col:rsc:mgc_out_stdreg.d#1(4)} {col:rsc:mgc_out_stdreg.d#1(5)} -attr xrf 3588 -attr oid 89 -attr vt d -attr @path {/MazeArrayTester/col:rsc:mgc_out_stdreg.d}
+load net {out:rsc:mgc_out_stdreg.d#1(0)} -attr vt d
+load net {out:rsc:mgc_out_stdreg.d#1(1)} -attr vt d
+load net {out:rsc:mgc_out_stdreg.d#1(2)} -attr vt d
+load net {out:rsc:mgc_out_stdreg.d#1(3)} -attr vt d
+load netBundle {out:rsc:mgc_out_stdreg.d#1} 4 {out:rsc:mgc_out_stdreg.d#1(0)} {out:rsc:mgc_out_stdreg.d#1(1)} {out:rsc:mgc_out_stdreg.d#1(2)} {out:rsc:mgc_out_stdreg.d#1(3)} -attr xrf 3589 -attr oid 90 -attr vt d -attr @path {/MazeArrayTester/out:rsc:mgc_out_stdreg.d}
+load net {write:rsc:mgc_out_stdreg.d#1} -attr xrf 3590 -attr oid 91 -attr vt d
+load net {row:rsc.z(0)} -attr vt d
+load net {row:rsc.z(1)} -attr vt d
+load net {row:rsc.z(2)} -attr vt d
+load net {row:rsc.z(3)} -attr vt d
+load net {row:rsc.z(4)} -attr vt d
+load net {row:rsc.z(5)} -attr vt d
+load netBundle {row:rsc.z} 6 {row:rsc.z(0)} {row:rsc.z(1)} {row:rsc.z(2)} {row:rsc.z(3)} {row:rsc.z(4)} {row:rsc.z(5)} -attr xrf 3591 -attr oid 92 -attr vt d -attr @path {/MazeArrayTester/row:rsc.z}
+load net {row:rsc.z(0)} -port {row:rsc.z(0)} -attr vt d -attr @path {/MazeArrayTester/row:rsc.z}
+load net {row:rsc.z(1)} -port {row:rsc.z(1)} -attr vt d -attr @path {/MazeArrayTester/row:rsc.z}
+load net {row:rsc.z(2)} -port {row:rsc.z(2)} -attr vt d -attr @path {/MazeArrayTester/row:rsc.z}
+load net {row:rsc.z(3)} -port {row:rsc.z(3)} -attr vt d -attr @path {/MazeArrayTester/row:rsc.z}
+load net {row:rsc.z(4)} -port {row:rsc.z(4)} -attr vt d -attr @path {/MazeArrayTester/row:rsc.z}
+load net {row:rsc.z(5)} -port {row:rsc.z(5)} -attr vt d -attr @path {/MazeArrayTester/row:rsc.z}
+load net {col:rsc.z(0)} -attr vt d
+load net {col:rsc.z(1)} -attr vt d
+load net {col:rsc.z(2)} -attr vt d
+load net {col:rsc.z(3)} -attr vt d
+load net {col:rsc.z(4)} -attr vt d
+load net {col:rsc.z(5)} -attr vt d
+load netBundle {col:rsc.z} 6 {col:rsc.z(0)} {col:rsc.z(1)} {col:rsc.z(2)} {col:rsc.z(3)} {col:rsc.z(4)} {col:rsc.z(5)} -attr xrf 3592 -attr oid 93 -attr vt d -attr @path {/MazeArrayTester/col:rsc.z}
+load net {col:rsc.z(0)} -port {col:rsc.z(0)} -attr vt d -attr @path {/MazeArrayTester/col:rsc.z}
+load net {col:rsc.z(1)} -port {col:rsc.z(1)} -attr vt d -attr @path {/MazeArrayTester/col:rsc.z}
+load net {col:rsc.z(2)} -port {col:rsc.z(2)} -attr vt d -attr @path {/MazeArrayTester/col:rsc.z}
+load net {col:rsc.z(3)} -port {col:rsc.z(3)} -attr vt d -attr @path {/MazeArrayTester/col:rsc.z}
+load net {col:rsc.z(4)} -port {col:rsc.z(4)} -attr vt d -attr @path {/MazeArrayTester/col:rsc.z}
+load net {col:rsc.z(5)} -port {col:rsc.z(5)} -attr vt d -attr @path {/MazeArrayTester/col:rsc.z}
+load net {out:rsc.z(0)} -attr vt d
+load net {out:rsc.z(1)} -attr vt d
+load net {out:rsc.z(2)} -attr vt d
+load net {out:rsc.z(3)} -attr vt d
+load netBundle {out:rsc.z} 4 {out:rsc.z(0)} {out:rsc.z(1)} {out:rsc.z(2)} {out:rsc.z(3)} -attr xrf 3593 -attr oid 94 -attr vt d -attr @path {/MazeArrayTester/out:rsc.z}
+load net {out:rsc.z(0)} -port {out:rsc.z(0)} -attr vt d -attr @path {/MazeArrayTester/out:rsc.z}
+load net {out:rsc.z(1)} -port {out:rsc.z(1)} -attr vt d -attr @path {/MazeArrayTester/out:rsc.z}
+load net {out:rsc.z(2)} -port {out:rsc.z(2)} -attr vt d -attr @path {/MazeArrayTester/out:rsc.z}
+load net {out:rsc.z(3)} -port {out:rsc.z(3)} -attr vt d -attr @path {/MazeArrayTester/out:rsc.z}
+load net {write:rsc.z} -attr xrf 3594 -attr oid 95 -attr vt d
+load net {write:rsc.z} -port {write:rsc.z} -attr xrf 3595 -attr oid 96 -attr vt d -attr @path {/MazeArrayTester/write:rsc.z}
+load net {clk} -attr xrf 3596 -attr oid 97
+load net {clk} -port {clk} -attr xrf 3597 -attr oid 98
+load net {rst} -attr xrf 3598 -attr oid 99
+load net {rst} -port {rst} -attr xrf 3599 -attr oid 100
+load inst "MazeArrayTester:core:inst" "MazeArrayTester:core" "orig" -attr xrf 3600 -attr oid 101 -attr vt dc -attr @path {/MazeArrayTester/MazeArrayTester:core:inst} -attr area 64.682806 -attr delay 3.389166 -attr hier "/MazeArrayTester/MazeArrayTester:core" -pg 1 -lvl 5
+load net {clk} -pin  "MazeArrayTester:core:inst" {clk#1} -attr xrf 3601 -attr oid 102 -attr @path {/MazeArrayTester/clk}
+load net {rst} -pin  "MazeArrayTester:core:inst" {rst#1} -attr xrf 3602 -attr oid 103 -attr @path {/MazeArrayTester/rst}
+load net {row:rsc:mgc_out_stdreg.d#1(0)} -pin  "MazeArrayTester:core:inst" {row:rsc:mgc_out_stdreg.d(0)} -attr vt dc -attr @path {/MazeArrayTester/row:rsc:mgc_out_stdreg.d}
+load net {row:rsc:mgc_out_stdreg.d#1(1)} -pin  "MazeArrayTester:core:inst" {row:rsc:mgc_out_stdreg.d(1)} -attr vt dc -attr @path {/MazeArrayTester/row:rsc:mgc_out_stdreg.d}
+load net {row:rsc:mgc_out_stdreg.d#1(2)} -pin  "MazeArrayTester:core:inst" {row:rsc:mgc_out_stdreg.d(2)} -attr vt dc -attr @path {/MazeArrayTester/row:rsc:mgc_out_stdreg.d}
+load net {row:rsc:mgc_out_stdreg.d#1(3)} -pin  "MazeArrayTester:core:inst" {row:rsc:mgc_out_stdreg.d(3)} -attr vt dc -attr @path {/MazeArrayTester/row:rsc:mgc_out_stdreg.d}
+load net {row:rsc:mgc_out_stdreg.d#1(4)} -pin  "MazeArrayTester:core:inst" {row:rsc:mgc_out_stdreg.d(4)} -attr vt dc -attr @path {/MazeArrayTester/row:rsc:mgc_out_stdreg.d}
+load net {row:rsc:mgc_out_stdreg.d#1(5)} -pin  "MazeArrayTester:core:inst" {row:rsc:mgc_out_stdreg.d(5)} -attr vt dc -attr @path {/MazeArrayTester/row:rsc:mgc_out_stdreg.d}
+load net {col:rsc:mgc_out_stdreg.d#1(0)} -pin  "MazeArrayTester:core:inst" {col:rsc:mgc_out_stdreg.d(0)} -attr vt dc -attr @path {/MazeArrayTester/col:rsc:mgc_out_stdreg.d}
+load net {col:rsc:mgc_out_stdreg.d#1(1)} -pin  "MazeArrayTester:core:inst" {col:rsc:mgc_out_stdreg.d(1)} -attr vt dc -attr @path {/MazeArrayTester/col:rsc:mgc_out_stdreg.d}
+load net {col:rsc:mgc_out_stdreg.d#1(2)} -pin  "MazeArrayTester:core:inst" {col:rsc:mgc_out_stdreg.d(2)} -attr vt dc -attr @path {/MazeArrayTester/col:rsc:mgc_out_stdreg.d}
+load net {col:rsc:mgc_out_stdreg.d#1(3)} -pin  "MazeArrayTester:core:inst" {col:rsc:mgc_out_stdreg.d(3)} -attr vt dc -attr @path {/MazeArrayTester/col:rsc:mgc_out_stdreg.d}
+load net {col:rsc:mgc_out_stdreg.d#1(4)} -pin  "MazeArrayTester:core:inst" {col:rsc:mgc_out_stdreg.d(4)} -attr vt dc -attr @path {/MazeArrayTester/col:rsc:mgc_out_stdreg.d}
+load net {col:rsc:mgc_out_stdreg.d#1(5)} -pin  "MazeArrayTester:core:inst" {col:rsc:mgc_out_stdreg.d(5)} -attr vt dc -attr @path {/MazeArrayTester/col:rsc:mgc_out_stdreg.d}
+load net {out:rsc:mgc_out_stdreg.d#1(0)} -pin  "MazeArrayTester:core:inst" {out:rsc:mgc_out_stdreg.d(0)} -attr vt dc -attr @path {/MazeArrayTester/out:rsc:mgc_out_stdreg.d}
+load net {out:rsc:mgc_out_stdreg.d#1(1)} -pin  "MazeArrayTester:core:inst" {out:rsc:mgc_out_stdreg.d(1)} -attr vt dc -attr @path {/MazeArrayTester/out:rsc:mgc_out_stdreg.d}
+load net {out:rsc:mgc_out_stdreg.d#1(2)} -pin  "MazeArrayTester:core:inst" {out:rsc:mgc_out_stdreg.d(2)} -attr vt dc -attr @path {/MazeArrayTester/out:rsc:mgc_out_stdreg.d}
+load net {out:rsc:mgc_out_stdreg.d#1(3)} -pin  "MazeArrayTester:core:inst" {out:rsc:mgc_out_stdreg.d(3)} -attr vt dc -attr @path {/MazeArrayTester/out:rsc:mgc_out_stdreg.d}
+load net {write:rsc:mgc_out_stdreg.d#1} -pin  "MazeArrayTester:core:inst" {write:rsc:mgc_out_stdreg.d} -attr xrf 3603 -attr oid 104 -attr vt dc -attr @path {/MazeArrayTester/write:rsc:mgc_out_stdreg.d}
+load inst "row:rsc:mgc_out_stdreg" "mgc_ioport.mgc_out_stdreg(1,6)" "INTERFACE" -attr xrf 3604 -attr oid 105 -attr vt d -attr @path {/MazeArrayTester/row:rsc:mgc_out_stdreg} -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_ioport.mgc_out_stdreg(1,6)" -pg 1 -lvl 1002
+load net {row:rsc:mgc_out_stdreg.d#1(0)} -pin  "row:rsc:mgc_out_stdreg" {d(0)} -attr vt d -attr @path {/MazeArrayTester/row:rsc:mgc_out_stdreg.d}
+load net {row:rsc:mgc_out_stdreg.d#1(1)} -pin  "row:rsc:mgc_out_stdreg" {d(1)} -attr vt d -attr @path {/MazeArrayTester/row:rsc:mgc_out_stdreg.d}
+load net {row:rsc:mgc_out_stdreg.d#1(2)} -pin  "row:rsc:mgc_out_stdreg" {d(2)} -attr vt d -attr @path {/MazeArrayTester/row:rsc:mgc_out_stdreg.d}
+load net {row:rsc:mgc_out_stdreg.d#1(3)} -pin  "row:rsc:mgc_out_stdreg" {d(3)} -attr vt d -attr @path {/MazeArrayTester/row:rsc:mgc_out_stdreg.d}
+load net {row:rsc:mgc_out_stdreg.d#1(4)} -pin  "row:rsc:mgc_out_stdreg" {d(4)} -attr vt d -attr @path {/MazeArrayTester/row:rsc:mgc_out_stdreg.d}
+load net {row:rsc:mgc_out_stdreg.d#1(5)} -pin  "row:rsc:mgc_out_stdreg" {d(5)} -attr vt d -attr @path {/MazeArrayTester/row:rsc:mgc_out_stdreg.d}
+load net {row:rsc.z(0)} -pin  "row:rsc:mgc_out_stdreg" {z(0)} -attr vt d -attr @path {/MazeArrayTester/row:rsc.z}
+load net {row:rsc.z(1)} -pin  "row:rsc:mgc_out_stdreg" {z(1)} -attr vt d -attr @path {/MazeArrayTester/row:rsc.z}
+load net {row:rsc.z(2)} -pin  "row:rsc:mgc_out_stdreg" {z(2)} -attr vt d -attr @path {/MazeArrayTester/row:rsc.z}
+load net {row:rsc.z(3)} -pin  "row:rsc:mgc_out_stdreg" {z(3)} -attr vt d -attr @path {/MazeArrayTester/row:rsc.z}
+load net {row:rsc.z(4)} -pin  "row:rsc:mgc_out_stdreg" {z(4)} -attr vt d -attr @path {/MazeArrayTester/row:rsc.z}
+load net {row:rsc.z(5)} -pin  "row:rsc:mgc_out_stdreg" {z(5)} -attr vt d -attr @path {/MazeArrayTester/row:rsc.z}
+load inst "col:rsc:mgc_out_stdreg" "mgc_ioport.mgc_out_stdreg(2,6)" "INTERFACE" -attr xrf 3605 -attr oid 106 -attr vt d -attr @path {/MazeArrayTester/col:rsc:mgc_out_stdreg} -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_ioport.mgc_out_stdreg(2,6)" -pg 1 -lvl 1002
+load net {col:rsc:mgc_out_stdreg.d#1(0)} -pin  "col:rsc:mgc_out_stdreg" {d(0)} -attr vt d -attr @path {/MazeArrayTester/col:rsc:mgc_out_stdreg.d}
+load net {col:rsc:mgc_out_stdreg.d#1(1)} -pin  "col:rsc:mgc_out_stdreg" {d(1)} -attr vt d -attr @path {/MazeArrayTester/col:rsc:mgc_out_stdreg.d}
+load net {col:rsc:mgc_out_stdreg.d#1(2)} -pin  "col:rsc:mgc_out_stdreg" {d(2)} -attr vt d -attr @path {/MazeArrayTester/col:rsc:mgc_out_stdreg.d}
+load net {col:rsc:mgc_out_stdreg.d#1(3)} -pin  "col:rsc:mgc_out_stdreg" {d(3)} -attr vt d -attr @path {/MazeArrayTester/col:rsc:mgc_out_stdreg.d}
+load net {col:rsc:mgc_out_stdreg.d#1(4)} -pin  "col:rsc:mgc_out_stdreg" {d(4)} -attr vt d -attr @path {/MazeArrayTester/col:rsc:mgc_out_stdreg.d}
+load net {col:rsc:mgc_out_stdreg.d#1(5)} -pin  "col:rsc:mgc_out_stdreg" {d(5)} -attr vt d -attr @path {/MazeArrayTester/col:rsc:mgc_out_stdreg.d}
+load net {col:rsc.z(0)} -pin  "col:rsc:mgc_out_stdreg" {z(0)} -attr vt d -attr @path {/MazeArrayTester/col:rsc.z}
+load net {col:rsc.z(1)} -pin  "col:rsc:mgc_out_stdreg" {z(1)} -attr vt d -attr @path {/MazeArrayTester/col:rsc.z}
+load net {col:rsc.z(2)} -pin  "col:rsc:mgc_out_stdreg" {z(2)} -attr vt d -attr @path {/MazeArrayTester/col:rsc.z}
+load net {col:rsc.z(3)} -pin  "col:rsc:mgc_out_stdreg" {z(3)} -attr vt d -attr @path {/MazeArrayTester/col:rsc.z}
+load net {col:rsc.z(4)} -pin  "col:rsc:mgc_out_stdreg" {z(4)} -attr vt d -attr @path {/MazeArrayTester/col:rsc.z}
+load net {col:rsc.z(5)} -pin  "col:rsc:mgc_out_stdreg" {z(5)} -attr vt d -attr @path {/MazeArrayTester/col:rsc.z}
+load inst "out:rsc:mgc_out_stdreg" "mgc_ioport.mgc_out_stdreg(3,4)" "INTERFACE" -attr xrf 3606 -attr oid 107 -attr vt d -attr @path {/MazeArrayTester/out:rsc:mgc_out_stdreg} -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_ioport.mgc_out_stdreg(3,4)" -pg 1 -lvl 1002
+load net {out:rsc:mgc_out_stdreg.d#1(0)} -pin  "out:rsc:mgc_out_stdreg" {d(0)} -attr vt d -attr @path {/MazeArrayTester/out:rsc:mgc_out_stdreg.d}
+load net {out:rsc:mgc_out_stdreg.d#1(1)} -pin  "out:rsc:mgc_out_stdreg" {d(1)} -attr vt d -attr @path {/MazeArrayTester/out:rsc:mgc_out_stdreg.d}
+load net {out:rsc:mgc_out_stdreg.d#1(2)} -pin  "out:rsc:mgc_out_stdreg" {d(2)} -attr vt d -attr @path {/MazeArrayTester/out:rsc:mgc_out_stdreg.d}
+load net {out:rsc:mgc_out_stdreg.d#1(3)} -pin  "out:rsc:mgc_out_stdreg" {d(3)} -attr vt d -attr @path {/MazeArrayTester/out:rsc:mgc_out_stdreg.d}
+load net {out:rsc.z(0)} -pin  "out:rsc:mgc_out_stdreg" {z(0)} -attr vt d -attr @path {/MazeArrayTester/out:rsc.z}
+load net {out:rsc.z(1)} -pin  "out:rsc:mgc_out_stdreg" {z(1)} -attr vt d -attr @path {/MazeArrayTester/out:rsc.z}
+load net {out:rsc.z(2)} -pin  "out:rsc:mgc_out_stdreg" {z(2)} -attr vt d -attr @path {/MazeArrayTester/out:rsc.z}
+load net {out:rsc.z(3)} -pin  "out:rsc:mgc_out_stdreg" {z(3)} -attr vt d -attr @path {/MazeArrayTester/out:rsc.z}
+load inst "write:rsc:mgc_out_stdreg" "mgc_ioport.mgc_out_stdreg(4,1)" "INTERFACE" -attr xrf 3607 -attr oid 108 -attr vt d -attr @path {/MazeArrayTester/write:rsc:mgc_out_stdreg} -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_ioport.mgc_out_stdreg(4,1)" -pg 1 -lvl 1002
+load net {write:rsc:mgc_out_stdreg.d#1} -pin  "write:rsc:mgc_out_stdreg" {d(0)} -attr vt d -attr @path {/MazeArrayTester/write:rsc:mgc_out_stdreg.d}
+load net {write:rsc.z} -pin  "write:rsc:mgc_out_stdreg" {z(0)} -attr vt d -attr @path {/MazeArrayTester/write:rsc.z}
+### END MODULE 
+
