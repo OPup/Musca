@@ -652,3 +652,4 @@ go extract
 # IO timing constraints written to synthesis script file
 # Synthesis script written to file 'rtl.v.psr'
 # Info: Completed transformation 'extract' on solution 'MazeArrayTester.v5': elapsed time 1.81 seconds, memory usage 183540kB, peak memory usage 208008kB (SOL-9)
+quit -f
